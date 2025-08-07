@@ -1,0 +1,219 @@
+{
+  "navbar": {
+    "sounds": "Zvukovi",
+    "profile": "Profil",
+    "admin": "Administrator",
+    "welcome": "Dobrodošli, {{name}}",
+    "signOut": "Odjava",
+    "signIn": "Prijava",
+    "getStarted": "Počnite"
+  },
+  "homepage": {
+    "hero": {
+      "title": "Otkrijte iscjeljujuću moć zvuka",
+      "subtitle": "Transformirajte svoje blagostanje terapeutskim zvučnim liječenjem dizajniranim za duboku relaksaciju, otklanjanje stresa i mentalnu jasnoću.",
+      "cta": "Započnite svoje putovanje",
+      "learnMore": "Saznajte više"
+    },
+    "features": {
+      "title": "Savršeno za svaku potrebu blagostanja",
+      "useCases": {
+        "sleep": {
+          "title": "Poremećaji spavanja",
+          "description": "Nesanica, nemiran san ili problemi s usnivanjem"
+        },
+        "stress": {
+          "title": "Stres i anksioznost",
+          "description": "Svakodnevni stres, radni pritisak ili upravljanje anksioznošću"
+        },
+        "meditation": {
+          "title": "Praksa meditacije",
+          "description": "Poboljšajte svoju meditaciju vođenim zvučnim krajolicima"
+        },
+        "workplace": {
+          "title": "Blagostanje na radnom mjestu",
+          "description": "Poboljšajte fokus i smanjite stres na radnom mjestu"
+        },
+        "recovery": {
+          "title": "Podrška za oporavak",
+          "description": "Prirodno podržavajte procese liječenja i oporavka"
+        },
+        "study": {
+          "title": "Učenje i fokus",
+          "description": "Povećajte koncentraciju i učinkovitost učenja"
+        }
+      },
+      "scientifically": {
+        "title": "Znanstveno potvrđeno",
+        "description": "Naši terapeutski zvukovi temelje se na dokazanim istraživanjima u zvučnom liječenju i neuroznanosti."
+      },
+      "personalized": {
+        "title": "Personalizirano iskustvo",
+        "description": "Prilagođene seje zvučne terapije koje se prilagođavaju vašim jedinstvenim potrebama i preferencijama blagostanja."
+      },
+      "professional": {
+        "title": "Profesionalna kvaliteta",
+        "description": "Visokokvalitetan audio dizajniran od strane stručnjaka za zvučnu terapiju za maksimalnu terapeutsku korist."
+      },
+      "accessible": {
+        "title": "Uvijek dostupno",
+        "description": "Pristupite svojim iscjeljujućim zvukovima bilo kada, bilo gdje, s bilo kojeg uređaja."
+      },
+      "naturalHealing": {
+        "title": "Prirodno liječenje"
+      }
+    },
+    "whatWeDo": {
+      "title": "Što radi Sonicus?",
+      "description": "Sonicus se specijalizira za terapeutsko zvučno liječenje - dokazanu praksu blagostanja koja koristi specifične audio frekvencije, prirodne zvukove i pažljivo izrađene zvučne krajolike za poticanje liječenja i relaksacije. Naša platforma pruža vam trenutni pristup profesionalnoj biblioteci terapeutskih zvukova koje možete koristiti za meditaciju, otklanjanje stresa, poboljšanje spavanja i cjelokupnu podršku mentalnog zdravlja.",
+      "keyBenefits": {
+        "title": "Ključne koristi korištenja Sonicus:",
+        "stressReduction": {
+          "title": "Smanjenje stresa:",
+          "description": "Snižavajte razine kortizola kroz umirujuće zvučne krajolike"
+        },
+        "betterSleep": {
+          "title": "Bolji san:",
+          "description": "Poboljšajte kvalitetu spavanja specijaliziranim zvukovima za spavanje"
+        },
+        "enhancedFocus": {
+          "title": "Poboljšani fokus:",
+          "description": "Povećajte koncentraciju ambijantalnim zvukovima za fokus"
+        },
+        "emotionalBalance": {
+          "title": "Emocionalna ravnoteža:",
+          "description": "Regulirajte raspoloženje i emocije kroz terapeutske frekvencije"
+        },
+        "painManagement": {
+          "title": "Upravljanje boli:",
+          "description": "Prirodno ublažavanje boli kroz tehnike zvučne terapije"
+        },
+        "meditationSupport": {
+          "title": "Podrška za meditaciju:",
+          "description": "Produbite svoju praksu meditacije vođenim audiom"
+        }
+      }
+    },
+    "howItWorks": {
+      "title": "Kako Sonicus radi",
+      "curatedLibrary": {
+        "title": "🎵 Kurirana zvučna biblioteka",
+        "description": "Pristupite stotinama profesionalno izrađenih terapeutskih zvukova, od prirodnih zvučnih krajolika do biauralnih ritmova, svi dizajnirani za specifične ishode blagostanja."
+      },
+      "evidenceBased": {
+        "title": "🧘 Terapija utemeljena na dokazima",
+        "description": "Naš audio sadržaj temelji se na znanstvenim istraživanjima u zvučnoj terapiji, neuroznanosti i psihologiji blagostanja za maksimalnu terapeutsku korist."
+      },
+      "instantStreaming": {
+        "title": "📱 Trenutno streamiranje",
+        "description": "Streajte visokokvalitetan terapeutski audio trenutno na bilo kojem uređaju - nema potrebe za preuzimanjem. Savršeno za dom, ured ili putovanja."
+      },
+      "personalJourney": {
+        "title": "🎯 Osobno putovanje blagostanja",
+        "description": "Pratite svoje navike slušanja, otkrijte nove terapeutske zvukove i izgradite personalizirane rutine blagostanja prilagođene vašim potrebama."
+      },
+      "privateSecure": {
+        "title": "🔒 Privatno i sigurno",
+        "description": "Vaši osobni podaci o blagostanju potpuno su privatni uz našu multi-tenant arhitekturu - svaki korisnik dobiva svoj siguran prostor u bazi podataka."
+      },
+      "smartRecommendations": {
+        "title": "⚡ Pametne preporuke",
+        "description": "Naš sustav pokretan umjetnom inteligencijom uči vaše preferencije i predlaže savršene terapeutske zvukove za vaše trenutne potrebe i ciljeve blagostanja."
+      }
+    },
+    "cta": {
+      "title": "Spremni transformirati svoje blagostanje?",
+      "authenticatedDescription": "Nastavite svoje putovanje blagostanja s našom platformom za terapeutsko zvučno liječenje.",
+      "guestDescription": "Pridružite se tisućama korisnika koji su otkrili životno mijenjajuću moć terapeutskog zvučnog liječenja. Odaberite svoju razinu pretplate i doživite razliku koju profesionalna audio terapija može napraviti.",
+      "buttons": {
+        "exploreSounds": "Istražite zvukove",
+        "dashboard": "Moja nadzorna ploča",
+        "startTrial": "Počnite besplatnu probnu verziju",
+        "signIn": "Prijavite se"
+      }
+    },
+    "subscriptionTiers": {
+      "starter": {
+        "name": "Početni",
+        "price": "Besplatno",
+        "features": {
+          "sessions": "3 dnevne seje",
+          "timeLimit": "15-minutno ograničenje",
+          "content": "Osnovna biblioteka sadržaja",
+          "analytics": "Osobna analitika"
+        }
+      },
+      "premium": {
+        "name": "Premium",
+        "price": "9,99€/mjesec",
+        "features": {
+          "sessions": "10 dnevnih seja",
+          "timeLimit": "60-minutne seje",
+          "content": "Potpuna biblioteka sadržaja",
+          "analytics": "Napredna analitika",
+          "tracking": "Praćenje blagostanja"
+        }
+      },
+      "pro": {
+        "name": "Pro",
+        "price": "19,99€/mjesec",
+        "features": {
+          "sessions": "Neograničene seje",
+          "timeLimit": "Neograničena duljina",
+          "content": "Premium ekskluzivni sadržaj",
+          "insights": "Napredni uvidi",
+          "support": "Prioritetna podrška"
+        }
+      }
+    },
+    "science": {
+      "title": "Znanost iza zvučne terapije",
+      "intro": "Zvučna terapija podržana je opsežnim znanstvenim istraživanjima.",
+      "description": "Studije su pokazale da specifične audio frekvencije mogu utjecati na obrasce moždanih valova, smanjiti razine kortizola i pokrenuti prirodni opuštajući odgovor tijela. Naši terapeutski zvukovi koriste principe iz neuroznanosti, psihologije i tradicionalnih praksi liječenja kako bi pružili mjerljive koristi za blagostanje.",
+      "highlights": {
+        "stressReduction": "Klinički dokazano smanjenje stresa",
+        "neuroplasticity": "Poboljšanje neuroplastičnosti",
+        "sleep": "Poboljšana arhitektura spavanja",
+        "cognitive": "Poboljšani fokus i kognitivne performanse"
+      }
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Dobrodošli natrag",
+      "email": "Email adresa",
+      "password": "Lozinka",
+      "submit": "Prijavite se",
+      "forgotPassword": "Zaboravili ste lozinku?",
+      "noAccount": "Nemate račun?",
+      "signUp": "Registrirajte se"
+    },
+    "register": {
+      "title": "Stvorite svoj račun",
+      "name": "Puno ime",
+      "email": "Email adresa",
+      "password": "Lozinka",
+      "confirmPassword": "Potvrdite lozinku",
+      "submit": "Počnite",
+      "hasAccount": "Već imate račun?",
+      "signIn": "Prijavite se",
+      "passwordRequirement": "Lozinka mora imati najmanje 8 znakova"
+    }
+  },
+  "common": {
+    "loading": "Učitavanje...",
+    "error": "Došlo je do greške",
+    "retry": "Pokušajte ponovo",
+    "save": "Spremi",
+    "cancel": "Otkaži",
+    "edit": "Uredi",
+    "delete": "Obriši",
+    "confirm": "Potvrdi",
+    "yes": "Da",
+    "no": "Ne",
+    "footer": {
+      "version": "Sonicus v1.0.0 - Aplikacija za audio terapiju",
+      "tagline": "Pokretano od Elefefe"
+    }
+  }
+}

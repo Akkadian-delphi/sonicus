@@ -3,52 +3,48 @@ import { useTranslation } from 'react-i18next';
 import './LanguageSwitcher.css';
 
 const languages = [
-  // North America
+  // English variants
   { code: 'en-US', name: 'English (US)', flag: '🇺🇸' },
+  { code: 'en-GB', name: 'English (UK)', flag: '🇬🇧' },
   
-  // South America
-  { code: 'pt-BR', name: 'Português (Brasil)', flag: '🇧🇷' },
-  
-  // Western Europe (Atlantic Coast)
-  { code: 'pt-PT', name: 'Português (Portugal)', flag: '🇵🇹' },
+  // Romance languages
   { code: 'es', name: 'Español', flag: '🇪🇸' },
   { code: 'fr', name: 'Français', flag: '🇫🇷' },
+  { code: 'it', name: 'Italiano', flag: '��' },
+  { code: 'pt-BR', name: 'Português (Brasil)', flag: '🇧🇷' },
+  { code: 'pt-PT', name: 'Português (Portugal)', flag: '🇵🇹' },
+  { code: 'ro', name: 'Română', flag: '🇷🇴' },
   
-  // British Isles
-  { code: 'en-GB', name: 'English (UK)', flag: '🇬🇧' },
-  { code: 'ga', name: 'Gaeilge', flag: '🇮🇪' },
-  
-  // Low Countries & Central Europe
-  { code: 'nl', name: 'Nederlands', flag: '🇳🇱' },
+  // Germanic languages
   { code: 'de', name: 'Deutsch', flag: '🇩🇪' },
-  
-  // Alpine Region
-  { code: 'it', name: 'Italiano', flag: '🇮🇹' },
-  
-  // Nordic Countries
-  { code: 'da', name: 'Dansk', flag: '🇩🇰' },
+  { code: 'nl', name: 'Nederlands', flag: '🇳🇱' },
   { code: 'sv', name: 'Svenska', flag: '🇸🇪' },
-  { code: 'fi', name: 'Suomi', flag: '🇫🇮' },
+  { code: 'da', name: 'Dansk', flag: '🇩🇰' },
   
-  // Baltic States (North to South)
+  // Slavic languages
+  { code: 'pl', name: 'Polski', flag: '🇵🇱' },
+  { code: 'cs', name: 'Čeština', flag: '🇨🇿' },
+  { code: 'bg', name: 'Български', flag: '🇧🇬' },
+  { code: 'hr', name: 'Hrvatski', flag: '🇭🇷' },
+  { code: 'sk', name: 'Slovenčina', flag: '🇸🇰' },
+  { code: 'sl', name: 'Slovenščina', flag: '🇸🇮' },
+  
+  // Finno-Ugric languages
+  { code: 'fi', name: 'Suomi', flag: '🇫🇮' },
+  { code: 'hu', name: 'Magyar', flag: '🇭🇺' },
   { code: 'et', name: 'Eesti keel', flag: '🇪🇪' },
+  
+  // Baltic languages
   { code: 'lv', name: 'Latviešu valoda', flag: '🇱🇻' },
   { code: 'lt', name: 'Lietuvių kalba', flag: '🇱🇹' },
   
-  // Central Europe (West to East)
-  { code: 'cs', name: 'Čeština', flag: '🇨🇿' },
-  { code: 'sk', name: 'Slovenčina', flag: '🇸🇰' },
-  { code: 'pl', name: 'Polski', flag: '🇵🇱' },
-  { code: 'hu', name: 'Magyar', flag: '🇭🇺' },
+  // Celtic languages
+  { code: 'ga', name: 'Gaeilge', flag: '🇮🇪' },
   
-  // Southeast Europe (West to East)
-  { code: 'sl', name: 'Slovenščina', flag: '🇸🇮' },
-  { code: 'hr', name: 'Hrvatski', flag: '🇭🇷' },
-  { code: 'ro', name: 'Română', flag: '🇷🇴' },
-  { code: 'bg', name: 'Български', flag: '🇧🇬' },
-  
-  // Mediterranean
+  // Hellenic languages
   { code: 'el', name: 'Ελληνικά', flag: '🇬🇷' },
+  
+  // Semitic languages
   { code: 'mt', name: 'Malti', flag: '🇲🇹' }
 ];
 

@@ -1,0 +1,219 @@
+{
+  "navbar": {
+    "sounds": "Helid",
+    "profile": "Profiil",
+    "admin": "Administraator",
+    "welcome": "Tere tulemast, {{name}}",
+    "signOut": "Logi välja",
+    "signIn": "Logi sisse",
+    "getStarted": "Alusta"
+  },
+  "homepage": {
+    "hero": {
+      "title": "Avasta heli tervendav jõud",
+      "subtitle": "Muuda oma heaolu teraapiast heliraviga, mis on mõeldud sügavaks lõõgastuseks, stressi leevendamiseks ja vaimse selguse saavutamiseks.",
+      "cta": "Alusta oma teekonda",
+      "learnMore": "Lisateave"
+    },
+    "features": {
+      "title": "Täiuslik igale heaolu vajadusele",
+      "useCases": {
+        "sleep": {
+          "title": "Unehäired",
+          "description": "Unetus, rahutu uni või probleemid magamaminemisega"
+        },
+        "stress": {
+          "title": "Stress ja ärevus",
+          "description": "Igapäevane stress, tööpinge või ärevuse haldamine"
+        },
+        "meditation": {
+          "title": "Meditatsiooni praktika",
+          "description": "Paranda oma meditatsiooni juhendatud helimaastikuga"
+        },
+        "workplace": {
+          "title": "Töökoha heaolu",
+          "description": "Paranda keskendumist ja vähenda tööstressi"
+        },
+        "recovery": {
+          "title": "Taastumise toetus",
+          "description": "Toeta loomulikult ravimis- ja taastumisprotsesse"
+        },
+        "study": {
+          "title": "Õppimine ja keskendumine",
+          "description": "Suurenda keskendumist ja õppimise tulemuslikkust"
+        }
+      },
+      "scientifically": {
+        "title": "Teaduslikult tõestatud",
+        "description": "Meie teraapilist helid põhinevad tõestatud uuringutel heliravil ja neuroteaduses."
+      },
+      "personalized": {
+        "title": "Personaliseeritud kogemus",
+        "description": "Kohandatud heliteraapia seansid, mis kohanevad teie ainulaadsete heaolu vajaduste ja eelistustega."
+      },
+      "professional": {
+        "title": "Professionaalne kvaliteet",
+        "description": "Kõrge kvaliteediga audio, mille on disaininud heliteraapia eksperdid maksimaalse teraapilist kasu saamiseks."
+      },
+      "accessible": {
+        "title": "Alati kättesaadav",
+        "description": "Ligipääs oma tervendavale helidele igal ajal, kõikjal, mis tahes seadmest."
+      },
+      "naturalHealing": {
+        "title": "Loomulik ravi"
+      }
+    },
+    "whatWeDo": {
+      "title": "Mida Sonicus teeb?",
+      "description": "Sonicus spetsialiseerub teraapiast heliravile - tõestatud heaolu praktikale, mis kasutab spetsiifilisi audiosagedusi, looduse heli ja hoolikalt loodud helimaastiku ravi ja lõõgastuse edendamiseks. Meie platvorm annab teile kohese juurdepääsu professionaalsele teraapiast helide raamatukogule, mida saate kasutada meditatsiooni, stressi leevendamise, une parandamise ja üldise vaimse tervise toetuse jaoks.",
+      "keyBenefits": {
+        "title": "Sonicus kasutamise põhilised eelised:",
+        "stressReduction": {
+          "title": "Stressi vähendamine:",
+          "description": "Vähenda kortisooli taset rahustavate helimaastikuga"
+        },
+        "betterSleep": {
+          "title": "Parem uni:",
+          "description": "Paranda une kvaliteeti spetsialiseeritud uinumise helidega"
+        },
+        "enhancedFocus": {
+          "title": "Parandatud keskendumine:",
+          "description": "Suurenda keskendumist keskkonna fookuse helidega"
+        },
+        "emotionalBalance": {
+          "title": "Emotsionaalne tasakaal:",
+          "description": "Reguleeri meeleolu ja emotsioone teraapiast sageduste kaudu"
+        },
+        "painManagement": {
+          "title": "Valu haldamine:",
+          "description": "Loomulik valu leevendus heliteraapia tehnikate kaudu"
+        },
+        "meditationSupport": {
+          "title": "Meditatsiooni toetus:",
+          "description": "Süvenda oma meditatsiooni praktikat juhendatud audioga"
+        }
+      }
+    },
+    "howItWorks": {
+      "title": "Kuidas Sonicus töötab",
+      "curatedLibrary": {
+        "title": "🎵 Kureeritud heliraamatukogu",
+        "description": "Juurdepääs sadadele professionaalselt loodud teraapiast helidele, alates looduse helimaastikust kuni binaalsete rütmideni, kõik on disainitud spetsiifiliste heaolu tulemuste jaoks."
+      },
+      "evidenceBased": {
+        "title": "🧘 Tõendusel põhinev teraapia",
+        "description": "Meie audio sisu põhineb teaduslikel uuringutel heliteraapias, neuroteaduses ja heaolu psühholoogias maksimaalse teraapiast kasu saamiseks."
+      },
+      "instantStreaming": {
+        "title": "📱 Kohene voogedastus",
+        "description": "Vooga kõrge kvaliteediga teraapiast audiot koheselt mis tahes seadmes - allalaadimised pole vajalikud. Täiuslik kodu, kontori või reisimise jaoks."
+      },
+      "personalJourney": {
+        "title": "🎯 Isiklik heaolu teekond",
+        "description": "Jälgi oma kuulamise harjumusi, avasta uusi teraapiast heli ja ehita personaliseeritud heaolu rutiine, mis on kohandatud teie vajaduste järgi."
+      },
+      "privateSecure": {
+        "title": "🔒 Privaatne ja turvaline",
+        "description": "Teie isiklikud heaolu andmed on täiesti privaatsed meie mitme üürniku arhitektuuriga - iga kasutaja saab oma turvalise andmebaasi ruumi."
+      },
+      "smartRecommendations": {
+        "title": "⚡ Nutikad soovitused",
+        "description": "Meie tehisintellektiga töötav süsteem õpib teie eelistusi ja soovitab täiuslikke teraapiast heli teie praeguste vajaduste ja heaolu eesmärkide jaoks."
+      }
+    },
+    "cta": {
+      "title": "Valmis muutma oma heaolu?",
+      "authenticatedDescription": "Jätka oma heaolu teekonda meie teraapiast heliravi platvormiga.",
+      "guestDescription": "Liitu tuhandete kasutajatega, kes on avastanud teraapiast heliravi elukutsumuse võimu. Vali oma tellimuse tase ja koge erinevust, mida professionaalne audioteraapia võib teha.",
+      "buttons": {
+        "exploreSounds": "Uuri heli",
+        "dashboard": "Minu armatuurlaud",
+        "startTrial": "Alusta tasuta prooviversiooni",
+        "signIn": "Logi sisse"
+      }
+    },
+    "subscriptionTiers": {
+      "starter": {
+        "name": "Algaja",
+        "price": "Tasuta",
+        "features": {
+          "sessions": "3 päevast seanssi",
+          "timeLimit": "15-minutiline piirang",
+          "content": "Põhiline sisuraamatukogu",
+          "analytics": "Isiklik analüütika"
+        }
+      },
+      "premium": {
+        "name": "Premium",
+        "price": "9,99€/kuu",
+        "features": {
+          "sessions": "10 päevast seanssi",
+          "timeLimit": "60-minutilised seansid",
+          "content": "Täielik sisuraamatukogu",
+          "analytics": "Täpsem analüütika",
+          "tracking": "Heaolu jälgimine"
+        }
+      },
+      "pro": {
+        "name": "Pro",
+        "price": "19,99€/kuu",
+        "features": {
+          "sessions": "Piiramatud seansid",
+          "timeLimit": "Piiramatu kestus",
+          "content": "Premium eksklusiivne sisu",
+          "insights": "Täpsemad ülevaated",
+          "support": "Prioriteetne tugi"
+        }
+      }
+    },
+    "science": {
+      "title": "Teadus heliteraapia taga",
+      "intro": "Heliteraapia on toetatud ulatusliku teadusliku uurimistööga.",
+      "description": "Uuringud on näidanud, et spetsiifilised audiosagedused võivad mõjutada ajulainete mustreid, vähendada kortisooli taset ja käivitada keha loomuliku lõõgastuse vastuse. Meie teraapiast helid kasutavad neuroteaduse, psühholoogia ja traditsiooniliste ravimeetodite põhimõtteid mõõdetavate heaolu eeliste pakkumiseks.",
+      "highlights": {
+        "stressReduction": "Kliiniliselt tõestatud stressi vähendamine",
+        "neuroplasticity": "Neuroplastilisuse parandamine",
+        "sleep": "Parandatud une arhitektuur",
+        "cognitive": "Parandatud keskendumine ja kognitiivne jõudlus"
+      }
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Tere tulemast tagasi",
+      "email": "E-posti aadress",
+      "password": "Parool",
+      "submit": "Logi sisse",
+      "forgotPassword": "Unustasid oma parooli?",
+      "noAccount": "Sul pole kontot?",
+      "signUp": "Registreeru"
+    },
+    "register": {
+      "title": "Loo oma konto",
+      "name": "Täisnimi",
+      "email": "E-posti aadress",
+      "password": "Parool",
+      "confirmPassword": "Kinnita parool",
+      "submit": "Alusta",
+      "hasAccount": "On juba konto?",
+      "signIn": "Logi sisse",
+      "passwordRequirement": "Parool peab olema vähemalt 8 tähemärki pikk"
+    }
+  },
+  "common": {
+    "loading": "Laadimine...",
+    "error": "Tekkis viga",
+    "retry": "Proovi uuesti",
+    "save": "Salvesta",
+    "cancel": "Tühista",
+    "edit": "Muuda",
+    "delete": "Kustuta",
+    "confirm": "Kinnita",
+    "yes": "Jah",
+    "no": "Ei",
+    "footer": {
+      "version": "Sonicus v1.0.0 - Audioteraapia rakendus",
+      "tagline": "Jõustab Elefefe"
+    }
+  }
+}

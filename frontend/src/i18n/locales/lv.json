@@ -1,0 +1,219 @@
+{
+  "navbar": {
+    "sounds": "Skaņas",
+    "profile": "Profils",
+    "admin": "Administrators",
+    "welcome": "Laipni lūdzam, {{name}}",
+    "signOut": "Iziet",
+    "signIn": "Ieiet",
+    "getStarted": "Sākt"
+  },
+  "homepage": {
+    "hero": {
+      "title": "Atklājiet skaņas dziedinošo spēku",
+      "subtitle": "Pārveidojiet savu labsajūtu ar terapeitisko skaņu dziedināšanu, kas paredzēta dziļai relaksācijai, stresa mazināšanai un prāta skaidrībai.",
+      "cta": "Sāciet savu ceļojumu",
+      "learnMore": "Uzziniet vairāk"
+    },
+    "features": {
+      "title": "Lieliski piemērots katram labsajūtas vajadzībai",
+      "useCases": {
+        "sleep": {
+          "title": "Miega traucējumi",
+          "description": "Bezmiega, nemierīgs miegs vai grūtības ar aiziešanu gulēt"
+        },
+        "stress": {
+          "title": "Stress un trauksme",
+          "description": "Ikdienas stress, darba spiediens vai trauksmes pārvaldīšana"
+        },
+        "meditation": {
+          "title": "Meditācijas prakse",
+          "description": "Uzlabojiet savu meditāciju ar vadītiem skaņu ainavam"
+        },
+        "workplace": {
+          "title": "Darbavietas labsajūta",
+          "description": "Uzlabojiet koncentrēšanos un samaziniet darbavietas stresu"
+        },
+        "recovery": {
+          "title": "Atveseļošanās atbalsts",
+          "description": "Dabiski atbalstiet dziedināšanas un atveseļošanās procesus"
+        },
+        "study": {
+          "title": "Mācības un koncentrēšanās",
+          "description": "Palieliniet koncentrēšanos un mācību sniegumu"
+        }
+      },
+      "scientifically": {
+        "title": "Zinātniski pamatots",
+        "description": "Mūsu terapeitiskās skaņas balstās uz pierādītiem pētījumiem skaņu dziedināšanā un neiroloģijā."
+      },
+      "personalized": {
+        "title": "Personalizēta pieredze",
+        "description": "Pielāgotas skaņu terapijas sesijas, kas pielāgojas jūsu unikālajām labsajūtas vajadzībām un vēlmēm."
+      },
+      "professional": {
+        "title": "Profesionāla kvalitāte",
+        "description": "Augsti kvalitatīvs audio, ko izstrādājuši skaņu terapijas eksperti maksimālai terapeitiskai labai."
+      },
+      "accessible": {
+        "title": "Vienmēr pieejams",
+        "description": "Piekļūstiet savām dziedinošajām skaņām jebkurā laikā, jebkur, no jebkuras ierīces."
+      },
+      "naturalHealing": {
+        "title": "Dabiska dziedināšana"
+      }
+    },
+    "whatWeDo": {
+      "title": "Ko dara Sonicus?",
+      "description": "Sonicus specializējas terapeitiskā skaņu dziedināšanā - pierādītā labsajūtas praksē, kas izmanto specifiskas audio frekvences, dabas skaņas un rūpīgi izveidotas skaņu ainavas, lai veicinātu dziedināšanu un relaksāciju. Mūsu platforma nodrošina tūlītēju piekļuvi profesionālai terapeitisko skaņu bibliotēkai, ko varat izmantot meditācijai, stresa mazināšanai, miega uzlabošanai un vispārīgai garīgās veselības atbalstam.",
+      "keyBenefits": {
+        "title": "Galvenās Sonicus izmantošanas priekšrocības:",
+        "stressReduction": {
+          "title": "Stresa samazināšana:",
+          "description": "Samaziniet kortizola līmeni ar nomierinošām skaņu ainavām"
+        },
+        "betterSleep": {
+          "title": "Labāks miegs:",
+          "description": "Uzlabojiet miega kvalitāti ar specializētām miegu veicinošām skaņām"
+        },
+        "enhancedFocus": {
+          "title": "Uzlabota koncentrēšanās:",
+          "description": "Palieliniet koncentrēšanos ar vides koncentrēšanās skaņām"
+        },
+        "emotionalBalance": {
+          "title": "Emocionālā līdzsvara:",
+          "description": "Regulējiet noskaņojumu un emocijas ar terapeitiskām frekvencēm"
+        },
+        "painManagement": {
+          "title": "Sāpju pārvaldība:",
+          "description": "Dabiska sāpju mazināšana ar skaņu terapijas metodēm"
+        },
+        "meditationSupport": {
+          "title": "Meditācijas atbalsts:",
+          "description": "Padziļiniet savu meditācijas praksi ar vadītu audio"
+        }
+      }
+    },
+    "howItWorks": {
+      "title": "Kā darbojas Sonicus",
+      "curatedLibrary": {
+        "title": "🎵 Kurēta skaņu bibliotēka",
+        "description": "Piekļūstiet simtiem profesionāli izveidotu terapeitisko skaņu, no dabas skaņu ainavām līdz binaurāliem ritmiem, visi izstrādāti specifiskiem labsajūtas rezultātiem."
+      },
+      "evidenceBased": {
+        "title": "🧘 Uz pierādījumiem balstīta terapija",
+        "description": "Mūsu audio saturs balstās uz zinātniskiem pētījumiem skaņu terapijā, neiroloģijā un labsajūtas psiholoģijā maksimālai terapeitiskai labai."
+      },
+      "instantStreaming": {
+        "title": "📱 Tūlītēja straumēšana",
+        "description": "Straumējiet augstas kvalitātes terapeitisko audio tūlīt jebkurā ierīcē - nav nepieciešami lejupielādes. Lieliski piemērots mājas, biroja vai ceļošanas lietošanai."
+      },
+      "personalJourney": {
+        "title": "🎯 Personīgs labsajūtas ceļojums",
+        "description": "Izsekojiet saviem klausīšanās paradumiem, atklājiet jaunas terapeitiskās skaņas un veidojiet personalizētas labsajūtas rutīnas, kas pielāgotas jūsu vajadzībām."
+      },
+      "privateSecure": {
+        "title": "🔒 Privāts un drošs",
+        "description": "Jūsu personīgie labsajūtas dati ir pilnīgi privāti ar mūsu daudznomnieku arhitektūru - katrs lietotājs saņem savu drošo datu bāzes telpu."
+      },
+      "smartRecommendations": {
+        "title": "⚡ Viedas rekomendācijas",
+        "description": "Mūsu AI darbināmā sistēma iemācās jūsu vēlmes un iesaka perfektās terapeitiskās skaņas jūsu pašreizējām vajadzībām un labsajūtas mērķiem."
+      }
+    },
+    "cta": {
+      "title": "Gatavs pārveidot savu labsajūtu?",
+      "authenticatedDescription": "Turpiniet savu labsajūtas ceļojumu ar mūsu terapeitisko skaņu dziedināšanas platformu.",
+      "guestDescription": "Pievienojieties tūkstošiem lietotāju, kas atklājuši dzīvi mainošo terapeitisko skaņu dziedināšanas spēku. Izvēlieties savu abonementa līmeni un izbaudiet atšķirību, ko var radīt profesionāla audio terapija.",
+      "buttons": {
+        "exploreSounds": "Izpētiet skaņas",
+        "dashboard": "Mans panelis",
+        "startTrial": "Sāciet bezmaksas izmēģinājumu",
+        "signIn": "Ieiet"
+      }
+    },
+    "subscriptionTiers": {
+      "starter": {
+        "name": "Iesācējs",
+        "price": "Bezmaksas",
+        "features": {
+          "sessions": "3 dienas sesijas",
+          "timeLimit": "15 minūšu ierobežojums",
+          "content": "Pamata satura bibliotēka",
+          "analytics": "Personīgā analītika"
+        }
+      },
+      "premium": {
+        "name": "Premium",
+        "price": "9,99€/mēnesī",
+        "features": {
+          "sessions": "10 dienas sesijas",
+          "timeLimit": "60 minūšu sesijas",
+          "content": "Pilna satura bibliotēka",
+          "analytics": "Uzlabotā analītika",
+          "tracking": "Labsajūtas izsekošana"
+        }
+      },
+      "pro": {
+        "name": "Pro",
+        "price": "19,99€/mēnesī",
+        "features": {
+          "sessions": "Neierobežotas sesijas",
+          "timeLimit": "Neierobežots ilgums",
+          "content": "Premium ekskluzīvs saturs",
+          "insights": "Uzlaboti ieskati",
+          "support": "Prioritārs atbalsts"
+        }
+      }
+    },
+    "science": {
+      "title": "Zinātne skaņu terapijas pamatā",
+      "intro": "Skaņu terapiju atbalsta plaši zinātniski pētījumi.",
+      "description": "Pētījumi ir parādījuši, ka specifiskas audio frekvences var ietekmēt smadzeņu viļņu modeļus, samazināt kortizola līmeni un aktivizēt ķermeņa dabisku relaksācijas atbildi. Mūsu terapeitiskās skaņas izmanto principus no neiroloģijas, psiholoģijas un tradicionālām dziedināšanas praksēm, lai nodrošinātu mērāmas labsajūtas priekšrocības.",
+      "highlights": {
+        "stressReduction": "Klīniski pierādīta stresa samazināšana",
+        "neuroplasticity": "Neirokalācijas uzlabošana",
+        "sleep": "Uzlabota miega arhitektūra",
+        "cognitive": "Uzlabota koncentrēšanās un kognitīvā veiktspēja"
+      }
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Laipni lūdzam atpakaļ",
+      "email": "E-pasta adrese",
+      "password": "Parole",
+      "submit": "Ieiet",
+      "forgotPassword": "Aizmirsāt savu paroli?",
+      "noAccount": "Nav konta?",
+      "signUp": "Reģistrēties"
+    },
+    "register": {
+      "title": "Izveidojiet savu kontu",
+      "name": "Pilns vārds",
+      "email": "E-pasta adrese",
+      "password": "Parole",
+      "confirmPassword": "Apstipriniet paroli",
+      "submit": "Sākt",
+      "hasAccount": "Jau ir konts?",
+      "signIn": "Ieiet",
+      "passwordRequirement": "Parolei jābūt vismaz 8 rakstzīmes garai"
+    }
+  },
+  "common": {
+    "loading": "Ielāde...",
+    "error": "Radās kļūda",
+    "retry": "Mēģināt vēlreiz",
+    "save": "Saglabāt",
+    "cancel": "Atcelt",
+    "edit": "Rediģēt",
+    "delete": "Dzēst",
+    "confirm": "Apstiprināt",
+    "yes": "Jā",
+    "no": "Nē",
+    "footer": {
+      "version": "Sonicus v1.0.0 - Audio terapijas lietotne",
+      "tagline": "Darbina Elefefe"
+    }
+  }
+}

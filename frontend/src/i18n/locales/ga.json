@@ -1,0 +1,219 @@
+{
+  "navbar": {
+    "sounds": "Fuaimeanna",
+    "profile": "Próifíl",
+    "admin": "Riarthóir",
+    "welcome": "Fáilte, {{name}}",
+    "signOut": "Logáil Amach",
+    "signIn": "Logáil Isteach",
+    "getStarted": "Tosaigh"
+  },
+  "homepage": {
+    "hero": {
+      "title": "Faigh amach cumhacht leighis an fhuaime",
+      "subtitle": "Athraigh do fholláine le cneasú fuaime teiripeach a dearadh do scíth dhomhain, faoiseamh struis agus soiléireacht intinne.",
+      "cta": "Tosaigh d'aistear",
+      "learnMore": "Foghlaim níos mó"
+    },
+    "features": {
+      "title": "Foirfe do gach riachtanas folláine",
+      "useCases": {
+        "sleep": {
+          "title": "Neamhoird Codlata",
+          "description": "Néaltrú codlata, codladh corrthónach nó deacrachtaí ag titim ina chodladh"
+        },
+        "stress": {
+          "title": "Strus agus Imní",
+          "description": "Strus laethúil, brú oibre nó bainistiú imní"
+        },
+        "meditation": {
+          "title": "Cleachtas Machnaimh",
+          "description": "Feabhsaigh do mhachnamh le tírdhreacha fuaime threoraithe"
+        },
+        "workplace": {
+          "title": "Folláine san Ionad Oibre",
+          "description": "Feabhsaigh fócas agus laghdaigh strus san ionad oibre"
+        },
+        "recovery": {
+          "title": "Tacaíocht Téarnaimh",
+          "description": "Tacaigh le próisis leighis agus téarnaimh go nádúrtha"
+        },
+        "study": {
+          "title": "Staidéar agus Fócas",
+          "description": "Méadaigh tiúchan agus feidhmíocht foghlama"
+        }
+      },
+      "scientifically": {
+        "title": "Tacaithe go hEolaíoch",
+        "description": "Tá ár bhfuaimeanna teiripeach bunaithe ar thaighde cruthaithe i gcneasú fuaime agus néareolaíocht."
+      },
+      "personalized": {
+        "title": "Taithí Phearsantaithe",
+        "description": "Seisiúin teiripe fuaime oiriúnaithe a oireann do do riachtanais agus roghanna uathúla folláine."
+      },
+      "professional": {
+        "title": "Caighdeán Gairmiúil",
+        "description": "Fuaim ard-dlúthachta arna dearadh ag saineolaí teiripe fuaime don tairbhe teiripeach uasta."
+      },
+      "accessible": {
+        "title": "I gcónaí Inrochtana",
+        "description": "Faigh rochtain ar do fhuaimeanna leighis am ar bith, áit ar bith, ó ghléas ar bith."
+      },
+      "naturalHealing": {
+        "title": "Cneasú Nádúrtha"
+      }
+    },
+    "whatWeDo": {
+      "title": "Cad a dhéanann Sonicus?",
+      "description": "Speisialtóireacht Sonicus i gcneasú fuaime teiripeach - cleachtas folláine cruthaithe a úsáideann minicíochtaí fuaime sonracha, fuaimeanna nádúra, agus tírdhreacha fuaime arna gceardach go cúramach chun cneasú agus scíth a chur chun cinn. Tugann ár ardán rochtain láithreach duit ar leabharlann gairmiúil de fhuaimeanna teiripeach is féidir leat a úsáid le haghaidh machnaimh, faoiseamh struis, feabhsú codlata, agus tacaíocht ghinearálta sláinte intinne.",
+      "keyBenefits": {
+        "title": "Príomhthairbhí úsáid Sonicus:",
+        "stressReduction": {
+          "title": "Laghdú Struis:",
+          "description": "Leibhéil cortisol a laghdú trí thírdhreacha fuaime suaimhneach"
+        },
+        "betterSleep": {
+          "title": "Codladh Níos Fearr:",
+          "description": "Feabhsaigh caighdeán codlata le fuaimeanna speisialaithe a spreagann codladh"
+        },
+        "enhancedFocus": {
+          "title": "Fócas Feabhsaithe:",
+          "description": "Méadaigh tiúchan le fuaimeanna fócais chomhthimpeallach"
+        },
+        "emotionalBalance": {
+          "title": "Cothromaíocht Mhothúchánach:",
+          "description": "Rialú giúmar agus mothúcháin trí mhinicíochtaí teiripeach"
+        },
+        "painManagement": {
+          "title": "Bainistiú Pian:",
+          "description": "Faoiseamh pian nádúrtha trí theicnící teiripe fuaime"
+        },
+        "meditationSupport": {
+          "title": "Tacaíocht Machnaimh:",
+          "description": "Doimhnigh do chleachtas machnaimh le fuaim threoraithe"
+        }
+      }
+    },
+    "howItWorks": {
+      "title": "Conas a oibríonn Sonicus",
+      "curatedLibrary": {
+        "title": "🎵 Leabharlann Fuaime Coimeádta",
+        "description": "Faigh rochtain ar na céadta fuaim teiripeach arna gceardach go gairmiúil, ó thírdhreacha fuaime nádúrtha go buillí binaural, arna ndearadh go léir do thorthaí folláine sonracha."
+      },
+      "evidenceBased": {
+        "title": "🧘 Teiripe Bunaithe ar Fhianaise",
+        "description": "Tá ár n-ábhar fuaime bunaithe ar thaighde eolaíoch i dteiripe fuaime, néareolaíocht agus síceolaíocht folláine don tairbhe teiripeach uasta."
+      },
+      "instantStreaming": {
+        "title": "📱 Sruthú Láithreach",
+        "description": "Sruthú fuaim teiripeach ard-cháilíochta go láithreach ar ghléas ar bith - níl íoslódálacha de dhíth. Foirfe d'úsáid baile, oifige nó taistil."
+      },
+      "personalJourney": {
+        "title": "🎯 Aistear Folláine Pearsanta",
+        "description": "Rianaigh do nósanna éisteachta, faigh amach fuaimeanna teiripeach nua, agus tóg gnáthaimh phearsantaithe folláine arna gcur in oiriúint do do riachtanais."
+      },
+      "privateSecure": {
+        "title": "🔒 Príobháideach agus Daingean",
+        "description": "Tá do shonraí folláine pearsanta go hiomlán príobháideach lenár n-ailtireacht il-tionóntach - faigheann gach úsáideoir a spás bunachar sonraí daingean féin."
+      },
+      "smartRecommendations": {
+        "title": "⚡ Moltaí Cliste",
+        "description": "Foghlaimíonn ár gcóras AI-chumhachtú do roghanna agus molann na fuaimeanna teiripeach foirfe do do riachtanais reatha agus spriocanna folláine."
+      }
+    },
+    "cta": {
+      "title": "Réidh do d'fholláine a athrú?",
+      "authenticatedDescription": "Lean ar aghaidh le d'aistear folláine lenár n-ardán cneasaithe fuaime teiripeach.",
+      "guestDescription": "Bí páirteach le mílte úsáideoir a d'aimsigh cumhacht athraitheach saoil an cneasaithe fuaime teiripeach. Roghnaigh do leibhéal síntiúis agus taithí an difríocht a d'fhéadfadh teiripe fuaime gairmiúil a dhéanamh.",
+      "buttons": {
+        "exploreSounds": "Iniúch Fuaimeanna",
+        "dashboard": "Mo Dheais",
+        "startTrial": "Tosaigh Triail Saor in Aisce",
+        "signIn": "Logáil Isteach"
+      }
+    },
+    "subscriptionTiers": {
+      "starter": {
+        "name": "Tosaitheoir",
+        "price": "Saor in Aisce",
+        "features": {
+          "sessions": "3 seisiún laethúil",
+          "timeLimit": "Teorainn 15 nóiméad",
+          "content": "Leabharlann ábhair bhunúsach",
+          "analytics": "Anailísíocht phearsanta"
+        }
+      },
+      "premium": {
+        "name": "Préimiam",
+        "price": "€9.99/mí",
+        "features": {
+          "sessions": "10 seisiún laethúil",
+          "timeLimit": "Seisiúin 60 nóiméad",
+          "content": "Leabharlann ábhair iomlán",
+          "analytics": "Anailísíocht chun cinn",
+          "tracking": "Rianú folláine"
+        }
+      },
+      "pro": {
+        "name": "Pro",
+        "price": "€19.99/mí",
+        "features": {
+          "sessions": "Seisiúin gan teorainn",
+          "timeLimit": "Fad gan teorainn",
+          "content": "Ábhar eisiach préimiam",
+          "insights": "Léargais ardleibhéil",
+          "support": "Tacaíocht tosaíochta"
+        }
+      }
+    },
+    "science": {
+      "title": "An Eolaíocht taobh thiar de Theiripe Fuaime",
+      "intro": "Tá teiripe fuaime tacaithe ag taighde eolaíoch fairsing.",
+      "description": "Léirigh staidéir gur féidir le minicíochtaí fuaime sonracha tionchar a imirt ar phatrúin tonnbhrat inchinne, leibhéil cortisol a laghdú, agus freagra scíthe nádúrtha na colainne a spreagadh. Úsáideann ár bhfuaimeanna teiripeach prionsabail ó néareolaíocht, síceolaíocht, agus cleachtais leighis thraidisiúnta chun tairbhí folláine intomhaiste a sholáthar.",
+      "highlights": {
+        "stressReduction": "Laghdú struis cruthaithe go cliniciúil",
+        "neuroplasticity": "Feabhsú néar-sholúbthachta",
+        "sleep": "Ailtireacht codlata feabhsaithe",
+        "cognitive": "Fócas feabhsaithe agus feidhmíocht chognaíoch"
+      }
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Fáilte ar ais",
+      "email": "Seoladh Ríomhphoist",
+      "password": "Pasfhocal",
+      "submit": "Logáil Isteach",
+      "forgotPassword": "Dearmad déanta agat ar do phasfhocal?",
+      "noAccount": "Níl cuntas agat?",
+      "signUp": "Cláraigh"
+    },
+    "register": {
+      "title": "Cruthaigh Do Chuntas",
+      "name": "Ainm Iomlán",
+      "email": "Seoladh Ríomhphoist",
+      "password": "Pasfhocal",
+      "confirmPassword": "Deimhnigh Pasfhocal",
+      "submit": "Tosaigh",
+      "hasAccount": "Cuntas agat cheana féin?",
+      "signIn": "Logáil isteach",
+      "passwordRequirement": "Caithfidh an pasfhocal a bheith ar a laghad 8 gcarachtar ar fad"
+    }
+  },
+  "common": {
+    "loading": "Á lódáil...",
+    "error": "Tharla earráid",
+    "retry": "Bain triail eile as",
+    "save": "Sábháil",
+    "cancel": "Cealaigh",
+    "edit": "Cuir in eagar",
+    "delete": "Scrios",
+    "confirm": "Deimhnigh",
+    "yes": "Sea",
+    "no": "Níl",
+    "footer": {
+      "version": "Sonicus v1.0.0 - Feidhmchlár Teiripe Fuaime",
+      "tagline": "Cumhachtaithe ag Elefefe"
+    }
+  }
+}

@@ -1,0 +1,219 @@
+{
+  "navbar": {
+    "sounds": "Zvuky",
+    "profile": "Profil",
+    "admin": "Administrátor",
+    "welcome": "Vitajte, {{name}}",
+    "signOut": "Odhlásiť",
+    "signIn": "Prihlásiť",
+    "getStarted": "Začať"
+  },
+  "homepage": {
+    "hero": {
+      "title": "Objavte liečivú silu zvuku",
+      "subtitle": "Transformujte svoju pohodu s terapeutickým zvukovým liečením navrhnutým pre hlbokú relaxáciu, úľavu od stresu a jasnosť mysle.",
+      "cta": "Začnite svoju cestu",
+      "learnMore": "Zistite viac"
+    },
+    "features": {
+      "title": "Perfektné pre každú potrebu pohody",
+      "useCases": {
+        "sleep": {
+          "title": "Poruchy spánku",
+          "description": "Nespavosť, nepokojný spánok alebo problémy so zasínaním"
+        },
+        "stress": {
+          "title": "Stres a úzkosť",
+          "description": "Každodenný stres, pracovný tlak alebo zvládanie úzkosti"
+        },
+        "meditation": {
+          "title": "Prax meditácie",
+          "description": "Vylepšite svoju meditáciu s vedenými zvukovými krajinami"
+        },
+        "workplace": {
+          "title": "Pohoda na pracovisku",
+          "description": "Zlepšite sústredenosť a znížte stres na pracovisku"
+        },
+        "recovery": {
+          "title": "Podpora zotavovania",
+          "description": "Prirodzene podporujte procesy liečenia a zotavovania"
+        },
+        "study": {
+          "title": "Štúdium a sústredenosť",
+          "description": "Zvýšte koncentráciu a výkonnosť učenia"
+        }
+      },
+      "scientifically": {
+        "title": "Vedecky podložené",
+        "description": "Naše terapeutické zvuky sú založené na dokázanom výskume v zvukovom liečení a neurovede."
+      },
+      "personalized": {
+        "title": "Personalizovaný zážitok",
+        "description": "Prispôsobené relácie zvukovej terapie, ktoré sa prispôsobujú vašim jedinečným potrebám pohody a preferenciám."
+      },
+      "professional": {
+        "title": "Profesionálna kvalita",
+        "description": "Vysokej kvality audio navrhnuté expertmi na zvukovú terapiu pre maximálny terapeutický úžitok."
+      },
+      "accessible": {
+        "title": "Vždy dostupné",
+        "description": "Pristúpte k svojim liečivým zvukom kedykoľvek, kdekoľvek, z akéhokoľvek zariadenia."
+      },
+      "naturalHealing": {
+        "title": "Prirodzené liečenie"
+      }
+    },
+    "whatWeDo": {
+      "title": "Čo robí Sonicus?",
+      "description": "Sonicus sa špecializuje na terapeutické zvukové liečenie - dokázanú prax pohody, ktorá používa špecifické audio frekvencie, zvuky prírody a starostlivo vytvorené zvukové krajiny na podporu liečenia a relaxácie. Naša platforma vám poskytuje okamžitý prístup k profesionálnej knižnici terapeutických zvukov, ktoré môžete používať na meditáciu, úľavu od stresu, zlepšenie spánku a celkovú podporu duševného zdravia.",
+      "keyBenefits": {
+        "title": "Kľúčové výhody používania Sonicus:",
+        "stressReduction": {
+          "title": "Zníženie stresu:",
+          "description": "Znížte hladiny kortizolu prostredníctvom upokojujúcich zvukových krajín"
+        },
+        "betterSleep": {
+          "title": "Lepší spánok:",
+          "description": "Zlepšite kvalitu spánku špecializovanými zvukmi navodzujúcimi spánok"
+        },
+        "enhancedFocus": {
+          "title": "Vylepšená sústredenosť:",
+          "description": "Zvýšte koncentráciu ambientnými zvukmi sústredenosti"
+        },
+        "emotionalBalance": {
+          "title": "Emocionálna rovnováha:",
+          "description": "Regulujte náladu a emócie prostredníctvom terapeutických frekvencií"
+        },
+        "painManagement": {
+          "title": "Zvládanie bolesti:",
+          "description": "Prirodzená úľava od bolesti prostredníctvom techník zvukovej terapie"
+        },
+        "meditationSupport": {
+          "title": "Podpora meditácie:",
+          "description": "Prehĺbte svoju prax meditácie s vodeným audiom"
+        }
+      }
+    },
+    "howItWorks": {
+      "title": "Ako Sonicus funguje",
+      "curatedLibrary": {
+        "title": "🎵 Kurátorská zvuková knižnica",
+        "description": "Pristúpte k stovkám profesionálne vytvorených terapeutických zvukov, od prírodných zvukových krajín po binaurálne rytmy, všetky navrhnuté pre špecifické výsledky pohody."
+      },
+      "evidenceBased": {
+        "title": "🧘 Terapia založená na dôkazoch",
+        "description": "Náš audio obsah je založený na vedeckom výskume v zvukovej terapii, neurovede a psychológii pohody pre maximálny terapeutický úžitok."
+      },
+      "instantStreaming": {
+        "title": "📱 Okamžité streamovanie",
+        "description": "Streamujte vysokej kvality terapeutické audio okamžite na akomkoľvek zariadení - nie sú potrebné stiahnutia. Perfektné pre použitie doma, v kancelárii alebo na cestách."
+      },
+      "personalJourney": {
+        "title": "🎯 Osobná cesta pohody",
+        "description": "Sledujte svoje návyky počúvania, objavte nové terapeutické zvuky a vytvorte personalizované rutiny pohody prispôsobené vašim potrebám."
+      },
+      "privateSecure": {
+        "title": "🔒 Súkromné a bezpečné",
+        "description": "Vaše osobné údaje pohody sú úplne súkromné s našou multi-tenant architektúrou - každý používateľ dostane svoj vlastný bezpečný databázový priestor."
+      },
+      "smartRecommendations": {
+        "title": "⚡ Inteligentné odporúčania",
+        "description": "Náš AI-poháňaný systém sa učí vaše preferencie a navrhuje perfektné terapeutické zvuky pre vaše aktuálne potreby a ciele pohody."
+      }
+    },
+    "cta": {
+      "title": "Pripravení transformovať svoju pohodu?",
+      "authenticatedDescription": "Pokračujte vo svojej ceste pohody s našou platformou terapeutického zvukového liečenia.",
+      "guestDescription": "Pripojte sa k tisícom používateľov, ktorí objavili životomennú silu terapeutického zvukového liečenia. Vyberte si úroveň predplatného a zažite rozdiel, ktorý môže urobiť profesionálna audio terapia.",
+      "buttons": {
+        "exploreSounds": "Preskúmajte zvuky",
+        "dashboard": "Môj dashboard",
+        "startTrial": "Začnite bezplatnú skúšku",
+        "signIn": "Prihlásiť sa"
+      }
+    },
+    "subscriptionTiers": {
+      "starter": {
+        "name": "Začiatočník",
+        "price": "Zadarmo",
+        "features": {
+          "sessions": "3 denné relácie",
+          "timeLimit": "15-minútový limit",
+          "content": "Základná knižnica obsahu",
+          "analytics": "Osobná analytika"
+        }
+      },
+      "premium": {
+        "name": "Premium",
+        "price": "9,99€/mesiac",
+        "features": {
+          "sessions": "10 denných relácií",
+          "timeLimit": "60-minútové relácie",
+          "content": "Plná knižnica obsahu",
+          "analytics": "Pokročilá analytika",
+          "tracking": "Sledovanie pohody"
+        }
+      },
+      "pro": {
+        "name": "Pro",
+        "price": "19,99€/mesiac",
+        "features": {
+          "sessions": "Neobmedzené relácie",
+          "timeLimit": "Neobmedzená dĺžka",
+          "content": "Premium exkluzívny obsah",
+          "insights": "Pokročilé poznatky",
+          "support": "Prioritná podpora"
+        }
+      }
+    },
+    "science": {
+      "title": "Veda za zvukovou terapiou",
+      "intro": "Zvuková terapia je podporovaná rozsiahlym vedeckým výskumom.",
+      "description": "Štúdie ukázali, že špecifické audio frekvencie môžu ovplyvniť vzory mozgových vĺn, znížiť hladiny kortizolu a spustiť prirodzenú relaxačnú reakciu tela. Naše terapeutické zvuky využívajú princípy z neurovedy, psychológie a tradičných liečebných praktík na poskytnutie merateľných výhod pohody.",
+      "highlights": {
+        "stressReduction": "Klinicky dokázané zníženie stresu",
+        "neuroplasticity": "Zlepšenie neuroplasticity",
+        "sleep": "Zlepšená architektúra spánku",
+        "cognitive": "Zlepšená sústredenosť a kognitívny výkon"
+      }
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Vitajte späť",
+      "email": "Emailová adresa",
+      "password": "Heslo",
+      "submit": "Prihlásiť sa",
+      "forgotPassword": "Zabudli ste heslo?",
+      "noAccount": "Nemáte účet?",
+      "signUp": "Zaregistrovať sa"
+    },
+    "register": {
+      "title": "Vytvorte si účet",
+      "name": "Celé meno",
+      "email": "Emailová adresa",
+      "password": "Heslo",
+      "confirmPassword": "Potvrďte heslo",
+      "submit": "Začať",
+      "hasAccount": "Už máte účet?",
+      "signIn": "Prihlásiť sa",
+      "passwordRequirement": "Heslo musí mať aspoň 8 znakov"
+    }
+  },
+  "common": {
+    "loading": "Načítava sa...",
+    "error": "Nastala chyba",
+    "retry": "Skúsiť znova",
+    "save": "Uložiť",
+    "cancel": "Zrušiť",
+    "edit": "Upraviť",
+    "delete": "Vymazať",
+    "confirm": "Potvrdiť",
+    "yes": "Áno",
+    "no": "Nie",
+    "footer": {
+      "version": "Sonicus v1.0.0 - Aplikácia audio terapie",
+      "tagline": "Poháňané Elefefe"
+    }
+  }
+}

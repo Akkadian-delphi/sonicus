@@ -2,7 +2,7 @@ import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 
-// Translation resources - All EU Languages
+// Translation resources - All 24 EU Official Languages
 import enUSTranslations from './locales/en-US.json';
 import enGBTranslations from './locales/en-GB.json';
 import esTranslations from './locales/es.json';
@@ -20,6 +20,16 @@ import csTranslations from './locales/cs.json';
 import huTranslations from './locales/hu.json';
 import roTranslations from './locales/ro.json';
 import elTranslations from './locales/el.json';
+// Additional EU Languages
+import bgTranslations from './locales/bg.json';
+import hrTranslations from './locales/hr.json';
+import etTranslations from './locales/et.json';
+import gaTranslations from './locales/ga.json';
+import lvTranslations from './locales/lv.json';
+import ltTranslations from './locales/lt.json';
+import skTranslations from './locales/sk.json';
+import slTranslations from './locales/sl.json';
+import mtTranslations from './locales/mt.json';
 
 const resources = {
   // English variants
@@ -68,6 +78,18 @@ const resources = {
   cs: {
     translation: csTranslations
   },
+  bg: {
+    translation: bgTranslations
+  },
+  hr: {
+    translation: hrTranslations
+  },
+  sk: {
+    translation: skTranslations
+  },
+  sl: {
+    translation: slTranslations
+  },
   // Finno-Ugric languages
   fi: {
     translation: fiTranslations
@@ -75,9 +97,27 @@ const resources = {
   hu: {
     translation: huTranslations
   },
+  et: {
+    translation: etTranslations
+  },
+  // Baltic languages
+  lv: {
+    translation: lvTranslations
+  },
+  lt: {
+    translation: ltTranslations
+  },
+  // Celtic languages
+  ga: {
+    translation: gaTranslations
+  },
   // Hellenic languages
   el: {
     translation: elTranslations
+  },
+  // Semitic languages
+  mt: {
+    translation: mtTranslations
   }
 };
 
@@ -92,14 +132,17 @@ i18n
     fallbackLng: 'en-US',
     debug: process.env.NODE_ENV === 'development',
     
-    // Language fallback configuration for all EU languages
+    // Language fallback configuration for all 24 EU official languages
     supportedLngs: [
       'en-US', 'en-GB', // English variants
       'es', 'fr', 'it', 'pt-BR', 'pt-PT', 'ro', // Romance languages
       'de', 'nl', 'sv', 'da', // Germanic languages  
-      'pl', 'cs', // Slavic languages
-      'fi', 'hu', // Finno-Ugric languages
-      'el' // Hellenic languages
+      'pl', 'cs', 'bg', 'hr', 'sk', 'sl', // Slavic languages
+      'fi', 'hu', 'et', // Finno-Ugric and Estonian
+      'lv', 'lt', // Baltic languages
+      'ga', // Celtic languages
+      'el', // Hellenic languages
+      'mt' // Semitic languages (Maltese)
     ],
     nonExplicitSupportedLngs: false, // Only use explicitly supported languages
     cleanCode: true, // Clean language codes
@@ -229,6 +272,60 @@ i18n
           return 'el';
         }
         
+        // Handle Bulgarian variants
+        if (lng.startsWith('bg')) {
+          console.log('🇧🇬 Detected Bulgarian, using bg');
+          return 'bg';
+        }
+        
+        // Handle Croatian variants
+        if (lng.startsWith('hr')) {
+          console.log('🇭🇷 Detected Croatian, using hr');
+          return 'hr';
+        }
+        
+        // Handle Estonian variants
+        if (lng.startsWith('et')) {
+          console.log('🇪🇪 Detected Estonian, using et');
+          return 'et';
+        }
+        
+        // Handle Irish variants
+        if (lng.startsWith('ga')) {
+          console.log('🇮🇪 Detected Irish, using ga');
+          return 'ga';
+        }
+        
+        // Handle Latvian variants
+        if (lng.startsWith('lv')) {
+          console.log('🇱🇻 Detected Latvian, using lv');
+          return 'lv';
+        }
+        
+        // Handle Lithuanian variants
+        if (lng.startsWith('lt')) {
+          console.log('🇱🇹 Detected Lithuanian, using lt');
+          return 'lt';
+        }
+        
+        // Handle Slovak variants
+        if (lng.startsWith('sk')) {
+          console.log('🇸🇰 Detected Slovak, using sk');
+          return 'sk';
+        }
+        
+        // Handle Slovene variants
+        if (lng.startsWith('sl')) {
+          console.log('🇸🇮 Detected Slovene, using sl');
+          return 'sl';
+        }
+        
+        // Handle Maltese variants
+        if (lng.startsWith('mt')) {
+          console.log('🇲🇹 Detected Maltese, using mt');
+          return 'mt';
+        }
+        
         // For any unsupported language, fall back to English (USA)
         console.log('❌ Unsupported language detected, falling back to en-US:', lng);
         return 'en-US';
@@ -253,9 +350,12 @@ i18n.on('initialized', () => {
     'en-US', 'en-GB', // English variants
     'es', 'fr', 'it', 'pt-BR', 'pt-PT', 'ro', // Romance languages
     'de', 'nl', 'sv', 'da', // Germanic languages  
-    'pl', 'cs', // Slavic languages
-    'fi', 'hu', // Finno-Ugric languages
-    'el' // Hellenic languages
+    'pl', 'cs', 'bg', 'hr', 'sk', 'sl', // Slavic languages
+    'fi', 'hu', 'et', // Finno-Ugric and Estonian
+    'lv', 'lt', // Baltic languages
+    'ga', // Celtic languages
+    'el', // Hellenic languages
+    'mt' // Semitic languages (Maltese)
   ];
   if (!supportedLanguages.includes(currentLanguage)) {
     console.log('⚠️ Current language not supported, switching to en-US');

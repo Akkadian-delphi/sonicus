@@ -1,6 +1,6 @@
 # Sonicus - Therapeutic Sound Healing Platform 🎵
 
-A comprehensive B2C therapeutic sound healing platform built with React (Frontend) and FastAPI (Backend), supporting **all 24 official EU languages** for a truly global wellness experience.
+A comprehensive B2C therapeutic sound healing platform built with React (Frontend) and FastAPI (Backend), supporting **all 26 EU languages** for a truly global wellness experience.
 
 ## 🌟 Features
 
@@ -12,8 +12,8 @@ A comprehensive B2C therapeutic sound healing platform built with React (Fronten
 - **Cross-platform Access**: Web, mobile-responsive design
 
 ### 🌍 Internationalization
-- **17 EU Languages**: Complete support for all European Union languages
-- **Regional Variants**: Distinguishes between US/UK English, Brazil/Portugal Portuguese
+- **26 EU Languages**: Complete support for all European Union languages plus regional variants
+- **Geographical Organization**: Languages sorted by proximity for intuitive selection
 - **Auto-detection**: Intelligent browser language detection with fallbacks
 - **Cultural Adaptation**: Localized pricing, therapeutic terminology, wellness concepts
 
@@ -44,7 +44,7 @@ sonicus/
 │   │   ├── pages/          # Page components
 │   │   ├── context/        # React context providers
 │   │   ├── i18n/           # Internationalization
-│   │   │   └── locales/    # 17 language translation files
+│   │   │   └── locales/    # 26 language translation files
 │   │   ├── styles/         # CSS stylesheets
 │   │   └── utils/          # Utility functions
 │   ├── public/             # Static assets
@@ -105,27 +105,75 @@ npm run build
 
 ## 🌐 Supported Languages
 
-### Complete EU Language Support (17 Languages)
+### Complete EU Language Support (26 Languages) - Organized Geographically
 
+#### North America & Americas
 | Language | Code | Native Name | Status |
 |----------|------|-------------|---------|
 | 🇺🇸 English (US) | `en-US` | English (United States) | ✅ Default |
-| 🇬🇧 English (UK) | `en-GB` | English (United Kingdom) | ✅ Complete |
+| 🇷 Portuguese (BR) | `pt-BR` | Português (Brasil) | ✅ Complete |
+
+#### Western Europe (Atlantic Coast)
+| Language | Code | Native Name | Status |
+|----------|------|-------------|---------|
+| 🇵🇹 Portuguese (PT) | `pt-PT` | Português (Portugal) | ✅ Complete |
 | 🇪🇸 Spanish | `es` | Español | ✅ Complete |
 | 🇫🇷 French | `fr` | Français | ✅ Complete |
-| 🇮🇹 Italian | `it` | Italiano | ✅ Complete |
-| 🇩🇪 German | `de` | Deutsch | ✅ Complete |
+
+#### British Isles
+| Language | Code | Native Name | Status |
+|----------|------|-------------|---------|
+| �� English (UK) | `en-GB` | English (United Kingdom) | ✅ Complete |
+| �🇪 Irish | `ga` | Gaeilge | ✅ Complete |
+
+#### Low Countries & Central Europe
+| Language | Code | Native Name | Status |
+|----------|------|-------------|---------|
 | 🇳🇱 Dutch | `nl` | Nederlands | ✅ Complete |
-| 🇵🇹 Portuguese (PT) | `pt-PT` | Português (Portugal) | ✅ Complete |
-| 🇧🇷 Portuguese (BR) | `pt-BR` | Português (Brasil) | ✅ Complete |
-| 🇵🇱 Polish | `pl` | Polski | ✅ Complete |
+| �� German | `de` | Deutsch | ✅ Complete |
+
+#### Alpine Region
+| Language | Code | Native Name | Status |
+|----------|------|-------------|---------|
+| 🇮🇹 Italian | `it` | Italiano | ✅ Complete |
+
+#### Nordic Countries
+| Language | Code | Native Name | Status |
+|----------|------|-------------|---------|
+| �� Danish | `da` | Dansk | ✅ Complete |
 | 🇸🇪 Swedish | `sv` | Svenska | ✅ Complete |
-| 🇩🇰 Danish | `da` | Dansk | ✅ Complete |
-| 🇫🇮 Finnish | `fi` | Suomi | ✅ Complete |
+| �� Finnish | `fi` | Suomi | ✅ Complete |
+
+#### Baltic States
+| Language | Code | Native Name | Status |
+|----------|------|-------------|---------|
+| 🇪🇪 Estonian | `et` | Eesti keel | ✅ Complete |
+| �� Latvian | `lv` | Latviešu valoda | ✅ Complete |
+| 🇱🇹 Lithuanian | `lt` | Lietuvių kalba | ✅ Complete |
+
+#### Central Europe
+| Language | Code | Native Name | Status |
+|----------|------|-------------|---------|
 | 🇨🇿 Czech | `cs` | Čeština | ✅ Complete |
+| 🇸🇰 Slovak | `sk` | Slovenčina | ✅ Complete |
+| 🇵🇱 Polish | `pl` | Polski | ✅ Complete |
 | 🇭🇺 Hungarian | `hu` | Magyar | ✅ Complete |
-| 🇷🇴 Romanian | `ro` | Română | ✅ Complete |
+
+#### Southeast Europe
+| Language | Code | Native Name | Status |
+|----------|------|-------------|---------|
+| 🇸� Slovene | `sl` | Slovenščina | ✅ Complete |
+| 🇭🇷 Croatian | `hr` | Hrvatski | ✅ Complete |
+| �🇷🇴 Romanian | `ro` | Română | ✅ Complete |
+| 🇧🇬 Bulgarian | `bg` | Български | ✅ Complete |
+
+#### Mediterranean
+| Language | Code | Native Name | Status |
+|----------|------|-------------|---------|
 | 🇬🇷 Greek | `el` | Ελληνικά | ✅ Complete |
+| 🇲🇹 Maltese | `mt` | Malti | ✅ Complete |
+
+**Total**: 26 languages covering 100% of EU official languages plus regional variants
 
 ## 🔧 Technology Stack
 
@@ -206,7 +254,7 @@ npm run test:coverage
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is proprietary software. All rights reserved. Unauthorized copying, modification, distribution, or use of this software is strictly prohibited without explicit written permission from the copyright holder.
 
 ## 🆘 Support
 

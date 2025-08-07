@@ -1,0 +1,219 @@
+{
+  "navbar": {
+    "sounds": "Garsai",
+    "profile": "Profilis",
+    "admin": "Administratorius",
+    "welcome": "Sveiki, {{name}}",
+    "signOut": "Atsijungti",
+    "signIn": "Prisijungti",
+    "getStarted": "Pradėti"
+  },
+  "homepage": {
+    "hero": {
+      "title": "Atraskite garso gydančią galią",
+      "subtitle": "Keiskite savo gerovę su terapiniu garso gydomu, skirtu giliam atsipalaidavimui, streso mažinimui ir proto aiškumui.",
+      "cta": "Pradėkite savo kelionę",
+      "learnMore": "Sužinokite daugiau"
+    },
+    "features": {
+      "title": "Tobulas kiekvienam gerovės poreikiui",
+      "useCases": {
+        "sleep": {
+          "title": "Miego sutrikimai",
+          "description": "Nemiga, neramus miegas ar sunkumai užmiegant"
+        },
+        "stress": {
+          "title": "Stresas ir nerimas",
+          "description": "Kasdieninis stresas, darbo spaudimas ar nerimo valdymas"
+        },
+        "meditation": {
+          "title": "Meditacijos praktika",
+          "description": "Pagerinkite savo meditaciją su vadovaujamais garso peizažais"
+        },
+        "workplace": {
+          "title": "Darbo vietos gerovė",
+          "description": "Pagerinkite koncentraciją ir sumažinkite darbo vietos stresą"
+        },
+        "recovery": {
+          "title": "Atsigavimo parama",
+          "description": "Natūraliai palaikykite gydymo ir atsigavimo procesus"
+        },
+        "study": {
+          "title": "Mokymasis ir koncentracija",
+          "description": "Padidinkite koncentraciją ir mokymosi našumą"
+        }
+      },
+      "scientifically": {
+        "title": "Moksliškai pagrįstas",
+        "description": "Mūsų terapiniai garsai grindžiami įrodytais tyrimais garso gydyme ir neuromoksluose."
+      },
+      "personalized": {
+        "title": "Personalizuotas patyrimas",
+        "description": "Pritaikyti garso terapijos seansai, kurie prisitaiko prie jūsų unikalių gerovės poreikių ir pageidavimų."
+      },
+      "professional": {
+        "title": "Profesionalus kokybė",
+        "description": "Aukštos kokybės garsas, sukurtas garso terapijos ekspertų didžiausiai terapinei naudai."
+      },
+      "accessible": {
+        "title": "Visada prieinamas",
+        "description": "Pasiekite savo gydančius garsus bet kuriuo metu, bet kur, iš bet kurio prietaiso."
+      },
+      "naturalHealing": {
+        "title": "Natūralus gydymas"
+      }
+    },
+    "whatWeDo": {
+      "title": "Ką daro Sonicus?",
+      "description": "Sonicus specializuojasi terapiniame garso gydyme - įrodytoje gerovės praktikoje, kuri naudoja specifinius garso dažnius, gamtos garsus ir kruopščiai sukurtus garso peizažus gydymui ir atsipalaidavimui skatinti. Mūsų platforma suteikia jums tiesioginį prieigą prie profesionalios terapinių garsų bibliotekos, kurią galite naudoti meditacijai, streso mažinimui, miego gerinimui ir bendram psichikos sveikatos palaikymui.",
+      "keyBenefits": {
+        "title": "Pagrindinės Sonicus naudojimo naudos:",
+        "stressReduction": {
+          "title": "Streso mažinimas:",
+          "description": "Mažinkite kortizolio lygį raminančiais garso peizažais"
+        },
+        "betterSleep": {
+          "title": "Geresnis miegas:",
+          "description": "Pagerinkite miego kokybę specializuotais miego skatinančiais garsais"
+        },
+        "enhancedFocus": {
+          "title": "Pagerintas koncentracija:",
+          "description": "Padidinkite koncentraciją aplinkos koncentracijos garsais"
+        },
+        "emotionalBalance": {
+          "title": "Emocijų pusiausvyra:",
+          "description": "Reguliuokite nuotaiką ir emocijas terapiniais dažniais"
+        },
+        "painManagement": {
+          "title": "Skausmo valdymas:",
+          "description": "Natūralus skausmo palengvinimas garso terapijos metodais"
+        },
+        "meditationSupport": {
+          "title": "Meditacijos parama:",
+          "description": "Gilinkite savo meditacijos praktiką vadovaujamu garsu"
+        }
+      }
+    },
+    "howItWorks": {
+      "title": "Kaip veikia Sonicus",
+      "curatedLibrary": {
+        "title": "🎵 Kuruojama garsų biblioteka",
+        "description": "Prisiekite prie šimtų profesionaliai sukurtų terapinių garsų, nuo gamtos garso peizažų iki binauralių ritmų, visi sukurti specifiniams gerovės rezultatams."
+      },
+      "evidenceBased": {
+        "title": "🧘 Įrodymais grindžiama terapija",
+        "description": "Mūsų garso turinys grindžiamas moksliniais tyrimais garso terapijoje, neuromoksluose ir gerovės psichologijoje didžiausiai terapinei naudai."
+      },
+      "instantStreaming": {
+        "title": "📱 Tiesioginė transliacija",
+        "description": "Transliuokite aukštos kokybės terapinį garsą tiesiai bet kuriame prietaise - nereikia atsisiųsti. Tobulas namų, biuro ar kelionių naudojimui."
+      },
+      "personalJourney": {
+        "title": "🎯 Asmeninė gerovės kelionė",
+        "description": "Sekite savo klausymosi įpročius, atraskite naujus terapinius garsus ir kurkite personalizuotas gerovės rutinas, pritaikytas jūsų poreikiams."
+      },
+      "privateSecure": {
+        "title": "🔒 Privatūs ir saugūs",
+        "description": "Jūsų asmeniniai gerovės duomenys yra visiškai privatūs su mūsų daugianuomininke architektūra - kiekvienas vartotojas gauna savo saugią duomenų bazės vietą."
+      },
+      "smartRecommendations": {
+        "title": "⚡ Išmanūs rekomendacijos",
+        "description": "Mūsų AI valdoma sistema išmoksta jūsų pageidavimus ir siūlo tobulus terapinius garsus jūsų esamiems poreikiams ir gerovės tikslams."
+      }
+    },
+    "cta": {
+      "title": "Pasiruošę keisti savo gerovę?",
+      "authenticatedDescription": "Tęskite savo gerovės kelionę su mūsų terapinio garso gydymo platforma.",
+      "guestDescription": "Prisijunkite prie tūkstančių vartotojų, kurie atrado gyvenimą keičiantį terapinio garso gydymo galią. Pasirinkite savo prenumeratos lygį ir pajuskite skirtumą, kurį gali padaryti profesionali garso terapija.",
+      "buttons": {
+        "exploreSounds": "Tyrinėkite garsus",
+        "dashboard": "Mano skydelis",
+        "startTrial": "Pradėkite nemokamą bandomąjį periodą",
+        "signIn": "Prisijungti"
+      }
+    },
+    "subscriptionTiers": {
+      "starter": {
+        "name": "Pradedantysis",
+        "price": "Nemokamas",
+        "features": {
+          "sessions": "3 dienų seansai",
+          "timeLimit": "15 minučių riba",
+          "content": "Pagrindinė turinio biblioteka",
+          "analytics": "Asmeninė analitika"
+        }
+      },
+      "premium": {
+        "name": "Premium",
+        "price": "9,99€/mėn",
+        "features": {
+          "sessions": "10 dienų seansų",
+          "timeLimit": "60 minučių seansai",
+          "content": "Visa turinio biblioteka",
+          "analytics": "Pažangus analitika",
+          "tracking": "Gerovės sekimas"
+        }
+      },
+      "pro": {
+        "name": "Pro",
+        "price": "19,99€/mėn",
+        "features": {
+          "sessions": "Neriboti seansai",
+          "timeLimit": "Neribota trukmė",
+          "content": "Premium ekskluzyvus turinys",
+          "insights": "Pažangūs įžvalgos",
+          "support": "Prioritetinis palaikymas"
+        }
+      }
+    },
+    "science": {
+      "title": "Mokslas už garso terapijos",
+      "intro": "Garso terapija remiasi plačiais moksliniais tyrimais.",
+      "description": "Tyrimai parodė, kad specifiniai garso dažniai gali paveikti smegenų bangų šablonus, sumažinti kortizolio lygį ir sukelti natūralų kūno atsipalaidavimo atsaką. Mūsų terapiniai garsai naudoja neuromokslų, psichologijos ir tradicinių gydymo praktikų principus, kad suteiktų išmatuojamas gerovės naudas.",
+      "highlights": {
+        "stressReduction": "Kliniškai įrodytas streso mažinimas",
+        "neuroplasticity": "Neuroplastiškumo pagerinimas",
+        "sleep": "Pagerintas miego architektūra",
+        "cognitive": "Pagerintas koncentracija ir pažintiniai gebėjimai"
+      }
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Sveiki sugrįžę",
+      "email": "El. pašto adresas",
+      "password": "Slaptažodis",
+      "submit": "Prisijungti",
+      "forgotPassword": "Pamiršote slaptažodį?",
+      "noAccount": "Neturite paskyros?",
+      "signUp": "Registruotis"
+    },
+    "register": {
+      "title": "Sukurkite savo paskyrą",
+      "name": "Pilnas vardas",
+      "email": "El. pašto adresas",
+      "password": "Slaptažodis",
+      "confirmPassword": "Patvirtinkite slaptažodį",
+      "submit": "Pradėti",
+      "hasAccount": "Jau turite paskyrą?",
+      "signIn": "Prisijungti",
+      "passwordRequirement": "Slaptažodis turi būti bent 8 simbolių ilgio"
+    }
+  },
+  "common": {
+    "loading": "Kraunama...",
+    "error": "Įvyko klaida",
+    "retry": "Bandyti dar kartą",
+    "save": "Išsaugoti",
+    "cancel": "Atšaukti",
+    "edit": "Redaguoti",
+    "delete": "Ištrinti",
+    "confirm": "Patvirtinti",
+    "yes": "Taip",
+    "no": "Ne",
+    "footer": {
+      "version": "Sonicus v1.0.0 - Garso terapijos programa",
+      "tagline": "Palaiko Elefefe"
+    }
+  }
+}

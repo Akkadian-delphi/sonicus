@@ -1,0 +1,219 @@
+{
+  "navbar": {
+    "sounds": "Ħsejjes",
+    "profile": "Profil",
+    "admin": "Amministratur",
+    "welcome": "Merħba, {{name}}",
+    "signOut": "Oħroġ",
+    "signIn": "Idħol",
+    "getStarted": "Ibda"
+  },
+  "homepage": {
+    "hero": {
+      "title": "Skopri l-qawwa fejqana tal-ħoss",
+      "subtitle": "Aqleb il-benessri tiegħek bil-fejqan tal-ħoss terapewtiċi ddisinjat għar-rilassament fond, tnaqqis ta' stress u ċarezza mentali.",
+      "cta": "Ibda l-vjaġġ tiegħek",
+      "learnMore": "Tgħallem aktar"
+    },
+    "features": {
+      "title": "Perfett għal kull ħtieġa tal-benessri",
+      "useCases": {
+        "sleep": {
+          "title": "Disturbi tal-irqad",
+          "description": "Insonja, irqad mhux mistrieħ jew diffikultajiet biex torqod"
+        },
+        "stress": {
+          "title": "Stress u ansjetà",
+          "description": "Stress ta' kuljum, pressjoni tax-xogħol jew ġestjoni tal-ansjetà"
+        },
+        "meditation": {
+          "title": "Prattika ta' meditazzjoni",
+          "description": "Itejjeb il-meditazzjoni tiegħek b'pajsaġġi tal-ħoss gwida"
+        },
+        "workplace": {
+          "title": "Benessri fil-post tax-xogħol",
+          "description": "Itejjeb il-fokus u naqqas l-istress fil-post tax-xogħol"
+        },
+        "recovery": {
+          "title": "Appoġġ għall-irkupru",
+          "description": "Appoġġa naturalment il-proċessi ta' fejqan u rkupru"
+        },
+        "study": {
+          "title": "Studju u fokus",
+          "description": "Żid il-konċentrazzjoni u l-prestazzjoni tat-tagħlim"
+        }
+      },
+      "scientifically": {
+        "title": "Appoġġat xjentifikament",
+        "description": "Il-ħsejjes terapewtiċi tagħna huma bbażati fuq riċerka provata fil-fejqan tal-ħoss u newroxyenza."
+      },
+      "personalized": {
+        "title": "Esperjenza personalizzata",
+        "description": "Sessjonijiet ta' terapija tal-ħoss imfassla li jadattaw għall-ħtiġijiet u preferenzi uniċi tal-benessri tiegħek."
+      },
+      "professional": {
+        "title": "Kwalità professjonali",
+        "description": "Awdjo ta' kwalità għolja ddisinjat minn esperti ta' terapija tal-ħoss għall-benefiċċju terapewtiċu massimu."
+      },
+      "accessible": {
+        "title": "Dejjem aċċessibbli",
+        "description": "Aċċedi għall-ħsejjes fejqana tiegħek fi kwalunkwe ħin, fi kwalunkwe post, minn kwalunkwe apparat."
+      },
+      "naturalHealing": {
+        "title": "Fejqan naturali"
+      }
+    },
+    "whatWeDo": {
+      "title": "X'jagħmel Sonicus?",
+      "description": "Sonicus jispeċjalizza fil-fejqan tal-ħoss terapewtiċi - prattika provata tal-benessri li tuża frekwenzi awdjo speċifiċi, ħsejjes tan-natura, u pajsaġġi tal-ħoss maħluqin b'attenzjoni biex jippromwovu fejqan u rilassament. Il-pjattaforma tagħna tagħtik aċċess immedjat għal librerija professjonali ta' ħsejjes terapewtiċi li tista' tuża għall-meditazzjoni, tnaqqis ta' stress, titjib tal-irqad u appoġġ ġenerali tas-saħħa mentali.",
+      "keyBenefits": {
+        "title": "Benefiċċji ewlenin tal-użu ta' Sonicus:",
+        "stressReduction": {
+          "title": "Tnaqqis ta' stress:",
+          "description": "Naqqas il-livelli ta' kortisol permezz ta' pajsaġġi tal-ħoss li jkalmaw"
+        },
+        "betterSleep": {
+          "title": "Irqad aħjar:",
+          "description": "Itejjeb il-kwalità tal-irqad b'ħsejjes speċjalizzati li jinduċu l-irqad"
+        },
+        "enhancedFocus": {
+          "title": "Fokus mtejjeb:",
+          "description": "Żid il-konċentrazzjoni b'ħsejjes ambjentali tal-fokus"
+        },
+        "emotionalBalance": {
+          "title": "Bilanċ emozzjonali:",
+          "description": "Irregola l-burdata u emozzjonijiet permezz ta' frekwenzi terapewtiċi"
+        },
+        "painManagement": {
+          "title": "Ġestjoni tal-uġigħ:",
+          "description": "Rimedju naturali tal-uġigħ permezz ta' tekniki ta' terapija tal-ħoss"
+        },
+        "meditationSupport": {
+          "title": "Appoġġ tal-meditazzjoni:",
+          "description": "Approfondixxi l-prattika tal-meditazzjoni tiegħek b'awdjo gwida"
+        }
+      }
+    },
+    "howItWorks": {
+      "title": "Kif jaħdem Sonicus",
+      "curatedLibrary": {
+        "title": "🎵 Librerija tal-ħoss ikurata",
+        "description": "Aċċedi għal mijiet ta' ħsejjes terapewtiċi maħluqin professjonalment, minn pajsaġġi tal-ħoss naturali għal ritmi binarali, kollha ddisinjati għal riżultati speċifiċi tal-benessri."
+      },
+      "evidenceBased": {
+        "title": "🧘 Terapija bbażata fuq evidenza",
+        "description": "Il-kontenut awdjo tagħna huwa bbażat fuq riċerka xjentifika fit-terapija tal-ħoss, newroxyenza u psikoloġija tal-benessri għall-benefiċċju terapewtiċu massimu."
+      },
+      "instantStreaming": {
+        "title": "📱 Streaming immedjat",
+        "description": "Stream awdjo terapewtiċi ta' kwalità għolja immedjatament fuq kwalunkwe apparat - ebda downloads meħtieġa. Perfett għall-użu tad-dar, l-uffiċċju jew meta tivvjaġġa."
+      },
+      "personalJourney": {
+        "title": "🎯 Vjaġġ personali tal-benessri",
+        "description": "Isegwi l-abitudnijiet tal-istma tiegħek, skopri ħsejjes terapewtiċi ġodda, u ibni rutins personalizzati tal-benessri mfassla għall-ħtiġijiet tiegħek."
+      },
+      "privateSecure": {
+        "title": "🔒 Privat u sigur",
+        "description": "Id-dejta personali tal-benessri tiegħek hija kompletament privata bl-arkitettura multi-inquilin tagħna - kull utent jikseb l-ispazju tad-database sigur tiegħu stess."
+      },
+      "smartRecommendations": {
+        "title": "⚡ Rakkomandazzjonijiet intelliġenti",
+        "description": "Is-sistema tagħna mmexxija mill-AI titgħallem il-preferenzi tiegħek u tissuġġerixxi l-ħsejjes terapewtiċi perfetti għall-ħtiġijiet attwali u l-għanijiet tal-benessri tiegħek."
+      }
+    },
+    "cta": {
+      "title": "Lest biex taqleb il-benessri tiegħek?",
+      "authenticatedDescription": "Kompli l-vjaġġ tal-benessri tiegħek bil-pjattaforma tagħna ta' fejqan tal-ħoss terapewtiċi.",
+      "guestDescription": "Ingħaqad ma' eluf ta' utenti li skopruwha l-qawwa li tbiddel il-ħajja tal-fejqan tal-ħoss terapewtiċi. Agħżel il-livell ta' abbonament tiegħek u esperjenza d-differenza li tista' tagħmel it-terapija tal-awdjo professjonali.",
+      "buttons": {
+        "exploreSounds": "Esplora l-ħsejjes",
+        "dashboard": "Id-dashboard tiegħi",
+        "startTrial": "Ibda prova b'xejn",
+        "signIn": "Idħol"
+      }
+    },
+    "subscriptionTiers": {
+      "starter": {
+        "name": "Bdejja",
+        "price": "B'xejn",
+        "features": {
+          "sessions": "3 sessjonijiet ta' kuljum",
+          "timeLimit": "Limitu ta' 15-il minuta",
+          "content": "Librerija bażika tal-kontenut",
+          "analytics": "Analitika personali"
+        }
+      },
+      "premium": {
+        "name": "Premium",
+        "price": "€9.99/xahar",
+        "features": {
+          "sessions": "10 sessjonijiet ta' kuljum",
+          "timeLimit": "Sessjonijiet ta' 60 minuta",
+          "content": "Librerija sħiħa tal-kontenut",
+          "analytics": "Analitika avvanzata",
+          "tracking": "Traċċar tal-benessri"
+        }
+      },
+      "pro": {
+        "name": "Pro",
+        "price": "€19.99/xahar",
+        "features": {
+          "sessions": "Sessjonijiet illimitati",
+          "timeLimit": "Tul illimitat",
+          "content": "Kontenut esklussiv premium",
+          "insights": "Għarfien avvanzat",
+          "support": "Appoġġ prijorità"
+        }
+      }
+    },
+    "science": {
+      "title": "Ix-xjenza wara t-terapija tal-ħoss",
+      "intro": "It-terapija tal-ħoss hija appoġġata minn riċerka xjentifika estensiva.",
+      "description": "Studji urew li frekwenzi awdjo speċifiċi jistgħu jinfluwenzaw il-mudelli tal-mewġ tal-moħħ, inaqqsu l-livelli tal-kortisol u jqajmu r-rispons ta' rilassament naturali tal-ġisem. Il-ħsejjes terapewtiċi tagħna jużaw prinċipji min-newroxyenza, psikoloġija u prattiki ta' fejqan tradizzjonali biex jipprovdu benefiċċji tal-benessri li jistgħu jitkejlu.",
+      "highlights": {
+        "stressReduction": "Tnaqqis ta' stress pruvat klinikament",
+        "neuroplasticity": "Titjib tan-newroplastiċità",
+        "sleep": "Arkitettura tal-irqad imtejba",
+        "cognitive": "Fokus imtejjeb u prestazzjoni kognitiva"
+      }
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Merħba lura",
+      "email": "Indirizz tal-email",
+      "password": "Password",
+      "submit": "Idħol",
+      "forgotPassword": "Insejt il-password tiegħek?",
+      "noAccount": "M'għandekx kont?",
+      "signUp": "Irreġistra"
+    },
+    "register": {
+      "title": "Oħloq il-kont tiegħek",
+      "name": "Isem sħiħ",
+      "email": "Indirizz tal-email",
+      "password": "Password",
+      "confirmPassword": "Ikkonferma l-password",
+      "submit": "Ibda",
+      "hasAccount": "Diġà għandek kont?",
+      "signIn": "Idħol",
+      "passwordRequirement": "Il-password trid tkun mill-anqas 8 karattri fit-tul"
+    }
+  },
+  "common": {
+    "loading": "Qed jitgħabba...",
+    "error": "Seħħ żball",
+    "retry": "Erġa' pprova",
+    "save": "Ħlief",
+    "cancel": "Ikkanċella",
+    "edit": "Editja",
+    "delete": "Ħassar",
+    "confirm": "Ikkonferma",
+    "yes": "Iva",
+    "no": "Le",
+    "footer": {
+      "version": "Sonicus v1.0.0 - Applikazzjoni ta' Terapija tal-Awdjo",
+      "tagline": "Imħaddma minn Elefefe"
+    }
+  }
+}
