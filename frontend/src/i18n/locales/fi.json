@@ -1,0 +1,219 @@
+{
+  "navbar": {
+    "sounds": "Äänet",
+    "profile": "Profiili",
+    "admin": "Ylläpitäjä",
+    "welcome": "Tervetuloa, {{name}}",
+    "signOut": "Kirjaudu ulos",
+    "signIn": "Kirjaudu sisään",
+    "getStarted": "Aloita"
+  },
+  "homepage": {
+    "hero": {
+      "title": "Löydä Äänen Parantava Voima",
+      "subtitle": "Muunna hyvinvointisi terapeuttisella äänihoidolla, joka on suunniteltu syvää rentoutusta, stressin lievitystä ja henkistä selkeyttä varten.",
+      "cta": "Aloita Matkasi",
+      "learnMore": "Lue lisää"
+    },
+    "features": {
+      "title": "Täydellinen Jokaiseen Hyvinvointitarpeeseen",
+      "useCases": {
+        "sleep": {
+          "title": "Unihäiriöt",
+          "description": "Unettomuus, levoton uni tai vaikeus nukahtamisessa"
+        },
+        "stress": {
+          "title": "Stressi & Ahdistus",
+          "description": "Päivittäinen stressi, työpaine tai ahdistuksen hallinta"
+        },
+        "meditation": {
+          "title": "Meditaatioharjoitus",
+          "description": "Paranna meditaatiotasi opastetuilla äänimaisemilla"
+        },
+        "workplace": {
+          "title": "Työpaikka-hyvinvointi",
+          "description": "Paranna keskittymistä ja vähennä työpaikkastressiä"
+        },
+        "recovery": {
+          "title": "Palautumistuki",
+          "description": "Tue paranemis- ja palautumisprosesseja luonnollisesti"
+        },
+        "study": {
+          "title": "Opiskelu & Keskittyminen",
+          "description": "Paranna keskittymistä ja oppimissuoritusta"
+        }
+      },
+      "scientifically": {
+        "title": "Tieteellisesti Todistettu",
+        "description": "Terapeuttisemme äänet perustuvat todistettuun tutkimukseen äänihoidossa ja neurotieteessä."
+      },
+      "personalized": {
+        "title": "Henkilökohtainen Kokemus",
+        "description": "Räätälöidyt ääniterapiaistunnot, jotka mukautuvat ainutlaatuisiin hyvinvointitarpeisiisi ja mieltymyksiisi."
+      },
+      "professional": {
+        "title": "Ammattimainen Laatu",
+        "description": "Korkean tarkkuuden ääni, jonka ääniterapiaasiantuntijat ovat suunnitelleet maksimaalista terapeuttista hyötyä varten."
+      },
+      "accessible": {
+        "title": "Aina Saatavilla",
+        "description": "Käytä parantavia ääniäsi milloin tahansa, missä tahansa, mistä tahansa laitteesta."
+      },
+      "naturalHealing": {
+        "title": "Luonnollinen Parantaminen"
+      }
+    },
+    "whatWeDo": {
+      "title": "Mitä Sonicus Tekee?",
+      "description": "Sonicus erikoistuu terapeuttiseen äänihoitoon - todistettuun hyvinvointikäytäntöön, joka käyttää tiettyjä äänitalajuuksia, luonnonääniä ja huolellisesti luotuja äänimaisemia parantamisen ja rentoutumisen edistämiseksi. Alustamme antaa sinulle välittömän pääsyn ammattitasoiseen terapeuttisten äänien kirjastoon, jota voit käyttää meditaatioon, stressin lievitykseen, unen parantamiseen ja yleiseen mielenterveyden tukemiseen.",
+      "keyBenefits": {
+        "title": "Sonicuksen Käytön Tärkeimmät Edut:",
+        "stressReduction": {
+          "title": "Stressin Vähentäminen:",
+          "description": "Alenna kortisolitsasoja rauhoittavien äänimaisemien avulla"
+        },
+        "betterSleep": {
+          "title": "Parempi Uni:",
+          "description": "Paranna unen laatua erikoistuneilla unea edistävillä äänillä"
+        },
+        "enhancedFocus": {
+          "title": "Parantunut Keskittyminen:",
+          "description": "Lisää keskittymistä ympäristön keskittymisäänillä"
+        },
+        "emotionalBalance": {
+          "title": "Tunnetasapaino:",
+          "description": "Säätele mielialaa ja tunteita terapeuttisten taajuuksien avulla"
+        },
+        "painManagement": {
+          "title": "Kivunhallinta:",
+          "description": "Luonnollinen kivun lievitys ääniterapiatekniikoiden avulla"
+        },
+        "meditationSupport": {
+          "title": "Meditaatiotuki:",
+          "description": "Syvennä meditaatioharjoitustasi opastetuilla äänisisällöillä"
+        }
+      }
+    },
+    "howItWorks": {
+      "title": "Kuinka Sonicus Toimii",
+      "curatedLibrary": {
+        "title": "🎵 Kuratoitu Äänikirjasto",
+        "description": "Käytä satoja ammattimaisesti luotuja terapeuttisia ääniä, luonnonäänimaisemista binaarisiin lyönteihin, kaikki suunniteltu tiettyihin hyvinvointituloksiin."
+      },
+      "evidenceBased": {
+        "title": "🧘 Näyttöön Perustuva Terapia",
+        "description": "Äänisisältömme perustuu tieteelliseen tutkimukseen ääniterapiassa, neurotieteessä ja hyvinvointipsykologiassa maksimaalisen terapeuttisen hyödyn saavuttamiseksi."
+      },
+      "instantStreaming": {
+        "title": "📱 Välitön Suoratoisto",
+        "description": "Suoratoista korkealaatuista terapeuttista ääntä välittömästi millä tahansa laitteella - latauksia ei tarvita. Täydellinen koti-, toimisto- tai matkakäyttöön."
+      },
+      "personalJourney": {
+        "title": "🎯 Henkilökohtainen Hyvinvointimatka",
+        "description": "Seuraa kuuntelutottumuksiasi, löydä uusia terapeuttisia ääniä ja rakenna henkilökohtaisia hyvinvointirutiineja tarpeisiisi räätälöityinä."
+      },
+      "privateSecure": {
+        "title": "🔒 Yksityinen & Turvallinen",
+        "description": "Henkilökohtaiset hyvinvointitietosi ovat täysin yksityisiä monikäyttäjäarkkitehtuurimme ansiosta - jokainen käyttäjä saa oman turvallisen tietokantatilansa."
+      },
+      "smartRecommendations": {
+        "title": "⚡ Älykkäät Suositukset",
+        "description": "AI-käyttöinen järjestelmämme oppii mieltymyksesi ja ehdottaa täydellisiä terapeuttisia ääniä nykyisiin tarpeisiisi ja hyvinvointitavoitteisiisi."
+      }
+    },
+    "cta": {
+      "title": "Valmis Muuttamaan Hyvinvointiasi?",
+      "authenticatedDescription": "Jatka hyvinvointimatkasi terapeuttisen äänihoitoalustamme kanssa.",
+      "guestDescription": "Liity tuhansiin käyttäjiin, jotka ovat löytäneet terapeuttisen äänihoidon elämää muuttavan voiman. Valitse tilaustasosi ja koe ero, jonka ammattimainen ääniterapia voi tehdä.",
+      "buttons": {
+        "exploreSounds": "Tutki Ääniä",
+        "dashboard": "Oma Hallintapaneeli",
+        "startTrial": "Aloita Ilmainen Kokeilu",
+        "signIn": "Kirjaudu Sisään"
+      }
+    },
+    "subscriptionTiers": {
+      "starter": {
+        "name": "Aloittelija",
+        "price": "Ilmainen",
+        "features": {
+          "sessions": "3 päivittäistä istuntoa",
+          "timeLimit": "15 minuutin raja",
+          "content": "Perus sisältökirjasto",
+          "analytics": "Henkilökohtaiset analytiikka"
+        }
+      },
+      "premium": {
+        "name": "Premium",
+        "price": "9,99€/kuukausi",
+        "features": {
+          "sessions": "10 päivittäistä istuntoa",
+          "timeLimit": "60 minuutin istunnot",
+          "content": "Täysi sisältökirjasto",
+          "analytics": "Edistyneet analytiikka",
+          "tracking": "Hyvinvoinnin seuranta"
+        }
+      },
+      "pro": {
+        "name": "Pro",
+        "price": "19,99€/kuukausi",
+        "features": {
+          "sessions": "Rajattomat istunnot",
+          "timeLimit": "Rajoittamaton pituus",
+          "content": "Premium yksinoikeussisältö",
+          "insights": "Edistyneet oivallukset",
+          "support": "Prioriteettituki"
+        }
+      }
+    },
+    "science": {
+      "title": "Ääniterapian Takana Oleva Tiede",
+      "intro": "Ääniterapiaa tukee laaja tieteellinen tutkimus.",
+      "description": "Tutkimukset ovat osoittaneet, että tietyt äänitalajuudet voivat vaikuttaa aivoaaltojen kuvioihin, alentaa kortisolitsoja ja laukaista kehon luonnollisen rentoutumisvasteen. Terapeuttisemme äänet hyödyntävät neurotieteen, psykologian ja perinteisten parantamiskäytäntöjen periaatteita mitattavien hyvinvointietujen tarjoamiseksi.",
+      "highlights": {
+        "stressReduction": "Kliinisesti todistettu stressin vähentäminen",
+        "neuroplasticity": "Neuroplastisuuden parantaminen",
+        "sleep": "Parantunut uniarkkitehtuuri",
+        "cognitive": "Parantunut keskittyminen ja kognitiivinen suorituskyky"
+      }
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Tervetuloa Takaisin",
+      "email": "Sähköpostiosoite",
+      "password": "Salasana",
+      "submit": "Kirjaudu Sisään",
+      "forgotPassword": "Unohditko salasanasi?",
+      "noAccount": "Eikö sinulla ole tiliä?",
+      "signUp": "Rekisteröidy"
+    },
+    "register": {
+      "title": "Luo Tilisi",
+      "name": "Koko Nimi",
+      "email": "Sähköpostiosoite",
+      "password": "Salasana",
+      "confirmPassword": "Vahvista Salasana",
+      "submit": "Aloita",
+      "hasAccount": "Onko sinulla jo tili?",
+      "signIn": "Kirjaudu sisään",
+      "passwordRequirement": "Salasanan tulee olla vähintään 8 merkkiä pitkä"
+    }
+  },
+  "common": {
+    "loading": "Ladataan...",
+    "error": "Tapahtui virhe",
+    "retry": "Yritä uudelleen",
+    "save": "Tallenna",
+    "cancel": "Peruuta",
+    "edit": "Muokkaa",
+    "delete": "Poista",
+    "confirm": "Vahvista",
+    "yes": "Kyllä",
+    "no": "Ei",
+    "footer": {
+      "version": "Sonicus v1.0.0 - Ääniterapia Sovellus",
+      "tagline": "Powered by Elefefe"
+    }
+  }
+}

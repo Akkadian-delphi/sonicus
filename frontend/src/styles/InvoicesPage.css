@@ -1,0 +1,97 @@
+.invoices-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.invoices-container h1 {
+  margin-bottom: 30px;
+  text-align: center;
+  color: #333;
+}
+
+.no-invoices {
+  text-align: center;
+  padding: 40px 0;
+  color: #666;
+  font-size: 18px;
+}
+
+.invoices-table-container {
+  overflow-x: auto;
+}
+
+.invoices-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.invoices-table th,
+.invoices-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.invoices-table th {
+  background-color: #f8f9fa;
+  color: #333;
+  font-weight: 600;
+}
+
+.invoices-table tr:hover {
+  background-color: #f9f9f9;
+}
+
+.status-badge {
+  padding: 4px 8px;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.status-badge.paid {
+  background-color: #e3f7ed;
+  color: #28a745;
+}
+
+.status-badge.pending {
+  background-color: #fff8e5;
+  color: #ffc107;
+}
+
+.status-badge.overdue {
+  background-color: #fce8e6;
+  color: #dc3545;
+}
+
+.download-link {
+  color: #4a90e2;
+  text-decoration: none;
+}
+
+.download-link:hover {
+  text-decoration: underline;
+}
+
+.loading, .error {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 18px;
+}
+
+.error {
+  color: #e74c3c;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .invoices-table th,
+  .invoices-table td {
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+}

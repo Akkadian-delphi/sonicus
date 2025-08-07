@@ -1,0 +1,219 @@
+{
+  "navbar": {
+    "sounds": "Sons",
+    "profile": "Profil",
+    "admin": "Administrateur",
+    "welcome": "Bienvenue, {{name}}",
+    "signOut": "Déconnexion",
+    "signIn": "Connexion",
+    "getStarted": "Commencer"
+  },
+  "homepage": {
+    "hero": {
+      "title": "Découvrez le Pouvoir Guérisseur du Son",
+      "subtitle": "Transformez votre bien-être avec la guérison sonore thérapeutique conçue pour la relaxation profonde, le soulagement du stress et la clarté mentale.",
+      "cta": "Commencez Votre Voyage",
+      "learnMore": "En Savoir Plus"
+    },
+    "features": {
+      "title": "Parfait pour Chaque Besoin de Bien-être",
+      "useCases": {
+        "sleep": {
+          "title": "Troubles du Sommeil",
+          "description": "Insomnie, sommeil agité ou difficulté à s'endormir"
+        },
+        "stress": {
+          "title": "Stress & Anxiété",
+          "description": "Stress quotidien, pression au travail ou gestion de l'anxiété"
+        },
+        "meditation": {
+          "title": "Pratique de Méditation",
+          "description": "Améliorez votre méditation avec des paysages sonores guidés"
+        },
+        "workplace": {
+          "title": "Bien-être au Travail",
+          "description": "Améliorer la concentration et réduire le stress au travail"
+        },
+        "recovery": {
+          "title": "Soutien à la Récupération",
+          "description": "Soutenir naturellement les processus de guérison et de récupération"
+        },
+        "study": {
+          "title": "Étude & Concentration",
+          "description": "Améliorer la concentration et les performances d'apprentissage"
+        }
+      },
+      "scientifically": {
+        "title": "Scientifiquement Prouvé",
+        "description": "Nos sons thérapeutiques sont basés sur la recherche prouvée en guérison sonore et neurosciences."
+      },
+      "personalized": {
+        "title": "Expérience Personnalisée",
+        "description": "Sessions de thérapie sonore adaptées à vos besoins et préférences uniques de bien-être."
+      },
+      "professional": {
+        "title": "Qualité Professionnelle",
+        "description": "Audio haute fidélité conçu par des experts en thérapie sonore pour un bénéfice thérapeutique maximal."
+      },
+      "accessible": {
+        "title": "Toujours Accessible",
+        "description": "Accédez à vos sons guérisseurs à tout moment, n'importe où et depuis n'importe quel appareil."
+      },
+      "naturalHealing": {
+        "title": "Guérison Naturelle"
+      }
+    },
+    "whatWeDo": {
+      "title": "Que fait Sonicus?",
+      "description": "Sonicus se spécialise dans la guérison sonore thérapeutique - une pratique de bien-être éprouvée qui utilise des fréquences audio spécifiques, des sons de la nature et des paysages sonores soigneusement conçus pour favoriser la guérison et la relaxation. Notre plateforme vous donne un accès instantané à une bibliothèque de qualité professionnelle de sons thérapeutiques que vous pouvez utiliser pour la méditation, le soulagement du stress, l'amélioration du sommeil et le soutien général de la santé mentale.",
+      "keyBenefits": {
+        "title": "Principaux Avantages de l'Utilisation de Sonicus:",
+        "stressReduction": {
+          "title": "Réduction du Stress:",
+          "description": "Réduire les niveaux de cortisol grâce à des paysages sonores apaisants"
+        },
+        "betterSleep": {
+          "title": "Meilleur Sommeil:",
+          "description": "Améliorer la qualité du sommeil avec des sons spécialisés inducteurs de sommeil"
+        },
+        "enhancedFocus": {
+          "title": "Concentration Améliorée:",
+          "description": "Augmenter la concentration avec des sons d'ambiance de concentration"
+        },
+        "emotionalBalance": {
+          "title": "Équilibre Émotionnel:",
+          "description": "Réguler l'humeur et les émotions grâce aux fréquences thérapeutiques"
+        },
+        "painManagement": {
+          "title": "Gestion de la Douleur:",
+          "description": "Soulagement naturel de la douleur grâce aux techniques de thérapie sonore"
+        },
+        "meditationSupport": {
+          "title": "Soutien à la Méditation:",
+          "description": "Approfondir votre pratique de méditation avec des contenus audio guidés"
+        }
+      }
+    },
+    "howItWorks": {
+      "title": "Comment Fonctionne Sonicus",
+      "curatedLibrary": {
+        "title": "🎵 Bibliothèque de Sons Curatée",
+        "description": "Accédez à des centaines de sons thérapeutiques conçus professionnellement, des paysages sonores naturels aux battements binauraux, tous conçus pour des résultats de bien-être spécifiques."
+      },
+      "evidenceBased": {
+        "title": "🧘 Thérapie Basée sur les Preuves",
+        "description": "Notre contenu audio est basé sur la recherche scientifique en thérapie sonore, neurosciences et psychologie du bien-être pour un bénéfice thérapeutique maximal."
+      },
+      "instantStreaming": {
+        "title": "📱 Streaming Instantané",
+        "description": "Diffusez de l'audio thérapeutique de haute qualité instantanément sur n'importe quel appareil - aucun téléchargement requis. Parfait pour la maison, le bureau ou les voyages."
+      },
+      "personalJourney": {
+        "title": "🎯 Voyage Personnel de Bien-être",
+        "description": "Suivez vos habitudes d'écoute, découvrez de nouveaux sons thérapeutiques et construisez des routines de bien-être personnalisées adaptées à vos besoins."
+      },
+      "privateSecure": {
+        "title": "🔒 Privé et Sécurisé",
+        "description": "Vos données personnelles de bien-être sont entièrement privées avec notre architecture multi-locataires - chaque utilisateur obtient son propre espace de base de données sécurisé."
+      },
+      "smartRecommendations": {
+        "title": "⚡ Recommandations Intelligentes",
+        "description": "Notre système alimenté par l'IA apprend vos préférences et suggère les sons thérapeutiques parfaits pour vos besoins actuels et objectifs de bien-être."
+      }
+    },
+    "cta": {
+      "title": "Prêt à Transformer Votre Bien-être?",
+      "authenticatedDescription": "Continuez votre voyage de bien-être avec notre plateforme de guérison sonore thérapeutique.",
+      "guestDescription": "Rejoignez des milliers d'utilisateurs qui ont découvert le pouvoir transformateur de la guérison sonore thérapeutique. Choisissez votre niveau d'abonnement et découvrez la différence que l'audiothérapie professionnelle peut faire.",
+      "buttons": {
+        "exploreSounds": "Explorer les Sons",
+        "dashboard": "Mon Tableau de Bord",
+        "startTrial": "Commencer l'Essai Gratuit",
+        "signIn": "Se Connecter"
+      }
+    },
+    "subscriptionTiers": {
+      "starter": {
+        "name": "Débutant",
+        "price": "Gratuit",
+        "features": {
+          "sessions": "3 sessions quotidiennes",
+          "timeLimit": "Limite de 15 minutes",
+          "content": "Bibliothèque de contenu de base",
+          "analytics": "Analyses personnelles"
+        }
+      },
+      "premium": {
+        "name": "Premium",
+        "price": "9,99€/mois",
+        "features": {
+          "sessions": "10 sessions quotidiennes",
+          "timeLimit": "Sessions de 60 minutes",
+          "content": "Bibliothèque de contenu complète",
+          "analytics": "Analyses avancées",
+          "tracking": "Suivi du bien-être"
+        }
+      },
+      "pro": {
+        "name": "Pro",
+        "price": "19,99€/mois",
+        "features": {
+          "sessions": "Sessions illimitées",
+          "timeLimit": "Durée illimitée",
+          "content": "Contenu exclusif premium",
+          "insights": "Aperçus avancés",
+          "support": "Support prioritaire"
+        }
+      }
+    },
+    "science": {
+      "title": "La Science Derrière la Thérapie Sonore",
+      "intro": "La thérapie sonore est soutenue par une recherche scientifique approfondie.",
+      "description": "Les études ont montré que des fréquences audio spécifiques peuvent influencer les modèles d'ondes cérébrales, réduire les niveaux de cortisol et déclencher la réponse naturelle de relaxation du corps. Nos sons thérapeutiques utilisent des principes de neurosciences, psychologie et pratiques de guérison traditionnelles pour fournir des avantages de bien-être mesurables.",
+      "highlights": {
+        "stressReduction": "Réduction du stress cliniquement prouvée",
+        "neuroplasticity": "Amélioration de la neuroplasticité",
+        "sleep": "Architecture du sommeil améliorée",
+        "cognitive": "Concentration améliorée et performance cognitive"
+      }
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Bienvenue de Retour",
+      "email": "Adresse E-mail",
+      "password": "Mot de Passe",
+      "submit": "Se Connecter",
+      "forgotPassword": "Mot de passe oublié?",
+      "noAccount": "Pas de compte?",
+      "signUp": "S'inscrire"
+    },
+    "register": {
+      "title": "Créez Votre Compte",
+      "name": "Nom Complet",
+      "email": "Adresse E-mail",
+      "password": "Mot de Passe",
+      "confirmPassword": "Confirmer le Mot de Passe",
+      "submit": "Commencer",
+      "hasAccount": "Vous avez déjà un compte?",
+      "signIn": "Se connecter",
+      "passwordRequirement": "Le mot de passe doit comporter au moins 8 caractères"
+    }
+  },
+  "common": {
+    "loading": "Chargement...",
+    "error": "Une erreur s'est produite",
+    "retry": "Réessayer",
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "edit": "Modifier",
+    "delete": "Supprimer",
+    "confirm": "Confirmer",
+    "yes": "Oui",
+    "no": "Non",
+    "footer": {
+      "version": "Sonicus v1.0.0 - Application de Thérapie Audio",
+      "tagline": "Propulsé par Elefefe"
+    }
+  }
+}

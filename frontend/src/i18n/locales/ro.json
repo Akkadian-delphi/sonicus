@@ -1,0 +1,219 @@
+{
+  "navbar": {
+    "sounds": "Sunete",
+    "profile": "Profil",
+    "admin": "Administrator",
+    "welcome": "Bun venit, {{name}}",
+    "signOut": "Deconectare",
+    "signIn": "Conectare",
+    "getStarted": "Începe"
+  },
+  "homepage": {
+    "hero": {
+      "title": "Descoperă Puterea Vindecătoare a Sunetului",
+      "subtitle": "Transformă-ți starea de bine cu vindecarea terapeutică prin sunet, concepută pentru relaxare profundă, ameliorarea stresului și claritate mentală.",
+      "cta": "Începe-ți Călătoria",
+      "learnMore": "Află mai multe"
+    },
+    "features": {
+      "title": "Perfect pentru Fiecare Nevoie de Wellness",
+      "useCases": {
+        "sleep": {
+          "title": "Tulburări de Somn",
+          "description": "Insomnie, somn agitat sau dificultăți de adormire"
+        },
+        "stress": {
+          "title": "Stres și Anxietate",
+          "description": "Stress zilnic, presiune la muncă sau gestionarea anxietății"
+        },
+        "meditation": {
+          "title": "Practică de Meditație",
+          "description": "Îmbunătățiți-vă meditația cu peisaje sonore ghidate"
+        },
+        "workplace": {
+          "title": "Wellness la Locul de Muncă",
+          "description": "Îmbunătățiți concentrarea și reduceți stresul de la locul de muncă"
+        },
+        "recovery": {
+          "title": "Suport pentru Recuperare",
+          "description": "Susțineți natural procesele de vindecare și recuperare"
+        },
+        "study": {
+          "title": "Studiu și Concentrare",
+          "description": "Creșteți concentrarea și performanța de învățare"
+        }
+      },
+      "scientifically": {
+        "title": "Dovedit Științific",
+        "description": "Sunetele noastre terapeutice se bazează pe cercetări dovedite în vindecarea prin sunet și neuroștiințe."
+      },
+      "personalized": {
+        "title": "Experiență Personalizată",
+        "description": "Sesiuni de terapie prin sunet adaptate nevoilor și preferințelor dvs. unice de wellness."
+      },
+      "professional": {
+        "title": "Calitate Profesională",
+        "description": "Audio de înaltă fidelitate conceput de experți în terapia prin sunet pentru beneficiu terapeutic maxim."
+      },
+      "accessible": {
+        "title": "Mereu Accesibil",
+        "description": "Accesați-vă sunetele vindecătoare oricând, oriunde, de pe orice dispozitiv."
+      },
+      "naturalHealing": {
+        "title": "Vindecare Naturală"
+      }
+    },
+    "whatWeDo": {
+      "title": "Ce Face Sonicus?",
+      "description": "Sonicus se specializează în vindecarea terapeutică prin sunet - o practică de wellness dovedită care folosește frecvențe audio specifice, sunete din natură și peisaje sonore create cu atenție pentru a promova vindecarea și relaxarea. Platforma noastră vă oferă acces instantaneu la o bibliotecă de nivel profesional de sunete terapeutice pe care le puteți folosi pentru meditație, ameliorarea stresului, îmbunătățirea somnului și sprijinul general al sănătății mentale.",
+      "keyBenefits": {
+        "title": "Beneficii Cheie ale Folosirii Sonicus:",
+        "stressReduction": {
+          "title": "Reducerea Stresului:",
+          "description": "Scădeți nivelurile de cortizol prin peisaje sonore liniștitoare"
+        },
+        "betterSleep": {
+          "title": "Somn Mai Bun:",
+          "description": "Îmbunătățiți calitatea somnului cu sunete specializate care induc somnul"
+        },
+        "enhancedFocus": {
+          "title": "Concentrare Îmbunătățită:",
+          "description": "Creșteți concentrarea cu sunete ambientale pentru focus"
+        },
+        "emotionalBalance": {
+          "title": "Echilibru Emoțional:",
+          "description": "Reglați dispoziția și emoțiile prin frecvențe terapeutice"
+        },
+        "painManagement": {
+          "title": "Gestionarea Durerii:",
+          "description": "Ameliorarea naturală a durerii prin tehnici de terapie prin sunet"
+        },
+        "meditationSupport": {
+          "title": "Suport pentru Meditație:",
+          "description": "Aprofundați-vă practica de meditație cu conținut audio ghidat"
+        }
+      }
+    },
+    "howItWorks": {
+      "title": "Cum Funcționează Sonicus",
+      "curatedLibrary": {
+        "title": "🎵 Bibliotecă de Sunete Curatoriate",
+        "description": "Accesați sute de sunete terapeutice create profesional, de la peisaje sonore naturale la bătăi binaurale, toate concepute pentru rezultate specifice de wellness."
+      },
+      "evidenceBased": {
+        "title": "🧘 Terapie Bazată pe Dovezi",
+        "description": "Conținutul nostru audio se bazează pe cercetări științifice în terapia prin sunet, neuroștiințe și psihologia wellness-ului pentru beneficiul terapeutic maxim."
+      },
+      "instantStreaming": {
+        "title": "📱 Streaming Instantaneu",
+        "description": "Redați audio terapeutic de înaltă calitate instantaneu pe orice dispozitiv - nu sunt necesare descărcări. Perfect pentru acasă, birou sau călătorii."
+      },
+      "personalJourney": {
+        "title": "🎯 Călătorie Personală de Wellness",
+        "description": "Urmăriți-vă obiceiurile de ascultare, descoperiți sunete terapeutice noi și construiți rutine de wellness personalizate adaptate nevoilor dvs."
+      },
+      "privateSecure": {
+        "title": "🔒 Privat și Sigur",
+        "description": "Datele dvs. personale de wellness sunt complet private cu arhitectura noastră multi-tenant - fiecare utilizator primește propriul spațiu de bază de date sigur."
+      },
+      "smartRecommendations": {
+        "title": "⚡ Recomandări Inteligente",
+        "description": "Sistemul nostru alimentat de AI învață preferințele dvs. și sugerează sunetele terapeutice perfecte pentru nevoile actuale și obiectivele de wellness."
+      }
+    },
+    "cta": {
+      "title": "Gata să Vă Transformați Starea de Bine?",
+      "authenticatedDescription": "Continuați-vă călătoria de wellness cu platforma noastră de vindecare terapeutică prin sunet.",
+      "guestDescription": "Alăturați-vă miilor de utilizatori care au descoperit puterea transformatoare a vindecării terapeutice prin sunet. Alegeți nivelul de abonament și experimentați diferența pe care o poate face audioterapia profesională.",
+      "buttons": {
+        "exploreSounds": "Explorează Sunetele",
+        "dashboard": "Tabloul Meu de Bord",
+        "startTrial": "Începe Perioada de Probă Gratuită",
+        "signIn": "Conectare"
+      }
+    },
+    "subscriptionTiers": {
+      "starter": {
+        "name": "Începător",
+        "price": "Gratuit",
+        "features": {
+          "sessions": "3 sesiuni zilnice",
+          "timeLimit": "Limită de 15 minute",
+          "content": "Bibliotecă de conținut de bază",
+          "analytics": "Analiză personală"
+        }
+      },
+      "premium": {
+        "name": "Premium",
+        "price": "45 lei/lună",
+        "features": {
+          "sessions": "10 sesiuni zilnice",
+          "timeLimit": "Sesiuni de 60 de minute",
+          "content": "Bibliotecă de conținut completă",
+          "analytics": "Analiză avansată",
+          "tracking": "Urmărire wellness"
+        }
+      },
+      "pro": {
+        "name": "Pro",
+        "price": "90 lei/lună",
+        "features": {
+          "sessions": "Sesiuni nelimitate",
+          "timeLimit": "Durată nelimitată",
+          "content": "Conținut premium exclusiv",
+          "insights": "Perspective avansate",
+          "support": "Suport prioritar"
+        }
+      }
+    },
+    "science": {
+      "title": "Știința din Spatele Terapiei prin Sunet",
+      "intro": "Terapia prin sunet este susținută de cercetări științifice extensive.",
+      "description": "Studiile au arătat că frecvențele audio specifice pot influența modelele undelor cerebrale, pot reduce nivelurile de cortizol și pot declanșa răspunsul natural de relaxare al corpului. Sunetele noastre terapeutice utilizează principii din neuroștiință, psihologie și practici tradiționale de vindecare pentru a oferi beneficii de wellness măsurabile.",
+      "highlights": {
+        "stressReduction": "Reducerea stresului dovedită clinic",
+        "neuroplasticity": "Îmbunătățirea neuroplasticității",
+        "sleep": "Arhitectura somnului îmbunătățită",
+        "cognitive": "Concentrare îmbunătățită și performanță cognitivă"
+      }
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Bun Venit Înapoi",
+      "email": "Adresa de Email",
+      "password": "Parolă",
+      "submit": "Conectare",
+      "forgotPassword": "Ați uitat parola?",
+      "noAccount": "Nu aveți un cont?",
+      "signUp": "Înregistrați-vă"
+    },
+    "register": {
+      "title": "Creați-vă Contul",
+      "name": "Nume Complet",
+      "email": "Adresa de Email",
+      "password": "Parolă",
+      "confirmPassword": "Confirmați Parola",
+      "submit": "Începe",
+      "hasAccount": "Aveți deja un cont?",
+      "signIn": "Conectați-vă",
+      "passwordRequirement": "Parola trebuie să aibă cel puțin 8 caractere"
+    }
+  },
+  "common": {
+    "loading": "Se încarcă...",
+    "error": "A apărut o eroare",
+    "retry": "Reîncercați",
+    "save": "Salvare",
+    "cancel": "Anulare",
+    "edit": "Editare",
+    "delete": "Șterge",
+    "confirm": "Confirmă",
+    "yes": "Da",
+    "no": "Nu",
+    "footer": {
+      "version": "Sonicus v1.0.0 - Aplicație de Terapie Audio",
+      "tagline": "Powered by Elefefe"
+    }
+  }
+}

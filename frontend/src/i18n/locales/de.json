@@ -1,0 +1,219 @@
+{
+  "navbar": {
+    "sounds": "Klänge",
+    "profile": "Profil",
+    "admin": "Administrator",
+    "welcome": "Willkommen, {{name}}",
+    "signOut": "Abmelden",
+    "signIn": "Anmelden",
+    "getStarted": "Loslegen"
+  },
+  "homepage": {
+    "hero": {
+      "title": "Entdecken Sie die Heilkraft des Klangs",
+      "subtitle": "Transformieren Sie Ihr Wohlbefinden mit therapeutischer Klangtherapie, die für tiefe Entspannung, Stressabbau und geistige Klarheit entwickelt wurde.",
+      "cta": "Beginnen Sie Ihre Reise",
+      "learnMore": "Mehr erfahren"
+    },
+    "features": {
+      "title": "Perfekt für Jeden Wellness-Bedarf",
+      "useCases": {
+        "sleep": {
+          "title": "Schlafstörungen",
+          "description": "Schlaflosigkeit, unruhiger Schlaf oder Einschlafprobleme"
+        },
+        "stress": {
+          "title": "Stress & Angst",
+          "description": "Täglicher Stress, Arbeitsdruck oder Angstbewältigung"
+        },
+        "meditation": {
+          "title": "Meditationspraxis",
+          "description": "Verbessern Sie Ihre Meditation mit geführten Klanglandschaften"
+        },
+        "workplace": {
+          "title": "Arbeitsplatz-Wellness",
+          "description": "Verbesserung der Konzentration und Reduzierung von Arbeitsstress"
+        },
+        "recovery": {
+          "title": "Erholungsunterstützung",
+          "description": "Natürliche Unterstützung der Heilungs- und Erholungsprozesse"
+        },
+        "study": {
+          "title": "Studium & Fokus",
+          "description": "Verbesserung der Konzentration und Lernleistung"
+        }
+      },
+      "scientifically": {
+        "title": "Wissenschaftlich Belegt",
+        "description": "Unsere therapeutischen Klänge basieren auf bewährter Forschung in Klangtherapie und Neurowissenschaften."
+      },
+      "personalized": {
+        "title": "Personalisierte Erfahrung",
+        "description": "Maßgeschneiderte Klangtherapie-Sitzungen, die sich an Ihre einzigartigen Wellness-Bedürfnisse und Vorlieben anpassen."
+      },
+      "professional": {
+        "title": "Professionelle Qualität",
+        "description": "High-Fidelity-Audio, das von Klangtherapie-Experten für maximalen therapeutischen Nutzen entwickelt wurde."
+      },
+      "accessible": {
+        "title": "Immer Zugänglich",
+        "description": "Greifen Sie jederzeit, überall und von jedem Gerät auf Ihre heilenden Klänge zu."
+      },
+      "naturalHealing": {
+        "title": "Natürliche Heilung"
+      }
+    },
+    "whatWeDo": {
+      "title": "Was macht Sonicus?",
+      "description": "Sonicus spezialisiert sich auf therapeutische Klangtherapie - eine bewährte Wellness-Praxis, die spezifische Audiofrequenzen, Naturklänge und sorgfältig gestaltete Klanglandschaften verwendet, um Heilung und Entspannung zu fördern. Unsere Plattform bietet Ihnen sofortigen Zugang zu einer professionellen Bibliothek therapeutischer Klänge, die Sie für Meditation, Stressabbau, Schlafverbesserung und allgemeine Unterstützung der psychischen Gesundheit nutzen können.",
+      "keyBenefits": {
+        "title": "Hauptvorteile der Nutzung von Sonicus:",
+        "stressReduction": {
+          "title": "Stressabbau:",
+          "description": "Senken Sie den Cortisolspiegel durch beruhigende Klanglandschaften"
+        },
+        "betterSleep": {
+          "title": "Besserer Schlaf:",
+          "description": "Verbessern Sie die Schlafqualität mit speziellen schlaffördernden Klängen"
+        },
+        "enhancedFocus": {
+          "title": "Verbesserte Konzentration:",
+          "description": "Steigern Sie die Konzentration mit umgebenden Fokus-Klängen"
+        },
+        "emotionalBalance": {
+          "title": "Emotionale Balance:",
+          "description": "Regulieren Sie Stimmung und Emotionen durch therapeutische Frequenzen"
+        },
+        "painManagement": {
+          "title": "Schmerzmanagement:",
+          "description": "Natürliche Schmerzlinderung durch Klangtherapie-Techniken"
+        },
+        "meditationSupport": {
+          "title": "Meditationsunterstützung:",
+          "description": "Vertiefen Sie Ihre Meditationspraxis mit geführten Audio-Inhalten"
+        }
+      }
+    },
+    "howItWorks": {
+      "title": "Wie Sonicus Funktioniert",
+      "curatedLibrary": {
+        "title": "🎵 Kuratierte Klang-Bibliothek",
+        "description": "Zugang zu Hunderten von professionell gestalteten therapeutischen Klängen, von Naturklanglandschaften bis zu binauralen Beats, alle für spezifische Wellness-Ergebnisse entwickelt."
+      },
+      "evidenceBased": {
+        "title": "🧘 Evidenzbasierte Therapie",
+        "description": "Unser Audio-Inhalt basiert auf wissenschaftlicher Forschung in Klangtherapie, Neurowissenschaften und Wellness-Psychologie für maximalen therapeutischen Nutzen."
+      },
+      "instantStreaming": {
+        "title": "📱 Sofort-Streaming",
+        "description": "Streamen Sie hochwertiges therapeutisches Audio sofort auf jedem Gerät - keine Downloads erforderlich. Perfekt für Zuhause, Büro oder unterwegs."
+      },
+      "personalJourney": {
+        "title": "🎯 Persönliche Wellness-Reise",
+        "description": "Verfolgen Sie Ihre Hörgewohnheiten, entdecken Sie neue therapeutische Klänge und entwickeln Sie personalisierte Wellness-Routinen, die auf Ihre Bedürfnisse zugeschnitten sind."
+      },
+      "privateSecure": {
+        "title": "🔒 Privat & Sicher",
+        "description": "Ihre persönlichen Wellness-Daten sind vollständig privat mit unserer Multi-Tenant-Architektur - jeder Nutzer erhält seinen eigenen sicheren Datenbankbereich."
+      },
+      "smartRecommendations": {
+        "title": "⚡ Intelligente Empfehlungen",
+        "description": "Unser KI-gestütztes System lernt Ihre Vorlieben und schlägt die perfekten therapeutischen Klänge für Ihre aktuellen Bedürfnisse und Wellness-Ziele vor."
+      }
+    },
+    "cta": {
+      "title": "Bereit, Ihr Wohlbefinden zu Transformieren?",
+      "authenticatedDescription": "Setzen Sie Ihre Wellness-Reise mit unserer therapeutischen Klangtherapie-Plattform fort.",
+      "guestDescription": "Schließen Sie sich Tausenden von Nutzern an, die die lebensverändernde Kraft der therapeutischen Klangtherapie entdeckt haben. Wählen Sie Ihren Abonnement-Level und erleben Sie den Unterschied, den professionelle Audiotherapie machen kann.",
+      "buttons": {
+        "exploreSounds": "Klänge Entdecken",
+        "dashboard": "Mein Dashboard",
+        "startTrial": "Kostenlose Testversion Starten",
+        "signIn": "Anmelden"
+      }
+    },
+    "subscriptionTiers": {
+      "starter": {
+        "name": "Starter",
+        "price": "Kostenlos",
+        "features": {
+          "sessions": "3 tägliche Sitzungen",
+          "timeLimit": "15-Minuten-Limit",
+          "content": "Grundlegende Inhaltsbibliothek",
+          "analytics": "Persönliche Analysen"
+        }
+      },
+      "premium": {
+        "name": "Premium",
+        "price": "9,99€/Monat",
+        "features": {
+          "sessions": "10 tägliche Sitzungen",
+          "timeLimit": "60-Minuten-Sitzungen",
+          "content": "Vollständige Inhaltsbibliothek",
+          "analytics": "Erweiterte Analysen",
+          "tracking": "Wellness-Tracking"
+        }
+      },
+      "pro": {
+        "name": "Pro",
+        "price": "19,99€/Monat",
+        "features": {
+          "sessions": "Unbegrenzte Sitzungen",
+          "timeLimit": "Unbegrenzte Länge",
+          "content": "Premium-exklusive Inhalte",
+          "insights": "Erweiterte Einblicke",
+          "support": "Prioritätssupport"
+        }
+      }
+    },
+    "science": {
+      "title": "Die Wissenschaft Hinter der Klangtherapie",
+      "intro": "Klangtherapie wird durch umfangreiche wissenschaftliche Forschung unterstützt.",
+      "description": "Studien haben gezeigt, dass spezifische Audiofrequenzen Gehirnwellenmuster beeinflussen, Cortisolspiegel reduzieren und die natürliche Entspannungsreaktion des Körpers auslösen können. Unsere therapeutischen Klänge nutzen Prinzipien aus Neurowissenschaften, Psychologie und traditionellen Heilpraktiken, um messbare Wellness-Vorteile zu bieten.",
+      "highlights": {
+        "stressReduction": "Klinisch bewiesene Stressreduktion",
+        "neuroplasticity": "Neuroplastizitäts-Verbesserung",
+        "sleep": "Verbesserte Schlafarchitektur",
+        "cognitive": "Verbesserte Konzentration und kognitive Leistung"
+      }
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Willkommen Zurück",
+      "email": "E-Mail-Adresse",
+      "password": "Passwort",
+      "submit": "Anmelden",
+      "forgotPassword": "Passwort vergessen?",
+      "noAccount": "Kein Konto?",
+      "signUp": "Registrieren"
+    },
+    "register": {
+      "title": "Erstellen Sie Ihr Konto",
+      "name": "Vollständiger Name",
+      "email": "E-Mail-Adresse",
+      "password": "Passwort",
+      "confirmPassword": "Passwort bestätigen",
+      "submit": "Loslegen",
+      "hasAccount": "Haben Sie bereits ein Konto?",
+      "signIn": "Anmelden",
+      "passwordRequirement": "Passwort muss mindestens 8 Zeichen lang sein"
+    }
+  },
+  "common": {
+    "loading": "Laden...",
+    "error": "Ein Fehler ist aufgetreten",
+    "retry": "Erneut versuchen",
+    "save": "Speichern",
+    "cancel": "Abbrechen",
+    "edit": "Bearbeiten",
+    "delete": "Löschen",
+    "confirm": "Bestätigen",
+    "yes": "Ja",
+    "no": "Nein",
+    "footer": {
+      "version": "Sonicus v1.0.0 - Audio-Therapie-Anwendung",
+      "tagline": "Angetrieben von Elefefe"
+    }
+  }
+}

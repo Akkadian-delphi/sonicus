@@ -1,0 +1,219 @@
+{
+  "navbar": {
+    "sounds": "Suoni",
+    "profile": "Profilo",
+    "admin": "Admin",
+    "welcome": "Benvenuto, {{name}}",
+    "signOut": "Disconnetti",
+    "signIn": "Accedi",
+    "getStarted": "Inizia"
+  },
+  "homepage": {
+    "hero": {
+      "title": "Scopri il Potere Curativo del Suono",
+      "subtitle": "Trasforma il tuo benessere con la terapia del suono terapeutica progettata per il rilassamento profondo, il sollievo dallo stress e la chiarezza mentale.",
+      "cta": "Inizia il Tuo Viaggio",
+      "learnMore": "Scopri di Più"
+    },
+    "features": {
+      "title": "Perfetto per Ogni Necessità di Benessere",
+      "useCases": {
+        "sleep": {
+          "title": "Disturbi del Sonno",
+          "description": "Insonnia, sonno agitato o difficoltà ad addormentarsi"
+        },
+        "stress": {
+          "title": "Stress e Ansia",
+          "description": "Stress quotidiano, pressione lavorativa o gestione dell'ansia"
+        },
+        "meditation": {
+          "title": "Pratica di Meditazione",
+          "description": "Migliora la tua meditazione con paesaggi sonori guidati"
+        },
+        "workplace": {
+          "title": "Benessere Lavorativo",
+          "description": "Migliora la concentrazione e riduci lo stress lavorativo"
+        },
+        "recovery": {
+          "title": "Supporto al Recupero",
+          "description": "Supporta naturalmente i processi di guarigione e recupero"
+        },
+        "study": {
+          "title": "Studio e Concentrazione",
+          "description": "Aumenta la concentrazione e le prestazioni di apprendimento"
+        }
+      },
+      "scientifically": {
+        "title": "Scientificamente Provato",
+        "description": "I nostri suoni terapeutici sono basati su ricerche comprovate nella terapia del suono e nelle neuroscienze."
+      },
+      "personalized": {
+        "title": "Esperienza Personalizzata",
+        "description": "Sessioni di terapia del suono adattate alle tue esigenze e preferenze di benessere uniche."
+      },
+      "professional": {
+        "title": "Qualità Professionale",
+        "description": "Audio ad alta fedeltà progettato da esperti di terapia del suono per il massimo beneficio terapeutico."
+      },
+      "accessible": {
+        "title": "Sempre Accessibile",
+        "description": "Accedi ai tuoi suoni curativi sempre, ovunque, da qualsiasi dispositivo."
+      },
+      "naturalHealing": {
+        "title": "Guarigione Naturale"
+      }
+    },
+    "whatWeDo": {
+      "title": "Cosa Fa Sonicus?",
+      "description": "Sonicus è specializzata nella terapia del suono terapeutica - una pratica di benessere comprovata che utilizza frequenze audio specifiche, suoni della natura e paesaggi sonori accuratamente creati per promuovere la guarigione e il rilassamento. La nostra piattaforma ti fornisce accesso istantaneo a una libreria di livello professionale di suoni terapeutici che puoi utilizzare per la meditazione, il sollievo dallo stress, il miglioramento del sonno e il supporto generale della salute mentale.",
+      "keyBenefits": {
+        "title": "Principali Benefici dell'Utilizzo di Sonicus:",
+        "stressReduction": {
+          "title": "Riduzione dello Stress:",
+          "description": "Abbassa i livelli di cortisolo attraverso paesaggi sonori calmanti"
+        },
+        "betterSleep": {
+          "title": "Sonno Migliore:",
+          "description": "Migliora la qualità del sonno con suoni specializzati che inducono il sonno"
+        },
+        "enhancedFocus": {
+          "title": "Concentrazione Migliorata:",
+          "description": "Aumenta la concentrazione con suoni ambientali di concentrazione"
+        },
+        "emotionalBalance": {
+          "title": "Equilibrio Emotivo:",
+          "description": "Regola l'umore e le emozioni attraverso frequenze terapeutiche"
+        },
+        "painManagement": {
+          "title": "Gestione del Dolore:",
+          "description": "Sollievo naturale dal dolore attraverso tecniche di terapia del suono"
+        },
+        "meditationSupport": {
+          "title": "Supporto alla Meditazione:",
+          "description": "Approfondisci la tua pratica di meditazione con contenuti audio guidati"
+        }
+      }
+    },
+    "howItWorks": {
+      "title": "Come Funziona Sonicus",
+      "curatedLibrary": {
+        "title": "🎵 Libreria di Suoni Curata",
+        "description": "Accedi a centinaia di suoni terapeutici creati professionalmente, dai paesaggi sonori naturali ai battiti binaurali, tutti progettati per risultati di benessere specifici."
+      },
+      "evidenceBased": {
+        "title": "🧘 Terapia Basata sull'Evidenza",
+        "description": "I nostri contenuti audio sono basati sulla ricerca scientifica nella terapia del suono, nelle neuroscienze e nella psicologia del benessere per il massimo beneficio terapeutico."
+      },
+      "instantStreaming": {
+        "title": "📱 Streaming Istantaneo",
+        "description": "Ascolta audio terapeutico di alta qualità istantaneamente su qualsiasi dispositivo - nessun download richiesto. Perfetto per casa, ufficio o viaggi."
+      },
+      "personalJourney": {
+        "title": "🎯 Viaggio Personale di Benessere",
+        "description": "Traccia le tue abitudini di ascolto, scopri nuovi suoni terapeutici e costruisci routine di benessere personalizzate su misura per le tue esigenze."
+      },
+      "privateSecure": {
+        "title": "🔒 Privato e Sicuro",
+        "description": "I tuoi dati personali di benessere sono completamente privati con la nostra architettura multi-tenant - ogni utente ottiene il proprio spazio database sicuro."
+      },
+      "smartRecommendations": {
+        "title": "⚡ Raccomandazioni Intelligenti",
+        "description": "Il nostro sistema alimentato dall'IA impara le tue preferenze e suggerisce i suoni terapeutici perfetti per le tue esigenze attuali e gli obiettivi di benessere."
+      }
+    },
+    "cta": {
+      "title": "Pronto a Trasformare il Tuo Benessere?",
+      "authenticatedDescription": "Continua il tuo viaggio di benessere con la nostra piattaforma di terapia del suono terapeutica.",
+      "guestDescription": "Unisciti a migliaia di utenti che hanno scoperto il potere trasformativo della terapia del suono terapeutica. Scegli il tuo livello di abbonamento e sperimenta la differenza che l'audioterapia professionale può fare.",
+      "buttons": {
+        "exploreSounds": "Esplora i Suoni",
+        "dashboard": "La Mia Dashboard",
+        "startTrial": "Inizia Prova Gratuita",
+        "signIn": "Accedi"
+      }
+    },
+    "subscriptionTiers": {
+      "starter": {
+        "name": "Base",
+        "price": "Gratuito",
+        "features": {
+          "sessions": "3 sessioni giornaliere",
+          "timeLimit": "Limite di 15 minuti",
+          "content": "Libreria di contenuti di base",
+          "analytics": "Analisi personali"
+        }
+      },
+      "premium": {
+        "name": "Premium",
+        "price": "9,99€/mese",
+        "features": {
+          "sessions": "10 sessioni giornaliere",
+          "timeLimit": "Sessioni di 60 minuti",
+          "content": "Libreria di contenuti completa",
+          "analytics": "Analisi avanzate",
+          "tracking": "Monitoraggio del benessere"
+        }
+      },
+      "pro": {
+        "name": "Pro",
+        "price": "19,99€/mese",
+        "features": {
+          "sessions": "Sessioni illimitate",
+          "timeLimit": "Durata illimitata",
+          "content": "Contenuti esclusivi premium",
+          "insights": "Approfondimenti avanzati",
+          "support": "Supporto prioritario"
+        }
+      }
+    },
+    "science": {
+      "title": "La Scienza Dietro la Terapia del Suono",
+      "intro": "La terapia del suono è supportata da ricerche scientifiche approfondite.",
+      "description": "Gli studi hanno dimostrato che specifiche frequenze audio possono influenzare i modelli delle onde cerebrali, ridurre i livelli di cortisolo e attivare la risposta naturale di rilassamento del corpo. I nostri suoni terapeutici utilizzano principi delle neuroscienze, psicologia e pratiche di guarigione tradizionali per fornire benefici di benessere misurabili.",
+      "highlights": {
+        "stressReduction": "Riduzione dello stress clinicamente provata",
+        "neuroplasticity": "Miglioramento della neuroplasticità",
+        "sleep": "Architettura del sonno migliorata",
+        "cognitive": "Concentrazione migliorata e prestazioni cognitive"
+      }
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Bentornato",
+      "email": "Indirizzo Email",
+      "password": "Password",
+      "submit": "Accedi",
+      "forgotPassword": "Hai dimenticato la password?",
+      "noAccount": "Non hai un account?",
+      "signUp": "Registrati"
+    },
+    "register": {
+      "title": "Crea il Tuo Account",
+      "name": "Nome Completo",
+      "email": "Indirizzo Email",
+      "password": "Password",
+      "confirmPassword": "Conferma Password",
+      "submit": "Inizia",
+      "hasAccount": "Hai già un account?",
+      "signIn": "Accedi",
+      "passwordRequirement": "La password deve essere di almeno 8 caratteri"
+    }
+  },
+  "common": {
+    "loading": "Caricamento...",
+    "error": "Si è verificato un errore",
+    "retry": "Riprova",
+    "save": "Salva",
+    "cancel": "Annulla",
+    "edit": "Modifica",
+    "delete": "Elimina",
+    "confirm": "Conferma",
+    "yes": "Sì",
+    "no": "No",
+    "footer": {
+      "version": "Sonicus v1.0.0 - Applicazione di Terapia Audio",
+      "tagline": "Powered by Elefefe"
+    }
+  }
+}

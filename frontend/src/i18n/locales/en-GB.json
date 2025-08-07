@@ -1,0 +1,219 @@
+{
+  "navbar": {
+    "sounds": "Sounds",
+    "profile": "Profile",
+    "admin": "Admin",
+    "welcome": "Welcome, {{name}}",
+    "signOut": "Sign Out",
+    "signIn": "Sign In",
+    "getStarted": "Get Started"
+  },
+  "homepage": {
+    "hero": {
+      "title": "Discover the Healing Power of Sound",
+      "subtitle": "Transform your wellbeing with therapeutic sound healing designed for deep relaxation, stress relief, and mental clarity.",
+      "cta": "Start Your Journey",
+      "learnMore": "Learn More"
+    },
+    "features": {
+      "title": "Perfect for Every Wellness Need",
+      "useCases": {
+        "sleep": {
+          "title": "Sleep Disorders",
+          "description": "Insomnia, restless sleep, or trouble falling asleep"
+        },
+        "stress": {
+          "title": "Stress & Anxiety",
+          "description": "Daily stress, work pressure, or anxiety management"
+        },
+        "meditation": {
+          "title": "Meditation Practice",
+          "description": "Enhance your meditation with guided soundscapes"
+        },
+        "workplace": {
+          "title": "Workplace Wellbeing",
+          "description": "Improve focus and reduce workplace stress"
+        },
+        "recovery": {
+          "title": "Recovery Support",
+          "description": "Support healing and recovery processes naturally"
+        },
+        "study": {
+          "title": "Study & Focus",
+          "description": "Boost concentration and learning performance"
+        }
+      },
+      "scientifically": {
+        "title": "Scientifically Backed",
+        "description": "Our therapeutic sounds are based on proven research in sound healing and neuroscience."
+      },
+      "personalized": {
+        "title": "Personalised Experience",
+        "description": "Tailored sound therapy sessions that adapt to your unique wellness needs and preferences."
+      },
+      "professional": {
+        "title": "Professional Quality",
+        "description": "High-fidelity audio designed by sound therapy experts for maximum therapeutic benefit."
+      },
+      "accessible": {
+        "title": "Always Accessible",
+        "description": "Access your healing sounds anytime, anywhere, from any device."
+      },
+      "naturalHealing": {
+        "title": "Natural Healing"
+      }
+    },
+    "whatWeDo": {
+      "title": "What Does Sonicus Do?",
+      "description": "Sonicus specialises in therapeutic sound healing - a proven wellness practice that uses specific audio frequencies, nature sounds, and carefully crafted soundscapes to promote healing and relaxation. Our platform provides you with instant access to a professional-grade library of therapeutic sounds that you can use for meditation, stress relief, sleep improvement, and overall mental health support.",
+      "keyBenefits": {
+        "title": "Key Benefits of Using Sonicus:",
+        "stressReduction": {
+          "title": "Stress Reduction:",
+          "description": "Lower cortisol levels through calming soundscapes"
+        },
+        "betterSleep": {
+          "title": "Better Sleep:",
+          "description": "Improve sleep quality with specialised sleep-inducing sounds"
+        },
+        "enhancedFocus": {
+          "title": "Enhanced Focus:",
+          "description": "Boost concentration with ambient focus sounds"
+        },
+        "emotionalBalance": {
+          "title": "Emotional Balance:",
+          "description": "Regulate mood and emotions through therapeutic frequencies"
+        },
+        "painManagement": {
+          "title": "Pain Management:",
+          "description": "Natural pain relief through sound therapy techniques"
+        },
+        "meditationSupport": {
+          "title": "Meditation Support:",
+          "description": "Deepen your meditation practice with guided audio"
+        }
+      }
+    },
+    "howItWorks": {
+      "title": "How Sonicus Works",
+      "curatedLibrary": {
+        "title": "🎵 Curated Sound Library",
+        "description": "Access hundreds of professionally crafted therapeutic sounds, from nature soundscapes to binaural beats, all designed for specific wellness outcomes."
+      },
+      "evidenceBased": {
+        "title": "🧘 Evidence-Based Therapy",
+        "description": "Our audio content is based on scientific research in sound therapy, neuroscience, and wellness psychology for maximum therapeutic benefit."
+      },
+      "instantStreaming": {
+        "title": "📱 Instant Streaming",
+        "description": "Stream high-quality therapeutic audio instantly on any device - no downloads required. Perfect for home, office, or travel use."
+      },
+      "personalJourney": {
+        "title": "🎯 Personal Wellness Journey",
+        "description": "Track your listening habits, discover new therapeutic sounds, and build personalised wellness routines tailored to your needs."
+      },
+      "privateSecure": {
+        "title": "🔒 Private & Secure",
+        "description": "Your personal wellness data is completely private with our multi-tenant architecture - each user gets their own secure database space."
+      },
+      "smartRecommendations": {
+        "title": "⚡ Smart Recommendations",
+        "description": "Our AI-powered system learns your preferences and suggests the perfect therapeutic sounds for your current needs and wellness goals."
+      }
+    },
+    "cta": {
+      "title": "Ready to Transform Your Wellbeing?",
+      "authenticatedDescription": "Continue your wellness journey with our therapeutic sound healing platform.",
+      "guestDescription": "Join thousands of users who have discovered the life-changing power of therapeutic sound healing. Choose your subscription tier and experience the difference that professional audio therapy can make.",
+      "buttons": {
+        "exploreSounds": "Explore Sounds",
+        "dashboard": "My Dashboard",
+        "startTrial": "Start Free Trial",
+        "signIn": "Sign In"
+      }
+    },
+    "subscriptionTiers": {
+      "starter": {
+        "name": "Starter",
+        "price": "Free",
+        "features": {
+          "sessions": "3 daily sessions",
+          "timeLimit": "15-minute limit",
+          "content": "Basic content library",
+          "analytics": "Personal analytics"
+        }
+      },
+      "premium": {
+        "name": "Premium",
+        "price": "£7.99/month",
+        "features": {
+          "sessions": "10 daily sessions",
+          "timeLimit": "60-minute sessions",
+          "content": "Full content library",
+          "analytics": "Advanced analytics",
+          "tracking": "Wellness tracking"
+        }
+      },
+      "pro": {
+        "name": "Pro",
+        "price": "£14.99/month",
+        "features": {
+          "sessions": "Unlimited sessions",
+          "timeLimit": "Unlimited length",
+          "content": "Premium exclusive content",
+          "insights": "Advanced insights",
+          "support": "Priority support"
+        }
+      }
+    },
+    "science": {
+      "title": "The Science Behind Sound Therapy",
+      "intro": "Sound therapy is backed by extensive scientific research.",
+      "description": "Studies have shown that specific audio frequencies can influence brainwave patterns, reduce cortisol levels, and trigger the body's natural relaxation response. Our therapeutic sounds utilise principles from neuroscience, psychology, and traditional healing practices to provide measurable wellness benefits.",
+      "highlights": {
+        "stressReduction": "Clinically proven stress reduction",
+        "neuroplasticity": "Neuroplasticity enhancement",
+        "sleep": "Improved sleep architecture",
+        "cognitive": "Enhanced focus and cognitive performance"
+      }
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Welcome Back",
+      "email": "Email Address",
+      "password": "Password",
+      "submit": "Sign In",
+      "forgotPassword": "Forgot your password?",
+      "noAccount": "Don't have an account?",
+      "signUp": "Sign up"
+    },
+    "register": {
+      "title": "Create Your Account",
+      "name": "Full Name",
+      "email": "Email Address",
+      "password": "Password",
+      "confirmPassword": "Confirm Password",
+      "submit": "Get Started",
+      "hasAccount": "Already have an account?",
+      "signIn": "Sign in",
+      "passwordRequirement": "Password must be at least 8 characters long"
+    }
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "retry": "Retry",
+    "save": "Save",
+    "cancel": "Cancel",
+    "edit": "Edit",
+    "delete": "Delete",
+    "confirm": "Confirm",
+    "yes": "Yes",
+    "no": "No",
+    "footer": {
+      "version": "Sonicus v1.0.0 - Audio Therapy Application",
+      "tagline": "Powered by Elefefe"
+    }
+  }
+}

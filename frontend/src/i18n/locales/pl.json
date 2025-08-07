@@ -1,0 +1,219 @@
+{
+  "navbar": {
+    "sounds": "Dźwięki",
+    "profile": "Profil",
+    "admin": "Administrator",
+    "welcome": "Witaj, {{name}}",
+    "signOut": "Wyloguj",
+    "signIn": "Zaloguj",
+    "getStarted": "Rozpocznij"
+  },
+  "homepage": {
+    "hero": {
+      "title": "Odkryj Uzdrawiającą Moc Dźwięku",
+      "subtitle": "Przekształć swoje samopoczucie dzięki terapeutycznemu uzdrawianiu dźwiękiem zaprojektowanemu dla głębokiej relaksacji, redukcji stresu i jasności umysłu.",
+      "cta": "Rozpocznij Swoją Podróż",
+      "learnMore": "Dowiedz Się Więcej"
+    },
+    "features": {
+      "title": "Idealne dla Każdej Potrzeby Zdrowotnej",
+      "useCases": {
+        "sleep": {
+          "title": "Zaburzenia Snu",
+          "description": "Bezsenność, niespokojny sen lub problemy z zasypianiem"
+        },
+        "stress": {
+          "title": "Stres i Lęk",
+          "description": "Codzienny stres, presja w pracy lub zarządzanie lękiem"
+        },
+        "meditation": {
+          "title": "Praktyka Medytacji",
+          "description": "Wzmocnij swoją medytację dzięki prowadzonym krajobrazom dźwiękowym"
+        },
+        "workplace": {
+          "title": "Wellness w Pracy",
+          "description": "Popraw koncentrację i zmniejsz stres w miejscu pracy"
+        },
+        "recovery": {
+          "title": "Wsparcie Regeneracji",
+          "description": "Wspieraj naturalnie procesy uzdrawiania i regeneracji"
+        },
+        "study": {
+          "title": "Nauka i Koncentracja",
+          "description": "Zwiększ koncentrację i wydajność uczenia się"
+        }
+      },
+      "scientifically": {
+        "title": "Naukowo Udowodnione",
+        "description": "Nasze terapeutyczne dźwięki są oparte na udowodnionych badaniach w dziedzinie uzdrawiania dźwiękiem i neuronauk."
+      },
+      "personalized": {
+        "title": "Spersonalizowane Doświadczenie",
+        "description": "Dostosowane sesje terapii dźwiękowej, które adaptują się do Twoich unikalnych potrzeb i preferencji zdrowotnych."
+      },
+      "professional": {
+        "title": "Profesjonalna Jakość",
+        "description": "Audio wysokiej wierności zaprojektowane przez ekspertów terapii dźwiękowej dla maksymalnych korzyści terapeutycznych."
+      },
+      "accessible": {
+        "title": "Zawsze Dostępne",
+        "description": "Uzyskaj dostęp do swoich uzdrawiających dźwięków zawsze, wszędzie, z każdego urządzenia."
+      },
+      "naturalHealing": {
+        "title": "Naturalne Uzdrawianie"
+      }
+    },
+    "whatWeDo": {
+      "title": "Co Robi Sonicus?",
+      "description": "Sonicus specjalizuje się w terapeutycznym uzdrawianiu dźwiękiem - sprawdzonej praktyce wellness, która wykorzystuje specyficzne częstotliwości audio, dźwięki natury i starannie stworzone krajobrazy dźwiękowe do promowania uzdrawiania i relaksacji. Nasza platforma zapewnia Ci natychmiastowy dostęp do profesjonalnej biblioteki dźwięków terapeutycznych, których możesz używać do medytacji, redukcji stresu, poprawy snu i ogólnego wsparcia zdrowia psychicznego.",
+      "keyBenefits": {
+        "title": "Główne Korzyści z Używania Sonicus:",
+        "stressReduction": {
+          "title": "Redukcja Stresu:",
+          "description": "Obniż poziom kortyzolu poprzez uspokajające krajobrazy dźwiękowe"
+        },
+        "betterSleep": {
+          "title": "Lepszy Sen:",
+          "description": "Popraw jakość snu dzięki specjalistycznym dźwiękom nasennymi"
+        },
+        "enhancedFocus": {
+          "title": "Wzmocniona Koncentracja:",
+          "description": "Zwiększ koncentrację dzięki dźwiękom otoczenia wspierającym skupienie"
+        },
+        "emotionalBalance": {
+          "title": "Równowaga Emocjonalna:",
+          "description": "Reguluj nastrój i emocje poprzez terapeutyczne częstotliwości"
+        },
+        "painManagement": {
+          "title": "Zarządzanie Bólem:",
+          "description": "Naturalna ulga w bólu poprzez techniki terapii dźwiękowej"
+        },
+        "meditationSupport": {
+          "title": "Wsparcie Medytacji:",
+          "description": "Pogłęb swoją praktykę medytacyjną dzięki prowadzonemu audio"
+        }
+      }
+    },
+    "howItWorks": {
+      "title": "Jak Działa Sonicus",
+      "curatedLibrary": {
+        "title": "🎵 Kuratorska Biblioteka Dźwięków",
+        "description": "Uzyskaj dostęp do setek profesjonalnie stworzonych dźwięków terapeutycznych, od naturalnych krajobrazów dźwiękowych po uderzenia binauralne, wszystkie zaprojektowane dla konkretnych rezultatów wellness."
+      },
+      "evidenceBased": {
+        "title": "🧘 Terapia Oparta na Dowodach",
+        "description": "Nasze treści audio są oparte na badaniach naukowych w dziedzinie terapii dźwiękowej, neuronauk i psychologii wellness dla maksymalnych korzyści terapeutycznych."
+      },
+      "instantStreaming": {
+        "title": "📱 Natychmiastowe Streamowanie",
+        "description": "Streamuj wysokiej jakości audio terapeutyczne natychmiast na każdym urządzeniu - bez potrzeby pobierania. Idealne do użytku w domu, biurze lub w podróży."
+      },
+      "personalJourney": {
+        "title": "🎯 Osobista Podróż Wellness",
+        "description": "Śledź swoje nawyki słuchania, odkrywaj nowe dźwięki terapeutyczne i buduj spersonalizowane rutyny wellness dostosowane do Twoich potrzeb."
+      },
+      "privateSecure": {
+        "title": "🔒 Prywatne i Bezpieczne",
+        "description": "Twoje osobiste dane wellness są całkowicie prywatne dzięki naszej architekturze wielodostępnej - każdy użytkownik otrzymuje własną bezpieczną przestrzeń bazodanową."
+      },
+      "smartRecommendations": {
+        "title": "⚡ Inteligentne Rekomendacje",
+        "description": "Nasz system napędzany przez AI uczy się Twoich preferencji i sugeruje idealne dźwięki terapeutyczne dla Twoich obecnych potrzeb i celów wellness."
+      }
+    },
+    "cta": {
+      "title": "Gotowy na Transformację Swojego Samopoczucia?",
+      "authenticatedDescription": "Kontynuuj swoją podróż wellness z naszą platformą terapeutycznego uzdrawiania dźwiękiem.",
+      "guestDescription": "Dołącz do tysięcy użytkowników, którzy odkryli życiodajną moc terapeutycznego uzdrawiania dźwiękiem. Wybierz swój poziom subskrypcji i doświadcz różnicy, jaką może zrobić profesjonalna audioterapia.",
+      "buttons": {
+        "exploreSounds": "Eksploruj Dźwięki",
+        "dashboard": "Mój Panel",
+        "startTrial": "Rozpocznij Bezpłatny Trial",
+        "signIn": "Zaloguj Się"
+      }
+    },
+    "subscriptionTiers": {
+      "starter": {
+        "name": "Starter",
+        "price": "Bezpłatny",
+        "features": {
+          "sessions": "3 sesje dziennie",
+          "timeLimit": "Limit 15 minut",
+          "content": "Podstawowa biblioteka treści",
+          "analytics": "Analityka osobista"
+        }
+      },
+      "premium": {
+        "name": "Premium",
+        "price": "9,99€/miesiąc",
+        "features": {
+          "sessions": "10 sesji dziennie",
+          "timeLimit": "60-minutowe sesje",
+          "content": "Pełna biblioteka treści",
+          "analytics": "Zaawansowana analityka",
+          "tracking": "Śledzenie wellness"
+        }
+      },
+      "pro": {
+        "name": "Pro",
+        "price": "19,99€/miesiąc",
+        "features": {
+          "sessions": "Nieograniczone sesje",
+          "timeLimit": "Nieograniczona długość",
+          "content": "Ekskluzywna treść premium",
+          "insights": "Zaawansowane wglądy",
+          "support": "Wsparcie priorytetowe"
+        }
+      }
+    },
+    "science": {
+      "title": "Nauka Stojąca za Terapią Dźwiękową",
+      "intro": "Terapia dźwiękowa jest poparta obszernym badaniem naukowym.",
+      "description": "Badania wykazały, że specyficzne częstotliwości audio mogą wpływać na wzorce fal mózgowych, obniżać poziom kortyzolu i wyzwalać naturalną reakcję relaksacyjną organizmu. Nasze dźwięki terapeutyczne wykorzystują zasady z neuronauk, psychologii i tradycyjnych praktyk uzdrawiających, aby zapewnić wymierne korzyści wellness.",
+      "highlights": {
+        "stressReduction": "Klinicznie udowodniona redukcja stresu",
+        "neuroplasticity": "Poprawa neuroplastyczności",
+        "sleep": "Ulepszona architektura snu",
+        "cognitive": "Wzmocniona koncentracja i wydajność poznawcza"
+      }
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Witaj Ponownie",
+      "email": "Adres Email",
+      "password": "Hasło",
+      "submit": "Zaloguj Się",
+      "forgotPassword": "Zapomniałeś hasła?",
+      "noAccount": "Nie masz konta?",
+      "signUp": "Zarejestruj się"
+    },
+    "register": {
+      "title": "Utwórz Swoje Konto",
+      "name": "Imię i Nazwisko",
+      "email": "Adres Email",
+      "password": "Hasło",
+      "confirmPassword": "Potwierdź Hasło",
+      "submit": "Rozpocznij",
+      "hasAccount": "Masz już konto?",
+      "signIn": "Zaloguj się",
+      "passwordRequirement": "Hasło musi mieć co najmniej 8 znaków"
+    }
+  },
+  "common": {
+    "loading": "Ładowanie...",
+    "error": "Wystąpił błąd",
+    "retry": "Spróbuj ponownie",
+    "save": "Zapisz",
+    "cancel": "Anuluj",
+    "edit": "Edytuj",
+    "delete": "Usuń",
+    "confirm": "Potwierdź",
+    "yes": "Tak",
+    "no": "Nie",
+    "footer": {
+      "version": "Sonicus v1.0.0 - Aplikacja Terapii Audio",
+      "tagline": "Powered by Elefefe"
+    }
+  }
+}

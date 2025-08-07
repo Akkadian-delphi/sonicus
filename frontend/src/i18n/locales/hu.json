@@ -1,0 +1,219 @@
+{
+  "navbar": {
+    "sounds": "Hangok",
+    "profile": "Profil",
+    "admin": "Adminisztrátor",
+    "welcome": "Üdvözöljük, {{name}}",
+    "signOut": "Kijelentkezés",
+    "signIn": "Bejelentkezés",
+    "getStarted": "Kezdés"
+  },
+  "homepage": {
+    "hero": {
+      "title": "Fedezze Fel a Hang Gyógyító Erejét",
+      "subtitle": "Alakítsa át jóllétét terápiás hanggyógyítással, amelyet mély relaxációra, stresszcsökkentésre és mentális tisztaságra terveztek.",
+      "cta": "Kezdje El Útját",
+      "learnMore": "Tudjon meg többet"
+    },
+    "features": {
+      "title": "Tökéletes Minden Wellness Igényhez",
+      "useCases": {
+        "sleep": {
+          "title": "Alvászavarok",
+          "description": "Álmatlanság, nyugtalan alvás vagy elalvásnehézségek"
+        },
+        "stress": {
+          "title": "Stressz és Szorongás",
+          "description": "Napi stressz, munkahelyi nyomás vagy szorongáskezelés"
+        },
+        "meditation": {
+          "title": "Meditációs Gyakorlat",
+          "description": "Fejlessze meditációját vezetett hangtájképekkel"
+        },
+        "workplace": {
+          "title": "Munkahelyi Wellness",
+          "description": "Javítsa a koncentrációt és csökkentse a munkahelyi stresszt"
+        },
+        "recovery": {
+          "title": "Gyógyulási Támogatás",
+          "description": "Természetesen támogassa a gyógyulási és helyreállítási folyamatokat"
+        },
+        "study": {
+          "title": "Tanulás és Koncentráció",
+          "description": "Növelje a koncentrációt és a tanulási teljesítményt"
+        }
+      },
+      "scientifically": {
+        "title": "Tudományosan Bizonyított",
+        "description": "Terápiás hangjaink a hanggyógyításban és az idegtudományban bizonyított kutatásokon alapulnak."
+      },
+      "personalized": {
+        "title": "Személyre Szabott Élmény",
+        "description": "Testreszabott hangterápiás ülések, amelyek alkalmazkodnak egyedi wellness igényeihez és preferenciáihoz."
+      },
+      "professional": {
+        "title": "Professzionális Minőség",
+        "description": "Nagy pontosságú audio, amelyet hangterápiás szakértők terveztek a maximális terápiás előny érdekében."
+      },
+      "accessible": {
+        "title": "Mindig Elérhető",
+        "description": "Hozzáférés gyógyító hangjaihoz bármikor, bárhol, bármilyen eszközről."
+      },
+      "naturalHealing": {
+        "title": "Természetes Gyógyítás"
+      }
+    },
+    "whatWeDo": {
+      "title": "Mit Csinál a Sonicus?",
+      "description": "A Sonicus a terápiás hanggyógyításra specializálódik - egy bizonyított wellness gyakorlatra, amely specifikus hangfrekvenciákat, természeti hangokat és gondosan kialakított hangtájképeket használ a gyógyítás és relaxáció előmozdítására. Platformunk azonnali hozzáférést biztosít egy professzionális szintű terápiás hangkönyvtárhoz, amelyet meditációhoz, stresszcsökkentéshez, alvásjavításhoz és általános mentális egészség támogatásához használhat.",
+      "keyBenefits": {
+        "title": "A Sonicus Használatának Fő Előnyei:",
+        "stressReduction": {
+          "title": "Stresszcsökkentés:",
+          "description": "Csökkentse a kortizolszintet megnyugtató hangtájképekkel"
+        },
+        "betterSleep": {
+          "title": "Jobb Alvás:",
+          "description": "Javítsa az alvás minőségét speciális alváselősegítő hangokkal"
+        },
+        "enhancedFocus": {
+          "title": "Fokozott Koncentráció:",
+          "description": "Növelje a koncentrációt környezeti fókuszhangokkal"
+        },
+        "emotionalBalance": {
+          "title": "Érzelmi Egyensúly:",
+          "description": "Szabályozza a hangulatot és az érzelmeket terápiás frekvenciákkal"
+        },
+        "painManagement": {
+          "title": "Fájdalomkezelés:",
+          "description": "Természetes fájdalomcsillapítás hangterápiás technikákkal"
+        },
+        "meditationSupport": {
+          "title": "Meditációs Támogatás:",
+          "description": "Mélyítse el meditációs gyakorlatát vezetett hangtartalommal"
+        }
+      }
+    },
+    "howItWorks": {
+      "title": "Hogyan Működik a Sonicus",
+      "curatedLibrary": {
+        "title": "🎵 Kurátorált Hangkönyvtár",
+        "description": "Hozzáférés több száz professzionálisan elkészített terápiás hanghoz, természeti hangtájképektől binaurális ütemekig, mind specifikus wellness eredményekre tervezve."
+      },
+      "evidenceBased": {
+        "title": "🧘 Bizonyítékalapú Terápia",
+        "description": "Hangtartalmunk tudományos kutatásokon alapul a hangterápia, idegtudományok és wellness pszichológia területén a maximális terápiás előny érdekében."
+      },
+      "instantStreaming": {
+        "title": "📱 Azonnali Streaming",
+        "description": "Streamelj kiváló minőségű terápiás audiót azonnal bármilyen eszközön - letöltés nem szükséges. Tökéletes otthoni, irodai vagy utazási használatra."
+      },
+      "personalJourney": {
+        "title": "🎯 Személyes Wellness Utazás",
+        "description": "Kövesse nyomon hallgatási szokásait, fedezzen fel új terápiás hangokat, és építsen fel személyre szabott wellness rutinokat igényeihez igazítva."
+      },
+      "privateSecure": {
+        "title": "🔒 Privát és Biztonságos",
+        "description": "Személyes wellness adatai teljesen privátak multi-tenant architektúránkkal - minden felhasználó saját biztonságos adatbázis-területet kap."
+      },
+      "smartRecommendations": {
+        "title": "⚡ Okos Ajánlások",
+        "description": "AI-vezérelt rendszerünk megtanulja preferenciáit és javasolja a tökéletes terápiás hangokat jelenlegi igényeihez és wellness céljaihoz."
+      }
+    },
+    "cta": {
+      "title": "Készen Áll a Jóllétének Átalakítására?",
+      "authenticatedDescription": "Folytassa wellness útját terápiás hanggyógyító platformunkkal.",
+      "guestDescription": "Csatlakozzon több ezer felhasználóhoz, akik felfedezték a terápiás hanggyógyítás életváltoztató erejét. Válassza ki előfizetési szintjét és tapasztalja meg a különbséget, amit a professzionális hangterápia tehet.",
+      "buttons": {
+        "exploreSounds": "Hangok Felfedezése",
+        "dashboard": "Irányítópultom",
+        "startTrial": "Ingyenes Próba Kezdése",
+        "signIn": "Bejelentkezés"
+      }
+    },
+    "subscriptionTiers": {
+      "starter": {
+        "name": "Kezdő",
+        "price": "Ingyenes",
+        "features": {
+          "sessions": "3 napi ülés",
+          "timeLimit": "15 perces korlát",
+          "content": "Alapvető tartalomkönyvtár",
+          "analytics": "Személyes elemzések"
+        }
+      },
+      "premium": {
+        "name": "Prémium",
+        "price": "2990 Ft/hó",
+        "features": {
+          "sessions": "10 napi ülés",
+          "timeLimit": "60 perces ülések",
+          "content": "Teljes tartalomkönyvtár",
+          "analytics": "Haladó elemzések",
+          "tracking": "Wellness követés"
+        }
+      },
+      "pro": {
+        "name": "Profi",
+        "price": "5990 Ft/hó",
+        "features": {
+          "sessions": "Korlátlan ülések",
+          "timeLimit": "Korlátlan hosszúság",
+          "content": "Prémium exkluzív tartalom",
+          "insights": "Haladó betekintések",
+          "support": "Elsőbbségi támogatás"
+        }
+      }
+    },
+    "science": {
+      "title": "A Hangterápia Mögött Álló Tudomány",
+      "intro": "A hangterápiát kiterjedt tudományos kutatás támogatja.",
+      "description": "Tanulmányok kimutatták, hogy specifikus hangfrekvenciák befolyásolhatják az agylapmintákat, csökkenthetik a kortizolszinteket és kiválthatják a test természetes relaxációs válaszát. Terápiás hangjaink az idegtudományok, pszichológia és hagyományos gyógyító gyakorlatok elveit használják mérhető wellness előnyök nyújtására.",
+      "highlights": {
+        "stressReduction": "Klinikailag bizonyított stresszcsökkentés",
+        "neuroplasticity": "Neuroplaszticitás fejlesztése",
+        "sleep": "Javított alvásarchitektúra",
+        "cognitive": "Javított fókusz és kognitív teljesítmény"
+      }
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Üdvözöljük Vissza",
+      "email": "E-mail Cím",
+      "password": "Jelszó",
+      "submit": "Bejelentkezés",
+      "forgotPassword": "Elfelejtette jelszavát?",
+      "noAccount": "Nincs fiókja?",
+      "signUp": "Regisztráljon"
+    },
+    "register": {
+      "title": "Hozza Létre Fiókját",
+      "name": "Teljes Név",
+      "email": "E-mail Cím",
+      "password": "Jelszó",
+      "confirmPassword": "Jelszó Megerősítése",
+      "submit": "Kezdés",
+      "hasAccount": "Már van fiókja?",
+      "signIn": "Bejelentkezés",
+      "passwordRequirement": "A jelszónak legalább 8 karakter hosszúnak kell lennie"
+    }
+  },
+  "common": {
+    "loading": "Betöltés...",
+    "error": "Hiba történt",
+    "retry": "Újra",
+    "save": "Mentés",
+    "cancel": "Mégse",
+    "edit": "Szerkesztés",
+    "delete": "Törlés",
+    "confirm": "Megerősítés",
+    "yes": "Igen",
+    "no": "Nem",
+    "footer": {
+      "version": "Sonicus v1.0.0 - Hangterápiás Alkalmazás",
+      "tagline": "Powered by Elefefe"
+    }
+  }
+}

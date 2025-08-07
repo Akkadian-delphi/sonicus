@@ -1,0 +1,82 @@
+{
+  "short_name": "Sonicus Admin",
+  "name": "Sonicus Wellness Admin Platform",
+  "description": "Mobile-first admin interface for Sonicus wellness platform with offline capabilities",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable any"
+    }
+  ],
+  "start_url": "/admin",
+  "display": "standalone",
+  "orientation": "any",
+  "theme_color": "#4a90e2",
+  "background_color": "#ffffff",
+  "scope": "/",
+  "categories": ["business", "productivity", "wellness"],
+  "shortcuts": [
+    {
+      "name": "Dashboard",
+      "short_name": "Dashboard",
+      "description": "View admin dashboard",
+      "url": "/admin",
+      "icons": [{ "src": "logo192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Organizations",
+      "short_name": "Organizations",
+      "description": "Manage organizations",
+      "url": "/admin/organizations",
+      "icons": [{ "src": "logo192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Users",
+      "short_name": "Users",
+      "description": "Manage users",
+      "url": "/admin/users",
+      "icons": [{ "src": "logo192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Analytics",
+      "short_name": "Analytics",
+      "description": "View wellness analytics",
+      "url": "/admin/analytics",
+      "icons": [{ "src": "logo192.png", "sizes": "192x192" }]
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "screenshot-mobile.png",
+      "type": "image/png",
+      "sizes": "375x812",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "screenshot-desktop.png",
+      "type": "image/png", 
+      "sizes": "1280x800",
+      "form_factor": "wide"
+    }
+  ],
+  "prefer_related_applications": false,
+  "edge_side_panel": {
+    "preferred_width": 400
+  },
+  "launch_handler": {
+    "client_mode": "navigate-existing"
+  }
+}

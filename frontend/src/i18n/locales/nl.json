@@ -1,0 +1,219 @@
+{
+  "navbar": {
+    "sounds": "Geluiden",
+    "profile": "Profiel",
+    "admin": "Beheerder",
+    "welcome": "Welkom, {{name}}",
+    "signOut": "Uitloggen",
+    "signIn": "Inloggen",
+    "getStarted": "Begin Nu"
+  },
+  "homepage": {
+    "hero": {
+      "title": "Ontdek de Helende Kracht van Geluid",
+      "subtitle": "Transformeer je welzijn met therapeutische geluidsgenezing ontworpen voor diepe ontspanning, stressverlichting en mentale helderheid.",
+      "cta": "Begin Je Reis",
+      "learnMore": "Meer Weten"
+    },
+    "features": {
+      "title": "Perfect voor Elke Welzijnsbehoefte",
+      "useCases": {
+        "sleep": {
+          "title": "Slaapstoornissen",
+          "description": "Slapeloosheid, onrustige slaap of problemen met inslapen"
+        },
+        "stress": {
+          "title": "Stress & Angst",
+          "description": "Dagelijkse stress, werkdruk of angstbeheersing"
+        },
+        "meditation": {
+          "title": "Meditatiepraktijk",
+          "description": "Verbeter je meditatie met begeleide geluidslandschappen"
+        },
+        "workplace": {
+          "title": "Werkplaatswelzijn",
+          "description": "Verbeter focus en verminder werkplaatsstress"
+        },
+        "recovery": {
+          "title": "Herstelondersteuning",
+          "description": "Ondersteun genezings- en herstelprocessen natuurlijk"
+        },
+        "study": {
+          "title": "Studie & Focus",
+          "description": "Verhoog concentratie en leerprestaties"
+        }
+      },
+      "scientifically": {
+        "title": "Wetenschappelijk Onderbouwd",
+        "description": "Onze therapeutische geluiden zijn gebaseerd op bewezen onderzoek in geluidsgenezing en neurowetenschappen."
+      },
+      "personalized": {
+        "title": "Gepersonaliseerde Ervaring",
+        "description": "Op maat gemaakte geluidstherapiesessies die zich aanpassen aan je unieke welzijnsbehoeften en voorkeuren."
+      },
+      "professional": {
+        "title": "Professionele Kwaliteit",
+        "description": "High-fidelity audio ontworpen door geluidstherapie-experts voor maximaal therapeutisch voordeel."
+      },
+      "accessible": {
+        "title": "Altijd Toegankelijk",
+        "description": "Toegang tot je helende geluiden altijd, overal, vanaf elk apparaat."
+      },
+      "naturalHealing": {
+        "title": "Natuurlijke Genezing"
+      }
+    },
+    "whatWeDo": {
+      "title": "Wat Doet Sonicus?",
+      "description": "Sonicus is gespecialiseerd in therapeutische geluidsgenezing - een bewezen welzijnspraktijk die specifieke audiofrequenties, natuurgeluiden en zorgvuldig vervaardigde geluidslandschappen gebruikt om genezing en ontspanning te bevorderen. Ons platform biedt je directe toegang tot een professionele bibliotheek van therapeutische geluiden die je kunt gebruiken voor meditatie, stressverlichting, slaapverbetering en algemene ondersteuning van geestelijke gezondheid.",
+      "keyBenefits": {
+        "title": "Belangrijkste Voordelen van Sonicus:",
+        "stressReduction": {
+          "title": "Stressvermindering:",
+          "description": "Verlaag cortisolniveaus door kalmerende geluidslandschappen"
+        },
+        "betterSleep": {
+          "title": "Betere Slaap:",
+        "description": "Verbeter slaapkwaliteit met gespecialiseerde slaapbevorderende geluiden"
+        },
+        "enhancedFocus": {
+          "title": "Verbeterde Focus:",
+          "description": "Verhoog concentratie met omgevingsgeluiden voor focus"
+        },
+        "emotionalBalance": {
+          "title": "Emotionele Balans:",
+          "description": "Reguleer stemming en emoties door therapeutische frequenties"
+        },
+        "painManagement": {
+          "title": "Pijnbeheersing:",
+          "description": "Natuurlijke pijnverlichting door geluidstherapietechnieken"
+        },
+        "meditationSupport": {
+          "title": "Meditatieondersteuning:",
+          "description": "Verdiep je meditatiepraktijk met begeleide audio"
+        }
+      }
+    },
+    "howItWorks": {
+      "title": "Hoe Sonicus Werkt",
+      "curatedLibrary": {
+        "title": "🎵 Samengestelde Geluidsbibliotheek",
+        "description": "Toegang tot honderden professioneel vervaardigde therapeutische geluiden, van natuurgeluidslandschappen tot binaurale beats, allemaal ontworpen voor specifieke welzijnsresultaten."
+      },
+      "evidenceBased": {
+        "title": "🧘 Evidence-Based Therapie",
+        "description": "Onze audio-inhoud is gebaseerd op wetenschappelijk onderzoek in geluidstherapie, neurowetenschappen en welzijnspsychologie voor maximaal therapeutisch voordeel."
+      },
+      "instantStreaming": {
+        "title": "📱 Directe Streaming",
+        "description": "Stream hoogkwalitatieve therapeutische audio direct op elk apparaat - geen downloads vereist. Perfect voor thuis, kantoor of onderweg."
+      },
+      "personalJourney": {
+        "title": "🎯 Persoonlijke Welzijnsreis",
+        "description": "Volg je luistergewoonten, ontdek nieuwe therapeutische geluiden en bouw gepersonaliseerde welzijnsroutines op maat voor jouw behoeften."
+      },
+      "privateSecure": {
+        "title": "🔒 Privé & Veilig",
+        "description": "Je persoonlijke welzijnsgegevens zijn volledig privé met onze multi-tenant architectuur - elke gebruiker krijgt zijn eigen veilige databaseruimte."
+      },
+      "smartRecommendations": {
+        "title": "⚡ Slimme Aanbevelingen",
+        "description": "Ons AI-aangedreven systeem leert je voorkeuren en stelt de perfecte therapeutische geluiden voor voor je huidige behoeften en welzijnsdoelen."
+      }
+    },
+    "cta": {
+      "title": "Klaar om Je Welzijn te Transformeren?",
+      "authenticatedDescription": "Ga verder met je welzijnsreis met ons therapeutische geluidsgenezingsplatform.",
+      "guestDescription": "Sluit je aan bij duizenden gebruikers die de levensveranderende kracht van therapeutische geluidsgenezing hebben ontdekt. Kies je abonnementsniveau en ervaar het verschil dat professionele audiotherapie kan maken.",
+      "buttons": {
+        "exploreSounds": "Geluiden Verkennen",
+        "dashboard": "Mijn Dashboard",
+        "startTrial": "Start Gratis Proefperiode",
+        "signIn": "Inloggen"
+      }
+    },
+    "subscriptionTiers": {
+      "starter": {
+        "name": "Starter",
+        "price": "Gratis",
+        "features": {
+          "sessions": "3 dagelijkse sessies",
+          "timeLimit": "15-minuten limiet",
+          "content": "Basis inhoudsbibliotheek",
+          "analytics": "Persoonlijke analyses"
+        }
+      },
+      "premium": {
+        "name": "Premium",
+        "price": "€9,99/maand",
+        "features": {
+          "sessions": "10 dagelijkse sessies",
+          "timeLimit": "60-minuten sessies",
+          "content": "Volledige inhoudsbibliotheek",
+          "analytics": "Geavanceerde analyses",
+          "tracking": "Welzijns tracking"
+        }
+      },
+      "pro": {
+        "name": "Pro",
+        "price": "€19,99/maand",
+        "features": {
+          "sessions": "Onbeperkte sessies",
+          "timeLimit": "Onbeperkte lengte",
+          "content": "Premium exclusieve inhoud",
+          "insights": "Geavanceerde inzichten",
+          "support": "Prioriteitsondersteuning"
+        }
+      }
+    },
+    "science": {
+      "title": "De Wetenschap Achter Geluidstherapie",
+      "intro": "Geluidstherapie wordt ondersteund door uitgebreid wetenschappelijk onderzoek.",
+      "description": "Onderzoeken hebben aangetoond dat specifieke audiofrequenties hersenpatronen kunnen beïnvloeden, cortisolniveaus kunnen verlagen en de natuurlijke ontspanningsreactie van het lichaam kunnen activeren. Onze therapeutische geluiden gebruiken principes uit de neurowetenschappen, psychologie en traditionele genezingspraktijken om meetbare welzijnsvoordelen te bieden.",
+      "highlights": {
+        "stressReduction": "Klinisch bewezen stressvermindering",
+        "neuroplasticity": "Neuroplasticiteitsverbetering",
+        "sleep": "Verbeterde slaaparchitectuur",
+        "cognitive": "Verbeterde focus en cognitieve prestaties"
+      }
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Welkom Terug",
+      "email": "E-mailadres",
+      "password": "Wachtwoord",
+      "submit": "Inloggen",
+      "forgotPassword": "Wachtwoord vergeten?",
+      "noAccount": "Geen account?",
+      "signUp": "Registreren"
+    },
+    "register": {
+      "title": "Maak Je Account Aan",
+      "name": "Volledige Naam",
+      "email": "E-mailadres",
+      "password": "Wachtwoord",
+      "confirmPassword": "Bevestig Wachtwoord",
+      "submit": "Begin",
+      "hasAccount": "Al een account?",
+      "signIn": "Inloggen",
+      "passwordRequirement": "Wachtwoord moet minimaal 8 karakters lang zijn"
+    }
+  },
+  "common": {
+    "loading": "Laden...",
+    "error": "Er is een fout opgetreden",
+    "retry": "Opnieuw proberen",
+    "save": "Opslaan",
+    "cancel": "Annuleren",
+    "edit": "Bewerken",
+    "delete": "Verwijderen",
+    "confirm": "Bevestigen",
+    "yes": "Ja",
+    "no": "Nee",
+    "footer": {
+      "version": "Sonicus v1.0.0 - Audio Therapie Applicatie",
+      "tagline": "Powered by Elefefe"
+    }
+  }
+}

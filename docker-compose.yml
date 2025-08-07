@@ -1,0 +1,84 @@
+services:
+  postgres:
+    image: postgres:15
+    container_name: sonicus-postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: e1efefe
+      POSTGRES_DB: sonicus_db
+      POSTGRES_INITDB_ARGS: "--encoding=UTF-8 --locale=C"
+    ports:
+      - "5433:5432"  # Map host port 5433 to container port 5432
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./backend/docker-init.sql:/docker-entrypoint-initdb.d/docker-init.sql:ro
+    networks:
+      - sonicus-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d sonicus_db"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  redis:
+    image: redis:7-alpine
+    container_name: sonicus-redis
+    command: redis-server --requirepass e1efefe
+    environment:
+      REDIS_PASSWORD: e1efefe
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    networks:
+      - sonicus-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "redis-cli", "--raw", "incr", "ping"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+
+  # Optional: Add the backend service for full containerization
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: sonicus-backend
+    environment:
+      - POSTGRES_SERVER=postgres
+      - POSTGRES_PORT=5432
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=e1efefe
+      - POSTGRES_DB=sonicus_db
+      - POSTGRES_SCHEMA=sonicus
+      - DATABASE_URL=postgresql+asyncpg://postgres:e1efefe@postgres:5432/sonicus_db?options=-csearch_path%3Dsonicus
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+      - REDIS_PASSWORD=e1efefe
+      - DEBUG=True
+      - DOCKER_ENV=true
+    ports:
+      - "18100:18100"
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    networks:
+      - sonicus-network
+    restart: unless-stopped
+    volumes:
+      - ./backend:/app
+    working_dir: /app
+
+volumes:
+  postgres_data:
+    driver: local
+  redis_data:
+    driver: local
+
+networks:
+  sonicus-network:
+    driver: bridge

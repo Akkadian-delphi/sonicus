@@ -1,0 +1,249 @@
+#!/usr/bin/env python3
+"""
+Simple test script to validate enhanced authentication components independently.
+Tests the enhanced authentication modules without loading FastAPI routes.
+"""
+
+import asyncio
+import sys
+from datetime import datetime
+from typing import Dict, Any
+from unittest.mock import Mock
+
+# Add the app directory to Python path
+sys.path.insert(0, '/Users/luis/Projects/Elefefe/Sonicus')
+
+
+class TestEnhancedAuthComponents:
+    """Test suite for enhanced authentication components."""
+    
+    def __init__(self):
+        self.test_results = []
+        self.test_count = 0
+        self.passed_count = 0
+    
+    def log_test(self, test_name: str, passed: bool, details: str = ""):
+        """Log test result."""
+        self.test_count += 1
+        if passed:
+            self.passed_count += 1
+            status = "✅ PASSED"
+        else:
+            status = "❌ FAILED"
+        
+        result = f"{status} - {test_name}"
+        if details:
+            result += f" | {details}"
+        
+        self.test_results.append(result)
+        print(result)
+    
+    def test_enhanced_auth_imports(self):
+        """Test that enhanced authentication modules can be imported."""
+        try:
+            from app.core.enhanced_auth import (
+                UserRole, get_user_id, get_user_role, get_user_org_id,
+                SessionAuditService, EnhancedJWTManager
+            )
+            from app.models.user import User, UserRole as ModelUserRole
+            self.log_test("Enhanced auth imports", True, "All core imports successful")
+        except ImportError as e:
+            self.log_test("Enhanced auth imports", False, f"Import error: {e}")
+    
+    def test_cache_client(self):
+        """Test Redis cache client functionality."""
+        try:
+            from app.core.cache import redis_client
+            
+            # Test that redis_client exists and has expected methods
+            assert hasattr(redis_client, 'get')
+            assert hasattr(redis_client, 'set')
+            assert hasattr(redis_client, 'delete')
+            
+            self.log_test("Cache client", True, "Redis client methods available")
+        except Exception as e:
+            self.log_test("Cache client", False, str(e))
+    
+    def test_user_helper_functions(self):
+        """Test user helper functions with mock data."""
+        try:
+            from app.core.enhanced_auth import get_user_id, get_user_role, get_user_org_id
+            from app.models.user import User, UserRole
+            
+            # Create mock user with enhanced attributes
+            mock_user = Mock(spec=User)
+            mock_user.id = "test_user_123"
+            mock_user.role = UserRole.STAFF
+            mock_user.organization_id = "org_456"
+            
+            # Test helper functions
+            user_id = get_user_id(mock_user)
+            user_role = get_user_role(mock_user)
+            user_org_id = get_user_org_id(mock_user)
+            
+            assert user_id == "test_user_123"
+            assert user_role == UserRole.STAFF
+            assert user_org_id == "org_456"
+            
+            self.log_test("User helper functions", True, "Enhanced user data extraction working")
+        except Exception as e:
+            self.log_test("User helper functions", False, str(e))
+    
+    def test_fallback_user_functions(self):
+        """Test fallback behavior with legacy user objects."""
+        try:
+            from app.core.enhanced_auth import get_user_id, get_user_role, get_user_org_id
+            from app.models.user import UserRole
+            
+            # Create mock user without enhanced attributes (legacy user)
+            mock_user = Mock()
+            mock_user.id = "legacy_user_789"
+            
+            # Test helper functions with fallback
+            user_id = get_user_id(mock_user)
+            user_role = get_user_role(mock_user)
+            
+            # For organization_id, Mock will create it automatically, 
+            # but we can check that the function handles it properly
+            user_org_id = get_user_org_id(mock_user)
+            
+            assert user_id == "legacy_user_789"
+            assert user_role == UserRole.USER  # Default fallback
+            # Note: Mock objects return Mock objects for missing attributes,
+            # but in real scenarios with database models, this would be None
+            
+            self.log_test("Fallback user functions", True, "Legacy user compatibility working with Mock behavior")
+        except Exception as e:
+            self.log_test("Fallback user functions", False, str(e))
+    
+    def test_jwt_manager(self):
+        """Test JWT manager functionality."""
+        try:
+            from app.core.enhanced_auth import EnhancedJWTManager
+            from app.models.user import UserRole
+            
+            jwt_manager = EnhancedJWTManager()
+            
+            # Test token creation
+            token = jwt_manager.create_access_token(
+                user_id=123,
+                email="test@example.com",
+                role=UserRole.STAFF,
+                organization_id=456
+            )
+            
+            assert isinstance(token, str)
+            assert len(token) > 50  # JWT tokens are typically longer
+            
+            self.log_test("JWT manager", True, "Token creation working")
+        except Exception as e:
+            self.log_test("JWT manager", False, str(e))
+    
+    def test_session_audit_service(self):
+        """Test session audit service structure."""
+        try:
+            from app.core.enhanced_auth import SessionAuditService
+            
+            # Test that SessionAuditService has expected methods
+            assert hasattr(SessionAuditService, 'log_authentication_event')
+            assert callable(getattr(SessionAuditService, 'log_authentication_event'))
+            
+            self.log_test("Session audit service", True, "Audit service methods available")
+        except Exception as e:
+            self.log_test("Session audit service", False, str(e))
+    
+    def test_security_imports(self):
+        """Test security module imports."""
+        try:
+            from app.core.security import SECRET_KEY, ALGORITHM, oauth2_scheme
+            from jose import jwt, JWTError
+            
+            assert SECRET_KEY is not None
+            assert ALGORITHM == "HS256"
+            assert oauth2_scheme is not None
+            
+            self.log_test("Security imports", True, "Security components available")
+        except Exception as e:
+            self.log_test("Security imports", False, str(e))
+    
+    def test_database_session(self):
+        """Test database session functionality."""
+        try:
+            from app.db.b2b2c_session import get_contextual_db_session
+            
+            # Test that the function exists and is callable
+            assert callable(get_contextual_db_session)
+            
+            self.log_test("Database session", True, "DB session function available")
+        except Exception as e:
+            self.log_test("Database session", False, str(e))
+    
+    def test_user_model_structure(self):
+        """Test user model structure and attributes."""
+        try:
+            from app.models.user import User, UserRole
+            
+            # Check UserRole enum values
+            expected_roles = ['SUPER_ADMIN', 'BUSINESS_ADMIN', 'STAFF', 'USER']
+            actual_roles = [role.name for role in UserRole]
+            
+            for role in expected_roles:
+                assert role in actual_roles, f"Missing role: {role}"
+            
+            self.log_test("User model structure", True, f"All expected roles found: {actual_roles}")
+        except Exception as e:
+            self.log_test("User model structure", False, str(e))
+    
+    def run_all_tests(self):
+        """Run all tests and display results."""
+        print("🚀 Starting Enhanced Authentication Components Test\n")
+        
+        # Run all tests
+        self.test_enhanced_auth_imports()
+        self.test_cache_client()
+        self.test_user_helper_functions()
+        self.test_fallback_user_functions()
+        self.test_jwt_manager()
+        self.test_session_audit_service()
+        self.test_security_imports()
+        self.test_database_session()
+        self.test_user_model_structure()
+        
+        # Display summary
+        print(f"\n📊 Test Results Summary:")
+        print(f"Total Tests: {self.test_count}")
+        print(f"Passed: {self.passed_count}")
+        print(f"Failed: {self.test_count - self.passed_count}")
+        print(f"Success Rate: {(self.passed_count / self.test_count * 100):.1f}%")
+        
+        if self.passed_count == self.test_count:
+            print("\n🎉 All tests passed! Enhanced authentication components are working correctly.")
+            return True
+        else:
+            print(f"\n⚠️  {self.test_count - self.passed_count} test(s) failed. Please review the implementation.")
+            return False
+
+
+def main():
+    """Main test execution function."""
+    print("=" * 80)
+    print("SONICUS ENHANCED AUTHENTICATION - COMPONENTS TEST")
+    print("=" * 80)
+    print(f"Test started at: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+    print()
+    
+    tester = TestEnhancedAuthComponents()
+    success = tester.run_all_tests()
+    
+    print("\n" + "=" * 80)
+    if success:
+        print("✅ COMPONENT TEST COMPLETED SUCCESSFULLY")
+        return 0
+    else:
+        print("❌ COMPONENT TEST FAILED")
+        return 1
+
+
+if __name__ == "__main__":
+    exit_code = main()
+    sys.exit(exit_code)

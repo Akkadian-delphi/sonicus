@@ -1,0 +1,158 @@
+{
+  "navbar": {
+    "sounds": "Sons",
+    "profile": "Perfil",
+    "admin": "Administrador",
+    "welcome": "Bem-vindo, {{name}}",
+    "signOut": "Terminar Sessão",
+    "signIn": "Iniciar Sessão",
+    "getStarted": "Começar"
+  },
+  "homepage": {
+    "hero": {
+      "title": "Descubra o Poder Curativo do Som",
+      "subtitle": "Transforme o seu bem-estar com cura sonora terapêutica concebida para relaxamento profundo, alívio do stress e clareza mental.",
+      "cta": "Comece a sua Jornada",
+      "learnMore": "Saber Mais"
+    },
+    "features": {
+      "title": "Perfeito para Qualquer Necessidade de Bem-estar",
+      "useCases": {
+        "sleep": {
+          "title": "Perturbações do Sono",
+          "description": "Insónia, sono inquieto ou dificuldade em adormecer"
+        },
+        "stress": {
+          "title": "Stress e Ansiedade",
+          "description": "Stress diário, pressão no trabalho ou gestão da ansiedade"
+        },
+        "meditation": {
+          "title": "Prática de Meditação",
+          "description": "Melhore a sua meditação com paisagens sonoras guiadas"
+        },
+        "workplace": {
+          "title": "Bem-estar no Trabalho",
+          "description": "Melhore o foco e reduza o stress no trabalho"
+        },
+        "recovery": {
+          "title": "Apoio à Recuperação",
+          "description": "Apoie naturalmente os processos de cura e recuperação"
+        },
+        "study": {
+          "title": "Estudo e Concentração",
+          "description": "Melhore a concentração e o desempenho da aprendizagem"
+        }
+      },
+      "scientifically": {
+        "title": "Cientificamente Comprovado",
+        "description": "Os nossos sons terapêuticos baseiam-se em investigação comprovada em cura sonora e neurociências."
+      },
+      "personalized": {
+        "title": "Experiência Personalizada",
+        "description": "Sessões de terapia sonora adaptadas às suas necessidades e preferências únicas de bem-estar."
+      },
+      "professional": {
+        "title": "Qualidade Profissional",
+        "description": "Áudio de alta fidelidade concebido por especialistas em terapia sonora para máximo benefício terapêutico."
+      },
+      "accessible": {
+        "title": "Sempre Acessível",
+        "description": "Aceda aos seus sons curativos a qualquer hora, em qualquer lugar, de qualquer dispositivo."
+      }
+    },
+    "cta": {
+      "title": "Pronto para Transformar o seu Bem-estar?",
+      "authenticatedDescription": "Continue a sua jornada de bem-estar com a nossa plataforma de cura sonora terapêutica.",
+      "guestDescription": "Junte-se a milhares de utilizadores que descobriram o poder transformador da cura sonora terapêutica. Escolha o seu nível de subscrição e experimente a diferença que a terapia de áudio profissional pode fazer.",
+      "buttons": {
+        "exploreSounds": "Explorar Sons",
+        "dashboard": "O meu Painel",
+        "startTrial": "Iniciar Teste Gratuito",
+        "signIn": "Iniciar Sessão"
+      }
+    },
+    "subscriptionTiers": {
+      "starter": {
+        "name": "Iniciante",
+        "price": "Gratuito",
+        "features": {
+          "sessions": "3 sessões diárias",
+          "timeLimit": "Limite de 15 minutos",
+          "content": "Biblioteca de conteúdo básico",
+          "analytics": "Análises pessoais"
+        }
+      },
+      "premium": {
+        "name": "Premium",
+        "price": "9,99€/mês",
+        "features": {
+          "sessions": "10 sessões diárias",
+          "timeLimit": "Sessões de 60 minutos",
+          "content": "Biblioteca completa de conteúdo",
+          "analytics": "Análises avançadas",
+          "tracking": "Acompanhamento de bem-estar"
+        }
+      },
+      "pro": {
+        "name": "Pro",
+        "price": "19,99€/mês",
+        "features": {
+          "sessions": "Sessões ilimitadas",
+          "timeLimit": "Duração ilimitada",
+          "content": "Conteúdo exclusivo premium",
+          "insights": "Insights avançados",
+          "support": "Apoio prioritário"
+        }
+      }
+    },
+    "science": {
+      "title": "A Ciência Por Trás da Terapia Sonora",
+      "intro": "A terapia sonora é apoiada por extensa investigação científica.",
+      "description": "Estudos demonstraram que frequências de áudio específicas podem influenciar padrões de ondas cerebrais, reduzir níveis de cortisol e desencadear a resposta natural de relaxamento do corpo. Os nossos sons terapêuticos utilizam princípios da neurociência, psicologia e práticas de cura tradicionais para fornecer benefícios mensuráveis de bem-estar.",
+      "highlights": {
+        "stressReduction": "Redução do stress clinicamente comprovada",
+        "neuroplasticity": "Melhoria da neuroplasticidade",
+        "sleep": "Arquitectura do sono melhorada",
+        "cognitive": "Foco e desempenho cognitivo aprimorados"
+      }
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Bem-vindo de Volta",
+      "email": "Endereço de Email",
+      "password": "Palavra-passe",
+      "submit": "Iniciar Sessão",
+      "forgotPassword": "Esqueceu-se da sua palavra-passe?",
+      "noAccount": "Não tem conta?",
+      "signUp": "Registar-se"
+    },
+    "register": {
+      "title": "Crie a sua Conta",
+      "name": "Nome Completo",
+      "email": "Endereço de Email",
+      "password": "Palavra-passe",
+      "confirmPassword": "Confirmar Palavra-passe",
+      "submit": "Começar",
+      "hasAccount": "Já tem uma conta?",
+      "signIn": "Iniciar sessão",
+      "passwordRequirement": "A palavra-passe deve ter pelo menos 8 caracteres"
+    }
+  },
+  "common": {
+    "loading": "A carregar...",
+    "error": "Ocorreu um erro",
+    "retry": "Tentar novamente",
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "edit": "Editar",
+    "delete": "Eliminar",
+    "confirm": "Confirmar",
+    "yes": "Sim",
+    "no": "Não",
+    "footer": {
+      "version": "Sonicus v1.0.0 - Aplicação de Terapia de Áudio",
+      "tagline": "Desenvolvido pela Elefefe"
+    }
+  }
+}

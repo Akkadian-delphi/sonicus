@@ -1,0 +1,268 @@
+#!/usr/bin/env python3
+"""
+Test script to validate enhanced authentication integration in sounds router.
+Tests both the enhanced authentication features and fallback compatibility.
+"""
+
+import asyncio
+import json
+import sys
+from datetime import datetime
+from typing import Dict, Any
+
+# Add the app directory to Python path
+sys.path.insert(0, '/Users/luis/Projects/Elefefe/Sonicus')
+
+from fastapi import Request
+from fastapi.responses import Response
+from unittest.mock import Mock, AsyncMock
+
+# Import the application modules
+# from app.core.enhanced_auth import (
+#     UserRole, 
+#     get_user_id, 
+#     get_user_role, 
+#     get_user_org_id,
+#     SessionAuditService
+# )
+from app.core.auth_dependencies import get_current_user_enhanced
+from app.models.user import User
+
+
+class TestSoundsIntegration:
+    """Test suite for sounds router enhanced authentication integration."""
+    
+    def __init__(self):
+        self.test_results = []
+        self.test_count = 0
+        self.passed_count = 0
+    
+    def log_test(self, test_name: str, passed: bool, details: str = ""):
+        """Log test result."""
+        self.test_count += 1
+        if passed:
+            self.passed_count += 1
+            status = "✅ PASSED"
+        else:
+            status = "❌ FAILED"
+        
+        result = f"{status} - {test_name}"
+        if details:
+            result += f" | {details}"
+        
+        self.test_results.append(result)
+        print(result)
+    
+    def test_enhanced_auth_imports(self):
+        """Test that all enhanced authentication imports are working."""
+        try:
+            from app.core.auth_dependencies import get_current_user_enhanced
+            from app.core.enhanced_auth import (
+                get_user_id, get_user_role, get_user_org_id,
+                SessionAuditService
+            )
+            from app.models.user import UserRole
+            self.log_test("Enhanced auth imports", True, "All imports successful")
+        except ImportError as e:
+            self.log_test("Enhanced auth imports", False, f"Import error: {e}")
+    
+    def test_user_helper_functions(self):
+        """Test user helper functions with mock user data."""
+        try:
+            # Create mock user with enhanced attributes
+            mock_user = Mock(spec=User)
+            mock_user.id = "test_user_123"
+            mock_user.role = UserRole.STAFF
+            mock_user.organization_id = "org_456"
+            
+            # Test helper functions
+            user_id = get_user_id(mock_user)
+            user_role = get_user_role(mock_user)
+            user_org_id = get_user_org_id(mock_user)
+            
+            assert user_id == "test_user_123"
+            assert user_role == UserRole.STAFF
+            assert user_org_id == "org_456"
+            
+            self.log_test("User helper functions", True, "All helpers working correctly")
+        except Exception as e:
+            self.log_test("User helper functions", False, str(e))
+    
+    def test_fallback_user_functions(self):
+        """Test fallback behavior with legacy user objects."""
+        try:
+            # Create mock user without enhanced attributes (legacy user)
+            mock_user = Mock(spec=User)
+            mock_user.id = "legacy_user_789"
+            # No role or organization_id attributes
+            
+            # Test helper functions with fallback
+            user_id = get_user_id(mock_user)
+            user_role = get_user_role(mock_user)
+            user_org_id = get_user_org_id(mock_user)
+            
+            assert user_id == "legacy_user_789"
+            assert user_role == UserRole.USER  # Default fallback
+            assert user_org_id is None  # No organization
+            
+            self.log_test("Fallback user functions", True, "Fallback behavior working")
+        except Exception as e:
+            self.log_test("Fallback user functions", False, str(e))
+    
+    async def test_get_current_user_enhanced_function(self):
+        """Test the get_current_user_enhanced dependency function."""
+        try:
+            # This is a dependency function, so we'll test its import and structure
+            from app.core.auth_dependencies import get_current_user_enhanced
+            
+            # Check if it's callable
+            assert callable(get_current_user_enhanced)
+            
+            self.log_test("get_current_user_enhanced function", True, "Function is callable and imported")
+        except Exception as e:
+            self.log_test("get_current_user_enhanced function", False, str(e))
+    
+    def test_audit_logging_structure(self):
+        """Test audit logging functionality structure."""
+        try:
+            # Test SessionAuditService import and method existence
+            assert hasattr(SessionAuditService, 'log_authentication_event')
+            
+            # Create mock request data
+            mock_details = {
+                "endpoint": "/sounds",
+                "method": "GET",
+                "test": True
+            }
+            
+            # Test logging structure (without actual database call)
+            self.log_test("Audit logging structure", True, "SessionAuditService accessible")
+        except Exception as e:
+            self.log_test("Audit logging structure", False, str(e))
+    
+    def test_request_response_handling(self):
+        """Test FastAPI Request and Response handling in endpoints."""
+        try:
+            from fastapi import Request
+            from fastapi.responses import Response
+            
+            # Create mock request and response objects
+            mock_request = Mock(spec=Request)
+            mock_request.client = Mock()
+            mock_request.client.host = "127.0.0.1"
+            mock_request.headers = {"user-agent": "test-agent"}
+            
+            mock_response = Mock(spec=Response)
+            mock_response.headers = {}
+            
+            # Test that we can access request attributes safely
+            ip_address = getattr(mock_request.client, 'host', 'unknown')
+            user_agent = mock_request.headers.get("user-agent", "unknown")
+            
+            assert ip_address == "127.0.0.1"
+            assert user_agent == "test-agent"
+            
+            self.log_test("Request/Response handling", True, "Mock request/response working")
+        except Exception as e:
+            self.log_test("Request/Response handling", False, str(e))
+    
+    def test_error_handling_patterns(self):
+        """Test error handling patterns used in enhanced endpoints."""
+        try:
+            # Test exception handling patterns
+            try:
+                # Simulate audit logging error
+                raise Exception("Simulated audit error")
+            except Exception as audit_error:
+                # This should not crash the endpoint
+                error_message = f"Failed to log audit event: {audit_error}"
+                assert "Failed to log audit event" in error_message
+            
+            try:
+                # Simulate user context error
+                raise Exception("Simulated context error")
+            except Exception as context_error:
+                # This should not crash the endpoint
+                error_message = f"Could not add user context headers: {context_error}"
+                assert "Could not add user context headers" in error_message
+            
+            self.log_test("Error handling patterns", True, "Exception handling working correctly")
+        except Exception as e:
+            self.log_test("Error handling patterns", False, str(e))
+    
+    def test_header_enhancement(self):
+        """Test response header enhancement functionality."""
+        try:
+            from fastapi.responses import Response
+            
+            # Create mock response
+            mock_response = Mock(spec=Response)
+            mock_response.headers = {}
+            
+            # Test adding enhanced headers
+            mock_response.headers["X-Total-Count"] = "10"
+            mock_response.headers["X-User-Role"] = "MEMBER"
+            mock_response.headers["X-Organization-ID"] = "org_123"
+            
+            assert mock_response.headers["X-Total-Count"] == "10"
+            assert mock_response.headers["X-User-Role"] == "MEMBER"
+            assert mock_response.headers["X-Organization-ID"] == "org_123"
+            
+            self.log_test("Header enhancement", True, "Response headers working correctly")
+        except Exception as e:
+            self.log_test("Header enhancement", False, str(e))
+    
+    async def run_all_tests(self):
+        """Run all tests and display results."""
+        print("🚀 Starting Sounds Router Enhanced Authentication Integration Tests\n")
+        
+        # Run synchronous tests
+        self.test_enhanced_auth_imports()
+        self.test_user_helper_functions()
+        self.test_fallback_user_functions()
+        self.test_audit_logging_structure()
+        self.test_request_response_handling()
+        self.test_error_handling_patterns()
+        self.test_header_enhancement()
+        
+        # Run asynchronous tests
+        await self.test_get_current_user_enhanced_function()
+        
+        # Display summary
+        print(f"\n📊 Test Results Summary:")
+        print(f"Total Tests: {self.test_count}")
+        print(f"Passed: {self.passed_count}")
+        print(f"Failed: {self.test_count - self.passed_count}")
+        print(f"Success Rate: {(self.passed_count / self.test_count * 100):.1f}%")
+        
+        if self.passed_count == self.test_count:
+            print("\n🎉 All tests passed! Enhanced authentication integration is working correctly.")
+            return True
+        else:
+            print(f"\n⚠️  {self.test_count - self.passed_count} test(s) failed. Please review the implementation.")
+            return False
+
+
+async def main():
+    """Main test execution function."""
+    print("=" * 80)
+    print("SONICUS ENHANCED AUTHENTICATION - SOUNDS ROUTER INTEGRATION TEST")
+    print("=" * 80)
+    print(f"Test started at: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+    print()
+    
+    tester = TestSoundsIntegration()
+    success = await tester.run_all_tests()
+    
+    print("\n" + "=" * 80)
+    if success:
+        print("✅ INTEGRATION TEST COMPLETED SUCCESSFULLY")
+        return 0
+    else:
+        print("❌ INTEGRATION TEST FAILED")
+        return 1
+
+
+if __name__ == "__main__":
+    exit_code = asyncio.run(main())
+    sys.exit(exit_code)

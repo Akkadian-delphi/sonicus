@@ -1,0 +1,485 @@
+/* PWA-specific styles */
+
+/* Offline indicator */
+.offline-indicator {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(135deg, #ff6b6b, #ffa726);
+  color: white;
+  padding: 0.75rem;
+  text-align: center;
+  transform: translateY(-100%);
+  transition: transform var(--transition-base);
+  z-index: var(--z-tooltip);
+  box-shadow: var(--shadow-md);
+}
+
+.offline-indicator.show {
+  transform: translateY(0);
+}
+
+.offline-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.offline-icon {
+  font-size: 1.2rem;
+}
+
+.offline-text {
+  font-weight: 600;
+  margin-right: 0.5rem;
+}
+
+.offline-subtext {
+  font-size: var(--font-size-sm);
+  opacity: 0.9;
+}
+
+@media (max-width: 576px) {
+  .offline-subtext {
+    display: none;
+  }
+}
+
+/* Update notification */
+.update-notification {
+  position: fixed;
+  bottom: 2rem;
+  left: 1rem;
+  right: 1rem;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem;
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-lg);
+  z-index: var(--z-tooltip);
+  animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.update-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.update-text {
+  flex: 1;
+  font-weight: 500;
+}
+
+.update-btn,
+.dismiss-btn {
+  min-width: auto;
+  padding: 0.5rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.update-btn {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.dismiss-btn {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Install prompt */
+.install-prompt {
+  position: fixed;
+  bottom: 2rem;
+  left: 1rem;
+  right: 1rem;
+  background-color: white;
+  border: 1px solid var(--gray-300);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-lg);
+  padding: 1.5rem;
+  z-index: var(--z-tooltip);
+  animation: slideUp 0.3s ease;
+}
+
+.install-prompt-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.install-prompt-icon {
+  width: 48px;
+  height: 48px;
+  background-color: var(--primary-color);
+  border-radius: var(--border-radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+.install-prompt-title {
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  margin: 0;
+}
+
+.install-prompt-description {
+  color: var(--gray-600);
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.install-prompt-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.install-prompt-actions .btn {
+  flex: 1;
+}
+
+/* Toast notifications */
+.mobile-toast .toast-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.toast-message {
+  flex: 1;
+  margin-right: 1rem;
+}
+
+.toast-close {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--gray-500);
+  cursor: pointer;
+  padding: 0;
+  min-height: auto;
+  min-width: auto;
+}
+
+/* PWA-specific layout adjustments */
+@media (display-mode: standalone) {
+  /* Adjustments for when app is installed as PWA */
+  body {
+    padding-top: env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+  }
+
+  .mobile-nav-header {
+    padding-top: calc(1rem + env(safe-area-inset-top));
+  }
+
+  .fab-container {
+    bottom: calc(2rem + env(safe-area-inset-bottom));
+    right: calc(2rem + env(safe-area-inset-right));
+  }
+
+  .offline-indicator {
+    top: env(safe-area-inset-top);
+  }
+
+  .update-notification,
+  .install-prompt {
+    bottom: calc(2rem + env(safe-area-inset-bottom));
+    left: calc(1rem + env(safe-area-inset-left));
+    right: calc(1rem + env(safe-area-inset-right));
+  }
+}
+
+/* iOS-specific adjustments */
+@supports (-webkit-touch-callout: none) {
+  /* iOS Safari */
+  .form-control {
+    font-size: 16px; /* Prevent zoom on focus */
+  }
+
+  .btn {
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: var(--border-radius);
+  }
+
+  /* Handle iOS status bar in PWA */
+  @media (display-mode: standalone) {
+    .mobile-nav-header {
+      padding-top: calc(1rem + 44px); /* iOS status bar height */
+    }
+  }
+}
+
+/* Android-specific adjustments */
+@media (max-width: 767px) and (orientation: portrait) {
+  /* Android Chrome */
+  .container {
+    padding-left: calc(var(--spacing-md) + env(safe-area-inset-left));
+    padding-right: calc(var(--spacing-md) + env(safe-area-inset-right));
+  }
+}
+
+/* Splash screen styles */
+.pwa-splash {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  transition: opacity var(--transition-slow);
+}
+
+.pwa-splash.fade-out {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.splash-logo {
+  width: 120px;
+  height: 120px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
+}
+
+.splash-title {
+  font-size: var(--font-size-3xl);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.splash-subtitle {
+  font-size: var(--font-size-lg);
+  opacity: 0.9;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.splash-loading {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.splash-spinner {
+  width: 24px;
+  height: 24px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top: 2px solid white;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.splash-loading-text {
+  font-size: var(--font-size-base);
+  opacity: 0.9;
+}
+
+/* Connection quality indicator */
+.connection-indicator {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius-full);
+  font-size: var(--font-size-sm);
+  z-index: var(--z-fixed);
+  opacity: 0;
+  transition: opacity var(--transition-base);
+}
+
+.connection-indicator.show {
+  opacity: 1;
+}
+
+.connection-dots {
+  display: flex;
+  gap: 2px;
+}
+
+.connection-dot {
+  width: 4px;
+  height: 12px;
+  background-color: var(--gray-500);
+  border-radius: 2px;
+}
+
+.connection-dot.active {
+  background-color: var(--success-color);
+}
+
+.connection-dot.slow {
+  background-color: var(--warning-color);
+}
+
+.connection-dot.offline {
+  background-color: var(--danger-color);
+}
+
+/* Enhanced touch targets for accessibility */
+@media (pointer: coarse) {
+  .btn,
+  .form-control,
+  .nav-link,
+  a {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  /* Increase touch target for small interactive elements */
+  .toast-close,
+  .modal-close-btn,
+  .search-clear-btn {
+    min-height: 44px;
+    min-width: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .offline-indicator,
+  .update-notification,
+  .install-prompt,
+  .pwa-splash {
+    animation: none;
+    transition: none;
+  }
+
+  .splash-logo {
+    animation: none;
+  }
+
+  .splash-spinner {
+    animation: none;
+    border: 2px solid white;
+  }
+}
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+  .offline-indicator {
+    border: 2px solid white;
+  }
+
+  .update-notification,
+  .install-prompt {
+    border-width: 2px;
+  }
+
+  .connection-indicator {
+    border: 1px solid white;
+  }
+}
+
+/* Dark mode adjustments */
+@media (prefers-color-scheme: dark) {
+  .install-prompt {
+    background-color: var(--gray-800);
+    border-color: var(--gray-600);
+  }
+
+  .install-prompt-description {
+    color: var(--gray-400);
+  }
+
+  .connection-indicator {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+  }
+}
+
+/* Print styles */
+@media print {
+  .offline-indicator,
+  .update-notification,
+  .install-prompt,
+  .fab-container,
+  .connection-indicator,
+  .mobile-toast {
+    display: none !important;
+  }
+}
+
+/* Landscape orientation adjustments for mobile */
+@media (max-width: 767px) and (orientation: landscape) {
+  .mobile-nav-header {
+    padding: 0.5rem 1rem;
+  }
+
+  .mobile-nav-title {
+    font-size: var(--font-size-lg);
+  }
+
+  .admin-nav-tabs {
+    width: 240px;
+  }
+
+  .touch-modal {
+    max-height: 80vh;
+  }
+
+  .install-prompt {
+    left: 2rem;
+    right: 2rem;
+    bottom: 1rem;
+  }
+}

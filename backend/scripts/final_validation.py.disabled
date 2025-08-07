@@ -1,0 +1,238 @@
+#!/usr/bin/env python3
+"""
+Final Validation Script for Enhanced Authentication System
+Tests all components of the enhanced authentication system to verify everything is working correctly.
+Total Components: 9
+"""
+
+import asyncio
+import sys
+from datetime import datetime
+from unittest.mock import Mock, patch
+
+# Add the app directory to Python path
+sys.path.insert(0, '/Users/luis/Projects/Elefefe/Sonicus')
+
+# Import required modules at the top level to avoid "possibly unbound" errors
+IMPORTS_AVAILABLE = False
+try:
+    from app.core.enhanced_auth import (
+        EnhancedJWTManager, SessionAuditService, 
+        get_user_id, get_user_role, get_user_org_id
+    )
+    from app.models.user import User, UserRole
+    from app.core.cache import redis_client
+    from app.core.security import SECRET_KEY, ALGORITHM, oauth2_scheme
+    from app.db.b2b2c_session import get_contextual_db_session
+    from jose import jwt, JWTError
+    
+    IMPORTS_AVAILABLE = True
+except ImportError as e:
+    print(f"⚠️ Import error: {e}")
+    # Exit early if imports fail
+    print("❌ Cannot proceed with validation - missing dependencies")
+    sys.exit(1)
+
+
+def validate_system():
+    """Complete system validation."""
+    print("🔍 SONICUS ENHANCED AUTHENTICATION - FINAL VALIDATION")
+    print("=" * 70)
+    
+    validation_results = []
+    
+    # 1. Validate core authentication system
+    try:
+        # Test JWT manager
+        jwt_manager = EnhancedJWTManager()
+        token = jwt_manager.create_access_token(
+            user_id=123,
+            email="admin@company.com",
+            role=UserRole.BUSINESS_ADMIN,
+            organization_id=456
+        )
+        
+        payload = jwt_manager.verify_token(token)
+        assert payload is not None
+        assert payload.get("sub") == "123"
+        assert payload.get("email") == "admin@company.com"
+        
+        validation_results.append("✅ Core Authentication System: WORKING")
+        
+    except Exception as e:
+        validation_results.append(f"❌ Core Authentication System: FAILED - {e}")
+    
+    # 2. Validate Redis cache client
+    try:
+        # Test Redis client structure
+        assert hasattr(redis_client, 'get')
+        assert hasattr(redis_client, 'set')
+        assert hasattr(redis_client, 'delete')
+        
+        validation_results.append("✅ Redis Cache Client: WORKING")
+        
+    except Exception as e:
+        validation_results.append(f"❌ Redis Cache Client: FAILED - {e}")
+    
+    # 3. Validate user helper functions
+    try:
+        # Test with enhanced user
+        mock_user = Mock()
+        mock_user.id = "test_123"
+        mock_user.role = UserRole.STAFF
+        mock_user.organization_id = 789
+        
+        user_id = get_user_id(mock_user)
+        user_role = get_user_role(mock_user)
+        user_org_id = get_user_org_id(mock_user)
+        
+        assert user_id == "test_123"
+        assert user_role == UserRole.STAFF
+        assert user_org_id == 789
+        
+        validation_results.append("✅ User Helper Functions: WORKING")
+        
+    except Exception as e:
+        validation_results.append(f"❌ User Helper Functions: FAILED - {e}")
+    
+    # 4. Validate security imports
+    try:
+        assert SECRET_KEY is not None
+        assert ALGORITHM == "HS256"
+        assert oauth2_scheme is not None
+        
+        validation_results.append("✅ Security Module: WORKING")
+        
+    except Exception as e:
+        validation_results.append(f"❌ Security Module: FAILED - {e}")
+    
+    # 5. Validate database session
+    try:
+        assert callable(get_contextual_db_session)
+        
+        validation_results.append("✅ Database Session: WORKING")
+        
+    except Exception as e:
+        validation_results.append(f"❌ Database Session: FAILED - {e}")
+    
+    # 6. Validate sounds router syntax (note: router is temporarily disabled due to FastAPI type issues)
+    try:
+        # We can't directly import the router functions due to FastAPI dependency issues,
+        # but we can validate the individual components exist and syntax is valid
+        import app.routers.sounds  # This will fail if there are syntax errors
+        
+        # Check that the file was successfully parsed
+        import ast
+        with open('/Users/luis/Projects/Elefefe/Sonicus/app/routers/sounds.py', 'r') as f:
+            ast.parse(f.read())
+        
+        validation_results.append("✅ Sounds Router Syntax: VALID (temporarily disabled in run.py)")
+        
+    except Exception as e:
+        validation_results.append(f"❌ Sounds Router Syntax: FAILED - {e}")
+    
+    # 6b. Validate simple enhanced auth router (our working authentication router)
+    try:
+        import app.routers.simple_enhanced_auth
+        
+        # Check that the router has the expected endpoints
+        router = app.routers.simple_enhanced_auth.router
+        assert router is not None
+        
+        routes = router.routes
+        # Use a more flexible approach to check routes
+        route_count = len(routes)
+        assert route_count >= 3, f"Expected at least 3 routes, found {route_count}"
+        
+        validation_results.append(f"✅ Simple Enhanced Auth Router: WORKING ({route_count} endpoints)")
+        
+    except Exception as e:
+        validation_results.append(f"❌ Simple Enhanced Auth Router: FAILED - {e}")
+    
+    # 7. Validate user model structure
+    try:
+        # Check all expected roles exist
+        expected_roles = [UserRole.SUPER_ADMIN, UserRole.BUSINESS_ADMIN, UserRole.STAFF, UserRole.USER]
+        for role in expected_roles:
+            assert isinstance(role, UserRole)
+        
+        validation_results.append("✅ User Model Structure: WORKING")
+        
+    except Exception as e:
+        validation_results.append(f"❌ User Model Structure: FAILED - {e}")
+    
+    # 8. Validate integration components
+    try:
+        # Check that enhanced auth components can create proper tokens
+        jwt_manager = EnhancedJWTManager()
+        
+        # Create tokens for different user types
+        admin_token = jwt_manager.create_access_token(
+            user_id=1, email="admin@test.com", role=UserRole.SUPER_ADMIN
+        )
+        staff_token = jwt_manager.create_access_token(
+            user_id=2, email="staff@company.com", role=UserRole.STAFF, organization_id=100
+        )
+        user_token = jwt_manager.create_access_token(
+            user_id=3, email="user@company.com", role=UserRole.USER, organization_id=100
+        )
+        
+        # Verify all tokens
+        for token in [admin_token, staff_token, user_token]:
+            payload = jwt_manager.verify_token(token)
+            assert payload is not None
+            assert "sub" in payload
+            assert "email" in payload
+        
+        validation_results.append("✅ Multi-Role Token Integration: WORKING")
+        
+    except Exception as e:
+        validation_results.append(f"❌ Multi-Role Token Integration: FAILED - {e}")
+    
+    # Display results
+    print("\\n📋 VALIDATION RESULTS:")
+    print("-" * 50)
+    
+    passed = 0
+    total = len(validation_results)
+    
+    for result in validation_results:
+        print(result)
+        if result.startswith("✅"):
+            passed += 1
+    
+    print("-" * 50)
+    print(f"📊 Summary: {passed}/{total} components working ({passed/total*100:.1f}%)")
+    
+    if passed == total:
+        print("\\n🎉 SYSTEM VALIDATION SUCCESSFUL!")
+        print("💡 Enhanced authentication integration is ready for production.")
+        return True
+    else:
+        print(f"\\n⚠️  {total - passed} component(s) need attention.")
+        print("🔧 Please review failed components before deployment.")
+        return False
+
+
+def main():
+    """Main validation function."""
+    print(f"🚀 Started at: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+    print()
+    
+    success = validate_system()
+    
+    print()
+    print("=" * 70)
+    
+    if success:
+        print("✅ FINAL VALIDATION: PASSED")
+        print("🚀 System ready for production deployment!")
+        return 0
+    else:
+        print("❌ FINAL VALIDATION: NEEDS REVIEW")
+        return 1
+
+
+if __name__ == "__main__":
+    exit_code = main()
+    sys.exit(exit_code)

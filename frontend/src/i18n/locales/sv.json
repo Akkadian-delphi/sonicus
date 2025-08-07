@@ -1,0 +1,219 @@
+{
+  "navbar": {
+    "sounds": "Ljud",
+    "profile": "Profil",
+    "admin": "Admin",
+    "welcome": "Välkommen, {{name}}",
+    "signOut": "Logga ut",
+    "signIn": "Logga in",
+    "getStarted": "Kom igång"
+  },
+  "homepage": {
+    "hero": {
+      "title": "Upptäck Ljudets Helande Kraft",
+      "subtitle": "Transformera ditt välbefinnande med terapeutisk ljudhealing designad för djup avslappning, stresslindring och mental klarhet.",
+      "cta": "Starta Din Resa",
+      "learnMore": "Läs mer"
+    },
+    "features": {
+      "title": "Perfekt för Alla Välbefinnandebehov",
+      "useCases": {
+        "sleep": {
+          "title": "Sömnstörningar",
+          "description": "Sömnlöshet, rastlös sömn eller svårigheter att somna"
+        },
+        "stress": {
+          "title": "Stress & Ångest",
+          "description": "Daglig stress, arbetstryck eller ångesthantering"
+        },
+        "meditation": {
+          "title": "Meditationspraktik",
+          "description": "Förbättra din meditation med guidade ljudlandskap"
+        },
+        "workplace": {
+          "title": "Arbetsplatswellness",
+          "description": "Förbättra fokus och minska arbetsplatsstress"
+        },
+        "recovery": {
+          "title": "Återhämtningsstöd",
+          "description": "Stöd läknings- och återhämtningsprocesser naturligt"
+        },
+        "study": {
+          "title": "Studier & Fokus",
+          "description": "Öka koncentration och inlärningsprestanda"
+        }
+      },
+      "scientifically": {
+        "title": "Vetenskapligt Bevisat",
+        "description": "Våra terapeutiska ljud är baserade på beprövad forskning inom ljudhealing och neurovetenskap."
+      },
+      "personalized": {
+        "title": "Personlig Upplevelse",
+        "description": "Skräddarsydda ljudterapisessioner som anpassas till dina unika välbefinnandebehov och preferenser."
+      },
+      "professional": {
+        "title": "Professionell Kvalitet",
+        "description": "High-fidelity audio designad av ljudterapi-experter för maximal terapeutisk nytta."
+      },
+      "accessible": {
+        "title": "Alltid Tillgängligt",
+        "description": "Få tillgång till dina helande ljud när som helst, var som helst, från vilken enhet som helst."
+      },
+      "naturalHealing": {
+        "title": "Naturlig Healing"
+      }
+    },
+    "whatWeDo": {
+      "title": "Vad Gör Sonicus?",
+      "description": "Sonicus specialiserar sig på terapeutisk ljudhealing - en beprövad wellnesspraktik som använder specifika audiofrekvenser, naturljud och noggrant utformade ljudlandskap för att främja healing och avslappning. Vår plattform ger dig omedelbar tillgång till ett professionellt bibliotek av terapeutiska ljud som du kan använda för meditation, stresslindring, sömnförbättring och allmänt stöd för mental hälsa.",
+      "keyBenefits": {
+        "title": "Huvudsakliga Fördelar med att Använda Sonicus:",
+        "stressReduction": {
+          "title": "Stressminskning:",
+          "description": "Sänk kortisolnivåer genom lugnande ljudlandskap"
+        },
+        "betterSleep": {
+          "title": "Bättre Sömn:",
+          "description": "Förbättra sömnkvaliteten med specialiserade sömnfrämjande ljud"
+        },
+        "enhancedFocus": {
+          "title": "Förbättrat Fokus:",
+          "description": "Öka koncentrationen med omgivande fokusljud"
+        },
+        "emotionalBalance": {
+          "title": "Känslomässig Balans:",
+          "description": "Reglera humör och känslor genom terapeutiska frekvenser"
+        },
+        "painManagement": {
+          "title": "Smärthantering:",
+          "description": "Naturlig smärtlindring genom ljudterapitekniker"
+        },
+        "meditationSupport": {
+          "title": "Meditationsstöd:",
+          "description": "Fördjupa din meditationspraktik med guidad audio"
+        }
+      }
+    },
+    "howItWorks": {
+      "title": "Hur Sonicus Fungerar",
+      "curatedLibrary": {
+        "title": "🎵 Kurerat Ljudbibliotek",
+        "description": "Få tillgång till hundratals professionellt utformade terapeutiska ljud, från naturljudlandskap till binaurala beats, alla designade för specifika wellnessresultat."
+      },
+      "evidenceBased": {
+        "title": "🧘 Evidensbaserad Terapi",
+        "description": "Vårt ljudinnehåll är baserat på vetenskaplig forskning inom ljudterapi, neurovetenskap och wellnesspsykologi för maximal terapeutisk nytta."
+      },
+      "instantStreaming": {
+        "title": "📱 Omedelbar Streaming",
+        "description": "Streama högkvalitativt terapeutiskt ljud omedelbart på vilken enhet som helst - inga nedladdningar krävs. Perfekt för hem, kontor eller resebruk."
+      },
+      "personalJourney": {
+        "title": "🎯 Personlig Wellnessresa",
+        "description": "Spåra dina lyssnarvanor, upptäck nya terapeutiska ljud och bygg personliga wellnessrutiner skräddarsydda för dina behov."
+      },
+      "privateSecure": {
+        "title": "🔒 Privat & Säkert",
+        "description": "Din personliga wellnessdata är helt privat med vår multi-tenant arkitektur - varje användare får sitt eget säkra databasutrymme."
+      },
+      "smartRecommendations": {
+        "title": "⚡ Smarta Rekommendationer",
+        "description": "Vårt AI-drivna system lär sig dina preferenser och föreslår de perfekta terapeutiska ljuden för dina nuvarande behov och wellnessmål."
+      }
+    },
+    "cta": {
+      "title": "Redo att Transformera Ditt Välbefinnande?",
+      "authenticatedDescription": "Fortsätt din wellnessresa med vår terapeutiska ljudhealingplattform.",
+      "guestDescription": "Gå med tusentals användare som har upptäckt den livsförändrande kraften av terapeutisk ljudhealing. Välj din prenumerationsnivå och upplev skillnaden som professionell ljudterapi kan göra.",
+      "buttons": {
+        "exploreSounds": "Utforska Ljud",
+        "dashboard": "Min Dashboard",
+        "startTrial": "Starta Gratis Testperiod",
+        "signIn": "Logga In"
+      }
+    },
+    "subscriptionTiers": {
+      "starter": {
+        "name": "Nybörjare",
+        "price": "Gratis",
+        "features": {
+          "sessions": "3 dagliga sessioner",
+          "timeLimit": "15-minuters gräns",
+          "content": "Grundläggande innehållsbibliotek",
+          "analytics": "Personlig analys"
+        }
+      },
+      "premium": {
+        "name": "Premium",
+        "price": "99 kr/månad",
+        "features": {
+          "sessions": "10 dagliga sessioner",
+          "timeLimit": "60-minuters sessioner",
+          "content": "Fullständigt innehållsbibliotek",
+          "analytics": "Avancerad analys",
+          "tracking": "Wellness spårning"
+        }
+      },
+      "pro": {
+        "name": "Pro",
+        "price": "199 kr/månad",
+        "features": {
+          "sessions": "Obegränsade sessioner",
+          "timeLimit": "Obegränsad längd",
+          "content": "Premium exklusivt innehåll",
+          "insights": "Avancerade insikter",
+          "support": "Prioritetsstöd"
+        }
+      }
+    },
+    "science": {
+      "title": "Vetenskapen Bakom Ljudterapi",
+      "intro": "Ljudterapi stöds av omfattande vetenskaplig forskning.",
+      "description": "Studier har visat att specifika ljudfrekvenser kan påverka hjärnvågsmönster, sänka kortisolnivåer och utlösa kroppens naturliga avslappningsrespons. Våra terapeutiska ljud använder principer från neurovetenskap, psykologi och traditionella healingmetoder för att ge mätbara wellnessfördelar.",
+      "highlights": {
+        "stressReduction": "Kliniskt bevisad stressminskning",
+        "neuroplasticity": "Neuroplasticitetförbättring",
+        "sleep": "Förbättrad sömnarkitektur",
+        "cognitive": "Förbättrat fokus och kognitiv prestanda"
+      }
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Välkommen Tillbaka",
+      "email": "E-postadress",
+      "password": "Lösenord",
+      "submit": "Logga In",
+      "forgotPassword": "Glömt ditt lösenord?",
+      "noAccount": "Har du inget konto?",
+      "signUp": "Registrera dig"
+    },
+    "register": {
+      "title": "Skapa Ditt Konto",
+      "name": "Fullständigt Namn",
+      "email": "E-postadress",
+      "password": "Lösenord",
+      "confirmPassword": "Bekräfta Lösenord",
+      "submit": "Kom Igång",
+      "hasAccount": "Har du redan ett konto?",
+      "signIn": "Logga in",
+      "passwordRequirement": "Lösenordet måste vara minst 8 tecken långt"
+    }
+  },
+  "common": {
+    "loading": "Laddar...",
+    "error": "Ett fel uppstod",
+    "retry": "Försök igen",
+    "save": "Spara",
+    "cancel": "Avbryt",
+    "edit": "Redigera",
+    "delete": "Ta bort",
+    "confirm": "Bekräfta",
+    "yes": "Ja",
+    "no": "Nej",
+    "footer": {
+      "version": "Sonicus v1.0.0 - Ljudterapi Applikation",
+      "tagline": "Powered by Elefefe"
+    }
+  }
+}

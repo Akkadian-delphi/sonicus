@@ -1,0 +1,219 @@
+{
+  "navbar": {
+    "sounds": "Lyde",
+    "profile": "Profil",
+    "admin": "Administrator",
+    "welcome": "Velkommen, {{name}}",
+    "signOut": "Log ud",
+    "signIn": "Log ind",
+    "getStarted": "Kom i gang"
+  },
+  "homepage": {
+    "hero": {
+      "title": "Oplev Lydens Helbredende Kraft",
+      "subtitle": "Transformer dit velbefindende med terapeutisk lydhealing designet til dyb afslapning, stressaflastning og mental klarhed.",
+      "cta": "Start Din Rejse",
+      "learnMore": "Læs mere"
+    },
+    "features": {
+      "title": "Perfekt til Alle Wellness-behov",
+      "useCases": {
+        "sleep": {
+          "title": "Søvnforstyrrelser",
+          "description": "Søvnløshed, urolig søvn eller problemer med at falde i søvn"
+        },
+        "stress": {
+          "title": "Stress & Angst",
+          "description": "Daglig stress, arbejdspres eller angsthåndtering"
+        },
+        "meditation": {
+          "title": "Meditationspraksis",
+          "description": "Forbedr din meditation med guidede lydlandskaber"
+        },
+        "workplace": {
+          "title": "Arbejdsplads Wellness",
+          "description": "Forbedr fokus og reducer arbejdsplads stress"
+        },
+        "recovery": {
+          "title": "Rekreationsstøtte",
+          "description": "Støt helbredelses- og rekreationsprocesser naturligt"
+        },
+        "study": {
+          "title": "Studier & Fokus",
+          "description": "Boost koncentration og lærepræstation"
+        }
+      },
+      "scientifically": {
+        "title": "Videnskabeligt Dokumenteret",
+        "description": "Vores terapeutiske lyde er baseret på dokumenteret forskning inden for lydhealing og neurovidenskab."
+      },
+      "personalized": {
+        "title": "Personlig Oplevelse",
+        "description": "Skræddersyede lydterapi-sessioner der tilpasser sig dine unikke wellness-behov og præferencer."
+      },
+      "professional": {
+        "title": "Professionel Kvalitet",
+        "description": "High-fidelity audio designet af lydterapi-eksperter for maksimal terapeutisk fordel."
+      },
+      "accessible": {
+        "title": "Altid Tilgængelig",
+        "description": "Få adgang til dine helbredende lyde når som helst, hvor som helst, fra enhver enhed."
+      },
+      "naturalHealing": {
+        "title": "Naturlig Healing"
+      }
+    },
+    "whatWeDo": {
+      "title": "Hvad Laver Sonicus?",
+      "description": "Sonicus specialiserer sig i terapeutisk lydhealing - en dokumenteret wellness-praksis der bruger specifikke lydfrekvenser, naturlyde og omhyggeligt fremstillede lydlandskaber til at fremme healing og afslapning. Vores platform giver dig øjeblikkelig adgang til et professionelt bibliotek af terapeutiske lyde som du kan bruge til meditation, stressaflastning, søvnforbedring og generel mental sundhedsstøtte.",
+      "keyBenefits": {
+        "title": "Vigtige Fordele ved at Bruge Sonicus:",
+        "stressReduction": {
+          "title": "Stressreduktion:",
+          "description": "Sænk cortisolniveauer gennem beroligende lydlandskaber"
+        },
+        "betterSleep": {
+          "title": "Bedre Søvn:",
+          "description": "Forbedr søvnkvaliteten med specialiserede søvnfremmende lyde"
+        },
+        "enhancedFocus": {
+          "title": "Forbedret Fokus:",
+          "description": "Øg koncentrationen med omgivende fokuslyde"
+        },
+        "emotionalBalance": {
+          "title": "Følelsesmæssig Balance:",
+          "description": "Reguler humør og følelser gennem terapeutiske frekvenser"
+        },
+        "painManagement": {
+          "title": "Smertebehandling:",
+          "description": "Naturlig smertelindring gennem lydterapi-teknikker"
+        },
+        "meditationSupport": {
+          "title": "Meditationsstøtte:",
+          "description": "Gør din meditationspraksis dybere med guidet lyd"
+        }
+      }
+    },
+    "howItWorks": {
+      "title": "Hvordan Sonicus Virker",
+      "curatedLibrary": {
+        "title": "🎵 Kurateret Lydbibliotek",
+        "description": "Få adgang til hundredvis af professionelt fremstillede terapeutiske lyde, fra naturlydlandskaber til binaurale beats, alle designet til specifikke wellness-resultater."
+      },
+      "evidenceBased": {
+        "title": "🧘 Evidensbaseret Terapi",
+        "description": "Vores lydindhold er baseret på videnskabelig forskning inden for lydterapi, neurovidenskab og wellness-psykologi for maksimal terapeutisk fordel."
+      },
+      "instantStreaming": {
+        "title": "📱 Øjeblikkelig Streaming",
+        "description": "Stream højkvalitets terapeutisk lyd øjeblikkeligt på enhver enhed - ingen downloads påkrævet. Perfekt til hjemme-, kontor- eller rejsebrug."
+      },
+      "personalJourney": {
+        "title": "🎯 Personlig Wellness-rejse",
+        "description": "Følg dine lyttevaner, opdag nye terapeutiske lyde og byg personlige wellness-rutiner skræddersyet til dine behov."
+      },
+      "privateSecure": {
+        "title": "🔒 Privat & Sikker",
+        "description": "Dine personlige wellness-data er fuldstændig private med vores multi-tenant arkitektur - hver bruger får sit eget sikre database-rum."
+      },
+      "smartRecommendations": {
+        "title": "⚡ Smarte Anbefalinger",
+        "description": "Vores AI-drevne system lærer dine præferencer og foreslår de perfekte terapeutiske lyde til dine nuværende behov og wellness-mål."
+      }
+    },
+    "cta": {
+      "title": "Klar til at Transformere Dit Velbefindende?",
+      "authenticatedDescription": "Fortsæt din wellness-rejse med vores terapeutiske lydhealing-platform.",
+      "guestDescription": "Slut dig til tusindvis af brugere der har opdaget den livsændrende kraft af terapeutisk lydhealing. Vælg dit abonnementsniveau og oplev forskellen som professionel lydterapi kan gøre.",
+      "buttons": {
+        "exploreSounds": "Udforsk Lyde",
+        "dashboard": "Mit Dashboard",
+        "startTrial": "Start Gratis Prøveperiode",
+        "signIn": "Log Ind"
+      }
+    },
+    "subscriptionTiers": {
+      "starter": {
+        "name": "Begynder",
+        "price": "Gratis",
+        "features": {
+          "sessions": "3 daglige sessioner",
+          "timeLimit": "15-minutters grænse",
+          "content": "Grundlæggende indholdsbibliotek",
+          "analytics": "Personlig analyse"
+        }
+      },
+      "premium": {
+        "name": "Premium",
+        "price": "75 kr/måned",
+        "features": {
+          "sessions": "10 daglige sessioner",
+          "timeLimit": "60-minutters sessioner",
+          "content": "Fuldt indholdsbibliotek",
+          "analytics": "Avanceret analyse",
+          "tracking": "Wellness sporing"
+        }
+      },
+      "pro": {
+        "name": "Pro",
+        "price": "150 kr/måned",
+        "features": {
+          "sessions": "Ubegrænsede sessioner",
+          "timeLimit": "Ubegrænset længde",
+          "content": "Premium eksklusivt indhold",
+          "insights": "Avancerede indsigter",
+          "support": "Prioritetsstøtte"
+        }
+      }
+    },
+    "science": {
+      "title": "Videnskaben Bag Lydterapi",
+      "intro": "Lydterapi er bakket op af omfattende videnskabelig forskning.",
+      "description": "Studier har vist at specifikke lydfrekvenser kan påvirke hjernebølgemønstre, reducere cortisolniveauer og udløse kroppens naturlige afslappningsrespons. Vores terapeutiske lyde bruger principper fra neurovidenskab, psykologi og traditionelle healing-praksisser for at levere målbare wellness-fordele.",
+      "highlights": {
+        "stressReduction": "Klinisk dokumenteret stressreduktion",
+        "neuroplasticity": "Neuroplasticitetsforbedring",
+        "sleep": "Forbedret søvnarkitektur",
+        "cognitive": "Forbedret fokus og kognitiv præstation"
+      }
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Velkommen Tilbage",
+      "email": "E-mailadresse",
+      "password": "Adgangskode",
+      "submit": "Log Ind",
+      "forgotPassword": "Glemt din adgangskode?",
+      "noAccount": "Har du ikke en konto?",
+      "signUp": "Tilmeld dig"
+    },
+    "register": {
+      "title": "Opret Din Konto",
+      "name": "Fulde Navn",
+      "email": "E-mailadresse",
+      "password": "Adgangskode",
+      "confirmPassword": "Bekræft Adgangskode",
+      "submit": "Kom I Gang",
+      "hasAccount": "Har du allerede en konto?",
+      "signIn": "Log ind",
+      "passwordRequirement": "Adgangskoden skal være mindst 8 tegn lang"
+    }
+  },
+  "common": {
+    "loading": "Indlæser...",
+    "error": "Der opstod en fejl",
+    "retry": "Prøv igen",
+    "save": "Gem",
+    "cancel": "Annuller",
+    "edit": "Rediger",
+    "delete": "Slet",
+    "confirm": "Bekræft",
+    "yes": "Ja",
+    "no": "Nej",
+    "footer": {
+      "version": "Sonicus v1.0.0 - Lydterapi Applikation",
+      "tagline": "Powered by Elefefe"
+    }
+  }
+}

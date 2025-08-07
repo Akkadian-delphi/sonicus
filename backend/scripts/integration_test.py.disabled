@@ -1,0 +1,274 @@
+#!/usr/bin/env python3
+"""
+Complete Integration Test for Enhanced Authentication + API Integration
+
+This script demonstrates the full workflow:
+1. Create authentication tokens
+2. Make API calls with authentication
+3. Test different permission levels
+4. Show audit logging
+"""
+
+import sys
+import os
+import json
+from datetime import datetime
+
+# Add the app directory to Python path
+sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
+
+# from app.core.enhanced_auth import (
+#     UserRole, SessionType,
+#     jwt_manager, invitation_service, multi_org_manager,
+#     SessionAuditService, get_user_permissions
+# )
+
+def test_complete_authentication_workflow():
+    """Test complete authentication workflow"""
+    print("🔐 Enhanced Authentication Integration Test")
+    print("=" * 60)
+    
+    # Test users with different roles
+    test_users = [
+        {
+            "id": 1001,
+            "email": "admin@sonicus.com",
+            "role": UserRole.BUSINESS_ADMIN,
+            "org_id": 100
+        },
+        {
+            "id": 1002,
+            "email": "staff@sonicus.com", 
+            "role": UserRole.STAFF,
+            "org_id": 100
+        },
+        {
+            "id": 1003,
+            "email": "user@sonicus.com",
+            "role": UserRole.USER,
+            "org_id": 100
+        }
+    ]
+    
+    print("👥 Creating tokens for different user roles...")
+    tokens = {}
+    
+    for user in test_users:
+        permissions = get_user_permissions(user["role"], user["org_id"])
+        
+        access_token = jwt_manager.create_access_token(
+            user_id=user["id"],
+            email=user["email"],
+            role=user["role"],
+            organization_id=user["org_id"],
+            session_type=SessionType.WEB,
+            permissions=permissions
+        )
+        
+        tokens[user["role"].value] = {
+            "token": access_token,
+            "user": user,
+            "permissions": permissions
+        }
+        
+        print(f"✅ {user['role'].value:15} | {user['email']:20} | Permissions: {len(permissions)}")
+    
+    print(f"\n🎯 Testing API Access Patterns")
+    print("-" * 40)
+    
+    # Simulate API calls for different endpoints
+    api_endpoints = [
+        {"path": "/sounds", "required_permission": "read_sounds", "description": "List sounds"},
+        {"path": "/sounds/1", "required_permission": "read_sounds", "description": "Get specific sound"},
+        {"path": "/sounds/1/stream", "required_permission": "read_sounds", "description": "Stream sound"},
+        {"path": "/sounds", "required_permission": "manage_sounds", "description": "Create sound (POST)", "method": "POST"},
+        {"path": "/sounds/1", "required_permission": "manage_sounds", "description": "Delete sound", "method": "DELETE"},
+        {"path": "/users", "required_permission": "manage_users", "description": "Manage users"},
+    ]
+    
+    for endpoint in api_endpoints:
+        print(f"\n📡 Testing: {endpoint['description']}")
+        
+        for role_name, token_data in tokens.items():
+            user_permissions = token_data["permissions"]
+            required_perm = endpoint["required_permission"]
+            
+            # Check if user has permission
+            has_permission = required_perm in user_permissions or "*" in user_permissions
+            access_status = "✅ ALLOWED" if has_permission else "❌ DENIED"
+            
+            print(f"   {role_name:15} | {access_status}")
+            
+            # Log the API access attempt
+            SessionAuditService.log_authentication_event(
+                user_id=token_data["user"]["id"],
+                event_type="api_access_attempt",
+                details={
+                    "endpoint": endpoint["path"],
+                    "method": endpoint.get("method", "GET"),
+                    "required_permission": required_perm,
+                    "access_granted": has_permission
+                },
+                ip_address="127.0.0.1",
+                user_agent="Integration Test"
+            )
+    
+    print(f"\n🎫 Testing Organization Invitations")
+    print("-" * 40)
+    
+    # Create an invitation
+    invitation_token = invitation_service.create_invitation(
+        email="newuser@sonicus.com",
+        role=UserRole.STAFF,
+        organization_id=100,
+        message="Welcome to our team!"
+    )
+    
+    print(f"✅ Invitation created: {invitation_token[:50]}...")
+    
+    # Verify invitation
+    invitation_data = invitation_service.verify_invitation(invitation_token)
+    print(f"✅ Invitation verified for: {invitation_data['email']}")
+    print(f"   Role: {invitation_data['role']}")
+    print(f"   Organization: {invitation_data['organization_id']}")
+    
+    print(f"\n🏢 Testing Multi-Organization Access")
+    print("-" * 40)
+    
+    test_user_id = 1001
+    
+    # Grant access to multiple organizations
+    orgs = [
+        {"id": 100, "role": UserRole.BUSINESS_ADMIN, "name": "Sonicus Main"},
+        {"id": 101, "role": UserRole.STAFF, "name": "Sonicus Beta"},
+        {"id": 102, "role": UserRole.USER, "name": "Sonicus Demo"}
+    ]
+    
+    for org in orgs:
+        success = multi_org_manager.grant_organization_access(
+            user_id=test_user_id,
+            organization_id=org["id"],
+            role=org["role"]
+        )
+        print(f"✅ Access granted to {org['name']} (ID: {org['id']}) as {org['role'].value}")
+    
+    # Get user's organizations
+    user_orgs = multi_org_manager.get_user_organizations(test_user_id)
+    print(f"\n👤 User {test_user_id} has access to {len(user_orgs)} organizations:")
+    for org in user_orgs:
+        if isinstance(org, dict):
+            print(f"   Organization {org.get('organization_id')} as {org.get('role')}")
+    
+    print(f"\n📊 Testing Audit Logs")
+    print("-" * 40)
+    
+    # Get audit logs for our test users
+    for user in test_users[:2]:  # Just check first 2 users
+        audit_log = SessionAuditService.get_user_audit_log(user["id"], days=1)
+        print(f"👤 User {user['email']}: {len(audit_log)} audit events")
+        
+        # Show recent events
+        for event in audit_log[:3]:  # Show first 3 events
+            event_type = event.get("event_type", "unknown")
+            timestamp = event.get("timestamp", "unknown")
+            print(f"   📝 {timestamp[:19]} | {event_type}")
+    
+    print(f"\n🎉 Integration Test Complete!")
+    print("=" * 60)
+    
+    # Create a summary report
+    report = {
+        "test_timestamp": datetime.utcnow().isoformat(),
+        "users_tested": len(test_users),
+        "api_endpoints_tested": len(api_endpoints),
+        "organizations_tested": len(orgs),
+        "invitation_system": "working",
+        "multi_org_access": "working",
+        "audit_logging": "working",
+        "token_creation": "working",
+        "permission_checking": "working"
+    }
+    
+    print(f"\n📈 Test Summary:")
+    for key, value in report.items():
+        if key != "test_timestamp":
+            print(f"   {key.replace('_', ' ').title()}: {value}")
+    
+    # Save report
+    with open("integration_test_report.json", "w") as f:
+        json.dump(report, f, indent=2)
+    
+    print(f"\n📄 Report saved to: integration_test_report.json")
+
+def show_sample_api_usage():
+    """Show sample API usage with authentication"""
+    print(f"\n💡 Sample API Usage with Enhanced Authentication")
+    print("=" * 60)
+    
+    # Create a sample token
+    sample_token = jwt_manager.create_access_token(
+        user_id=1001,
+        email="demo@sonicus.com",
+        role=UserRole.BUSINESS_ADMIN,
+        organization_id=100,
+        permissions=["read_sounds", "manage_sounds", "manage_users"]
+    )
+    
+    print("🔑 Sample Bearer Token (first 50 chars):")
+    print(f"   {sample_token[:50]}...")
+    
+    print(f"\n📡 Sample API Calls:")
+    
+    api_examples = [
+        {
+            "method": "GET",
+            "endpoint": "/api/v1/sounds",
+            "description": "List all sounds",
+            "headers": {
+                "Authorization": f"Bearer {sample_token}",
+                "Content-Type": "application/json"
+            }
+        },
+        {
+            "method": "GET", 
+            "endpoint": "/api/v1/sounds/123",
+            "description": "Get specific sound",
+            "headers": {
+                "Authorization": f"Bearer {sample_token}",
+                "Content-Type": "application/json"
+            }
+        },
+        {
+            "method": "POST",
+            "endpoint": "/auth/switch-organization",
+            "description": "Switch organization context",
+            "headers": {
+                "Authorization": f"Bearer {sample_token}",
+                "Content-Type": "application/json"
+            },
+            "body": {
+                "organization_id": 101
+            }
+        }
+    ]
+    
+    for example in api_examples:
+        print(f"\n📝 {example['method']} {example['endpoint']}")
+        print(f"   Description: {example['description']}")
+        print(f"   Authorization: Bearer <token>")
+        if example.get("body"):
+            print(f"   Body: {json.dumps(example['body'], indent=8)}")
+    
+    print(f"\n✨ Response Headers Include:")
+    print(f"   X-User-Role: business_admin")
+    print(f"   X-Organization-ID: 100")
+    print(f"   X-Total-Count: (for list endpoints)")
+
+if __name__ == "__main__":
+    try:
+        test_complete_authentication_workflow()
+        show_sample_api_usage()
+    except Exception as e:
+        print(f"❌ Integration test failed: {str(e)}")
+        import traceback
+        traceback.print_exc()
