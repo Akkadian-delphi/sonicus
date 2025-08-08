@@ -16,11 +16,11 @@ import {
 import { useApiCall, usePaginatedApi, useApiSubmit } from '../utils/apiHooks';
 
 function SuperAdminPage() {
-  const { isAuthenticated, user, isDevMode } = useAuth();
+  const { isAuthenticated, user } = useAuth();
   const [activeTab, setActiveTab] = useState('dashboard');
 
-  // Check if user is super admin (in dev mode, simulate super admin access)
-  const isSuperAdmin = isDevMode || (user && user.role === 'super_admin');
+  // Check if user is super admin
+  const isSuperAdmin = user && user.role === 'super_admin';
 
   // API hooks for platform stats
   const {
@@ -167,7 +167,7 @@ function SuperAdminPage() {
   });
 
   // Redirect if not authenticated or not super admin
-  if (!isAuthenticated && !isDevMode) {
+  if (!isAuthenticated) {
     return <Navigate to="/login" />;
   }
 
@@ -193,7 +193,7 @@ function SuperAdminPage() {
   }
 
   // Show error state if both critical APIs fail
-  if (statsError && orgsError && !isDevMode) {
+  if (statsError && orgsError) {
     return (
       <div className="super-admin-error">
         <h1>Unable to Load Platform Data</h1>
