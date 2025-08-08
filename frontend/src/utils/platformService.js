@@ -21,6 +21,12 @@ export const getRegistrationText = () => 'Get Started';
  */
 export const getPlatformMode = () => 'b2c';
 
-// Legacy compatibility exports (deprecated)
-export const hasOrganizations = async () => false;
-export const clearCache = () => {};
+// Legacy compatibility exports (deprecated) - NO API CALLS
+export const hasOrganizations = async () => {
+  // B2C platform - never has organizations
+  console.log('🛑 hasOrganizations called - returning false (B2C mode)');
+  return false;
+};
+export const clearCache = () => {
+  console.log('🛑 clearCache called - no-op for B2C platform');
+};
