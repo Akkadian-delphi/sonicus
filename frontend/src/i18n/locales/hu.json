@@ -215,5 +215,46 @@
       "version": "Sonicus v1.0.0 - Hangterápiás Alkalmazás",
       "tagline": "Powered by Elefefe"
     }
+  },
+  "pricing": {
+    "title": "Válaszd Ki a Hanggyógyítási Utadat",
+    "subtitle": "Szabadítsd fel a terápiás hanggyógyítás teljes potenciálját rugalmas előfizetési terveinkkel, amelyek minden wellness igényre készültek.",
+    "chooseYourPlan": "Válassz Tervet",
+    "currentPlan": "Jelenlegi Terv",
+    "getStarted": "Kezdj Bele",
+    "upgradeToPremium": "Frissítés Prémiumra",
+    "upgradeToPro": "Frissítés Pro-ra",
+    "mostPopular": "LEGNÉPSZERŰBB",
+    "faq": {
+      "title": "Gyakran Ismételt Kérdések",
+      "billing": {
+        "question": "Hogyan működik a számlázás?",
+        "answer": "A választott csomag alapján havonta vagy évente kerülsz számlázásra. Bármikor módosíthatod vagy lemondhatod előfizetésed a fiókbeállításokban."
+      },
+      "cancel": {
+        "question": "Lemondhatom bármikor?",
+        "answer": "Igen, bármikor lemondhatod előfizetésed. A számlázási időszak végéig továbbra is hozzáférsz a prémium funkciókhoz."
+      },
+      "trial": {
+        "question": "Van ingyenes próbaidőszak?",
+        "answer": "Minden új felhasználó az ingyenes Starter csomaggal kezd. Bármikor frissíthetsz Prémiumra vagy Pro-ra további funkciók és tartalmak feloldásához."
+      },
+      "support": {
+        "question": "Milyen támogatást nyújtanak?",
+        "answer": "Email támogatást biztosítunk minden felhasználónak, prioritásos támogatással a Pro előfizetők számára. Csapatunk itt van, hogy segítsen maximalizálni hanggyógyítási utadat."
+      }
+    },
+    "guarantee": {
+      "title": "30 napos elégedettségi garancia",
+      "description": "Biztosak vagyunk benne, hogy szeretni fogod a hanggyógyítási élményt. Ha nem vagy teljesen elégedett, teljes visszatérítést biztosítunk 30 napon belül.",
+      "noCommitment": "Nincs hosszú távú kötelezettségvállalás",
+      "securePayments": "Biztonságos fizetések",
+      "dataProtection": "Adatvédelem garantált"
+    },
+    "readyToStart": "Készen állsz az utad megkezdésére?",
+    "joinThousands": "Csatlakozz a felhasználók ezreihez, akik átalakították jólétüket a terápiás hanggyógyítással.",
+    "startFreeTrial": "Ingyenes próba indítása",
+    "signIn": "Bejelentkezés",
+    "redirectingToSubscription": "Átirányítás az előfizetéshez a {{plan}} csomaghoz..."
   }
 }

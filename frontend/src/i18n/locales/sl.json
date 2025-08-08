@@ -215,5 +215,46 @@
       "version": "Sonicus v1.0.0 - Aplikacija zvočne terapije",
       "tagline": "Poganja Elefefe"
     }
+  },
+  "pricing": {
+    "title": "Izberite Svojo Pot Zvočnega Celjenja",
+    "subtitle": "Odklenite polni potencial terapevtskega zvočnega celjenja z našimi fleksibilnimi naročniškimi načrti, oblikovanimi za vsako potrebo dobrega počutja.",
+    "chooseYourPlan": "Izberite Svoj Načrt",
+    "currentPlan": "Trenutni Načrt",
+    "getStarted": "Začni",
+    "upgradeToPremium": "Nadgradi na Premium",
+    "upgradeToPro": "Nadgradi na Pro",
+    "mostPopular": "NAJBOLJ PRILJUBLJEN",
+    "faq": {
+      "title": "Pogosto Zastavljena Vprašanja",
+      "billing": {
+        "question": "Kako deluje zaračunavanje?",
+        "answer": "Zaračunali vam bomo mesečno ali letno, odvisno od vašega izbranega načrta. Naročnino lahko spremenite ali prekličete kadarkoli v nastavitvah računa."
+      },
+      "cancel": {
+        "question": "Ali lahko prekličem kadarkoli?",
+        "answer": "Da, naročnino lahko prekličete kadarkoli. Dostop do premium funkcij boste imeli do konca fakturacijskega obdobja."
+      },
+      "trial": {
+        "question": "Ali obstaja brezplačno preskusno obdobje?",
+        "answer": "Vsi novi uporabniki začnejo z našim brezplačnim Starter načrtom. Kadarkoli lahko nadgradite na Premium ali Pro, da odklenete dodatne funkcije in vsebino."
+      },
+      "support": {
+        "question": "Kakšno podporo nudite?",
+        "answer": "Nudimo e-poštno podporo vsem uporabnikom, s prednostno podporo za Pro naročnike. Naša ekipa je tu, da vam pomaga čim bolje izkoristiti vašo pot zvočnega celjenja."
+      }
+    },
+    "guarantee": {
+      "title": "30-dnevna Garancija Zadovoljstva",
+      "description": "Prepričani smo, da bo vaša izkušnja zvočnega celjenja odlična. Če niste popolnoma zadovoljni, nudimo polno povračilo v 30 dneh.",
+      "noCommitment": "Brez dolgoročnih obveznosti",
+      "securePayments": "Varna plačila",
+      "dataProtection": "Zaščita podatkov zagotovljena"
+    },
+    "readyToStart": "Pripravljeni Začeti Svojo Pot?",
+    "joinThousands": "Pridružite se tisočem uporabnikov, ki so s terapevtskim zvočnim celjenjem spremenili svoje dobro počutje.",
+    "startFreeTrial": "Začni Brezplačno Preskusno Obdobje",
+    "signIn": "Prijavi se",
+    "redirectingToSubscription": "Preusmerjanje na naročnino za načrt {{plan}}..."
   }
 }

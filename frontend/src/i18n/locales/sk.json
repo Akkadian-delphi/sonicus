@@ -215,5 +215,46 @@
       "version": "Sonicus v1.0.0 - Aplikácia audio terapie",
       "tagline": "Poháňané Elefefe"
     }
+  },
+  "pricing": {
+    "title": "Vyberte si Svoju Cestu Zvukového Uzdravovania",
+    "subtitle": "Odomknite plný potenciál terapeutického zvukového uzdravovania s našimi flexibilnými predplatnými plánmi navrhnutými pre každú potrebu wellness.",
+    "chooseYourPlan": "Vyberte si Váš Plán",
+    "currentPlan": "Aktuálny Plán",
+    "getStarted": "Začať",
+    "upgradeToPremium": "Upgradovať na Premium",
+    "upgradeToPro": "Upgradovať na Pro",
+    "mostPopular": "NAJPOPULÁRNEJŠÍ",
+    "faq": {
+      "title": "Často Kladené Otázky",
+      "billing": {
+        "question": "Ako funguje fakturácia?",
+        "answer": "Budete fakturovaní mesačne alebo ročne v závislosti od vášho vybraného plánu. Môžete zmeniť alebo zrušiť svoje predplatné kedykoľvek v nastaveniach vášho účtu."
+      },
+      "cancel": {
+        "question": "Môžem zrušiť kedykoľvek?",
+        "answer": "Áno, môžete zrušiť svoje predplatné kedykoľvek. Budete mať naďalej prístup k prémiových funkcií až do konca vášho fakturačného obdobia."
+      },
+      "trial": {
+        "question": "Je k dispozícii bezplatné skúšobné obdobie?",
+        "answer": "Všetci noví užívatelia začínajú s naším bezplatným Starter plánom. Môžete upgradovať na Premium alebo Pro kedykoľvek pre odomknutie dodatočných funkcií a obsahu."
+      },
+      "support": {
+        "question": "Akú podporu poskytujete?",
+        "answer": "Poskytujeme e-mailovú podporu všetkým užívateľom, s prioritnou podporou pre Pro predplatiteľov. Náš tím je tu, aby vám pomohol maximalizovať vašu cestu zvukového uzdravovania."
+      }
+    },
+    "guarantee": {
+      "title": "30-dňová Záruka Spokojnosti",
+      "description": "Sme presvedčení, že si zamilujete váš zážitok zo zvukového uzdravovania. Ak nie ste úplne spokojní, ponúkame plnú refundáciu do 30 dní.",
+      "noCommitment": "Žiadny dlhodobý záväzok",
+      "securePayments": "Bezpečné platby",
+      "dataProtection": "Ochrana údajov garantovaná"
+    },
+    "readyToStart": "Pripravení Začať Vašu Cestu?",
+    "joinThousands": "Pridajte sa k tisícom užívateľov, ktorí transformovali svoje wellness s terapeutickým zvukovým uzdravovaním.",
+    "startFreeTrial": "Začať Bezplatnú Skúšku",
+    "signIn": "Prihlásiť sa",
+    "redirectingToSubscription": "Presmerovanie na predplatné pre {{plan}} plán..."
   }
 }

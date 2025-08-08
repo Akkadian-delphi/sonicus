@@ -6,8 +6,7 @@
     "welcome": "Bun venit, {{name}}",
     "signOut": "Deconectare",
     "signIn": "Conectare",
-    "getStarted": "Începe"
-  },
+    "getStarted": "Începe" },
   "homepage": {
     "hero": {
       "title": "Descoperă Puterea Vindecătoare a Sunetului",
@@ -215,5 +214,46 @@
       "version": "Sonicus v1.0.0 - Aplicație de Terapie Audio",
       "tagline": "Powered by Elefefe"
     }
+  },
+  "pricing": {
+    "title": "Alege-ți Călătoria de Vindecare Sonoră",
+    "subtitle": "Deblochează potențialul complet al vindecării sonore terapeutice cu planurile noastre flexibile de abonament, create pentru orice nevoie de wellness.",
+    "chooseYourPlan": "Alege-ți Planul",
+    "currentPlan": "Planul Actual",
+    "getStarted": "Începe Acum",
+    "upgradeToPremium": "Actualizează la Premium",
+    "upgradeToPro": "Actualizează la Pro",
+    "mostPopular": "CEL MAI POPULAR",
+    "faq": {
+      "title": "Întrebări Frecvente",
+      "billing": {
+        "question": "Cum funcționează facturarea?",
+        "answer": "Vei fi facturat lunar sau anual în funcție de planul ales. Poți modifica sau anula abonamentul oricând din setările contului."
+      },
+      "cancel": {
+        "question": "Pot anula oricând?",
+        "answer": "Da, îți poți anula abonamentul oricând. Vei continua să ai acces la funcțiile premium până la sfârșitul perioadei de facturare."
+      },
+      "trial": {
+        "question": "Există o perioadă de probă gratuită?",
+        "answer": "Toți utilizatorii noi încep cu planul nostru gratuit Starter. Poți face upgrade la Premium sau Pro oricând pentru a debloca funcții și conținut suplimentar."
+      },
+      "support": {
+        "question": "Ce suport oferiți?",
+        "answer": "Oferim suport prin email pentru toți utilizatorii, cu suport prioritar pentru abonații Pro. Echipa noastră este aici să te ajute să îți maximizezi călătoria de vindecare sonoră."
+      }
+    },
+    "guarantee": {
+      "title": "Garanție de Satisfacție de 30 de Zile",
+      "description": "Suntem încrezători că îți va plăcea experiența de vindecare sonoră. Dacă nu ești complet satisfăcut, oferim rambursarea completă în termen de 30 de zile.",
+      "noCommitment": "Fără angajament pe termen lung",
+      "securePayments": "Plăți securizate",
+      "dataProtection": "Protecția datelor garantată"
+    },
+    "readyToStart": "Gata să Îți Începi Călătoria?",
+    "joinThousands": "Alătură-te miilor de utilizatori care și-au transformat wellness-ul cu vindecarea sonoră terapeutică.",
+    "startFreeTrial": "Începe Proba Gratuită",
+    "signIn": "Conectează-te",
+    "redirectingToSubscription": "Redirecționare către abonament pentru planul {{plan}}..."
   }
 }

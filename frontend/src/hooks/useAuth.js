@@ -142,8 +142,6 @@ export const AuthProvider = ({ children }) => {
   // Login with JWT (legacy)
   const loginWithJWT = async (email, password) => {
     try {
-      console.log('🔍 Attempting login with:', { email, password: password.substring(0, 3) + '*'.repeat(password.length - 3) });
-      
       const response = await axios.post('/token', 
         new URLSearchParams({
           username: email,
@@ -155,7 +153,6 @@ export const AuthProvider = ({ children }) => {
         }
       );
 
-      console.log('✅ Login successful, token received');
       const { access_token } = response.data;
       localStorage.setItem('access_token', access_token);
       

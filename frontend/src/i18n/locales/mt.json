@@ -6,7 +6,67 @@
     "welcome": "Merħba, {{name}}",
     "signOut": "Oħroġ",
     "signIn": "Idħol",
-    "getStarted": "Ibda"
+    "getStarted": "Ibda",
+    "pricing": "Prezzijiet",
+    "upgrade": "Aġġorna",
+    "upgradePlan": "Aġġorna l-Pjan"
+  },
+  "common": {
+    "loading": "Qed jitgħabba...",
+    "error": "Seħħ żball",
+    "retry": "Erġa' pprova",
+    "save": "Ħlief",
+    "cancel": "Ikkanċella",
+    "edit": "Editja",
+    "delete": "Ħassar",
+    "confirm": "Ikkonferma",
+    "yes": "Iva",
+    "no": "Le",
+    "footer": {
+      "version": "Sonicus v1.0.0 - Applikazzjoni tat-Terapija tal-Ħoss",
+      "tagline": "Powered by Elefefe"
+    }
+  },
+  "pricing": {
+    "title": "Agħżel il-Vjaġġ ta' Fejqan bil-Ħoss Tiegħek",
+    "subtitle": "Iftaħ il-potenzjal sħiħ tal-fejqan bil-ħoss terapewiku bil-pjanijiet flessibbli ta' abbonament tagħna ddisinjati għal kull ħtieġa ta' benesseri.",
+    "chooseYourPlan": "Agħżel il-Pjan Tiegħek",
+    "currentPlan": "Pjan Kurrenti",
+    "getStarted": "Ibda",
+    "upgradeToPremium": "Aġġorna għal Premium",
+    "upgradeToPro": "Aġġorna għal Pro",
+    "mostPopular": "L-AKTAR POPOLARI",
+    "faq": {
+      "title": "Mistoqsijiet Spiss Magħmula",
+      "billing": {
+        "question": "Kif jaħdem il-ħlas?",
+        "answer": "Int se tiġi mħallsa kull xahar jew kull sena skont il-pjan magħżul tiegħek. Tista' tbiddel jew tikkanċella l-abbonament tiegħek fi kwalunkwe ħin mis-settings tal-kont tiegħek."
+      },
+      "cancel": {
+        "question": "Nista' nikkanċella fi kwalunkwe ħin?",
+        "answer": "Iva, tista' tikkanċella l-abbonament tiegħek fi kwalunkwe ħin. Tibqa' għandek aċċess għall-karatteristiċi premium sal-aħħar tal-perjodu tal-ħlas tiegħek."
+      },
+      "trial": {
+        "question": "Hemm perjodu ta' prova b'xejn?",
+        "answer": "L-utenti l-ġodda kollha jibdew bil-pjan Starter b'xejn tagħna. Tista' taġġorna għal Premium jew Pro fi kwalunkwe ħin biex tiftaħ karatteristiċi u kontenut addizzjonali."
+      },
+      "support": {
+        "question": "X'appoġġ toffru?",
+        "answer": "Nipprovdu appoġġ bl-email għall-utenti kollha, b'appoġġ ta' prijorità għall-abbonati Pro. It-tim tagħna hawn biex jgħinek timmassimizza l-vjaġġ ta' fejqan bil-ħoss tiegħek."
+      }
+    },
+    "guarantee": {
+      "title": "Garanzija ta' Sodisfazzjoni ta' 30 Jum",
+      "description": "Aħna ċerti li se togħġbok l-esperjenza ta' fejqan bil-ħoss tiegħek. Jekk m'intix kompletament sodisfatt, noffru rifużjoni sħiħa fi żmien 30 jum.",
+      "noCommitment": "L-ebda impenn fit-tul",
+      "securePayments": "Ħlasijiet siguri",
+      "dataProtection": "Protezzjoni tad-data garantita"
+    },
+    "readyToStart": "Lest Biex Tibda l-Vjaġġ Tiegħek?",
+    "joinThousands": "Ingħaqad ma' eluf ta' utenti li ttrasformaw il-benesseri tagħhom bil-fejqan bil-ħoss terapewiku.",
+    "startFreeTrial": "Ibda Prova B'xejn",
+    "signIn": "Idħol",
+    "redirectingToSubscription": "Qed tirreferi għall-abbonament għall-pjan {{plan}}..."
   },
   "homepage": {
     "hero": {
@@ -198,22 +258,6 @@
       "hasAccount": "Diġà għandek kont?",
       "signIn": "Idħol",
       "passwordRequirement": "Il-password trid tkun mill-anqas 8 karattri fit-tul"
-    }
-  },
-  "common": {
-    "loading": "Qed jitgħabba...",
-    "error": "Seħħ żball",
-    "retry": "Erġa' pprova",
-    "save": "Ħlief",
-    "cancel": "Ikkanċella",
-    "edit": "Editja",
-    "delete": "Ħassar",
-    "confirm": "Ikkonferma",
-    "yes": "Iva",
-    "no": "Le",
-    "footer": {
-      "version": "Sonicus v1.0.0 - Applikazzjoni ta' Terapija tal-Awdjo",
-      "tagline": "Imħaddma minn Elefefe"
     }
   }
 }

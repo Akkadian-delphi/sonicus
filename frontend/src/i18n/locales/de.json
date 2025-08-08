@@ -215,5 +215,46 @@
       "version": "Sonicus v1.0.0 - Audio-Therapie-Anwendung",
       "tagline": "Angetrieben von Elefefe"
     }
+  },
+  "pricing": {
+    "title": "Wählen Sie Ihre Klang-Heilungsreise",
+    "subtitle": "Erschließen Sie das volle Potenzial der therapeutischen Klang-Heilung mit unseren flexiblen Abonnement-Plänen, die für jeden Wellness-Bedarf entwickelt wurden.",
+    "chooseYourPlan": "Wählen Sie Ihren Plan",
+    "currentPlan": "Aktueller Plan",
+    "getStarted": "Loslegen",
+    "upgradeToPremium": "Auf Premium upgraden",
+    "upgradeToPro": "Auf Pro upgraden",
+    "mostPopular": "BELIEBTESTE",
+    "faq": {
+      "title": "Häufig gestellte Fragen",
+      "billing": {
+        "question": "Wie funktioniert die Abrechnung?",
+        "answer": "Sie werden monatlich oder jährlich abgerechnet, je nach Ihrem gewählten Plan. Sie können Ihr Abonnement jederzeit in Ihren Kontoeinstellungen ändern oder kündigen."
+      },
+      "cancel": {
+        "question": "Kann ich jederzeit kündigen?",
+        "answer": "Ja, Sie können Ihr Abonnement jederzeit kündigen. Sie haben weiterhin Zugang zu Premium-Funktionen bis zum Ende Ihrer Abrechnungsperiode."
+      },
+      "trial": {
+        "question": "Gibt es eine kostenlose Testversion?",
+        "answer": "Alle neuen Benutzer beginnen mit unserem kostenlosen Starter-Plan. Sie können jederzeit auf Premium oder Pro upgraden, um zusätzliche Funktionen und Inhalte freizuschalten."
+      },
+      "support": {
+        "question": "Welche Unterstützung bieten Sie an?",
+        "answer": "Wir bieten E-Mail-Support für alle Benutzer, mit vorrangiger Unterstützung für Pro-Abonnenten. Unser Team ist hier, um Ihnen zu helfen, Ihre Klang-Heilungsreise zu maximieren."
+      }
+    },
+    "guarantee": {
+      "title": "30-Tage-Zufriedenheitsgarantie",
+      "description": "Wir sind zuversichtlich, dass Sie Ihre Klang-Heilungserfahrung lieben werden. Wenn Sie nicht vollständig zufrieden sind, bieten wir eine vollständige Rückerstattung innerhalb von 30 Tagen.",
+      "noCommitment": "Keine langfristige Verpflichtung",
+      "securePayments": "Sichere Zahlungen",
+      "dataProtection": "Datenschutz garantiert"
+    },
+    "readyToStart": "Bereit, Ihre Reise zu beginnen?",
+    "joinThousands": "Schließen Sie sich Tausenden von Benutzern an, die ihr Wohlbefinden mit therapeutischer Klang-Heilung transformiert haben.",
+    "startFreeTrial": "Kostenlose Testversion starten",
+    "signIn": "Anmelden",
+    "redirectingToSubscription": "Weiterleitung zum Abonnement für {{plan}} Plan..."
   }
 }

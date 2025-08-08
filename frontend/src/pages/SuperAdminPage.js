@@ -79,13 +79,11 @@ function SuperAdminPage() {
 
   const handleViewOrg = (org) => {
     // Navigate to organization detail view
-    console.log('Viewing organization:', org);
     // TODO: Implement organization detail modal or navigation
   };
 
   const handleEditOrg = (org) => {
     // Open edit modal
-    console.log('Editing organization:', org);
     // TODO: Implement organization edit modal
   };
 

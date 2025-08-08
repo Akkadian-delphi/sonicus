@@ -215,5 +215,46 @@
       "version": "Sonicus v1.0.0 - Audio Therapie Applicatie",
       "tagline": "Powered by Elefefe"
     }
+  },
+  "pricing": {
+    "title": "Kies Uw Geluidsgenezing Reis",
+    "subtitle": "Ontsluit het volledige potentieel van therapeutische geluidsgenezing met onze flexibele abonnementspakketten ontworpen voor elke welzijnsbehoefte.",
+    "chooseYourPlan": "Kies Uw Pakket",
+    "currentPlan": "Huidige Pakket",
+    "getStarted": "Beginnen",
+    "upgradeToPremium": "Upgraden naar Premium",
+    "upgradeToPro": "Upgraden naar Pro",
+    "mostPopular": "POPULAIRSTE",
+    "faq": {
+      "title": "Veelgestelde Vragen",
+      "billing": {
+        "question": "Hoe werkt facturering?",
+        "answer": "U wordt maandelijks of jaarlijks gefactureerd afhankelijk van uw gekozen pakket. U kunt uw abonnement op elk moment wijzigen of opzeggen via uw accountinstellingen."
+      },
+      "cancel": {
+        "question": "Kan ik op elk moment opzeggen?",
+        "answer": "Ja, u kunt uw abonnement op elk moment opzeggen. U behoudt toegang tot premium functies tot het einde van uw factureringsperiode."
+      },
+      "trial": {
+        "question": "Is er een gratis proefperiode?",
+        "answer": "Alle nieuwe gebruikers beginnen met ons gratis Starter-pakket. U kunt op elk moment upgraden naar Premium of Pro om aanvullende functies en inhoud te ontgrendelen."
+      },
+      "support": {
+        "question": "Welke ondersteuning bieden jullie?",
+        "answer": "Wij bieden e-mailondersteuning voor alle gebruikers, met prioriteitsondersteuning voor Pro-abonnees. Ons team is er om u te helpen uw geluidsgenezing reis te maximaliseren."
+      }
+    },
+    "guarantee": {
+      "title": "30-Dagen Tevredenheidsgarantie",
+      "description": "Wij zijn er zeker van dat u uw geluidsgenezing ervaring zult waarderen. Als u niet volledig tevreden bent, bieden wij een volledige terugbetaling binnen 30 dagen.",
+      "noCommitment": "Geen langetermijnverplichting",
+      "securePayments": "Veilige betalingen",
+      "dataProtection": "Gegevensbescherming gegarandeerd"
+    },
+    "readyToStart": "Klaar om Uw Reis te Beginnen?",
+    "joinThousands": "Sluit u aan bij duizenden gebruikers die hun welzijn hebben getransformeerd met therapeutische geluidsgenezing.",
+    "startFreeTrial": "Gratis Proefperiode Starten",
+    "signIn": "Inloggen",
+    "redirectingToSubscription": "Doorverwijzen naar abonnement voor {{plan}} pakket..."
   }
 }

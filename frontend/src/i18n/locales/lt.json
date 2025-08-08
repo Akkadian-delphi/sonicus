@@ -215,5 +215,46 @@
       "version": "Sonicus v1.0.0 - Garso terapijos programa",
       "tagline": "Palaiko Elefefe"
     }
+  },
+  "pricing": {
+    "title": "Pasirinkite Savo Garso Gydymo Kelionę",
+    "subtitle": "Atrakinkite visą terapinio garso gydymo potencialą su mūsų lanksčiais prenumeratos planais, sukurtais kiekvienam gerovės poreikiui.",
+    "chooseYourPlan": "Pasirinkite Savo Planą",
+    "currentPlan": "Dabartinis Planas",
+    "getStarted": "Pradėti",
+    "upgradeToPremium": "Atnaujinti į Premium",
+    "upgradeToPro": "Atnaujinti į Pro",
+    "mostPopular": "POPULIARIAUSIAS",
+    "faq": {
+      "title": "Dažnai Užduodami Klausimai",
+      "billing": {
+        "question": "Kaip veikia atsiskaitymas?",
+        "answer": "Mokesčiai bus taikomi kas mėnesį arba kasmet, priklausomai nuo jūsų pasirinkto plano. Galite pakeisti arba atšaukti prenumeratą bet kada iš savo paskyros nustatymų."
+      },
+      "cancel": {
+        "question": "Ar galiu atšaukti bet kada?",
+        "answer": "Taip, galite atšaukti prenumeratą bet kada. Turėsite prieigą prie premium funkcijų iki atsiskaitymo laikotarpio pabaigos."
+      },
+      "trial": {
+        "question": "Ar yra nemokamas bandomasis laikotarpis?",
+        "answer": "Visi nauji vartotojai pradeda su mūsų nemokamu Starter planu. Galite atnaujinti į Premium arba Pro bet kada, kad atrakintumėte papildomas funkcijas ir turinį."
+      },
+      "support": {
+        "question": "Kokią pagalbą teikiate?",
+        "answer": "Teikiame el. pašto pagalbą visiems vartotojams, su pirmumo pagalba Pro prenumeratoriams. Mūsų komanda čia, kad padėtų maksimaliai išnaudoti jūsų garso gydymo kelionę."
+      }
+    },
+    "guarantee": {
+      "title": "30 Dienų Pasitenkinimo Garantija",
+      "description": "Esame tikri, kad jums patiks garso gydymo patirtis. Jei nesate visiškai patenkinti, siūlome pilną pinigų grąžinimą per 30 dienų.",
+      "noCommitment": "Nėra ilgalaikių įsipareigojimų",
+      "securePayments": "Saugūs mokėjimai",
+      "dataProtection": "Duomenų apsauga garantuojama"
+    },
+    "readyToStart": "Pasiruošę Pradėti Savo Kelionę?",
+    "joinThousands": "Prisijunkite prie tūkstančių vartotojų, kurie transformavo savo gerovę su terapiniu garso gydymu.",
+    "startFreeTrial": "Pradėti Nemokamą Bandomąjį Laikotarpį",
+    "signIn": "Prisijungti",
+    "redirectingToSubscription": "Nukreipiama į prenumeratą {{plan}} planui..."
   }
 }

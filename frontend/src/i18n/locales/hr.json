@@ -6,7 +6,7 @@
     "welcome": "Dobrodošli, {{name}}",
     "signOut": "Odjava",
     "signIn": "Prijava",
-    "getStarted": "Počnite"
+    "getStarted": "Počni"
   },
   "homepage": {
     "hero": {
@@ -215,5 +215,46 @@
       "version": "Sonicus v1.0.0 - Aplikacija za audio terapiju",
       "tagline": "Pokretano od Elefefe"
     }
+  },
+  "pricing": {
+    "title": "Odaberi Svoj Put Zvučnog Iscjeljenja",
+    "subtitle": "Otključaj punu moć terapeutskog zvučnog iscjeljenja s našim fleksibilnim planovima pretplate dizajniranim za sve potrebe dobrobiti.",
+    "chooseYourPlan": "Odaberi Plan",
+    "currentPlan": "Trenutni Plan",
+    "getStarted": "Započni",
+    "upgradeToPremium": "Nadogradi na Premium",
+    "upgradeToPro": "Nadogradi na Pro",
+    "mostPopular": "NAJPOPULARNIJI",
+    "faq": {
+      "title": "Često Postavljana Pitanja",
+      "billing": {
+        "question": "Kako funkcionira naplata?",
+        "answer": "Naplaćujemo mjesečno ili godišnje ovisno o odabranom planu. Možete promijeniti ili otkazati pretplatu bilo kada u postavkama računa."
+      },
+      "cancel": {
+        "question": "Mogu li otkazati bilo kada?",
+        "answer": "Da, možete otkazati pretplatu bilo kada. Nastavit ćete imati pristup premium funkcijama do kraja naplatnog razdoblja."
+      },
+      "trial": {
+        "question": "Postoji li besplatno probno razdoblje?",
+        "answer": "Svi novi korisnici počinju s našim besplatnim Starter planom. Možete nadograditi na Premium ili Pro bilo kada kako biste otključali dodatne funkcije i sadržaj."
+      },
+      "support": {
+        "question": "Kakvu podršku pružate?",
+        "answer": "Pružamo email podršku svim korisnicima, s prioritetnom podrškom za Pro pretplatnike. Naš tim je ovdje da vam pomogne maksimizirati vaš put zvučnog iscjeljenja."
+      }
+    },
+    "guarantee": {
+      "title": "30-dnevno jamstvo zadovoljstva",
+      "description": "Sigurni smo da ćete voljeti svoje iskustvo zvučnog iscjeljenja. Ako niste potpuno zadovoljni, nudimo puni povrat novca u roku od 30 dana.",
+      "noCommitment": "Bez dugoročnih obveza",
+      "securePayments": "Sigurna plaćanja",
+      "dataProtection": "Zaštita podataka zajamčena"
+    },
+    "readyToStart": "Spremni Za Početak Vašeg Puta?",
+    "joinThousands": "Pridružite se tisućama korisnika koji su transformirali svoju dobrobit terapeutskim zvučnim iscjeljenjem.",
+    "startFreeTrial": "Započni Besplatnu Probu",
+    "signIn": "Prijavi Se",
+    "redirectingToSubscription": "Preusmjeravam na pretplatu za {{plan}} plan..."
   }
 }

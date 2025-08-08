@@ -6,7 +6,10 @@
     "welcome": "Bienvenue, {{name}}",
     "signOut": "Déconnexion",
     "signIn": "Connexion",
-    "getStarted": "Commencer"
+    "getStarted": "Commencer",
+    "pricing": "Tarifs",
+    "upgrade": "Améliorer",
+    "upgradePlan": "Améliorer le Plan"
   },
   "homepage": {
     "hero": {
@@ -129,7 +132,8 @@
         "exploreSounds": "Explorer les Sons",
         "dashboard": "Mon Tableau de Bord",
         "startTrial": "Commencer l'Essai Gratuit",
-        "signIn": "Se Connecter"
+        "signIn": "Se Connecter",
+        "viewPricing": "Voir les Plans Tarifaires"
       }
     },
     "subscriptionTiers": {
@@ -219,5 +223,46 @@
       "version": "Sonicus v1.0.0 - Application de Thérapie Audio",
       "tagline": "Propulsé par Elefefe"
     }
+  },
+  "pricing": {
+    "title": "Choisissez Votre Voyage de Guérison Sonore",
+    "subtitle": "Débloquez tout le potentiel de la guérison sonore thérapeutique avec nos plans d'abonnement flexibles conçus pour chaque besoin de bien-être.",
+    "chooseYourPlan": "Choisissez Votre Plan",
+    "currentPlan": "Plan Actuel",
+    "getStarted": "Commencer",
+    "upgradeToPremium": "Passer à Premium",
+    "upgradeToPro": "Passer à Pro",
+    "mostPopular": "LE PLUS POPULAIRE",
+    "faq": {
+      "title": "Questions Fréquentes",
+      "billing": {
+        "question": "Comment fonctionne la facturation?",
+        "answer": "Vous êtes facturé mensuellement ou annuellement selon le plan que vous choisissez. Vous pouvez modifier ou annuler votre abonnement à tout moment depuis les paramètres de votre compte."
+      },
+      "cancel": {
+        "question": "Puis-je annuler à tout moment?",
+        "answer": "Oui, vous pouvez annuler votre abonnement à tout moment. Vous continuerez à avoir accès aux fonctionnalités premium jusqu'à la fin de votre période de facturation."
+      },
+      "trial": {
+        "question": "Y a-t-il un essai gratuit?",
+        "answer": "Tous les nouveaux utilisateurs commencent avec notre plan gratuit Starter. Vous pouvez passer à Premium ou Pro à tout moment pour débloquer des fonctionnalités et du contenu supplémentaires."
+      },
+      "support": {
+        "question": "Quel support offrez-vous?",
+        "answer": "Nous fournissons un support par e-mail pour tous les utilisateurs, avec un support prioritaire pour les abonnés Pro. Notre équipe est là pour vous aider à maximiser votre voyage de guérison sonore."
+      }
+    },
+    "guarantee": {
+      "title": "Garantie de Satisfaction de 30 Jours",
+      "description": "Nous sommes confiants que vous aimerez votre expérience de guérison sonore. Si vous n'êtes pas entièrement satisfait, nous offrons un remboursement complet dans les 30 jours.",
+      "noCommitment": "Aucun engagement à long terme",
+      "securePayments": "Paiements sécurisés",
+      "dataProtection": "Protection des données garantie"
+    },
+    "readyToStart": "Prêt à Commencer Votre Voyage?",
+    "joinThousands": "Rejoignez des milliers d'utilisateurs qui ont transformé leur bien-être avec la guérison sonore thérapeutique.",
+    "startFreeTrial": "Commencer l'Essai Gratuit",
+    "signIn": "Se Connecter",
+    "redirectingToSubscription": "Redirection vers l'abonnement pour le plan {{plan}}..."
   }
 }

@@ -6,7 +6,7 @@
     "welcome": "Laipni lūdzam, {{name}}",
     "signOut": "Iziet",
     "signIn": "Ieiet",
-    "getStarted": "Sākt"
+        "getStarted": "Sākt"
   },
   "homepage": {
     "hero": {
@@ -215,5 +215,46 @@
       "version": "Sonicus v1.0.0 - Audio terapijas lietotne",
       "tagline": "Darbina Elefefe"
     }
+  },
+  "pricing": {
+    "title": "Izvēlieties Savu Skaņu Dziedināšanas Ceļojumu",
+    "subtitle": "Atklājiet terapeitiskās skaņu dziedināšanas pilnu potenciālu ar mūsu elastīgajiem abonēšanas plāniem, kas izveidoti katram labsajūtas vajadzībai.",
+    "chooseYourPlan": "Izvēlieties Savu Plānu",
+    "currentPlan": "Pašreizējais Plāns",
+    "getStarted": "Sākt",
+    "upgradeToPremium": "Atjaunot uz Premium",
+    "upgradeToPro": "Atjaunot uz Pro",
+    "mostPopular": "POPULĀRĀKAIS",
+    "faq": {
+      "title": "Bieži Uzdotie Jautājumi",
+      "billing": {
+        "question": "Kā darbojas norēķini?",
+        "answer": "Jums tiks piestādīti rēķini mēnesīgi vai gadīgi atkarībā no izvēlētā plāna. Varat mainīt vai atcelt savu abonēšanu jebkurā laikā no konta iestatījumiem."
+      },
+      "cancel": {
+        "question": "Vai varu atcelt jebkurā laikā?",
+        "answer": "Jā, varat atcelt savu abonēšanu jebkurā laikā. Jums saglabāsies piekļuve premium funkcijām līdz norēķinu perioda beigām."
+      },
+      "trial": {
+        "question": "Vai ir bezmaksas izmēģinājuma periods?",
+        "answer": "Visi jaunie lietotāji sāk ar mūsu bezmaksas Starter plānu. Varat atjaunot uz Premium vai Pro jebkurā laikā, lai atbloķētu papildu funkcijas un saturu."
+      },
+      "support": {
+        "question": "Kādu atbalstu jūs piedāvājat?",
+        "answer": "Mēs nodrošinām e-pasta atbalstu visiem lietotājiem, ar prioritātes atbalstu Pro abonentiem. Mūsu komanda ir šeit, lai palīdzētu jums maksimizēt savu skaņu dziedināšanas ceļojumu."
+      }
+    },
+    "guarantee": {
+      "title": "30 Dienu Apmierinātības Garantija",
+      "description": "Mēs esam pārliecināti, ka jums patiks skaņu dziedināšanas pieredze. Ja neesat pilnībā apmierināts, mēs piedāvājam pilnu naudas atdošanu 30 dienu laikā.",
+      "noCommitment": "Nav ilgtermiņa saistību",
+      "securePayments": "Drošs maksājums",
+      "dataProtection": "Datu aizsardzība garantēta"
+    },
+    "readyToStart": "Gatavs Sākt Savu Ceļojumu?",
+    "joinThousands": "Pievienojieties tūkstošiem lietotāju, kuri ir pārveidojuši savu labsajūtu ar terapeitisko skaņu dziedināšanu.",
+    "startFreeTrial": "Sākt Bezmaksas Izmēģinājumu",
+    "signIn": "Pierakstīties",
+    "redirectingToSubscription": "Novirza uz abonēšanu {{plan}} plānam..."
   }
 }

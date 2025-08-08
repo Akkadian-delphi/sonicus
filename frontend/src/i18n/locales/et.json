@@ -215,5 +215,46 @@
       "version": "Sonicus v1.0.0 - Audioteraapia rakendus",
       "tagline": "Jõustab Elefefe"
     }
+  },
+  "pricing": {
+    "title": "Vali Oma Heliraviks",
+    "subtitle": "Vabasta teraapiline heliravi täielik potentsiaal meie paindlike tellimisplaanidega, mis on loodud igasuguste heaolu vajaduste jaoks.",
+    "chooseYourPlan": "Vali Oma Plaan",
+    "currentPlan": "Praegune Plaan",
+    "getStarted": "Alusta",
+    "upgradeToPremium": "Uuenda Premium'ile",
+    "upgradeToPro": "Uuenda Pro'le",
+    "mostPopular": "KÕIGE POPULAARSEM",
+    "faq": {
+      "title": "Korduma Kippuvad Küsimused",
+      "billing": {
+        "question": "Kuidas arveldamine toimub?",
+        "answer": "Sind arveldetakse igakuiselt või aastas sõltuvalt valitud plaanist. Saad oma tellimust igal ajal muuta või tühistada konto seadetest."
+      },
+      "cancel": {
+        "question": "Kas saan igal ajal tühistada?",
+        "answer": "Jah, saad oma tellimuse igal ajal tühistada. Sul jääb juurdepääs premium funktsioonidele arveldusperioodi lõpuni."
+      },
+      "trial": {
+        "question": "Kas on tasuta prooviaeg?",
+        "answer": "Kõik uued kasutajad alustavad meie tasuta Starter plaaniga. Saad igal ajal uuendada Premium'ile või Pro'le, et avada lisafunktsioonid ja sisu."
+      },
+      "support": {
+        "question": "Millist tuge pakute?",
+        "answer": "Pakume e-posti tuge kõigile kasutajatele, prioriteetse toega Pro tellijatele. Meie meeskond on siin, et aidata sul oma heliravi teekonda maksimeerida."
+      }
+    },
+    "guarantee": {
+      "title": "30-päevane rahulolugarantii",
+      "description": "Oleme kindlad, et sulle meeldib heliravi kogemus. Kui sa ei ole täielikult rahul, pakume täielikku raha tagastamist 30 päeva jooksul.",
+      "noCommitment": "Pole pikaajalisi kohustusi",
+      "securePayments": "Turvalised maksed",
+      "dataProtection": "Andmekaitse garanteeritud"
+    },
+    "readyToStart": "Valmis Alustama Oma Teekonda?",
+    "joinThousands": "Liitu tuhandete kasutajatega, kes on muutnud oma heaolu teraapiline heliravi abil.",
+    "startFreeTrial": "Alusta Tasuta Prooviperioodi",
+    "signIn": "Logi sisse",
+    "redirectingToSubscription": "Suunan tellimisse {{plan}} plaani jaoks..."
   }
 }

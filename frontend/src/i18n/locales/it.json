@@ -215,5 +215,46 @@
       "version": "Sonicus v1.0.0 - Applicazione di Terapia Audio",
       "tagline": "Powered by Elefefe"
     }
+  },
+  "pricing": {
+    "title": "Scegli il Tuo Viaggio di Guarigione Sonora",
+    "subtitle": "Sblocca il pieno potenziale della guarigione sonora terapeutica con i nostri piani di abbonamento flessibili progettati per ogni esigenza di benessere.",
+    "chooseYourPlan": "Scegli il Tuo Piano",
+    "currentPlan": "Piano Attuale",
+    "getStarted": "Inizia",
+    "upgradeToPremium": "Passa a Premium",
+    "upgradeToPro": "Passa a Pro",
+    "mostPopular": "PIÙ POPOLARE",
+    "faq": {
+      "title": "Domande Frequenti",
+      "billing": {
+        "question": "Come funziona la fatturazione?",
+        "answer": "Vieni fatturato mensilmente o annualmente a seconda del piano scelto. Puoi modificare o cancellare il tuo abbonamento in qualsiasi momento dalle impostazioni del tuo account."
+      },
+      "cancel": {
+        "question": "Posso cancellare in qualsiasi momento?",
+        "answer": "Sì, puoi cancellare il tuo abbonamento in qualsiasi momento. Continuerai ad avere accesso alle funzioni premium fino alla fine del periodo di fatturazione."
+      },
+      "trial": {
+        "question": "C'è una prova gratuita?",
+        "answer": "Tutti i nuovi utenti iniziano con il nostro piano Starter gratuito. Puoi passare a Premium o Pro in qualsiasi momento per sbloccare funzioni e contenuti aggiuntivi."
+      },
+      "support": {
+        "question": "Che supporto offrite?",
+        "answer": "Forniamo supporto via email per tutti gli utenti, con supporto prioritario per gli abbonati Pro. Il nostro team è qui per aiutarti a massimizzare il tuo viaggio di guarigione sonora."
+      }
+    },
+    "guarantee": {
+      "title": "Garanzia di Soddisfazione di 30 Giorni",
+      "description": "Siamo sicuri che amerai la tua esperienza di guarigione sonora. Se non sei completamente soddisfatto, offriamo un rimborso completo entro 30 giorni.",
+      "noCommitment": "Nessun impegno a lungo termine",
+      "securePayments": "Pagamenti sicuri",
+      "dataProtection": "Protezione dei dati garantita"
+    },
+    "readyToStart": "Pronto per Iniziare il Tuo Viaggio?",
+    "joinThousands": "Unisciti a migliaia di utenti che hanno trasformato il loro benessere con la guarigione sonora terapeutica.",
+    "startFreeTrial": "Inizia Prova Gratuita",
+    "signIn": "Accedi",
+    "redirectingToSubscription": "Reindirizzamento all'abbonamento per il piano {{plan}}..."
   }
 }

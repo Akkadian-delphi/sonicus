@@ -215,5 +215,46 @@
       "version": "Sonicus v1.0.0 - Aplikace Zvukové Terapie",
       "tagline": "Powered by Elefefe"
     }
+  },
+  "pricing": {
+    "title": "Vyberte Si Svou Cestu Zvukového Léčení",
+    "subtitle": "Odemkněte plný potenciál terapeutického zvukového léčení s našimi flexibilními předplacenými plány navržené pro každou potřebu wellness.",
+    "chooseYourPlan": "Vyberte Si Svůj Plán",
+    "currentPlan": "Aktuální Plán",
+    "getStarted": "Začít",
+    "upgradeToPremium": "Upgradovat na Premium",
+    "upgradeToPro": "Upgradovat na Pro",
+    "mostPopular": "NEJPOPULÁRNĚJŠÍ",
+    "faq": {
+      "title": "Často Kladené Otázky",
+      "billing": {
+        "question": "Jak funguje fakturace?",
+        "answer": "Fakturujeme měsíčně nebo ročně v závislosti na vašem zvoleném plánu. Své předplatné můžete kdykoli změnit nebo zrušit v nastavení účtu."
+      },
+      "cancel": {
+        "question": "Mohu kdykoli zrušit?",
+        "answer": "Ano, své předplatné můžete kdykoli zrušit. Budete nadále mít přístup k prémiové funkce do konce fakturačního období."
+      },
+      "trial": {
+        "question": "Je k dispozici zkušební verze zdarma?",
+        "answer": "Všichni noví uživatelé začínají s naším bezplatným Starter plánem. Kdykoli můžete upgradovat na Premium nebo Pro pro odemčení dalších funkcí a obsahu."
+      },
+      "support": {
+        "question": "Jakou podporu nabízíte?",
+        "answer": "Poskytujeme e-mailovou podporu pro všechny uživatele, s prioritní podporou pro Pro předplatitele. Náš tým je tu, aby vám pomohl maximalizovat vaši cestu zvukového léčení."
+      }
+    },
+    "guarantee": {
+      "title": "30-Denní Záruka Spokojenosti",
+      "description": "Jsme si jisti, že si zamilujete svůj zážitek ze zvukového léčení. Pokud nebudete zcela spokojeni, nabízíme plnou náhradu do 30 dnů.",
+      "noCommitment": "Žádný dlouhodobý závazek",
+      "securePayments": "Bezpečné platby",
+      "dataProtection": "Ochrana dat zaručena"
+    },
+    "readyToStart": "Jste Připraveni Začít Svou Cestu?",
+    "joinThousands": "Připojte se k tisícům uživatelů, kteří transformovali své blaho pomocí terapeutického zvukového léčení.",
+    "startFreeTrial": "Začít Zkušební Verzi Zdarma",
+    "signIn": "Přihlásit se",
+    "redirectingToSubscription": "Přesměrování na předplatné pro {{plan}} plán..."
   }
 }

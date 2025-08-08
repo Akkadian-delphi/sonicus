@@ -2,8 +2,9 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import './i18n'; // Initialize i18n
 import Navbar from "./components/Navbar";
-import LanguageDebugInfo from "./components/LanguageDebugInfo";
+import ScrollToTop from "./components/ScrollToTop";
 import HomePage from "./pages/HomePage";
+import PricingPage from "./pages/PricingPage";
 import LoginPage from "./pages/LoginPage";
 import CustomerRegisterPage from "./pages/CustomerRegisterPage";
 import PasswordResetPage from "./pages/PasswordResetPage";
@@ -20,9 +21,6 @@ import SuperAdminPage from "./pages/SuperAdminPage";
 import NotFoundPage from "./pages/NotFoundPage";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { AuthProvider, useAuth } from "./hooks/useAuth";
-
-// Import development helpers (only active in development)
-import "./utils/devHelper";
 
 // PrivateRoute component that takes an element prop
 const PrivateRoute = ({ element }) => {
@@ -48,11 +46,13 @@ function App() {
 const AppContent = () => {
   return (
     <>
+      <ScrollToTop />
       <Navbar />
-      <LanguageDebugInfo />
       <Routes>
           {/* Public routes */}
           <Route path="/" element={<HomePage />} />
+          <Route path="/pricing" element={<PricingPage />} />
+          <Route path="/plans" element={<PricingPage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/register" element={<CustomerRegisterPage />} />
         <Route path="/register-customer" element={<CustomerRegisterPage />} />

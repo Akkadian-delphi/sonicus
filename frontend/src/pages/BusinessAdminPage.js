@@ -60,15 +60,20 @@ function BusinessAdminPage() {
   const organizationId = user?.organization_id;
   const hasValidOrgId = organizationId && organizationId !== 'undefined';
 
-  // Debug logging
-  console.log('BusinessAdminPage Debug:', {
-    user,
-    userRole: user?.role,
-    organizationId,
-    hasValidOrgId,
-    isBusinessAdmin,
-    hasRoleCheck: hasRole(['business_admin', 'staff'])
-  });
+  // Check authentication and user role
+  useEffect(() => {
+    if (!isAuthenticated || !user || !['business_admin', 'super_admin'].includes(user.role)) {
+      navigate('/login');
+      return;
+    }
+    
+    if (user.role === 'business_admin' && !hasValidOrgId) {
+      setError('No valid organization associated with this account');
+      return;
+    }
+    
+    fetchCustomers();
+  }, [isAuthenticated, user, navigate, hasValidOrgId]);
 
   // PWA manager setup
   useEffect(() => {
@@ -181,7 +186,8 @@ function BusinessAdminPage() {
   // Enhanced handlers with mobile-friendly toasts
     const handleCustomerStatusToggle = (customerId, currentStatus) => {
     // TODO: Implement customer status toggle
-    console.log('Toggle customer status:', customerId, currentStatus);
+    // For now, show a placeholder message
+    alert(`Toggle status for customer ${customerId} from ${currentStatus}`);
   };
 
   // Render content based on active tab

@@ -215,5 +215,46 @@
       "version": "Sonicus v1.0.0 - Aplikacja Terapii Audio",
       "tagline": "Powered by Elefefe"
     }
+  },
+  "pricing": {
+    "title": "Wybierz Swoją Podróż Uzdrawiania Dźwiękiem",
+    "subtitle": "Odkryj pełny potencjał terapeutycznego uzdrawiania dźwiękiem z naszymi elastycznymi planami subskrypcji zaprojektowanymi dla każdej potrzeby wellness.",
+    "chooseYourPlan": "Wybierz Swój Plan",
+    "currentPlan": "Aktualny Plan",
+    "getStarted": "Rozpocznij",
+    "upgradeToPremium": "Przejdź na Premium",
+    "upgradeToPro": "Przejdź na Pro",
+    "mostPopular": "NAJPOPULARNIEJSZY",
+    "faq": {
+      "title": "Często Zadawane Pytania",
+      "billing": {
+        "question": "Jak działa rozliczanie?",
+        "answer": "Rozliczenia następują miesięcznie lub rocznie w zależności od wybranego planu. Możesz zmienić lub anulować swoją subskrypcję w dowolnym momencie w ustawieniach konta."
+      },
+      "cancel": {
+        "question": "Czy mogę anulować w dowolnym momencie?",
+        "answer": "Tak, możesz anulować swoją subskrypcję w dowolnym momencie. Będziesz nadal mieć dostęp do funkcji premium do końca okresu rozliczeniowego."
+      },
+      "trial": {
+        "question": "Czy jest darmowy okres próbny?",
+        "answer": "Wszyscy nowi użytkownicy zaczynają z naszym darmowym planem Starter. Możesz przejść na Premium lub Pro w dowolnym momencie, aby odblokować dodatkowe funkcje i treści."
+      },
+      "support": {
+        "question": "Jakie wsparcie oferujecie?",
+        "answer": "Zapewniamy wsparcie e-mailowe dla wszystkich użytkowników, z priorytetowym wsparciem dla subskrybentów Pro. Nasz zespół jest tutaj, aby pomóc Ci zmaksymalizować Twoją podróż uzdrawiania dźwiękiem."
+      }
+    },
+    "guarantee": {
+      "title": "30-Dniowa Gwarancja Satysfakcji",
+      "description": "Jesteśmy pewni, że pokochasz swoje doświadczenie uzdrawiania dźwiękiem. Jeśli nie jesteś w pełni usatysfakcjonowany, oferujemy pełny zwrot pieniędzy w ciągu 30 dni.",
+      "noCommitment": "Brak długoterminowego zobowiązania",
+      "securePayments": "Bezpieczne płatności",
+      "dataProtection": "Ochrona danych gwarantowana"
+    },
+    "readyToStart": "Gotowy Rozpocząć Swoją Podróż?",
+    "joinThousands": "Dołącz do tysięcy użytkowników, którzy przekształcili swoje samopoczucie dzięki terapeutycznemu uzdrawianiu dźwiękiem.",
+    "startFreeTrial": "Rozpocznij Darmowy Okres Próbny",
+    "signIn": "Zaloguj się",
+    "redirectingToSubscription": "Przekierowanie do subskrypcji planu {{plan}}..."
   }
 }

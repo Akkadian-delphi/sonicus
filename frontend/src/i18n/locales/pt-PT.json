@@ -154,5 +154,46 @@
       "version": "Sonicus v1.0.0 - Aplicação de Terapia de Áudio",
       "tagline": "Desenvolvido pela Elefefe"
     }
+  },
+  "pricing": {
+    "title": "Escolha a Sua Jornada de Cura Sonora",
+    "subtitle": "Desbloqueie todo o potencial da cura sonora terapêutica com os nossos planos de subscrição flexíveis concebidos para todas as necessidades de bem-estar.",
+    "chooseYourPlan": "Escolha o Seu Plano",
+    "currentPlan": "Plano Actual",
+    "getStarted": "Começar",
+    "upgradeToPremium": "Actualizar para Premium",
+    "upgradeToPro": "Actualizar para Pro",
+    "mostPopular": "MAIS POPULAR",
+    "faq": {
+      "title": "Perguntas Frequentes",
+      "billing": {
+        "question": "Como funciona a facturação?",
+        "answer": "É facturado mensalmente ou anualmente dependendo do plano escolhido. Pode alterar ou cancelar a sua subscrição a qualquer momento nas definições da sua conta."
+      },
+      "cancel": {
+        "question": "Posso cancelar a qualquer momento?",
+        "answer": "Sim, pode cancelar a sua subscrição a qualquer momento. Continuará a ter acesso às funcionalidades premium até ao final do período de facturação."
+      },
+      "trial": {
+        "question": "Há um período de teste gratuito?",
+        "answer": "Todos os novos utilizadores começam com o nosso plano Starter gratuito. Pode actualizar para Premium ou Pro a qualquer momento para desbloquear funcionalidades e conteúdo adicionais."
+      },
+      "support": {
+        "question": "Que suporte oferecem?",
+        "answer": "Fornecemos suporte por email para todos os utilizadores, com suporte prioritário para subscritores Pro. A nossa equipa está aqui para ajudá-lo a maximizar a sua jornada de cura sonora."
+      }
+    },
+    "guarantee": {
+      "title": "Garantia de Satisfação de 30 Dias",
+      "description": "Estamos confiantes de que vai adorar a sua experiência de cura sonora. Se não estiver completamente satisfeito, oferecemos um reembolso total dentro de 30 dias.",
+      "noCommitment": "Sem compromisso a longo prazo",
+      "securePayments": "Pagamentos seguros",
+      "dataProtection": "Protecção de dados garantida"
+    },
+    "readyToStart": "Pronto para Começar a Sua Jornada?",
+    "joinThousands": "Junte-se a milhares de utilizadores que transformaram o seu bem-estar com cura sonora terapêutica.",
+    "startFreeTrial": "Iniciar Teste Gratuito",
+    "signIn": "Iniciar Sessão",
+    "redirectingToSubscription": "A redirigir para a subscrição do plano {{plan}}..."
   }
 }

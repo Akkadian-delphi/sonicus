@@ -146,13 +146,54 @@
     "save": "Guardar",
     "cancel": "Cancelar",
     "edit": "Editar",
-    "delete": "Eliminar",
+        "delete": "Excluir",
     "confirm": "Confirmar",
     "yes": "Sim",
     "no": "Não",
     "footer": {
-      "version": "Sonicus v1.0.0 - Aplicação de Terapia de Áudio",
-      "tagline": "Desenvolvido pela Elefefe"
+      "version": "Sonicus v1.0.0 - Aplicativo de Terapia Sonora",
+      "tagline": "Powered by Elefefe"
     }
+  },
+  "pricing": {
+    "title": "Escolha Sua Jornada de Cura Sonora",
+    "subtitle": "Desbloqueie todo o potencial da cura sonora terapêutica com nossos planos de assinatura flexíveis projetados para cada necessidade de bem-estar.",
+    "chooseYourPlan": "Escolha Seu Plano",
+    "currentPlan": "Plano Atual",
+    "getStarted": "Começar",
+    "upgradeToPremium": "Atualizar para Premium",
+    "upgradeToPro": "Atualizar para Pro",
+    "mostPopular": "MAIS POPULAR",
+    "faq": {
+      "title": "Perguntas Frequentes",
+      "billing": {
+        "question": "Como funciona a cobrança?",
+        "answer": "Você será cobrado mensalmente ou anualmente dependendo do plano escolhido. Pode alterar ou cancelar sua assinatura a qualquer momento nas configurações da sua conta."
+      },
+      "cancel": {
+        "question": "Posso cancelar a qualquer momento?",
+        "answer": "Sim, você pode cancelar sua assinatura a qualquer momento. Continuará tendo acesso aos recursos premium até o final do período de cobrança."
+      },
+      "trial": {
+        "question": "Existe um período de teste gratuito?",
+        "answer": "Todos os novos usuários começam com nosso plano Starter gratuito. Você pode atualizar para Premium ou Pro a qualquer momento para desbloquear recursos e conteúdo adicionais."
+      },
+      "support": {
+        "question": "Que suporte vocês oferecem?",
+        "answer": "Fornecemos suporte por email para todos os usuários, com suporte prioritário para assinantes Pro. Nossa equipe está aqui para ajudá-lo a maximizar sua jornada de cura sonora."
+      }
+    },
+    "guarantee": {
+      "title": "Garantia de Satisfação de 30 Dias",
+      "description": "Temos certeza de que você vai adorar sua experiência de cura sonora. Se não estiver completamente satisfeito, oferecemos reembolso total em até 30 dias.",
+      "noCommitment": "Sem compromisso de longo prazo",
+      "securePayments": "Pagamentos seguros",
+      "dataProtection": "Proteção de dados garantida"
+    },
+    "readyToStart": "Pronto Para Começar Sua Jornada?",
+    "joinThousands": "Junte-se a milhares de usuários que transformaram seu bem-estar com a cura sonora terapêutica.",
+    "startFreeTrial": "Iniciar Teste Gratuito",
+    "signIn": "Entrar",
+    "redirectingToSubscription": "Redirecionando para assinatura do plano {{plan}}..."
   }
 }

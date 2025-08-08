@@ -215,5 +215,46 @@
       "version": "Sonicus v1.0.0 - Ljudterapi Applikation",
       "tagline": "Powered by Elefefe"
     }
+  },
+  "pricing": {
+    "title": "Välj Din Ljudläkning Resa",
+    "subtitle": "Lås upp den fulla potentialen av terapeutisk ljudläkning med våra flexibla abonnemangsplaner utformade för alla wellness-behov.",
+    "chooseYourPlan": "Välj Din Plan",
+    "currentPlan": "Nuvarande Plan",
+    "getStarted": "Kom Igång",
+    "upgradeToPremium": "Uppgradera till Premium",
+    "upgradeToPro": "Uppgradera till Pro",
+    "mostPopular": "POPULÄRASTE",
+    "faq": {
+      "title": "Vanliga Frågor",
+      "billing": {
+        "question": "Hur fungerar fakturering?",
+        "answer": "Du faktureras månadsvis eller årligen beroende på din valda plan. Du kan ändra eller avbryta din prenumeration när som helst i dina kontoinställningar."
+      },
+      "cancel": {
+        "question": "Kan jag avbryta när som helst?",
+        "answer": "Ja, du kan avbryta din prenumeration när som helst. Du kommer fortsätta ha tillgång till premiumfunktioner till slutet av din faktureringsperiod."
+      },
+      "trial": {
+        "question": "Finns det en gratis provperiod?",
+        "answer": "Alla nya användare börjar med vår gratis Starter-plan. Du kan uppgradera till Premium eller Pro när som helst för att låsa upp ytterligare funktioner och innehåll."
+      },
+      "support": {
+        "question": "Vilket stöd erbjuder ni?",
+        "answer": "Vi tillhandahåller e-poststöd för alla användare, med prioriterat stöd för Pro-prenumeranter. Vårt team är här för att hjälpa dig maximera din ljudläkning resa."
+      }
+    },
+    "guarantee": {
+      "title": "30-Dagars Nöjdhetsgaranti",
+      "description": "Vi är säkra på att du kommer älska din ljudläkning upplevelse. Om du inte är helt nöjd erbjuder vi full återbetalning inom 30 dagar.",
+      "noCommitment": "Ingen långsiktig förpliktelse",
+      "securePayments": "Säkra betalningar",
+      "dataProtection": "Dataskydd garanterat"
+    },
+    "readyToStart": "Redo att Börja Din Resa?",
+    "joinThousands": "Gå med tusentals användare som har förvandlat sitt välbefinnande med terapeutisk ljudläkning.",
+    "startFreeTrial": "Starta Gratis Provperiod",
+    "signIn": "Logga In",
+    "redirectingToSubscription": "Omdirigerar till prenumeration för {{plan}} plan..."
   }
 }

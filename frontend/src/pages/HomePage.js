@@ -12,7 +12,8 @@ function HomePage() {
 
   useEffect(() => {
     // If user is authenticated, redirect to their personal dashboard
-    if (isAuthenticated && user) {
+    // Only redirect if coming from root path to avoid breaking direct homepage visits
+    if (isAuthenticated && user && window.location.pathname === '/') {
       const dashboardRoute = getDashboardRoute(user);
       navigate(dashboardRoute);
     }
@@ -169,44 +170,6 @@ function HomePage() {
                 : t('homepage.cta.guestDescription')
               }
             </p>
-            
-            {/* B2C Subscription Tiers */}
-            {!isAuthenticated && (
-              <div className="subscription-tiers">
-                <div className="tier-card">
-                  <h3>{t('homepage.subscriptionTiers.starter.name')}</h3>
-                  <div className="price">{t('homepage.subscriptionTiers.starter.price')}</div>
-                  <ul>
-                    <li>{t('homepage.subscriptionTiers.starter.features.sessions')}</li>
-                    <li>{t('homepage.subscriptionTiers.starter.features.timeLimit')}</li>
-                    <li>{t('homepage.subscriptionTiers.starter.features.content')}</li>
-                    <li>{t('homepage.subscriptionTiers.starter.features.analytics')}</li>
-                  </ul>
-                </div>
-                <div className="tier-card featured">
-                  <h3>{t('homepage.subscriptionTiers.premium.name')}</h3>
-                  <div className="price">{t('homepage.subscriptionTiers.premium.price')}</div>
-                  <ul>
-                    <li>{t('homepage.subscriptionTiers.premium.features.sessions')}</li>
-                    <li>{t('homepage.subscriptionTiers.premium.features.timeLimit')}</li>
-                    <li>{t('homepage.subscriptionTiers.premium.features.content')}</li>
-                    <li>{t('homepage.subscriptionTiers.premium.features.analytics')}</li>
-                    <li>{t('homepage.subscriptionTiers.premium.features.tracking')}</li>
-                  </ul>
-                </div>
-                <div className="tier-card">
-                  <h3>{t('homepage.subscriptionTiers.pro.name')}</h3>
-                  <div className="price">{t('homepage.subscriptionTiers.pro.price')}</div>
-                  <ul>
-                    <li>{t('homepage.subscriptionTiers.pro.features.sessions')}</li>
-                    <li>{t('homepage.subscriptionTiers.pro.features.timeLimit')}</li>
-                    <li>{t('homepage.subscriptionTiers.pro.features.content')}</li>
-                    <li>{t('homepage.subscriptionTiers.pro.features.insights')}</li>
-                    <li>{t('homepage.subscriptionTiers.pro.features.support')}</li>
-                  </ul>
-                </div>
-              </div>
-            )}
 
             <div className="cta-buttons">
               {isAuthenticated ? (
@@ -216,8 +179,8 @@ function HomePage() {
                 </>
               ) : (
                 <>
-                  <Link to="/register" className="btn btn-primary">{t('homepage.cta.buttons.startTrial')}</Link>
-                  <Link to="/login" className="btn btn-secondary">{t('homepage.cta.buttons.signIn')}</Link>
+                  <Link to="/pricing" className="btn btn-primary">{t('homepage.cta.buttons.viewPricing')}</Link>
+                  <Link to="/register" className="btn btn-secondary">{t('homepage.cta.buttons.startTrial')}</Link>
                 </>
               )}
             </div>

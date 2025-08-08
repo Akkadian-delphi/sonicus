@@ -6,7 +6,10 @@
     "welcome": "Bienvenido, {{name}}",
     "signOut": "Cerrar Sesión",
     "signIn": "Iniciar Sesión",
-    "getStarted": "Comenzar"
+    "getStarted": "Comenzar",
+    "pricing": "Precios",
+    "upgrade": "Mejorar",
+    "upgradePlan": "Mejorar Plan"
   },
   "homepage": {
     "hero": {
@@ -129,7 +132,8 @@
         "exploreSounds": "Explorar Sonidos",
         "dashboard": "Mi Panel",
         "startTrial": "Comenzar Prueba Gratuita",
-        "signIn": "Iniciar Sesión"
+        "signIn": "Iniciar Sesión",
+        "viewPricing": "Ver Planes de Precios"
       }
     },
     "subscriptionTiers": {
@@ -219,5 +223,46 @@
       "version": "Sonicus v1.0.0 - Aplicación de Terapia de Audio",
       "tagline": "Impulsado por Elefefe"
     }
+  },
+  "pricing": {
+    "title": "Elige Tu Viaje de Sanación Sonora",
+    "subtitle": "Desbloquea todo el potencial de la sanación sonora terapéutica con nuestros planes de suscripción flexibles diseñados para cada necesidad de bienestar.",
+    "chooseYourPlan": "Elige Tu Plan",
+    "currentPlan": "Plan Actual",
+    "getStarted": "Comenzar",
+    "upgradeToPremium": "Actualizar a Premium",
+    "upgradeToPro": "Actualizar a Pro",
+    "mostPopular": "MÁS POPULAR",
+    "faq": {
+      "title": "Preguntas Frecuentes",
+      "billing": {
+        "question": "¿Cómo funciona la facturación?",
+        "answer": "Se te factura mensual o anualmente según el plan que elijas. Puedes cambiar o cancelar tu suscripción en cualquier momento desde la configuración de tu cuenta."
+      },
+      "cancel": {
+        "question": "¿Puedo cancelar en cualquier momento?",
+        "answer": "Sí, puedes cancelar tu suscripción en cualquier momento. Continuarás teniendo acceso a las características premium hasta el final de tu período de facturación."
+      },
+      "trial": {
+        "question": "¿Hay una prueba gratuita?",
+        "answer": "Todos los usuarios nuevos comienzan con nuestro plan gratuito Starter. Puedes actualizar a Premium o Pro en cualquier momento para desbloquear características y contenido adicionales."
+      },
+      "support": {
+        "question": "¿Qué soporte ofrecen?",
+        "answer": "Proporcionamos soporte por correo electrónico para todos los usuarios, con soporte prioritario para suscriptores Pro. Nuestro equipo está aquí para ayudarte a maximizar tu viaje de sanación sonora."
+      }
+    },
+    "guarantee": {
+      "title": "Garantía de Satisfacción de 30 Días",
+      "description": "Estamos seguros de que amarás tu experiencia de sanación sonora. Si no estás completamente satisfecho, ofrecemos un reembolso completo dentro de 30 días.",
+      "noCommitment": "Sin compromiso a largo plazo",
+      "securePayments": "Pagos seguros",
+      "dataProtection": "Protección de datos garantizada"
+    },
+    "readyToStart": "¿Listo para Comenzar Tu Viaje?",
+    "joinThousands": "Únete a miles de usuarios que han transformado su bienestar con la sanación sonora terapéutica.",
+    "startFreeTrial": "Comenzar Prueba Gratuita",
+    "signIn": "Iniciar Sesión",
+    "redirectingToSubscription": "Redirigiendo a la suscripción para el plan {{plan}}..."
   }
 }

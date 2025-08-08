@@ -215,5 +215,46 @@
       "version": "Sonicus v1.0.0 - Lydterapi Applikation",
       "tagline": "Powered by Elefefe"
     }
+  },
+  "pricing": {
+    "title": "Vælg Din Lydhelings Rejse",
+    "subtitle": "Lås op for det fulde potentiale af terapeutisk lydheling med vores fleksible abonnementsplaner designet til ethvert wellness-behov.",
+    "chooseYourPlan": "Vælg Din Plan",
+    "currentPlan": "Nuværende Plan",
+    "getStarted": "Kom I Gang",
+    "upgradeToPremium": "Opgrader til Premium",
+    "upgradeToPro": "Opgrader til Pro",
+    "mostPopular": "MEST POPULÆRE",
+    "faq": {
+      "title": "Ofte Stillede Spørgsmål",
+      "billing": {
+        "question": "Hvordan fungerer fakturering?",
+        "answer": "Du faktureres månedligt eller årligt afhængigt af din valgte plan. Du kan ændre eller opsige dit abonnement når som helst i dine kontoindstillinger."
+      },
+      "cancel": {
+        "question": "Kan jeg opsige når som helst?",
+        "answer": "Ja, du kan opsige dit abonnement når som helst. Du vil fortsætte med at have adgang til premium funktioner indtil slutningen af din faktureringsperiode."
+      },
+      "trial": {
+        "question": "Er der en gratis prøveperiode?",
+        "answer": "Alle nye brugere starter med vores gratis Starter-plan. Du kan opgradere til Premium eller Pro når som helst for at låse op for yderligere funktioner og indhold."
+      },
+      "support": {
+        "question": "Hvilken support tilbyder I?",
+        "answer": "Vi leverer email support til alle brugere, med prioriteret support til Pro-abonnenter. Vores team er her for at hjælpe dig med at maksimere din lydhelings rejse."
+      }
+    },
+    "guarantee": {
+      "title": "30-Dages Tilfredshedsgaranti",
+      "description": "Vi er sikre på at du vil elske din lydhelings oplevelse. Hvis du ikke er helt tilfreds, tilbyder vi fuld refundering inden for 30 dage.",
+      "noCommitment": "Ingen langvarig forpligtelse",
+      "securePayments": "Sikre betalinger",
+      "dataProtection": "Databeskyttelse garanteret"
+    },
+    "readyToStart": "Klar Til At Starte Din Rejse?",
+    "joinThousands": "Tilslut dig tusindvis af brugere som har transformeret deres wellness med terapeutisk lydheling.",
+    "startFreeTrial": "Start Gratis Prøve",
+    "signIn": "Log Ind",
+    "redirectingToSubscription": "Omdirigerer til abonnement for {{plan}} plan..."
   }
 }

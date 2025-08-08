@@ -130,7 +130,7 @@ i18n
   .init({
     resources,
     fallbackLng: 'en-US',
-    debug: process.env.NODE_ENV === 'development',
+    debug: false,
     
     // Language fallback configuration for all 24 EU official languages
     supportedLngs: [

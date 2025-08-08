@@ -215,5 +215,46 @@
       "version": "Sonicus v1.0.0 - Audio Therapy Application",
       "tagline": "Powered by Elefefe"
     }
+  },
+  "pricing": {
+    "title": "Choose Your Sound Healing Journey",
+    "subtitle": "Unlock the full potential of therapeutic sound healing with our flexible subscription plans designed for every wellness need.",
+    "chooseYourPlan": "Choose Your Plan",
+    "currentPlan": "Current Plan",
+    "getStarted": "Get Started",
+    "upgradeToPremium": "Upgrade to Premium",
+    "upgradeToPro": "Upgrade to Pro",
+    "mostPopular": "MOST POPULAR",
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "billing": {
+        "question": "How does billing work?",
+        "answer": "You'll be billed monthly or annually depending on your chosen plan. You can change or cancel your subscription at any time from your account settings."
+      },
+      "cancel": {
+        "question": "Can I cancel at any time?",
+        "answer": "Yes, you can cancel your subscription at any time. You'll continue to have access to premium features until the end of your billing period."
+      },
+      "trial": {
+        "question": "Is there a free trial?",
+        "answer": "All new users start with our free Starter plan. You can upgrade to Premium or Pro at any time to unlock additional features and content."
+      },
+      "support": {
+        "question": "What support do you offer?",
+        "answer": "We provide email support to all users, with priority support for Pro subscribers. Our team is here to help you maximise your sound healing journey."
+      }
+    },
+    "guarantee": {
+      "title": "30-Day Satisfaction Guarantee",
+      "description": "We're confident you'll love your sound healing experience. If you're not completely satisfied, we offer a full refund within 30 days.",
+      "noCommitment": "No long-term commitment",
+      "securePayments": "Secure payments",
+      "dataProtection": "Data protection guaranteed"
+    },
+    "readyToStart": "Ready to Start Your Journey?",
+    "joinThousands": "Join thousands of users who have transformed their wellness with therapeutic sound healing.",
+    "startFreeTrial": "Start Free Trial",
+    "signIn": "Sign In",
+    "redirectingToSubscription": "Redirecting to subscription for {{plan}} plan..."
   }
 }

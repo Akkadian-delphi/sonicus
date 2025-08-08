@@ -215,5 +215,46 @@
       "version": "Sonicus v1.0.0 - Ääniterapia Sovellus",
       "tagline": "Powered by Elefefe"
     }
+  },
+  "pricing": {
+    "title": "Valitse Ääniparantumismatkasi",
+    "subtitle": "Vapauta terapeuttisen ääniparantumisen täysi potentiaali joustavilla tilauspaketeillamme, jotka on suunniteltu kaikkiin hyvinvoinnin tarpeisiin.",
+    "chooseYourPlan": "Valitse Pakettisi",
+    "currentPlan": "Nykyinen Paketti",
+    "getStarted": "Aloita",
+    "upgradeToPremium": "Päivitä Premium-pakettiin",
+    "upgradeToPro": "Päivitä Pro-pakettiin",
+    "mostPopular": "SUOSITUIN",
+    "faq": {
+      "title": "Usein Kysytyt Kysymykset",
+      "billing": {
+        "question": "Kuinka laskutus toimii?",
+        "answer": "Sinua laskutetaan kuukausittain tai vuosittain valitun paketin mukaan. Voit muuttaa tai peruuttaa tilauksesi milloin tahansa tiliasetuksista."
+      },
+      "cancel": {
+        "question": "Voinko peruuttaa milloin tahansa?",
+        "answer": "Kyllä, voit peruuttaa tilauksesi milloin tahansa. Sinulla on edelleen pääsy premium-ominaisuuksiin laskutuskauden loppuun asti."
+      },
+      "trial": {
+        "question": "Onko ilmainen kokeilujakso?",
+        "answer": "Kaikki uudet käyttäjät aloittavat ilmaisella Starter-paketillamme. Voit päivittää Premium- tai Pro-pakettiin milloin tahansa avataksesi lisäominaisuuksia ja sisältöä."
+      },
+      "support": {
+        "question": "Millaista tukea tarjoatte?",
+        "answer": "Tarjoamme sähköpostitukea kaikille käyttäjille, ensisijaisella tuella Pro-tilaajille. Tiimimme on täällä auttamassa sinua maksimoimaan ääniparantumismatkasi."
+      }
+    },
+    "guarantee": {
+      "title": "30 Päivän Tyytyväisyystakuu",
+      "description": "Olemme varmoja, että rakastat ääniparantumiskokemustasi. Jos et ole täysin tyytyväinen, tarjoamme täyden hyvityksen 30 päivän sisällä.",
+      "noCommitment": "Ei pitkäaikaista sitoutumista",
+      "securePayments": "Turvalliset maksut",
+      "dataProtection": "Tietosuoja taattu"
+    },
+    "readyToStart": "Valmis Aloittamaan Matkasi?",
+    "joinThousands": "Liity tuhansiin käyttäjiin, jotka ovat muuttaneet hyvinvointiaan terapeuttisella ääniparantumisella.",
+    "startFreeTrial": "Aloita Ilmainen Kokeilu",
+    "signIn": "Kirjaudu Sisään",
+    "redirectingToSubscription": "Ohjataan {{plan}}-paketin tilaukseen..."
   }
 }

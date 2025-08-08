@@ -215,5 +215,46 @@
       "version": "Sonicus v1.0.0 - Feidhmchlár Teiripe Fuaime",
       "tagline": "Cumhachtaithe ag Elefefe"
     }
+  },
+  "pricing": {
+    "title": "Roghnaigh Do Thuras Cneasaithe Fuaime",
+    "subtitle": "Scaoil lán-acmhainn na teiripe cneasaithe fuaime le ár bpleananna síntiúis solúbtha atá deartha do gach riachtanas folláine.",
+    "chooseYourPlan": "Roghnaigh Do Phlean",
+    "currentPlan": "Plean Reatha",
+    "getStarted": "Tosaigh",
+    "upgradeToPremium": "Uasghrádaigh go Premium",
+    "upgradeToPro": "Uasghrádaigh go Pro",
+    "mostPopular": "IS COITIANTA",
+    "faq": {
+      "title": "Ceisteanna Coitianta",
+      "billing": {
+        "question": "Conas a oibríonn billíocht?",
+        "answer": "Gheobhaidh tú bille míosúil nó bliantúil ag brath ar do phlean roghnaithe. Is féidir leat do shíntiús a athrú nó a chealú ag am ar bith ó shocruithe do chuntais."
+      },
+      "cancel": {
+        "question": "An féidir liom cealú ag am ar bith?",
+        "answer": "Is féidir, is féidir leat do shíntiús a chealú ag am ar bith. Leanfaidh tú ag bheith ag rochtain ar ghnéithe préimhe go dtí deireadh do thréimhse billíochta."
+      },
+      "trial": {
+        "question": "An bhfuil triail saor in aisce ann?",
+        "answer": "Tosaíonn gach úsáideoir nua lenár bplean Tosaitheora saor in aisce. Is féidir leat uasghrádú go Premium nó Pro ag am ar bith chun gnéithe agus ábhar breise a scaoileadh."
+      },
+      "support": {
+        "question": "Cén tacaíocht a thairgeann sibh?",
+        "answer": "Soláthraímid tacaíocht ríomhphoist do gach úsáideoir, le tacaíocht tosaíochta do shíntiúsóirí Pro. Tá ár bhfoireann anseo chun cabhrú leat do thuras cneasaithe fuaime a uasmhéadú."
+      }
+    },
+    "guarantee": {
+      "title": "Ráthaíocht Sásaimh 30 Lá",
+      "description": "Táimid muiníneach go mbeidh grá agat do thaithí cneasaithe fuaime. Mura bhfuil tú sásta go hiomlán, cuirimid aisíocaíocht iomlán ar fáil laistigh de 30 lá.",
+      "noCommitment": "Gan gealltanas fadtéarmach",
+      "securePayments": "Íocaíochtaí slána",
+      "dataProtection": "Cosaint sonraí ráthaithe"
+    },
+    "readyToStart": "Réidh chun Do Thuras a Thosú?",
+    "joinThousands": "Bí páirteach le na mílte úsáideoirí a d'athraigh a bhfolláine le cneasú fuaime teiripeach.",
+    "startFreeTrial": "Tosaigh Triail Saor in Aisce",
+    "signIn": "Sínigh Isteach",
+    "redirectingToSubscription": "Ag atreorú chuig síntiús don phlean {{plan}}..."
   }
 }

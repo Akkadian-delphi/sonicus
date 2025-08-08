@@ -79,7 +79,7 @@ export const usePaginatedApi = (apiFunction, options = {}) => {
     
     // Prevent concurrent executions and throttling
     if (executionRef.current || loading || (currentTime - lastExecutionTime < minExecutionInterval)) {
-      console.log('API call prevented - concurrent execution or throttling');
+      // API call prevented - concurrent execution or throttling
       return;
     }
     
