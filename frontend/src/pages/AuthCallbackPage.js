@@ -7,13 +7,13 @@ const AuthCallbackPage = () => {
   const [status, setStatus] = useState('processing');
   const [error, setError] = useState(null);
   const navigate = useNavigate();
-  const { handleAuthCallback } = useAuth();
+  const { handleOIDCCallback } = useAuth();
 
   useEffect(() => {
     const processCallback = async () => {
       try {
         setStatus('processing');
-        const result = await handleAuthCallback();
+        const result = await handleOIDCCallback();
         setStatus('success');
         
         // Determine redirect destination
@@ -46,7 +46,7 @@ const AuthCallbackPage = () => {
     };
 
     processCallback();
-  }, [handleAuthCallback, navigate]);
+  }, [handleOIDCCallback, navigate]);
 
   if (status === 'processing') {
     return (
