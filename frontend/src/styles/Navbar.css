@@ -312,7 +312,38 @@
 
 .navbar-auth {
   display: flex;
-  gap: 10px;
+  align-items: center;
+  gap: 20px; /* Increased gap for desktop */
+}
+
+.navbar-link {
+  color: var(--neutral-gray-light);
+  text-decoration: none;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  position: relative;
+}
+
+.navbar-link:hover {
+  color: var(--accent-blue-light);
+  transform: translateY(-1px);
+}
+
+.navbar-link.active {
+  color: var(--primary-green-light);
+  font-weight: 600;
+}
+
+.navbar-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--primary-green), var(--primary-green-light));
+  border-radius: 1px;
 }
 
 .navbar-button {

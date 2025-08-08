@@ -43,8 +43,8 @@ const devHelper = {
     console.group('🔗 Backend Connection Test');
     
     try {
-      const axios = (await import('./axios')).default;
       // Temporarily disabled - endpoint doesn't exist yet
+      // const axios = (await import('./axios')).default;
       // const response = await axios.get('/public/platform/organization-count');
       console.log('✅ Backend connection test skipped (endpoint not implemented)');
       // console.log('Organization count:', response.data.count);

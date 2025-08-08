@@ -1,0 +1,313 @@
+/* Modern Avatar Menu Styles */
+.avatar-menu {
+  position: relative;
+  z-index: 1000;
+}
+
+.avatar-button {
+  position: relative;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  background: linear-gradient(135deg, var(--primary-green), var(--primary-green-light));
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.avatar-button:hover {
+  transform: scale(1.05);
+  border-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.avatar-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.avatar-initials {
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.avatar-status-indicator {
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  width: 12px;
+  height: 12px;
+  background: var(--primary-green-light);
+  border: 2px solid white;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  animation: pulse-online 2s infinite;
+}
+
+@keyframes pulse-online {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+}
+
+/* Dropdown Styles */
+.avatar-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 8px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15),
+              0 8px 24px rgba(0, 0, 0, 0.1),
+              0 0 0 1px rgba(0, 0, 0, 0.05);
+  min-width: 280px;
+  z-index: 1001;
+  animation: dropdown-enter 0.2s ease-out;
+  transform-origin: top right;
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+@keyframes dropdown-enter {
+  0% {
+    opacity: 0;
+    transform: scale(0.95) translateY(-5px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.dropdown-header {
+  padding: 16px 20px 12px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.user-name {
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--neutral-gray-darker);
+  line-height: 1.2;
+}
+
+.user-email {
+  font-size: 14px;
+  color: var(--neutral-gray);
+  line-height: 1.3;
+}
+
+.user-role {
+  margin-top: 6px;
+}
+
+.role-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--primary-green), var(--primary-green-light));
+  color: white;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.dropdown-divider {
+  height: 1px;
+  background: rgba(0, 0, 0, 0.08);
+  margin: 4px 0;
+}
+
+.dropdown-menu {
+  padding: 8px 0;
+}
+
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 20px;
+  color: var(--neutral-gray-darker);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+}
+
+.dropdown-item:hover {
+  background: rgba(16, 185, 129, 0.08);
+  color: var(--primary-green-dark);
+  transform: translateX(2px);
+}
+
+.dropdown-icon {
+  width: 18px;
+  height: 18px;
+  opacity: 0.6;
+  transition: opacity 0.2s ease;
+}
+
+.dropdown-item:hover .dropdown-icon {
+  opacity: 1;
+}
+
+/* Special item styles */
+.admin-item:hover {
+  background: rgba(96, 165, 250, 0.08);
+  color: var(--accent-blue-dark);
+}
+
+.settings-item:hover {
+  background: rgba(107, 114, 128, 0.08);
+  color: var(--neutral-gray-darker);
+}
+
+.help-item:hover {
+  background: rgba(245, 158, 11, 0.08);
+  color: #d97706;
+}
+
+.logout-item:hover {
+  background: rgba(248, 113, 113, 0.08);
+  color: var(--accent-red-dark);
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .avatar-dropdown {
+    background: var(--neutral-gray-darker);
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .dropdown-header {
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .user-name {
+    color: white;
+  }
+  
+  .user-email {
+    color: var(--neutral-gray-light);
+  }
+  
+  .dropdown-divider {
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  .dropdown-item {
+    color: var(--neutral-gray-light);
+  }
+  
+  .dropdown-item:hover {
+    color: white;
+  }
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .avatar-button {
+    width: 36px;
+    height: 36px;
+  }
+  
+  .avatar-initials {
+    font-size: 14px;
+  }
+  
+  .avatar-status-indicator {
+    width: 10px;
+    height: 10px;
+    bottom: 1px;
+    right: 1px;
+  }
+  
+  .avatar-dropdown {
+    min-width: 260px;
+    right: -20px;
+  }
+  
+  .dropdown-header {
+    padding: 14px 16px 10px;
+  }
+  
+  .user-name {
+    font-size: 15px;
+  }
+  
+  .user-email {
+    font-size: 13px;
+  }
+  
+  .dropdown-item {
+    padding: 10px 16px;
+    font-size: 13px;
+  }
+  
+  .dropdown-icon {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  .avatar-dropdown {
+    right: -40px;
+    min-width: 240px;
+  }
+}
+
+/* Animation for menu items */
+.dropdown-menu .dropdown-item {
+  opacity: 0;
+  animation: fade-in-up 0.3s ease forwards;
+}
+
+.dropdown-menu .dropdown-item:nth-child(1) { animation-delay: 0.05s; }
+.dropdown-menu .dropdown-item:nth-child(2) { animation-delay: 0.1s; }
+.dropdown-menu .dropdown-item:nth-child(3) { animation-delay: 0.15s; }
+.dropdown-menu .dropdown-item:nth-child(4) { animation-delay: 0.2s; }
+.dropdown-menu .dropdown-item:nth-child(5) { animation-delay: 0.25s; }
+.dropdown-menu .dropdown-item:nth-child(6) { animation-delay: 0.3s; }
+.dropdown-menu .dropdown-item:nth-child(7) { animation-delay: 0.35s; }
+
+@keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

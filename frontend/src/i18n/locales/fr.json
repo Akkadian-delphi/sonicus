@@ -211,6 +211,10 @@
     "confirm": "Confirmer",
     "yes": "Oui",
     "no": "Non",
+    "user": "Utilisateur",
+    "dashboard": "Tableau de Bord",
+    "settings": "Paramètres",
+    "help": "Aide et Support",
     "footer": {
       "version": "Sonicus v1.0.0 - Application de Thérapie Audio",
       "tagline": "Propulsé par Elefefe"
