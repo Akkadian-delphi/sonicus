@@ -10,7 +10,7 @@ const RATE_LIMIT_WINDOW = 2000; // 2 seconds
 const MAX_REQUESTS_PER_WINDOW = 2; // Max 2 requests per 2 seconds per endpoint
 
 const axiosInstance = axios.create({
-  baseURL: 'http://localhost:18100/api/v1',
+  baseURL: 'http://127.0.0.1:18100/api/v1',
   timeout: 10000,
 });
 
