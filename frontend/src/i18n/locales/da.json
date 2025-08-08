@@ -129,8 +129,11 @@
         "exploreSounds": "Udforsk Lyde",
         "dashboard": "Mit Dashboard",
         "startTrial": "Start Gratis Prøveperiode",
-        "signIn": "Log Ind"
-      }
+        "signIn": "Log Ind",
+        "viewPricing": "Se Prisplaner"
+      },
+      "myDashboard": "Mit Dashboard",
+      "exploreSound": "Udforsk Lyde"
     },
     "subscriptionTiers": {
       "starter": {

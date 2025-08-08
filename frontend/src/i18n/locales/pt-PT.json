@@ -58,17 +58,81 @@
       "accessible": {
         "title": "Sempre Acessível",
         "description": "Aceda aos seus sons curativos a qualquer hora, em qualquer lugar, de qualquer dispositivo."
+      },
+      "naturalHealing": {
+        "title": "Cura Natural"
+      }
+    },
+    "whatWeDo": {
+      "title": "O que Faz o Sonicus?",
+      "description": "O Sonicus especializa-se na cura sonora terapêutica - uma prática de bem-estar comprovada que utiliza frequências de áudio específicas, sons da natureza e paisagens sonoras cuidadosamente elaboradas para promover a cura e o relaxamento. A nossa plataforma fornece-lhe acesso instantâneo a uma biblioteca de grau profissional de sons terapêuticos que pode usar para meditação, alívio do stress, melhoria do sono e apoio geral à saúde mental.",
+      "keyBenefits": {
+        "title": "Principais Benefícios de Usar o Sonicus:",
+        "stressReduction": {
+          "title": "Redução do Stress:",
+          "description": "Diminuir os níveis de cortisol através de paisagens sonoras calmantes"
+        },
+        "betterSleep": {
+          "title": "Melhor Sono:",
+          "description": "Melhore a qualidade do sono com sons especializados indutores de sono"
+        },
+        "enhancedFocus": {
+          "title": "Foco Aprimorado:",
+          "description": "Aumente a concentração com sons ambientes para foco"
+        },
+        "emotionalBalance": {
+          "title": "Equilíbrio Emocional:",
+          "description": "Regular o humor e as emoções através de frequências terapêuticas"
+        },
+        "painManagement": {
+          "title": "Gestão da Dor:",
+          "description": "Alívio natural da dor através de técnicas de terapia sonora"
+        },
+        "meditationSupport": {
+          "title": "Apoio à Meditação:",
+          "description": "Aprofunde a sua prática de meditação com áudio guiado"
+        }
+      }
+    },
+    "howItWorks": {
+      "title": "Como Funciona o Sonicus",
+      "curatedLibrary": {
+        "title": "🎵 Biblioteca Sonora Curada",
+        "description": "Aceda a centenas de sons terapêuticos criados profissionalmente, desde paisagens sonoras naturais a batidas binaurais, todos concebidos para resultados específicos de bem-estar."
+      },
+      "evidenceBased": {
+        "title": "🧘 Terapia Baseada em Evidências",
+        "description": "O nosso conteúdo áudio baseia-se em investigação científica em terapia sonora, neurociência e psicologia do bem-estar para máximo benefício terapêutico."
+      },
+      "instantStreaming": {
+        "title": "📱 Transmissão Instantânea",
+        "description": "Transmita áudio terapêutico de alta qualidade instantaneamente em qualquer dispositivo - não são necessários descarregamentos. Perfeito para casa, escritório ou uso em viagens."
+      },
+      "personalJourney": {
+        "title": "🎯 Jornada de Bem-estar Pessoal",
+        "description": "Acompanhe os seus hábitos de escuta, descubra novos sons terapêuticos e construa rotinas de bem-estar personalizadas adaptadas às suas necessidades."
+      },
+      "privateSecure": {
+        "title": "🔒 Privado e Seguro",
+        "description": "Os seus dados pessoais de bem-estar são completamente privados com a nossa arquitectura multi-inquilino - cada utilizador obtém o seu próprio espaço de base de dados seguro."
+      },
+      "smartRecommendations": {
+        "title": "⚡ Recomendações Inteligentes",
+        "description": "O nosso sistema alimentado por IA aprende as suas preferências e sugere os sons terapêuticos perfeitos para as suas necessidades actuais e objectivos de bem-estar."
       }
     },
     "cta": {
       "title": "Pronto para Transformar o seu Bem-estar?",
       "authenticatedDescription": "Continue a sua jornada de bem-estar com a nossa plataforma de cura sonora terapêutica.",
       "guestDescription": "Junte-se a milhares de utilizadores que descobriram o poder transformador da cura sonora terapêutica. Escolha o seu nível de subscrição e experimente a diferença que a terapia de áudio profissional pode fazer.",
+      "myDashboard": "O meu Painel",
+      "exploreSound": "Explorar Sons",
       "buttons": {
         "exploreSounds": "Explorar Sons",
         "dashboard": "O meu Painel",
         "startTrial": "Iniciar Teste Gratuito",
-        "signIn": "Iniciar Sessão"
+        "signIn": "Iniciar Sessão",
+        "viewPricing": "Ver Planos de Preços"
       }
     },
     "subscriptionTiers": {

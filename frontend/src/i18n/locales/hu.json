@@ -129,8 +129,11 @@
         "exploreSounds": "Hangok Felfedezése",
         "dashboard": "Irányítópultom",
         "startTrial": "Ingyenes Próba Kezdése",
-        "signIn": "Bejelentkezés"
-      }
+        "signIn": "Bejelentkezés",
+        "viewPricing": "Árképzési Tervek Megtekintése"
+      },
+      "myDashboard": "Saját Irányítópult",
+      "exploreSound": "Hangok Felfedezése"
     },
     "subscriptionTiers": {
       "starter": {

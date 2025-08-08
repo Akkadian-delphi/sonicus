@@ -6,7 +6,7 @@
     "welcome": "Laipni lūdzam, {{name}}",
     "signOut": "Iziet",
     "signIn": "Ieiet",
-        "getStarted": "Sākt"
+    "getStarted": "Sākt"
   },
   "homepage": {
     "hero": {
@@ -129,8 +129,11 @@
         "exploreSounds": "Izpētiet skaņas",
         "dashboard": "Mans panelis",
         "startTrial": "Sāciet bezmaksas izmēģinājumu",
-        "signIn": "Ieiet"
-      }
+        "signIn": "Ieiet",
+        "viewPricing": "Skatīt Cenu Plānus"
+      },
+      "myDashboard": "Mana Informācijas Panelis",
+      "exploreSound": "Izpētīt Skaņas"
     },
     "subscriptionTiers": {
       "starter": {

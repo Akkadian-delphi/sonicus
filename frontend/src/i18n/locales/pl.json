@@ -129,8 +129,11 @@
         "exploreSounds": "Eksploruj Dźwięki",
         "dashboard": "Mój Panel",
         "startTrial": "Rozpocznij Bezpłatny Trial",
-        "signIn": "Zaloguj Się"
-      }
+        "signIn": "Zaloguj Się",
+        "viewPricing": "Zobacz Plany Cenowe"
+      },
+      "myDashboard": "Mój Panel",
+      "exploreSound": "Odkryj Dźwięki"
     },
     "subscriptionTiers": {
       "starter": {

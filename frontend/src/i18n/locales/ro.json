@@ -6,7 +6,8 @@
     "welcome": "Bun venit, {{name}}",
     "signOut": "Deconectare",
     "signIn": "Conectare",
-    "getStarted": "Începe" },
+    "getStarted": "Începe"
+  },
   "homepage": {
     "hero": {
       "title": "Descoperă Puterea Vindecătoare a Sunetului",
@@ -128,8 +129,11 @@
         "exploreSounds": "Explorează Sunetele",
         "dashboard": "Tabloul Meu de Bord",
         "startTrial": "Începe Perioada de Probă Gratuită",
-        "signIn": "Conectare"
-      }
+        "signIn": "Conectare",
+        "viewPricing": "Vezi Planurile de Preț"
+      },
+      "myDashboard": "Tabloul Meu de Bord",
+      "exploreSound": "Explorează Sunete"
     },
     "subscriptionTiers": {
       "starter": {

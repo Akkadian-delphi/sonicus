@@ -129,8 +129,11 @@
         "exploreSounds": "Tyrinėkite garsus",
         "dashboard": "Mano skydelis",
         "startTrial": "Pradėkite nemokamą bandomąjį periodą",
-        "signIn": "Prisijungti"
-      }
+        "signIn": "Prisijungti",
+        "viewPricing": "Peržiūrėti Kainų Planus"
+      },
+      "myDashboard": "Mano Skydelis",
+      "exploreSound": "Tyrinėti Garsus"
     },
     "subscriptionTiers": {
       "starter": {

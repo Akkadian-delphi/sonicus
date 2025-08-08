@@ -129,8 +129,11 @@
         "exploreSounds": "Uuri heli",
         "dashboard": "Minu armatuurlaud",
         "startTrial": "Alusta tasuta prooviversiooni",
-        "signIn": "Logi sisse"
-      }
+        "signIn": "Logi sisse",
+        "viewPricing": "Vaata Hinnakavad"
+      },
+      "myDashboard": "Minu Armatuurlaud",
+      "exploreSound": "Avasta Helisid"
     },
     "subscriptionTiers": {
       "starter": {

@@ -58,17 +58,81 @@
       "accessible": {
         "title": "Sempre Acessível",
         "description": "Aceda aos seus sons curativos a qualquer hora, em qualquer lugar, de qualquer dispositivo."
+      },
+      "naturalHealing": {
+        "title": "Cura Natural"
+      }
+    },
+    "whatWeDo": {
+      "title": "O que o Sonicus Faz?",
+      "description": "O Sonicus se especializa em cura sonora terapêutica - uma prática de bem-estar comprovada que utiliza frequências de áudio específicas, sons da natureza e paisagens sonoras cuidadosamente elaboradas para promover a cura e o relaxamento. Nossa plataforma oferece acesso instantâneo a uma biblioteca de nível profissional de sons terapêuticos que você pode usar para meditação, alívio do estresse, melhoria do sono e suporte geral à saúde mental.",
+      "keyBenefits": {
+        "title": "Principais Benefícios de Usar o Sonicus:",
+        "stressReduction": {
+          "title": "Redução do Estresse:",
+          "description": "Diminuir os níveis de cortisol através de paisagens sonoras calmantes"
+        },
+        "betterSleep": {
+          "title": "Melhor Sono:",
+          "description": "Melhore a qualidade do sono com sons especializados indutores de sono"
+        },
+        "enhancedFocus": {
+          "title": "Foco Aprimorado:",
+          "description": "Aumente a concentração com sons ambientes para foco"
+        },
+        "emotionalBalance": {
+          "title": "Equilíbrio Emocional:",
+          "description": "Regular o humor e as emoções através de frequências terapêuticas"
+        },
+        "painManagement": {
+          "title": "Controle da Dor:",
+          "description": "Alívio natural da dor através de técnicas de terapia sonora"
+        },
+        "meditationSupport": {
+          "title": "Suporte à Meditação:",
+          "description": "Aprofunde sua prática de meditação com áudio guiado"
+        }
+      }
+    },
+    "howItWorks": {
+      "title": "Como Funciona o Sonicus",
+      "curatedLibrary": {
+        "title": "🎵 Biblioteca Sonora Curada",
+        "description": "Acesse centenas de sons terapêuticos criados profissionalmente, desde paisagens sonoras naturais a batidas binaurais, todos projetados para resultados específicos de bem-estar."
+      },
+      "evidenceBased": {
+        "title": "🧘 Terapia Baseada em Evidências",
+        "description": "Nosso conteúdo de áudio é baseado em pesquisa científica em terapia sonora, neurociência e psicologia do bem-estar para máximo benefício terapêutico."
+      },
+      "instantStreaming": {
+        "title": "📱 Transmissão Instantânea",
+        "description": "Transmita áudio terapêutico de alta qualidade instantaneamente em qualquer dispositivo - não são necessários downloads. Perfeito para casa, escritório ou viagens."
+      },
+      "personalJourney": {
+        "title": "🎯 Jornada de Bem-estar Pessoal",
+        "description": "Acompanhe seus hábitos de escuta, descubra novos sons terapêuticos e construa rotinas de bem-estar personalizadas adaptadas às suas necessidades."
+      },
+      "privateSecure": {
+        "title": "🔒 Privado e Seguro",
+        "description": "Seus dados pessoais de bem-estar são completamente privados com nossa arquitetura multi-inquilino - cada usuário obtém seu próprio espaço de banco de dados seguro."
+      },
+      "smartRecommendations": {
+        "title": "⚡ Recomendações Inteligentes",
+        "description": "Nosso sistema alimentado por IA aprende suas preferências e sugere os sons terapêuticos perfeitos para suas necessidades atuais e objetivos de bem-estar."
       }
     },
     "cta": {
       "title": "Pronto para Transformar o seu Bem-estar?",
       "authenticatedDescription": "Continue a sua jornada de bem-estar com a nossa plataforma de cura sonora terapêutica.",
       "guestDescription": "Junte-se a milhares de utilizadores que descobriram o poder transformador da cura sonora terapêutica. Escolha o seu nível de subscrição e experimente a diferença que a terapia de áudio profissional pode fazer.",
+      "myDashboard": "Meu Painel",
+      "exploreSound": "Explorar Sons",
       "buttons": {
         "exploreSounds": "Explorar Sons",
         "dashboard": "O meu Painel",
         "startTrial": "Iniciar Teste Gratuito",
-        "signIn": "Iniciar Sessão"
+        "signIn": "Iniciar Sessão",
+        "viewPricing": "Ver Planos de Preços"
       }
     },
     "subscriptionTiers": {

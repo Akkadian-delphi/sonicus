@@ -74,7 +74,7 @@
         },
         "betterSleep": {
           "title": "Betere Slaap:",
-        "description": "Verbeter slaapkwaliteit met gespecialiseerde slaapbevorderende geluiden"
+          "description": "Verbeter slaapkwaliteit met gespecialiseerde slaapbevorderende geluiden"
         },
         "enhancedFocus": {
           "title": "Verbeterde Focus:",
@@ -129,8 +129,11 @@
         "exploreSounds": "Geluiden Verkennen",
         "dashboard": "Mijn Dashboard",
         "startTrial": "Start Gratis Proefperiode",
-        "signIn": "Inloggen"
-      }
+        "signIn": "Inloggen",
+        "viewPricing": "Bekijk Prijsplannen"
+      },
+      "myDashboard": "Mijn Dashboard",
+      "exploreSound": "Klanken Verkennen"
     },
     "subscriptionTiers": {
       "starter": {

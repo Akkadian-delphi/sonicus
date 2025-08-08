@@ -129,8 +129,11 @@
         "exploreSounds": "Preskúmajte zvuky",
         "dashboard": "Môj dashboard",
         "startTrial": "Začnite bezplatnú skúšku",
-        "signIn": "Prihlásiť sa"
-      }
+        "signIn": "Prihlásiť sa",
+        "viewPricing": "Zobraziť Cenové Plány"
+      },
+      "myDashboard": "Môj Panel",
+      "exploreSound": "Preskúmať Zvuky"
     },
     "subscriptionTiers": {
       "starter": {

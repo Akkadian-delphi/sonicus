@@ -129,8 +129,11 @@
         "exploreSounds": "Esplora i Suoni",
         "dashboard": "La Mia Dashboard",
         "startTrial": "Inizia Prova Gratuita",
-        "signIn": "Accedi"
-      }
+        "signIn": "Accedi",
+        "viewPricing": "Visualizza Piani Tariffari"
+      },
+      "myDashboard": "La Mia Dashboard",
+      "exploreSound": "Esplora Suoni"
     },
     "subscriptionTiers": {
       "starter": {

@@ -129,8 +129,11 @@
         "exploreSounds": "Tutki Ääniä",
         "dashboard": "Oma Hallintapaneeli",
         "startTrial": "Aloita Ilmainen Kokeilu",
-        "signIn": "Kirjaudu Sisään"
-      }
+        "signIn": "Kirjaudu Sisään",
+        "viewPricing": "Näytä Hinnoittelusuunnitelmat"
+      },
+      "myDashboard": "Oma Kojelauta",
+      "exploreSound": "Tutki Ääniä"
     },
     "subscriptionTiers": {
       "starter": {

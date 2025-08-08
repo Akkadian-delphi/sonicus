@@ -129,8 +129,11 @@
         "exploreSounds": "Istražite zvukove",
         "dashboard": "Moja nadzorna ploča",
         "startTrial": "Počnite besplatnu probnu verziju",
-        "signIn": "Prijavite se"
-      }
+        "signIn": "Prijavite se",
+        "viewPricing": "Pogledaj Planove Cijena"
+      },
+      "myDashboard": "Moja Kontrolna Ploča",
+      "exploreSound": "Istražite Zvukove"
     },
     "subscriptionTiers": {
       "starter": {

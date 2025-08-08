@@ -129,8 +129,11 @@
         "exploreSounds": "Разгледайте звуците",
         "dashboard": "Моят панел",
         "startTrial": "Започнете безплатен пробен период",
-        "signIn": "Влезте"
-      }
+        "signIn": "Влезте",
+        "viewPricing": "Вижте Планове за Цени"
+      },
+      "myDashboard": "Моя Табло",
+      "exploreSound": "Изследвайте Звуци"
     },
     "subscriptionTiers": {
       "starter": {

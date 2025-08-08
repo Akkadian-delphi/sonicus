@@ -129,8 +129,11 @@
         "exploreSounds": "Iniúch Fuaimeanna",
         "dashboard": "Mo Dheais",
         "startTrial": "Tosaigh Triail Saor in Aisce",
-        "signIn": "Logáil Isteach"
-      }
+        "signIn": "Logáil Isteach",
+        "viewPricing": "Féach ar Phleananna Praghsála"
+      },
+      "myDashboard": "Mo Dheais",
+      "exploreSound": "Taiscéal Fuaimeanna"
     },
     "subscriptionTiers": {
       "starter": {

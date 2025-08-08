@@ -129,8 +129,11 @@
         "exploreSounds": "Explore Sounds",
         "dashboard": "My Dashboard",
         "startTrial": "Start Free Trial",
-        "signIn": "Sign In"
-      }
+        "signIn": "Sign In",
+        "viewPricing": "View Pricing Plans"
+      },
+      "myDashboard": "My Dashboard",
+      "exploreSound": "Explore Sounds"
     },
     "subscriptionTiers": {
       "starter": {

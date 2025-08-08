@@ -129,8 +129,11 @@
         "exploreSounds": "Utforska Ljud",
         "dashboard": "Min Dashboard",
         "startTrial": "Starta Gratis Testperiod",
-        "signIn": "Logga In"
-      }
+        "signIn": "Logga In",
+        "viewPricing": "Visa Prisplaner"
+      },
+      "myDashboard": "Min Instrumentpanel",
+      "exploreSound": "Utforska Ljud"
     },
     "subscriptionTiers": {
       "starter": {

@@ -189,8 +189,11 @@
         "exploreSounds": "Esplora l-ħsejjes",
         "dashboard": "Id-dashboard tiegħi",
         "startTrial": "Ibda prova b'xejn",
-        "signIn": "Idħol"
-      }
+        "signIn": "Idħol",
+        "viewPricing": "Ara l-Pjanijiet tal-Prezz"
+      },
+      "myDashboard": "Il-Dashboard Tiegħi",
+      "exploreSound": "Esplora l-Ħsejjes"
     },
     "subscriptionTiers": {
       "starter": {

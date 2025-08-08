@@ -6,7 +6,8 @@
     "welcome": "Καλώς ήρθες, {{name}}",
     "signOut": "Αποσύνδεση",
     "signIn": "Σύνδεση",
-    "getStarted": "Ξεκίνα"},
+    "getStarted": "Ξεκίνα"
+  },
   "homepage": {
     "hero": {
       "title": "Ανακαλύψτε τη Θεραπευτική Δύναμη του Ήχου",
@@ -128,8 +129,11 @@
         "exploreSounds": "Εξερευνήστε Ήχους",
         "dashboard": "Ο Πίνακάς μου",
         "startTrial": "Ξεκινήστε Δωρεάν Δοκιμή",
-        "signIn": "Σύνδεση"
-      }
+        "signIn": "Σύνδεση",
+        "viewPricing": "Δείτε Σχέδια Τιμολόγησης"
+      },
+      "myDashboard": "Ο Πίνακας Μου",
+      "exploreSound": "Εξερευνήστε Ήχους"
     },
     "subscriptionTiers": {
       "starter": {
