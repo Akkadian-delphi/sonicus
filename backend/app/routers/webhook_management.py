@@ -13,7 +13,7 @@ from app.db.session import get_db
 from app.services.webhook_service import webhook_service, WebhookEventType
 
 logger = logging.getLogger(__name__)
-router = APIRouter(prefix="/api/v1/webhooks", tags=["webhooks"])
+router = APIRouter(prefix="/api/v1/webhooks", tags=["Webhooks"])
 
 
 class WebhookEndpointCreate(BaseModel):

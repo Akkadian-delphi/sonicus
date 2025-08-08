@@ -13,7 +13,7 @@ from app.db.b2b2c_session import get_contextual_db_session
 from app.services.multi_tenant_db_service import multi_tenant_db_service
 from app.core.auth_dependencies import get_super_admin_user
 
-router = APIRouter(prefix="/admin/databases", tags=["admin-databases"])
+router = APIRouter(prefix="/admin/databases", tags=["Admin Databases"])
 
 @router.get("/list", response_model=List[Dict[str, Any]])
 async def list_user_databases(

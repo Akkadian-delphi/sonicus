@@ -208,6 +208,79 @@ export const AuthProvider = ({ children }) => {
     return hasRole('super_admin');
   };
 
+  // Update user profile
+  const updateProfile = async (profileData, avatarFile = null) => {
+    try {
+      let requestData;
+      let headers = {};
+
+      // Handle file upload vs. regular JSON data
+      if (avatarFile) {
+        // Create FormData for file upload
+        const formData = new FormData();
+        
+        // Add profile data
+        Object.keys(profileData).forEach(key => {
+          if (profileData[key] !== null && profileData[key] !== undefined) {
+            formData.append(key, profileData[key]);
+          }
+        });
+        
+        // Add avatar file
+        formData.append('avatar', avatarFile);
+        
+        requestData = formData;
+        headers['Content-Type'] = 'multipart/form-data';
+      } else {
+        // Send as JSON for regular profile updates
+        requestData = profileData;
+        headers['Content-Type'] = 'application/json';
+      }
+
+      console.log('Sending profile update request:', {
+        url: '/users/me',
+        method: 'PUT',
+        hasAvatar: !!avatarFile,
+        dataKeys: Object.keys(profileData)
+      });
+
+      const response = await axios.put('/users/me', requestData, {
+        headers
+      });
+
+      // Update user state with new data
+      setUser(prev => ({
+        ...prev,
+        ...response.data
+      }));
+
+      console.log('Profile updated successfully:', response.data);
+      return response.data;
+    } catch (error) {
+      console.error('❌ Profile update failed:', {
+        status: error.response?.status,
+        statusText: error.response?.statusText,
+        url: error.config?.url,
+        method: error.config?.method,
+        data: error.response?.data,
+        message: error.message
+      });
+
+      // Provide more specific error messages based on status code
+      if (error.response?.status === 405) {
+        throw new Error('Profile update method not supported. Please contact support.');
+      } else if (error.response?.status === 400) {
+        throw new Error(error.response?.data?.detail || 'Invalid profile data');
+      } else if (error.response?.status === 401) {
+        throw new Error('Authentication expired. Please log in again.');
+      } else if (error.response?.status === 422) {
+        throw new Error('Validation error. Please check your input.');
+      } else {
+        throw new Error(error.response?.data?.detail || 'Failed to update profile');
+      }
+    }
+  };
+
   const value = {
     user,
     loading,
@@ -221,6 +294,7 @@ export const AuthProvider = ({ children }) => {
     isBusinessAdmin,
     isSuperAdmin,
     refreshAuthentication,
+    updateProfile,
   };
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;

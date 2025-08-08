@@ -4,8 +4,7 @@ import os
 # from app.routers import super_admin  # TODO: Replace with Authentik auth
 from app.routers import business_admin  # Re-enabled: using JWT auth from get_current_user
 from app.routers import authentik_auth as authentik_router  # New Authentik OIDC authentication
-from app.routers import user  # User registration and management - for testing
-from app.routers import user_unified  # NEW: Consolidated user management system
+from app.routers import user  # UNIFIED: Single comprehensive user management system
 from app.routers import dashboard_metrics  # Re-enabled: now using Authentik compatible auth
 from app.routers import dashboard_websocket  # Re-enabled: now using Authentik compatible auth
 from app.routers import dashboard_management  # Re-enabled: now using Authentik compatible auth
@@ -33,7 +32,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Import essential routers
-from app.routers import users_simple, sounds_simple, sales_simple
+from app.routers import sounds_simple, sales_simple
 from app.routers import organization_metrics
 from app.routers import health
 # from app.routers import user_b2c_simple  # TODO: Fix import errors
@@ -289,11 +288,6 @@ def create_application() -> FastAPI:
         tags=["sounds"]
     )
     application.include_router(
-        users_simple.router,
-        prefix=effective_api_prefix,
-        tags=["users"]
-    )
-    application.include_router(
         sales_simple.router,
         prefix=effective_api_prefix,
         tags=["sales"]
@@ -331,19 +325,12 @@ def create_application() -> FastAPI:
         tags=["auth"]
     )
     
-    # User management routers - NEW UNIFIED SYSTEM
-    # The new unified user system consolidates all user operations
-    application.include_router(
-        user_unified.router,
-        prefix=f"{effective_api_prefix}/users",
-        tags=["users-unified"]
-    )
-    
-    # User registration and management router - LEGACY (for compatibility)
+    # User management routers - UNIFIED SYSTEM ONLY
+    # The unified user system consolidates all user operations
     application.include_router(
         user.router,
-        prefix=effective_api_prefix,
-        tags=["users-legacy"]
+        prefix=effective_api_prefix,  # Mount at /api/v1 for legacy compatibility
+        tags=["users"]
     )
     
     # Dashboard metrics router for Super Admin - Re-enabled with Authentik auth

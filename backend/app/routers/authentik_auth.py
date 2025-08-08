@@ -17,7 +17,7 @@ from app.models.user import User, UserRole
 from sqlalchemy.orm import Session
 
 logger = logging.getLogger(__name__)
-router = APIRouter()
+router = APIRouter(tags=["Authentication"])
 
 class AuthCallbackRequest(BaseModel):
     code: str

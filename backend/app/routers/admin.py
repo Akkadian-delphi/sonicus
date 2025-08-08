@@ -13,7 +13,10 @@ from app.models.invoice import Invoice
 from app.schemas.user import UserResponse, UserUpdate
 from app.schemas.therapy_sound import TherapySoundResponse, TherapySoundCreate, TherapySoundUpdate
 
-router = APIRouter(prefix="/admin", tags=["admin"])
+router = APIRouter(
+    prefix="/admin", 
+    tags=["Admin"]
+)
 
 # Dashboard Statistics
 @router.get("/dashboard/stats")

@@ -4,7 +4,7 @@ from typing import Optional, List, Dict, Any
 from app.services.payment_methods_service import PaymentMethodsService
 from app.models.user import PaymentMethod
 
-router = APIRouter(prefix="/payment-methods", tags=["payment-methods"])
+router = APIRouter(prefix="/payment-methods", tags=["Payment Methods"])
 
 @router.get("/available", response_model=List[Dict[str, Any]])
 async def get_available_payment_methods(

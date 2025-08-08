@@ -19,7 +19,7 @@ from typing import List, Optional, Dict, Any, Union
 
 logger = logging.getLogger(__name__)
 
-router = APIRouter(prefix="/api/v1/business-admin", tags=["business-admin"])
+router = APIRouter(prefix="/api/v1/business-admin", tags=["Business Admin"])
 
 
 def check_business_admin(current_user: Union[User, Dict[str, Any]]):

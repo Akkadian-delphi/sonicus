@@ -25,7 +25,7 @@ from app.db.b2b2c_session import B2B2CSessionManager
 
 logger = logging.getLogger(__name__)
 
-router = APIRouter(prefix="/api/v1/super-admin", tags=["super-admin"])
+router = APIRouter(prefix="/api/v1/super-admin", tags=["Super Admin"])
 
 # Initialize services
 organization_db_service = OrganizationDatabaseService()

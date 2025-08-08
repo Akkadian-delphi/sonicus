@@ -43,7 +43,7 @@
   border-bottom: 1px solid rgba(16, 185, 129, 0.1); /* Subtle green border */
   animation: navbar-glow 4s ease-in-out infinite;
   position: relative;
-  overflow: hidden;
+  overflow: visible; /* Changed from hidden to visible to allow dropdown to show */
 }
 
 /* Subtle background pattern */

@@ -27,6 +27,23 @@ class UserIdentitySchema(UserBaseSchema):
     class Config:
         from_attributes = True
 
+# === Profile Update Schemas ===
+
+class UserProfileUpdateSchema(BaseModel):
+    """Schema for updating user profile information."""
+    email: Optional[EmailStr] = None
+    telephone: Optional[str] = None
+    company_name: Optional[str] = None
+    business_type: Optional[str] = None
+    country: Optional[str] = None
+    preferred_payment_method: Optional[PaymentMethod] = None
+    language: Optional[str] = None  # For internationalization
+    notifications_enabled: Optional[bool] = None
+    
+    class Config:
+        # Allow extra fields for future extensibility
+        extra = "ignore"
+
 # === Registration Schemas ===
 
 class CustomerRegistrationSchema(BaseModel):

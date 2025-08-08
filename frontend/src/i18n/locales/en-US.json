@@ -260,5 +260,60 @@
     "startFreeTrial": "Start Free Trial",
     "signIn": "Sign In",
     "redirectingToSubscription": "Redirecting to subscription for {{plan}} plan..."
+  },
+  "profile": {
+    "avatar": "Avatar",
+    "memberSince": "Member Since",
+    "currentPlan": "Current Plan",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email",
+    "phone": "Phone",
+    "dateOfBirth": "Date of Birth",
+    "country": "Country",
+    "city": "City",
+    "timezone": "Timezone",
+    "bio": "Bio",
+    "preferredLanguage": "Preferred Language",
+    "emailNotifications": "Email Notifications",
+    "soundNotifications": "Sound Notifications",
+    "marketingEmails": "Marketing Emails",
+    "currentPassword": "Current Password",
+    "newPassword": "New Password",
+    "confirmNewPassword": "Confirm New Password",
+    "changePassword": "Change Password",
+    "updatePassword": "Update Password",
+    "languageSettings": "Language Settings",
+    "notificationSettings": "Notification Settings",
+    "saveSuccess": "Profile updated successfully!",
+    "saveError": "Failed to update profile",
+    "passwordChangeSuccess": "Password updated successfully!",
+    "passwordChangeError": "Failed to update password",
+    "avatarTooLarge": "Avatar file size must be less than 5MB",
+    "tabs": {
+      "personal": "Personal Info",
+      "security": "Security",
+      "preferences": "Preferences"
+    },
+    "placeholders": {
+      "firstName": "Enter your first name",
+      "lastName": "Enter your last name",
+      "email": "Enter your email address",
+      "phone": "Enter your phone number",
+      "country": "Enter your country",
+      "city": "Enter your city",
+      "bio": "Tell us a bit about yourself..."
+    },
+    "errors": {
+      "firstNameRequired": "First name is required",
+      "lastNameRequired": "Last name is required",
+      "emailRequired": "Email is required",
+      "emailInvalid": "Please enter a valid email address",
+      "phoneInvalid": "Please enter a valid phone number",
+      "currentPasswordRequired": "Current password is required",
+      "newPasswordRequired": "New password is required",
+      "passwordTooShort": "Password must be at least 8 characters long",
+      "passwordsDoNotMatch": "Passwords do not match"
+    }
   }
 }

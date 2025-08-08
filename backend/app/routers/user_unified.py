@@ -34,6 +34,7 @@ from app.schemas.user_unified import (
     UserRegistrationCompletionSchema,
     UserReadSchema,
     UserProfileSchema,
+    UserProfileUpdateSchema,  # New import for profile updates
     UserB2CProfileSchema,
     UserPreferencesSchema,
     UserPreferencesResponseSchema,
@@ -62,7 +63,9 @@ from passlib.context import CryptContext
 # Set up logger and password hashing
 logger = logging.getLogger(__name__)
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
-router = APIRouter(prefix="/api/users", tags=["users"])
+
+# Create router without prefix - it will be added in run.py
+router = APIRouter(tags=["Users"])
 
 # === Helper Functions ===
 
@@ -91,8 +94,50 @@ async def get_platform_mode(db: Session) -> str:
 
 # === Authentication Endpoints ===
 
+@router.post("/token", response_model=dict)
+def login_for_access_token(
+    form_data: OAuth2PasswordRequestForm = Depends(),
+    db: Session = Depends(get_db)
+):
+    """
+    Login user and get access token (legacy endpoint).
+    Compatible with existing frontend implementation.
+    """
+    logger.info(f"Login attempt for email: {form_data.username}")
+    
+    user = authenticate_user(db, form_data.username, form_data.password)
+    if not user:
+        logger.warning(f"Failed login attempt for email: {form_data.username}")
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail="Incorrect email or password",
+            headers={"WWW-Authenticate": "Bearer"},
+        )
+    
+    # Update last login
+    try:
+        db.execute(
+            User.__table__.update()
+            .where(User.id == getattr(user, 'id'))
+            .values(last_login=datetime.utcnow())
+        )
+        db.commit()
+    except Exception as e:
+        logger.warning(f"Could not update last login for {form_data.username}: {e}")
+    
+    # Create access token
+    access_token_expires = timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
+    access_token = create_access_token(
+        data={"sub": getattr(user, 'email')}, 
+        expires_delta=access_token_expires
+    )
+    
+    logger.info(f"Successful login for user: {getattr(user, 'email')}")
+    
+    return {"access_token": access_token, "token_type": "bearer"}
+
 @router.post("/login", response_model=TokenSchema)
-async def login_for_access_token(
+async def login_enhanced(
     form_data: OAuth2PasswordRequestForm = Depends(),
     db: Session = Depends(get_db)
 ):
@@ -137,6 +182,47 @@ async def login_for_access_token(
         expires_in=ACCESS_TOKEN_EXPIRE_MINUTES * 60,
         user=UserReadSchema(**create_user_response(user))
     )
+
+@router.post("/users", status_code=status.HTTP_201_CREATED, response_model=UserReadSchema)
+async def register_user(
+    user_data: OrganizationRegistrationSchema,
+    db: Session = Depends(get_db)
+):
+    """
+    Register a new user and organization in the system for B2B2C.
+    Legacy endpoint for compatibility.
+    """
+    try:
+        user_data_dict = {
+            'email': user_data.email,
+            'password': user_data.password,
+            'company_name': user_data.company_name,
+            'business_type': user_data.business_type,
+            'country': user_data.country,
+            'telephone': user_data.telephone,
+            'preferred_payment_method': user_data.preferred_payment_method
+        }
+        
+        user, organization, authentik_user = await user_registration_service.register_organization_user(
+            user_data=user_data_dict,
+            db=db,
+            create_in_authentik=True
+        )
+        
+        auth_status = "✓ Authentik" if authentik_user else "✗ Local only"
+        logger.info(f"Registration completed for {getattr(user, 'email')} - {auth_status}")
+        
+        return UserReadSchema(**create_user_response(user))
+        
+    except HTTPException:
+        raise
+    except Exception as e:
+        logger.error(f"User registration failed: {str(e)}")
+        db.rollback()
+        raise HTTPException(
+            status_code=500,
+            detail="Registration failed, please try again"
+        )
 
 @router.post("/register/customer", status_code=status.HTTP_201_CREATED, response_model=UserReadSchema)
 async def register_customer(
@@ -231,6 +317,36 @@ async def register_organization_user(
             detail="Registration failed, please try again"
         )
 
+@router.post("/request-password-reset")
+def request_password_reset_legacy(
+    email: str, 
+    background_tasks: BackgroundTasks, 
+    db: Session = Depends(get_db)
+):
+    """
+    Request password reset for a user (legacy endpoint).
+    """
+    # Find user by email
+    user = db.query(User).filter(User.email == email).first()
+    if not user:
+        # Don't reveal whether the email exists for security reasons
+        return {"message": "If the email exists, a password reset link has been sent."}
+    
+    # Generate reset token
+    reset_token = secrets.token_urlsafe(32)
+    
+    # Store token in cache (expire in 1 hour)
+    try:
+        user_email = getattr(user, 'email')
+        redis_client.set(f"password_reset:{reset_token}", user_email, expire=3600)
+    except Exception as e:
+        logger.error(f"Failed to store reset token in cache: {e}")
+    
+    # Send reset email
+    send_password_reset_email(background_tasks, email, reset_token)
+    
+    return {"message": "If the email exists, a password reset link has been sent."}
+
 @router.post("/password-reset/request", response_model=SuccessResponseSchema)
 async def request_password_reset(
     request: PasswordResetRequestSchema,
@@ -267,6 +383,148 @@ async def request_password_reset(
 
 # === User Profile Endpoints ===
 
+@router.get("/users/me", response_model=UserReadSchema)
+def read_users_me(current_user: User = Depends(get_current_user)):
+    """
+    Get current user profile information (legacy endpoint).
+    
+    Retrieves the profile information for the currently authenticated user.
+    Requires authentication via Bearer token.
+    """
+    # Check cache first
+    cache_key = f"user_profile:{getattr(current_user, 'id')}"
+    cached_user = redis_client.get_json(cache_key)
+    
+    if cached_user:
+        return cached_user
+    
+    # Return user data as dictionary to avoid SQLAlchemy serialization issues
+    user_data = {
+        "id": getattr(current_user, 'id'),
+        "email": getattr(current_user, 'email'),
+        "is_active": getattr(current_user, 'is_active', True),
+        "role": current_user.role.value if hasattr(current_user.role, 'value') else str(current_user.role),
+        "organization_id": str(getattr(current_user, 'organization_id')) if getattr(current_user, 'organization_id') is not None else None
+    }
+    
+    # Cache the user data for 5 minutes
+    redis_client.set_json(cache_key, user_data, expire=300)
+    
+    return user_data
+
+@router.put("/users/me", response_model=UserReadSchema)
+def update_users_me(
+    profile_data: UserProfileUpdateSchema,
+    current_user: User = Depends(get_current_user),
+    db: Session = Depends(get_db)
+):
+    """
+    Update current user profile information (legacy endpoint).
+    
+    Updates the profile information for the currently authenticated user.
+    Requires authentication via Bearer token.
+    """
+    user_id = getattr(current_user, 'id')
+    
+    try:
+        # Validate payment method if provided
+        if profile_data.preferred_payment_method:
+            validation = PaymentMethodsService.validate_payment_method(
+                profile_data.preferred_payment_method
+            )
+            if not validation["valid"]:
+                raise HTTPException(
+                    status_code=status.HTTP_400_BAD_REQUEST,
+                    detail=f"Invalid payment method: {validation['reason']}"
+                )
+        
+        # Check if email is being changed and ensure uniqueness
+        if profile_data.email and profile_data.email != getattr(current_user, 'email'):
+            existing_user = db.query(User).filter(
+                User.email == profile_data.email,
+                User.id != user_id
+            ).first()
+            
+            if existing_user:
+                raise HTTPException(
+                    status_code=status.HTTP_400_BAD_REQUEST,
+                    detail="Email address is already in use"
+                )
+        
+        # Build update values, only including non-None values
+        update_values = {}
+        
+        # Map profile data to database fields
+        field_mapping = {
+            'email': 'email',
+            'telephone': 'telephone', 
+            'company_name': 'company_name',
+            'business_type': 'business_type',
+            'country': 'country',
+            'preferred_payment_method': 'preferred_payment_method',
+            'language': 'language',
+            'notifications_enabled': 'notifications_enabled'
+        }
+        
+        for field_name, db_field in field_mapping.items():
+            value = getattr(profile_data, field_name, None)
+            if value is not None:
+                update_values[db_field] = value
+        
+        # Only proceed if there are changes
+        if not update_values:
+            # No changes, return current profile
+            user_data = {
+                "id": getattr(current_user, 'id'),
+                "email": getattr(current_user, 'email'),
+                "is_active": getattr(current_user, 'is_active', True),
+                "role": current_user.role.value if hasattr(current_user.role, 'value') else str(current_user.role),
+                "organization_id": str(getattr(current_user, 'organization_id')) if getattr(current_user, 'organization_id') is not None else None
+            }
+            return user_data
+        
+        # Update the user record
+        db.execute(
+            User.__table__.update()
+            .where(User.id == user_id)
+            .values(**update_values)
+        )
+        db.commit()
+        
+        # Clear cache to reflect changes
+        cache_key = f"user_profile:{user_id}"
+        redis_client.delete(cache_key)
+        
+        # Refresh user object and return updated profile
+        db.refresh(current_user)
+        
+        logger.info(f"Profile updated for user {getattr(current_user, 'email')}: {list(update_values.keys())}")
+        
+        user_data = {
+            "id": getattr(current_user, 'id'),
+            "email": getattr(current_user, 'email'),
+            "is_active": getattr(current_user, 'is_active', True),
+            "role": current_user.role.value if hasattr(current_user.role, 'value') else str(current_user.role),
+            "organization_id": str(getattr(current_user, 'organization_id')) if getattr(current_user, 'organization_id') is not None else None,
+            "telephone": getattr(current_user, 'telephone', None),
+            "company_name": getattr(current_user, 'company_name', None),
+            "business_type": getattr(current_user, 'business_type', None),
+            "country": getattr(current_user, 'country', None),
+            "preferred_payment_method": getattr(current_user, 'preferred_payment_method', None)
+        }
+        
+        return user_data
+        
+    except HTTPException:
+        raise
+    except Exception as e:
+        db.rollback()
+        logger.error(f"Error updating profile for user {user_id}: {e}")
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail="Error updating user profile"
+        )
+
 @router.get("/me", response_model=UserProfileSchema)
 async def get_current_user_profile(
     current_user: User = Depends(get_current_user),
@@ -289,6 +547,96 @@ async def get_current_user_profile(
     redis_client.set_json(cache_key, user_data, expire=300)
     
     return UserProfileSchema(**user_data)
+
+@router.put("/me", response_model=UserProfileSchema)
+async def update_current_user_profile(
+    profile_data: UserProfileUpdateSchema,
+    current_user: User = Depends(get_current_user),
+    db: Session = Depends(get_db)
+):
+    """Update current user's profile information."""
+    user_id = getattr(current_user, 'id')
+    
+    try:
+        # Validate payment method if provided
+        if profile_data.preferred_payment_method:
+            validation = PaymentMethodsService.validate_payment_method(
+                profile_data.preferred_payment_method
+            )
+            if not validation["valid"]:
+                raise HTTPException(
+                    status_code=status.HTTP_400_BAD_REQUEST,
+                    detail=f"Invalid payment method: {validation['reason']}"
+                )
+        
+        # Check if email is being changed and ensure uniqueness
+        if profile_data.email and profile_data.email != getattr(current_user, 'email'):
+            existing_user = db.query(User).filter(
+                User.email == profile_data.email,
+                User.id != user_id
+            ).first()
+            
+            if existing_user:
+                raise HTTPException(
+                    status_code=status.HTTP_400_BAD_REQUEST,
+                    detail="Email address is already in use"
+                )
+        
+        # Build update values, only including non-None values
+        update_values = {}
+        
+        # Map profile data to database fields
+        field_mapping = {
+            'email': 'email',
+            'telephone': 'telephone', 
+            'company_name': 'company_name',
+            'business_type': 'business_type',
+            'country': 'country',
+            'preferred_payment_method': 'preferred_payment_method',
+            'language': 'language',
+            'notifications_enabled': 'notifications_enabled'
+        }
+        
+        for field_name, db_field in field_mapping.items():
+            value = getattr(profile_data, field_name, None)
+            if value is not None:
+                update_values[db_field] = value
+        
+        # Only proceed if there are changes
+        if not update_values:
+            # No changes, return current profile
+            user_data = create_user_response(current_user, include_sensitive=True)
+            return UserProfileSchema(**user_data)
+        
+        # Update the user record
+        db.execute(
+            User.__table__.update()
+            .where(User.id == user_id)
+            .values(**update_values)
+        )
+        db.commit()
+        
+        # Clear cache to reflect changes
+        cache_key = f"user_profile:{user_id}"
+        redis_client.delete(cache_key)
+        
+        # Refresh user object and return updated profile
+        db.refresh(current_user)
+        
+        logger.info(f"Profile updated for user {getattr(current_user, 'email')}: {list(update_values.keys())}")
+        
+        user_data = create_user_response(current_user, include_sensitive=True)
+        return UserProfileSchema(**user_data)
+        
+    except HTTPException:
+        raise
+    except Exception as e:
+        db.rollback()
+        logger.error(f"Error updating profile for user {user_id}: {e}")
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail="Error updating user profile"
+        )
 
 @router.get("/me/b2c", response_model=UserB2CProfileSchema)
 async def get_b2c_user_profile(
@@ -745,6 +1093,34 @@ async def get_user_sound_packages(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail="Error retrieving sound packages"
         )
+
+# === Payment Methods (Legacy Compatibility) ===
+
+@router.get("/payment-methods/available")
+def get_user_available_payment_methods(
+    currency: str = "USD",
+    platform: Optional[str] = None,
+    current_user: User = Depends(get_current_user)
+):
+    """Get available payment methods for the current user (legacy endpoint)."""
+    return PaymentMethodsService.get_available_payment_methods(
+        currency=currency,
+        platform=platform
+    )
+
+@router.get("/payment-methods/recommended")
+def get_user_recommended_payment_methods(
+    currency: str = "USD", 
+    amount: Optional[float] = None,
+    platform: Optional[str] = None,
+    current_user: User = Depends(get_current_user)
+):
+    """Get recommended payment methods for the current user (legacy endpoint)."""
+    return PaymentMethodsService.get_recommended_payment_methods(
+        currency=currency,
+        amount=amount,
+        platform=platform
+    )
 
 # === Payment Methods ===
 

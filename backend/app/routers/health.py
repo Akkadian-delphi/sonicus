@@ -15,7 +15,7 @@ from typing import Dict, Any
 from app.db.session import get_db
 
 logger = logging.getLogger(__name__)
-router = APIRouter(tags=["health"])
+router = APIRouter(tags=["Health"])
 
 @router.get("/health")
 async def basic_health_check():

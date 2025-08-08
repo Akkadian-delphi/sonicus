@@ -19,7 +19,7 @@ from app.db.session import get_db
 
 logger = logging.getLogger(__name__)
 
-router = APIRouter(prefix="/organization", tags=["business-admin-organization"])
+router = APIRouter(prefix="/organization", tags=["Business Admin Organization"])
 
 
 def check_business_admin(current_user: User):
