@@ -87,6 +87,32 @@ class Settings(BaseSettings):
     FIREBASE_DATABASE_URL: str = os.getenv("FIREBASE_DATABASE_URL", "")
     FIREBASE_STORAGE_BUCKET: str = os.getenv("FIREBASE_STORAGE_BUCKET", "")
 
+    # IONOS DNS API Configuration
+    IONOS_API_KEY: str = os.getenv("IONOS_API_KEY", "")
+    SERVER_PUBLIC_IP: str = os.getenv("SERVER_PUBLIC_IP", "")
+    DNS_TTL: int = int(os.getenv("DNS_TTL", "3600"))
+    DNS_VERIFICATION_TIMEOUT: int = int(os.getenv("DNS_VERIFICATION_TIMEOUT", "300"))
+    DNS_MANAGEMENT_ENABLED: bool = os.getenv("DNS_MANAGEMENT_ENABLED", "True").lower() == "true"
+    DNS_VERIFICATION_ENABLED: bool = os.getenv("DNS_VERIFICATION_ENABLED", "True").lower() == "true"
+    
+    # Stripe Payment Integration
+    STRIPE_SECRET_KEY: str = os.getenv("STRIPE_SECRET_KEY", "")
+    STRIPE_PUBLISHABLE_KEY: str = os.getenv("STRIPE_PUBLISHABLE_KEY", "")
+    STRIPE_WEBHOOK_SECRET: str = os.getenv("STRIPE_WEBHOOK_SECRET", "")
+    STRIPE_ENABLED: bool = os.getenv("STRIPE_ENABLED", "True").lower() == "true"
+    
+    # Odoo CRM Integration
+    ODOO_URL: str = os.getenv("ODOO_URL", "")
+    ODOO_DATABASE: str = os.getenv("ODOO_DATABASE", "")
+    ODOO_USERNAME: str = os.getenv("ODOO_USERNAME", "")
+    ODOO_API_KEY: str = os.getenv("ODOO_API_KEY", "")
+    ODOO_LEAD_ENABLED: bool = os.getenv("ODOO_LEAD_ENABLED", "True").lower() == "true"
+    
+    # Container Deployment
+    DEPLOYMENT_WEBHOOK_URL: str = os.getenv("DEPLOYMENT_WEBHOOK_URL", "")
+    DEPLOYMENT_WEBHOOK_SECRET: str = os.getenv("DEPLOYMENT_WEBHOOK_SECRET", "")
+    CONTAINER_DEPLOYMENT_ENABLED: bool = os.getenv("CONTAINER_DEPLOYMENT_ENABLED", "True").lower() == "true"
+
     @field_validator("FIREBASE_PROJECT_ID", mode="after")
     def validate_firebase_project_id(cls, v: str, info) -> str:
         """Validate that Firebase Project ID is provided in production."""

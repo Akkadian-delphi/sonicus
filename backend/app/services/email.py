@@ -141,3 +141,82 @@ def send_welcome_email(background_tasks: BackgroundTasks, user_email: str):
     """
     
     background_tasks.add_task(_send_email_task, user_email, subject, body)
+
+def send_organization_registration_email(
+    background_tasks: BackgroundTasks, 
+    admin_email: str, 
+    organization_name: str, 
+    subdomain: str,
+    admin_password: Optional[str] = None
+):
+    """Send organization registration confirmation email with login credentials."""
+    subject = f"🎉 Your Sonicus Organization is Ready - {organization_name}"
+    
+    # Create login credentials section
+    credentials_section = ""
+    if admin_password:
+        credentials_section = f"""
+        <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0;">
+            <h3 style="color: #2e7d32; margin-top: 0;">🔑 Your Login Credentials</h3>
+            <p><strong>Email:</strong> {admin_email}</p>
+            <p><strong>Temporary Password:</strong> <code>{admin_password}</code></p>
+            <p><small style="color: #666;">Please change this password after your first login for security.</small></p>
+        </div>
+        """
+    
+    body = f"""
+    <html>
+        <body style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; color: #333;">
+            <div style="text-align: center; margin-bottom: 30px;">
+                <h1 style="color: #2e7d32;">✅ Registration Successful!</h1>
+                <h2 style="color: #4a5568; font-weight: normal;">Your Sonicus instance is ready!</h2>
+            </div>
+            
+            <div style="background: #e8f5e8; padding: 20px; border-radius: 8px; border-left: 4px solid #4caf50;">
+                <p>Congratulations! Your organization "<strong>{organization_name}</strong>" has been successfully set up.</p>
+                
+                <h3 style="color: #2e7d32;">🚀 What we've prepared for you:</h3>
+                <ul>
+                    <li>✅ Your dedicated container deployment</li>
+                    <li>✅ Configured organizational database</li>
+                    <li>✅ Complete therapeutic sound library</li>
+                    <li>✅ Your personalized admin dashboard</li>
+                </ul>
+                
+                {credentials_section}
+                
+                <div style="text-align: center; margin: 30px 0;">
+                    <a href="https://{subdomain}.sonicus.eu" 
+                       style="background: #2e7d32; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: 600;">
+                        🌐 Access Your Portal: {subdomain}.sonicus.eu
+                    </a>
+                </div>
+                
+                <h3 style="color: #2e7d32;">📚 Getting Started Guide:</h3>
+                <ol>
+                    <li>Click the link above to access your portal</li>
+                    <li>Log in with your credentials</li>
+                    <li>Complete your organization profile</li>
+                    <li>Invite your team members</li>
+                    <li>Start exploring therapeutic sound healing</li>
+                </ol>
+                
+                <div style="background: #fff3cd; border: 1px solid #ffeaa7; padding: 15px; border-radius: 6px; margin: 20px 0;">
+                    <p style="margin: 0;"><strong>💡 Pro Tip:</strong> You can customize your organization's branding, add your logo, and configure user access levels from the admin dashboard.</p>
+                </div>
+            </div>
+            
+            <div style="margin-top: 30px; text-align: center; color: #666; font-size: 14px;">
+                <p>Need help? Contact our support team at <a href="mailto:support@sonicus.eu">support@sonicus.eu</a></p>
+                <p style="margin-top: 20px;"><strong>Thank you for choosing Sonicus!</strong></p>
+                <p style="color: #2e7d32; font-weight: 600;">The Sonicus Team</p>
+            </div>
+        </body>
+    </html>
+    """
+    
+    background_tasks.add_task(_send_email_task, admin_email, subject, body, {
+        "organization_name": organization_name,
+        "subdomain": subdomain,
+        "admin_email": admin_email
+    })

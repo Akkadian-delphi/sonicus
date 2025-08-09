@@ -266,5 +266,243 @@
     "startFreeTrial": "Comenzar Prueba Gratuita",
     "signIn": "Iniciar Sesión",
     "redirectingToSubscription": "Redirigiendo a la suscripción para el plan {{plan}}..."
+  },
+  "business": {
+    "registration": {
+      "title": "Registra Tu Organización",
+      "subtitle": "Comienza a llevar sanación sonora terapéutica a tu equipo con una prueba gratuita de 14 días",
+      "step1": "Info Básica",
+      "step2": "Detalles",
+      "step3": "Dirección",
+      "basicInfo": "Información de la Organización",
+      "businessDetails": "Detalles del Negocio",
+      "addressInfo": "Información de Dirección",
+      "addressOptional": "La información de dirección es opcional pero nos ayuda a brindar un mejor servicio",
+      "companyName": "Nombre de la Empresa",
+      "companyNamePlaceholder": "Ingresa el nombre de tu empresa",
+      "displayName": "Nombre para Mostrar",
+      "displayNamePlaceholder": "Nombre público para tu organización",
+      "displayNameHelp": "Así es como aparecerá tu organización ante tus usuarios",
+      "subdomain": "Subdominio",
+      "primaryEmail": "Email de Contacto Principal",
+      "phone": "Número de Teléfono",
+      "industry": "Industria",
+      "companySize": "Tamaño de la Empresa",
+      "selectIndustry": "Selecciona tu industria",
+      "selectCompanySize": "Selecciona el tamaño de la empresa",
+      "employees": "empleados",
+      "addressLine1": "Dirección Línea 1",
+      "addressLine2": "Dirección Línea 2",
+      "city": "Ciudad",
+      "state": "Estado/Provincia",
+      "country": "País",
+      "postalCode": "Código Postal",
+      "previous": "Anterior",
+      "next": "Siguiente",
+      "creating": "Creando Organización...",
+      "createOrganization": "Crear Organización",
+      "trialInfo": "Comienza con una prueba gratuita de 14 días. No se requiere tarjeta de crédito.",
+      "haveAccount": "¿Ya tienes una cuenta?",
+      "signIn": "Inicia sesión aquí",
+      "domain": {
+        "tooShort": "El dominio debe tener al menos 3 caracteres",
+        "checking": "Verificando disponibilidad...",
+        "checkError": "Error verificando disponibilidad del dominio",
+        "notAvailable": "El dominio no está disponible",
+        "suggestions": "Prueba estas alternativas"
+      },
+      "error": {
+        "requiredFields": "Por favor completa todos los campos requeridos",
+        "domainNotAvailable": "Por favor selecciona un dominio disponible",
+        "general": "Ocurrió un error durante el registro"
+      }
+    },
+    "welcome": {
+      "title": "¡Bienvenido a Sonicus!",
+      "yourSubdomain": "Tu Portal",
+      "subscriptionTier": "Plan",
+      "trialEnds": "La prueba termina",
+      "trialTitle": "Tu Prueba Gratuita de 14 Días",
+      "trialDescription": "Tienes acceso a todas las características del plan Starter durante tu período de prueba:",
+      "trialFeatures": {
+        "users": "Hasta {{count}} usuarios",
+        "soundLibraries": "{{count}} bibliotecas de sonidos",
+        "analytics": "Analíticas básicas",
+        "support": "Soporte por email"
+      },
+      "nextStepsTitle": "Comienza en 4 Pasos",
+      "nextStepsDesc": "Así es como poner tu organización en funcionamiento:",
+      "steps": {
+        "accessPortal": "Accede a Tu Portal",
+        "accessPortalDesc": "Visita el portal dedicado de tu organización para comenzar a usar Sonicus",
+        "visitPortal": "Visitar Portal",
+        "inviteTeam": "Invita a Tu Equipo",
+        "inviteTeamDesc": "Agrega miembros del equipo y asigna roles para tu organización",
+        "inviteMembers": "Invitar Miembros",
+        "customizeBranding": "Personaliza la Marca",
+        "customizeBrandingDesc": "Agrega tu logo y colores de marca para personalizar la experiencia",
+        "customizeNow": "Personalizar",
+        "configureSounds": "Configurar Paquetes de Sonidos",
+        "configureSoundsDesc": "Elige colecciones de sonidos terapéuticos para tu organización",
+        "browseSounds": "Explorar Sonidos"
+      },
+      "resourcesTitle": "Recursos Útiles",
+      "resources": {
+        "gettingStarted": "Guía de Inicio",
+        "gettingStartedDesc": "Aprende los conceptos básicos de configurar tu organización",
+        "apiDocs": "Documentación de API",
+        "apiDocsDesc": "Integra Sonicus con tus sistemas existentes",
+        "support": "Centro de Soporte",
+        "supportDesc": "Obtén ayuda de nuestros expertos en bienestar",
+        "community": "Foro de la Comunidad",
+        "communityDesc": "Conéctate con otras organizaciones que usan Sonicus"
+      },
+      "needHelp": "¿Necesitas ayuda para comenzar? Nuestro equipo está aquí para ayudar.",
+      "contactSupport": "Contactar Soporte",
+      "goToPortal": "Ir al Portal"
+    },
+    "industries": {
+      "technology": "Tecnología",
+      "healthcare": "Salud",
+      "finance": "Finanzas",
+      "education": "Educación",
+      "retail": "Comercio Minorista",
+      "manufacturing": "Manufactura",
+      "consulting": "Consultoría",
+      "realEstate": "Bienes Raíces",
+      "nonProfit": "Sin Fines de Lucro",
+      "other": "Otro"
+    },
+    "companySize": {
+      "1-10": "1-10",
+      "11-50": "11-50",
+      "51-200": "51-200",
+      "201-1000": "201-1000",
+      "1000+": "1000+"
+    }
+  },
+  "dashboard": {
+    "settings": "Configuraciones",
+    "manageUsers": "Administrar Usuarios",
+    "trialEnds": "La prueba termina",
+    "stats": {
+      "totalUsers": "Usuarios Totales",
+      "activeUsers": "Usuarios Activos",
+      "totalSessions": "Sesiones Totales",
+      "totalListenTime": "Tiempo de Escucha",
+      "usersLimit": "usuarios",
+      "nearLimit": "Cerca del límite",
+      "newThisMonth": "nuevos este mes",
+      "avgMinutes": "minutos promedio",
+      "thisMonth": "este mes"
+    },
+    "sections": {
+      "popularSounds": "Sonidos Populares",
+      "wellnessMetrics": "Métricas de Bienestar",
+      "quickActions": "Acciones Rápidas",
+      "subscription": "Suscripción"
+    },
+    "viewAll": "Ver Todo",
+    "detailedReport": "Reporte Detallado",
+    "listens": "escuchas",
+    "noData": {
+      "sounds": "Aún no hay datos de sonidos disponibles"
+    },
+    "wellness": {
+      "avgScore": "Puntuación Promedio de Bienestar",
+      "responses": "Respuestas de Encuesta",
+      "noResponsesCTA": "Anima a tu equipo a participar en encuestas de bienestar para obtener mejores insights.",
+      "sendSurvey": "Enviar Encuesta"
+    },
+    "actions": {
+      "inviteUsers": "Invitar Usuarios",
+      "inviteUsersDesc": "Agregar miembros del equipo a tu organización",
+      "customizeBranding": "Personalizar Marca",
+      "customizeBrandingDesc": "Agregar tu logo y colores de marca",
+      "exportData": "Exportar Datos",
+      "exportDataDesc": "Descargar reportes de uso y bienestar",
+      "apiAccess": "Acceso a API",
+      "apiAccessDesc": "Generar claves de API para integraciones"
+    },
+    "plan": "Plan",
+    "features": {
+      "users": "{{count}} usuarios",
+      "soundLibraries": "{{count}} bibliotecas de sonidos",
+      "analytics": "Analíticas avanzadas",
+      "customBranding": "Marca personalizada",
+      "apiAccess": "Acceso a API"
+    },
+    "upgrade": "Mejorar Plan",
+    "trial": {
+      "ending": "Prueba Terminando Pronto",
+      "endingDesc": "Tu prueba terminará pronto. Mejora para continuar usando Sonicus.",
+      "upgradeNow": "Mejorar Ahora"
+    },
+    "error": {
+      "noOrganization": "No se encontró contexto de organización",
+      "fetchFailed": "Error al cargar datos del dashboard",
+      "b2cMode": "Dashboard de Organización No Disponible",
+      "b2cModeDesc": "Esta característica solo está disponible para organizaciones empresariales.",
+      "title": "Error Cargando Dashboard"
+    }
+  },
+  "userManagement": {
+    "title": "Administración de Usuarios",
+    "subtitle": "{{current}} de {{limit}} usuarios en {{organization}}",
+    "inviteUser": "Invitar Usuario",
+    "searchPlaceholder": "Buscar usuarios...",
+    "filters": {
+      "allRoles": "Todos los Roles"
+    },
+    "sort": {
+      "name": "Ordenar por Nombre",
+      "role": "Ordenar por Rol",
+      "dateAdded": "Ordenar por Fecha de Adición"
+    },
+    "roles": {
+      "admin": "Administrador",
+      "manager": "Gerente",
+      "user": "Usuario"
+    },
+    "status": {
+      "active": "Activo",
+      "invited": "Invitado",
+      "inactive": "Inactivo"
+    },
+    "joinedOn": "Se unió el",
+    "lastActive": "Última actividad",
+    "removeUser": "Eliminar",
+    "noUsers": "Aún No Hay Usuarios",
+    "noUsersDesc": "Comienza invitando miembros del equipo a tu organización.",
+    "inviteFirstUser": "Invitar Primer Usuario",
+    "confirmRemove": "¿Estás seguro de que quieres eliminar este usuario?",
+    "invite": {
+      "title": "Invitar Nuevo Usuario",
+      "email": "Dirección de Email",
+      "role": "Rol",
+      "roleDescriptions": "Descripciones de Roles:",
+      "send": "Enviar Invitación",
+      "success": "¡Invitación enviada exitosamente!",
+      "error": "Error al enviar invitación"
+    },
+    "roleDesc": {
+      "user": "Puede acceder y usar sonidos terapéuticos",
+      "manager": "Puede administrar paquetes de sonidos y ver analíticas del equipo",
+      "admin": "Acceso completo a configuraciones de organización y administración de usuarios"
+    },
+    "remove": {
+      "error": "Error al eliminar usuario"
+    },
+    "updateRole": {
+      "error": "Error al actualizar rol del usuario"
+    },
+    "error": {
+      "noOrganization": "No se encontró contexto de organización",
+      "noPermission": "No tienes permiso para administrar usuarios",
+      "fetchFailed": "Error al cargar usuarios",
+      "userLimitReached": "Límite de usuarios alcanzado (máx {{limit}} usuarios)",
+      "b2cMode": "Administración de Usuarios No Disponible",
+      "b2cModeDesc": "Esta característica solo está disponible para organizaciones empresariales."
+    }
   }
 }

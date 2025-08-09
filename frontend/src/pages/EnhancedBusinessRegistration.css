@@ -1,0 +1,606 @@
+/* Enhanced Business Registration Styles with Infrastructure Progress */
+
+.business-registration {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 2rem 0;
+}
+
+.business-registration .container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.registration-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: white;
+}
+
+.registration-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.registration-header p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  margin-bottom: 2rem;
+}
+
+/* Progress Steps */
+.progress-steps {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.step span {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.step.active span {
+  background: rgba(255, 255, 255, 0.9);
+  border-color: rgba(255, 255, 255, 1);
+  color: #667eea;
+  transform: scale(1.1);
+}
+
+.step label {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  text-align: center;
+}
+
+.step.active label {
+  opacity: 1;
+  font-weight: 600;
+}
+
+/* Form Styles */
+.registration-form {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  margin-bottom: 2rem;
+}
+
+.step-content h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.step-description {
+  text-align: center;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+/* Form Groups */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.form-group label.required::after {
+  content: ' *';
+  color: #e74c3c;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid #e1e5e9;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.form-group small {
+  display: block;
+  color: #666;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.field-help {
+  color: #4a90e2 !important;
+  font-weight: 500;
+  background: #f8fafe;
+  padding: 0.5rem;
+  border-radius: 4px;
+  border-left: 3px solid #4a90e2;
+  margin-top: 0.5rem !important;
+}
+
+/* Domain Input Group */
+.domain-input-group {
+  display: flex;
+  align-items: center;
+  border: 2px solid #e1e5e9;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: border-color 0.3s ease;
+}
+
+.domain-input-group:focus-within {
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.domain-input-group input {
+  border: none;
+  margin: 0;
+  flex: 1;
+}
+
+.domain-input-group input:focus {
+  box-shadow: none;
+}
+
+.domain-suffix {
+  padding: 0.75rem;
+  background: #f8f9fa;
+  color: #666;
+  font-weight: 500;
+  border-left: 1px solid #e1e5e9;
+}
+
+/* Domain Feedback */
+.domain-feedback {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 6px;
+  font-size: 0.875rem;
+}
+
+.domain-feedback.checking {
+  background: #e3f2fd;
+  color: #1976d2;
+  border-left: 4px solid #2196f3;
+}
+
+.domain-feedback.available {
+  background: #e8f5e8;
+  color: #2e7d32;
+  border-left: 4px solid #4caf50;
+}
+
+.domain-feedback.unavailable {
+  background: #ffebee;
+  color: #c62828;
+  border-left: 4px solid #f44336;
+}
+
+/* Domain Suggestions */
+.domain-suggestions {
+  margin-top: 1rem;
+}
+
+.suggestions-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.suggestion-button {
+  padding: 0.5rem 1rem;
+  background: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.875rem;
+}
+
+.suggestion-button:hover {
+  background: #667eea;
+  color: white;
+  border-color: #667eea;
+}
+
+/* Infrastructure Progress Styles */
+.infrastructure-progress {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.infrastructure-progress h2 {
+  color: #333;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.infrastructure-progress p {
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+/* Infrastructure Steps */
+.infrastructure-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 2rem 0;
+  text-align: left;
+}
+
+.infrastructure-step {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  background: #f8f9fa;
+}
+
+.infrastructure-step.completed {
+  background: #e8f5e8;
+  border-left: 4px solid #4caf50;
+}
+
+.infrastructure-step.in-progress {
+  background: #e3f2fd;
+  border-left: 4px solid #2196f3;
+}
+
+.infrastructure-step.pending {
+  background: #f8f9fa;
+  border-left: 4px solid #dee2e6;
+}
+
+/* Step Icon */
+.step-icon {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.infrastructure-step.completed .step-icon {
+  background: #4caf50;
+  color: white;
+}
+
+.infrastructure-step.in-progress .step-icon {
+  background: #2196f3;
+  color: white;
+}
+
+.infrastructure-step.pending .step-icon {
+  background: #dee2e6;
+  color: #666;
+}
+
+/* Spinner Animation */
+.spinner {
+  display: flex;
+  gap: 2px;
+}
+
+.spinner-dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: white;
+  animation: spinner-bounce 1.4s ease-in-out infinite both;
+}
+
+.spinner-dot:nth-child(1) {
+  animation-delay: -0.32s;
+}
+
+.spinner-dot:nth-child(2) {
+  animation-delay: -0.16s;
+}
+
+@keyframes spinner-bounce {
+  0%, 80%, 100% {
+    transform: scale(0);
+  }
+  40% {
+    transform: scale(1);
+  }
+}
+
+/* Step Content */
+.step-content .step-title {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.25rem;
+}
+
+.step-content .step-message {
+  font-size: 0.875rem;
+  color: #666;
+}
+
+/* Infrastructure Status Messages */
+.infrastructure-error {
+  background: #ffebee;
+  color: #c62828;
+  padding: 1rem;
+  border-radius: 8px;
+  border-left: 4px solid #f44336;
+  margin-top: 2rem;
+}
+
+.infrastructure-complete {
+  background: #e8f5e8;
+  color: #2e7d32;
+  padding: 2rem;
+  border-radius: 8px;
+  border-left: 4px solid #4caf50;
+  margin-top: 2rem;
+  text-align: left;
+}
+
+.success-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.infrastructure-complete h3 {
+  color: #2e7d32;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.deployment-info {
+  margin-bottom: 1.5rem;
+}
+
+.deployment-status {
+  font-weight: 600;
+  margin: 1rem 0 0.5rem 0;
+}
+
+.deployment-steps {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0;
+}
+
+.deployment-steps li {
+  margin: 0.25rem 0;
+  color: #4a5568;
+}
+
+.email-notification {
+  background: #f7faff;
+  border: 1px solid #bee3f8;
+  border-radius: 6px;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.email-notification p {
+  margin: 0 0 0.5rem 0;
+  font-weight: 600;
+  color: #2d3748;
+}
+
+.email-includes {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0;
+}
+
+.email-includes li {
+  margin: 0.25rem 0;
+  color: #4a5568;
+}
+
+.completion-footer {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.estimated-time {
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin-bottom: 0.5rem;
+}
+
+.thank-you {
+  font-weight: 600;
+  color: #2e7d32;
+  margin: 0;
+}
+
+/* Navigation Buttons */
+.form-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  min-width: 120px;
+}
+
+.btn-primary {
+  background: #667eea;
+  color: white;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background: #5a67d8;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.btn-secondary {
+  background: #6c757d;
+  color: white;
+}
+
+.btn-secondary:hover:not(:disabled) {
+  background: #5a6268;
+}
+
+.btn-success {
+  background: #28a745;
+  color: white;
+}
+
+.btn-success:hover:not(:disabled) {
+  background: #218838;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(40, 167, 69, 0.4);
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Error Message */
+.error-message {
+  background: #ffebee;
+  color: #c62828;
+  padding: 1rem;
+  border-radius: 8px;
+  border-left: 4px solid #f44336;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+/* Registration Footer */
+.registration-footer {
+  text-align: center;
+  color: white;
+  opacity: 0.9;
+}
+
+.registration-footer p {
+  margin-bottom: 0.5rem;
+}
+
+.registration-footer a {
+  color: white;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.registration-footer a:hover {
+  opacity: 0.8;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .business-registration {
+    padding: 1rem 0;
+  }
+  
+  .registration-header h1 {
+    font-size: 2rem;
+  }
+  
+  .progress-steps {
+    gap: 1rem;
+  }
+  
+  .step span {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  
+  .step label {
+    font-size: 0.8rem;
+  }
+  
+  .registration-form {
+    padding: 1.5rem;
+  }
+  
+  .form-navigation {
+    flex-direction: column;
+  }
+  
+  .btn {
+    width: 100%;
+  }
+  
+  .infrastructure-steps {
+    margin: 1rem 0;
+  }
+  
+  .infrastructure-step {
+    padding: 0.75rem;
+  }
+}

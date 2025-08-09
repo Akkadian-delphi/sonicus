@@ -23,28 +23,16 @@ class RedisClient:
             cls._instance = super(RedisClient, cls).__new__(cls)
             cls._instance.__init__()
             
-            # Initialize connection variables
-            host = None
-            port = None
-            
             try:
-                # Ensure we have the correct Redis connection URL with authentication
-                # Extract components from settings to build a proper connection
-                host = settings.REDIS_HOST
-                port = settings.REDIS_PORT
-                db = settings.REDIS_DB
-                password = settings.REDIS_PASSWORD
+                # Use the REDIS_URL setting directly from configuration
+                redis_url = settings.REDIS_URL
                 
                 # Log connection attempt (without password)
-                logger.info(f"Connecting to Redis at {host}:{port}/{db}")
+                logger.info(f"Connecting to Redis using URL: {redis_url}")
                 
-                # Use from_url with proper credentials
-                if password:
-                    # Ensure password is properly included in the URL
-                    redis_url = f"redis://:{password}@{host}:{port}/{db}"
+                if settings.REDIS_PASSWORD:
                     logger.debug("Using Redis with authentication")
                 else:
-                    redis_url = f"redis://{host}:{port}/{db}"
                     logger.warning("Connecting to Redis without authentication - this may fail if authentication is required")
                 
                 cls._instance.client = redis.Redis.from_url(
@@ -61,9 +49,9 @@ class RedisClient:
                 logger.error("Check that REDIS_PASSWORD is correctly set in your environment")
                 cls._instance.client = None
             except ConnectionError as e:
+                redis_url = getattr(settings, 'REDIS_URL', 'unknown')
                 logger.error(f"Redis connection error: {str(e)}")
-                if host and port:
-                    logger.error(f"Check that Redis is running at {host}:{port}")
+                logger.error(f"Check that Redis is running at {redis_url}")
                 cls._instance.client = None
             except RedisError as e:
                 logger.error(f"Redis connection failed: {str(e)}")

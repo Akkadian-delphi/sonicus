@@ -14,6 +14,10 @@ from app.routers import business_admin_packages
 from app.routers import organization_crud  # Organization CRUD operations with Authentik auth
 from app.routers import business_admin_communications
 from app.routers import business_admin_organization  # New organization-specific endpoints
+from app.routers import organization_registration  # B2B2C organization registration and management
+from app.routers import debug_router  # Debug endpoints for development
+# from app.routers import organization_branding as organization_branding  # Organization branding management - disabled temporarily
+from app.routers import advanced_themes  # Advanced theme management with scheduling and color intelligence
 from app.routers import wellness_impact_tracking
 from app.routers import webhook_management  # Webhook management and testing
 from app.routers import public  # Public endpoints for platform detection
@@ -24,6 +28,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from contextlib import asynccontextmanager
 from app.core.config import settings
 from app.core.api_docs import custom_openapi
+from app.core.tenant_middleware import TenantDetectionMiddleware
 import time
 import httpx
 
@@ -243,6 +248,12 @@ def create_application() -> FastAPI:
         allow_headers=["*"],
     )
     
+    # Add tenant detection middleware for B2B2C multi-tenancy
+    application.add_middleware(
+        TenantDetectionMiddleware,
+        platform_domain="sonicus.eu"
+    )
+    
     # Add request logging middleware
     @application.middleware("http")
     async def log_requests(request: Request, call_next):
@@ -394,6 +405,34 @@ def create_application() -> FastAPI:
         business_admin_communications.router,
         prefix=f"{effective_api_prefix}/business-admin",
         tags=["business-admin-communications"]
+    )
+    
+    # B2B2C Organization Registration and Management
+    application.include_router(
+        organization_registration.router,
+        prefix=f"{effective_api_prefix}",
+        tags=["organization-registration"]
+    )
+    
+    # Debug endpoints for development
+    application.include_router(
+        debug_router.router,
+        prefix=f"{effective_api_prefix}",
+        tags=["debug"]
+    )
+    
+    # Organization Branding and Customization - Temporarily disabled
+    # application.include_router(
+    #     organization_branding.router,
+    #     prefix=f"{effective_api_prefix}",
+    #     tags=["organization-branding"]
+    # )
+    
+    # Advanced Theme Management
+    application.include_router(
+        advanced_themes.router,
+        prefix=f"{effective_api_prefix}",
+        tags=["advanced-themes"]
     )
     
     # Business admin organization-specific endpoints router

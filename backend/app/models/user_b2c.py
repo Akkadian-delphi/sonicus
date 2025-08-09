@@ -56,7 +56,7 @@ class UserSoundPackage(Base):
 
     id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
     user_id = Column(Integer, ForeignKey("users.id"), nullable=False, index=True)
-    sound_package_id = Column(Integer, ForeignKey("sound_packages.id"), nullable=False, index=True)
+    sound_package_id = Column(UUID(as_uuid=True), ForeignKey("sound_packages.id"), nullable=False, index=True)
     
     # Access management
     access_granted_at = Column(DateTime, default=datetime.utcnow, nullable=False)

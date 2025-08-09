@@ -45,8 +45,12 @@ kombu>=5.3.0
 slowapi>=0.1.9
 limits>=5.5.0
 
-# HTTP client for Authentik integration
+# HTTP client for external API integrations
 httpx>=0.25.0
+requests>=2.31.0
+
+# Payment processing with Stripe
+stripe>=5.0.0
 
 # System monitoring
 psutil>=5.9.0

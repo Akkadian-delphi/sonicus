@@ -43,7 +43,7 @@ CREATE INDEX idx_organizations_subdomain ON organizations(subdomain);
 - Subdomain generation and validation
 - Organization database creation
 - Admin user provisioning
-- Revolut payment integration and billing setup
+- Stripe payment integration and billing setup
 - Odoo Lead integration
 - Container deployment webhook triggers
 
@@ -85,7 +85,7 @@ GET  /api/v1/organizations/subdomain-suggestions
 - Subdomain generation from company name
 - Subdomain availability check
 - Customizable subdomain input
-- Revolut payment setup and subscription management
+- Stripe payment setup and subscription management
 - Terms acceptance and plan selection
 
 ### **2.3 Business Registration Form UX**
@@ -313,7 +313,7 @@ All existing endpoints will include tenant context:
 - User management: Tenant-scoped users
 - Content: Organization-specific content
 - Analytics: Tenant-specific metrics
-- Billing: Revolut-based subscription management
+- Billing: Stripe-based subscription management
 
 ## 🎨 Frontend Component Structure
 
@@ -324,7 +324,7 @@ src/
 │   │   ├── BusinessRegistration.js
 │   │   ├── SubdomainGenerator.js
 │   │   ├── CompanyDetailsForm.js
-│   │   ├── RevolutPaymentForm.js
+│   │   ├── StripePaymentForm.js
 │   │   └── PlanSelection.js
 │   ├── tenant/
 │   │   ├── TenantApp.js
@@ -342,7 +342,7 @@ src/
 ├── utils/
 │   ├── domainDetection.js
 │   ├── subdomainValidation.js
-│   ├── revolutPayment.js
+│   ├── stripePayment.js
 │   └── tenantApi.js
 └── hooks/
     ├── useTenant.js
@@ -363,13 +363,49 @@ src/
 - [ ] Subdomain activation rate
 - [ ] Customer onboarding completion
 
-## 🎯 Next Steps
+## 🎯 Implementation Status & Next Steps
 
-1. **Start with Phase 1**: Backend infrastructure and tenant detection
-2. **Create migration script**: For existing organizations to have subdomains
-3. **Set up development environment**: With local subdomain testing
-4. **Implement security first**: Cross-tenant isolation before features
-5. **Test thoroughly**: Each phase before moving to the next
+### ✅ Completed Components (Updated Status)
+- **Backend Infrastructure**: ✅ Tenant detection middleware, DNS service, deployment service, Stripe service
+- **Database Schema**: ✅ Multi-tenant organization support with subdomains 
+- **API Endpoints**: ✅ Organization registration, domain availability checking, tenant status
+- **Payment Integration**: ✅ Stripe service fully implemented and configured
+- **CRM Integration**: ✅ Odoo service for lead management
+- **Security**: ✅ Cross-tenant isolation and authentication
+- **Frontend Domain Detection**: ✅ Complete utilities for subdomain detection and validation  
+- **Business Registration UI**: ✅ Multi-step registration form with subdomain selection
+- **Conditional App Rendering**: ✅ Different UI for main domain vs subdomains
+
+### 🔧 Immediate Next Steps (Current Focus)
+
+1. **✅ COMPLETED: Frontend Domain Detection** - Created complete domain detection utilities
+2. **✅ COMPLETED: Environment Configuration** - Fixed domain configuration (.sonicus.eu)
+3. **✅ COMPLETED: Business Registration UI** - Implemented complete registration flow
+4. **⚠️ IN PROGRESS: Testing & Validation** - Need to test end-to-end functionality
+
+### 📋 Specific Implementation Tasks
+
+#### ✅ Task 1: Frontend Domain Detection & Conditional Rendering
+- ✅ Created `frontend/src/utils/domainDetection.js` - Full domain detection system
+- ✅ Updated `frontend/src/App.js` for conditional rendering based on domain type
+- ✅ Implemented business registration components with multi-step flow
+- ✅ Created tenant context providers for organization management
+
+#### ✅ Task 2: Configuration Alignment  
+- ✅ Updated domain references from `.sonicus.com` to `.sonicus.eu`
+- ✅ Fixed tenant middleware configuration in run.py
+- ✅ Updated all service configurations for consistent domain usage
+
+#### ✅ Task 3: Business Registration Flow
+- ✅ Complete frontend form components (CompanyDetailsForm, SubdomainGenerator, StripePaymentForm)
+- ✅ Integrated with backend APIs for domain availability and registration
+- ✅ Added professional styling and UX for all registration steps
+
+#### 🚧 Task 4: Testing & Validation (NEXT PRIORITY)
+- 🔄 Test subdomain routing and tenant detection
+- 🔄 Validate complete business registration flow  
+- 🔄 Test organization dashboard access via subdomains
+- 🔄 Verify DNS functionality in development mode
 
 ## 📋 Definition of Done
 
@@ -564,7 +600,7 @@ deployment_service = ContainerDeploymentService()
 from app.services.dns_service import dns_service
 from app.services.odoo_service import odoo_service
 from app.services.deployment_service import deployment_service
-from app.services.revolut_service import revolut_service
+from app.services.stripe_service import stripe_service
 
 @router.post("/organizations/register")
 async def register_organization(org_data: OrganizationRegistrationRequest):
@@ -572,8 +608,8 @@ async def register_organization(org_data: OrganizationRegistrationRequest):
         # 1. Create organization in database
         organization = await create_organization(org_data)
         
-        # 2. Create Revolut customer and subscription
-        revolut_customer = await revolut_service.create_customer({
+        # 2. Create Stripe customer and subscription
+        stripe_customer = await stripe_service.create_customer({
             "name": organization.name,
             "email": organization.admin_email,
             "phone": organization.phone,
@@ -585,16 +621,16 @@ async def register_organization(org_data: OrganizationRegistrationRequest):
             }
         })
         
-        if not revolut_customer:
+        if not stripe_customer:
             await rollback_organization_creation(organization.id)
-            raise HTTPException(status_code=500, detail="Failed to create Revolut customer")
+            raise HTTPException(status_code=500, detail="Failed to create Stripe customer")
         
-        # Store Revolut customer ID
-        organization.revolut_customer_id = revolut_customer["id"]
+        # Store Stripe customer ID
+        organization.stripe_customer_id = stripe_customer["id"]
         
         # Create subscription based on selected plan
-        subscription = await revolut_service.create_subscription({
-            "customer_id": revolut_customer["id"],
+        subscription = await stripe_service.create_subscription({
+            "customer_id": stripe_customer["id"],
             "plan_id": org_data.subscription_plan_id,
             "payment_method": org_data.payment_method,
             "metadata": {
@@ -605,19 +641,17 @@ async def register_organization(org_data: OrganizationRegistrationRequest):
         
         if not subscription:
             await rollback_organization_creation(organization.id)
-            raise HTTPException(status_code=500, detail="Failed to create Revolut subscription")
-        
-        organization.revolut_subscription_id = subscription["id"]
-        
-        # 3. Create DNS record for subdomain
+            raise HTTPException(status_code=500, detail="Failed to create Stripe subscription")
+
+        organization.stripe_subscription_id = subscription["id"]        # 3. Create DNS record for subdomain
         dns_success = await dns_service.create_subdomain_record(
             subdomain=organization.subdomain,
             target_ip=settings.SERVER_PUBLIC_IP
         )
         
         if not dns_success:
-            # Rollback Revolut subscription and organization
-            await revolut_service.cancel_subscription(subscription["id"])
+            # Rollback Stripe subscription and organization
+            await stripe_service.cancel_subscription(subscription["id"])
             await rollback_organization_creation(organization.id)
             raise HTTPException(
                 status_code=500,
@@ -651,7 +685,7 @@ async def register_organization(org_data: OrganizationRegistrationRequest):
             "company_name": organization.name,
             "source": "sonicus_registration",
             "subscription_plan": org_data.subscription_plan_id,
-            "revolut_customer_id": revolut_customer["id"],
+            "stripe_customer_id": stripe_customer["id"],
             "description": f"New business registration for {organization.name}"
         })
         
@@ -742,11 +776,11 @@ class Settings:
     ODOO_API_KEY: str = Field(..., env="ODOO_API_KEY")
     ODOO_LEAD_ENABLED: bool = Field(default=True, env="ODOO_LEAD_ENABLED")
     
-    # Revolut Payment Integration
-    REVOLUT_API_KEY: str = Field(..., env="REVOLUT_API_KEY")
-    REVOLUT_API_URL: str = Field(default="https://business-api.revolut.com", env="REVOLUT_API_URL")
-    REVOLUT_WEBHOOK_SECRET: str = Field(..., env="REVOLUT_WEBHOOK_SECRET")
-    REVOLUT_ENABLED: bool = Field(default=True, env="REVOLUT_ENABLED")
+    # Stripe Payment Integration
+    STRIPE_SECRET_KEY: str = Field(..., env="STRIPE_SECRET_KEY")
+    STRIPE_PUBLISHABLE_KEY: str = Field(..., env="STRIPE_PUBLISHABLE_KEY")
+    STRIPE_WEBHOOK_SECRET: str = Field(..., env="STRIPE_WEBHOOK_SECRET")
+    STRIPE_ENABLED: bool = Field(default=True, env="STRIPE_ENABLED")
     
     # Container Deployment
     DEPLOYMENT_WEBHOOK_URL: str = Field(..., env="DEPLOYMENT_WEBHOOK_URL")
@@ -853,11 +887,11 @@ SERVER_PUBLIC_IP=your_server_public_ip
 DNS_TTL=3600
 DNS_VERIFICATION_TIMEOUT=300
 
-# Revolut Payment Integration
-REVOLUT_API_KEY=your_revolut_api_key
-REVOLUT_API_URL=https://business-api.revolut.com
-REVOLUT_WEBHOOK_SECRET=your_webhook_secret
-REVOLUT_ENABLED=true
+# Stripe Payment Integration
+STRIPE_SECRET_KEY=sk_test_your_stripe_secret_key
+STRIPE_PUBLISHABLE_KEY=pk_test_your_stripe_publishable_key
+STRIPE_WEBHOOK_SECRET=whsec_your_webhook_secret
+STRIPE_ENABLED=true
 
 # Odoo CRM Integration
 ODOO_URL=https://your-odoo-instance.com
@@ -897,7 +931,7 @@ FROM_EMAIL=noreply@sonicus.eu
 1. **Landing Page Visit** → User visits `sonicus.eu`
 2. **"Get Started" Click** → Triggers business registration flow
 3. **Company Registration** → Fill company details, tax info, billing
-4. **Revolut Payment Setup** → Choose subscription plan and payment method
+4. **Stripe Payment Setup** → Choose subscription plan and payment method
 5. **Subdomain Creation** → System generates and validates unique subdomain
 6. **Subdomain Customization** → User can modify suggested subdomain
 6. **DNS Creation** → Automatic DNS record creation via IONOS API
@@ -944,7 +978,7 @@ User Clicks "Get Started" → Domain Detection (sonicus.eu) → Business Registr
      ↓
 Company Details Entry → Real-time Subdomain Generation → Availability Check
      ↓
-Revolut Payment Setup → Subscription Plan Selection → Payment Method Configuration
+Stripe Payment Setup → Subscription Plan Selection → Payment Method Configuration
      ↓
 Subdomain Confirmation → Terms Acceptance → Submit Registration → API Call
      ↓

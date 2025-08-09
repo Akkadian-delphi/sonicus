@@ -81,6 +81,7 @@ class Organization(Base):
     database_created_at = Column(DateTime, nullable=True)  # When database was created
     
     # Relationships
+    # branding = relationship("OrganizationBranding", back_populates="organization", uselist=False)
     # Temporarily commented out to avoid circular import issues
     # users = relationship("User", back_populates="organization")
     # sound_packages = relationship("OrganizationSoundPackage", back_populates="organization")

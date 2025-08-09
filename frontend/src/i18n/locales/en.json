@@ -1,0 +1,510 @@
+{
+  "navbar": {
+    "sounds": "Sounds",
+    "profile": "Profile",
+    "admin": "Admin",
+    "welcome": "Welcome, {{name}}",
+    "signOut": "Sign Out",
+    "signIn": "Sign In",
+    "getStarted": "Get Started"
+  },
+  "homepage": {
+    "hero": {
+      "title": "Discover the Healing Power of Sound",
+      "subtitle": "Transform your well-being with therapeutic sound healing designed for deep relaxation, stress relief, and mental clarity.",
+      "cta": "Start Your Journey",
+      "learnMore": "Learn More"
+    },
+    "features": {
+      "title": "Perfect for Every Wellness Need",
+      "useCases": {
+        "sleep": {
+          "title": "Sleep Disorders",
+          "description": "Insomnia, restless sleep, or trouble falling asleep"
+        },
+        "stress": {
+          "title": "Stress & Anxiety",
+          "description": "Daily stress, work pressure, or anxiety management"
+        },
+        "meditation": {
+          "title": "Meditation Practice",
+          "description": "Enhance your meditation with guided soundscapes"
+        },
+        "workplace": {
+          "title": "Workplace Wellness",
+          "description": "Improve focus and reduce workplace stress"
+        },
+        "recovery": {
+          "title": "Recovery Support",
+          "description": "Support healing and recovery processes naturally"
+        },
+        "study": {
+          "title": "Study & Focus",
+          "description": "Boost concentration and learning performance"
+        }
+      },
+      "scientifically": {
+        "title": "Scientifically Backed",
+        "description": "Our therapeutic sounds are based on proven research in sound healing and neuroscience."
+      },
+      "personalized": {
+        "title": "Personalized Experience",
+        "description": "Tailored sound therapy sessions that adapt to your unique wellness needs and preferences."
+      },
+      "professional": {
+        "title": "Professional Quality",
+        "description": "High-fidelity audio designed by sound therapy experts for maximum therapeutic benefit."
+      },
+      "accessible": {
+        "title": "Always Accessible",
+        "description": "Access your healing sounds anytime, anywhere, from any device."
+      }
+    },
+    "cta": {
+      "title": "Ready to Transform Your Well-being?",
+      "authenticatedDescription": "Continue your wellness journey with our therapeutic sound healing platform.",
+      "guestDescription": "Join thousands of users who have discovered the life-changing power of therapeutic sound healing. Choose your subscription tier and experience the difference that professional audio therapy can make.",
+      "buttons": {
+        "exploreSounds": "Explore Sounds",
+        "dashboard": "My Dashboard",
+        "startTrial": "Start Free Trial",
+        "signIn": "Sign In"
+      }
+    },
+    "subscriptionTiers": {
+      "starter": {
+        "name": "Starter",
+        "price": "Free",
+        "features": {
+          "sessions": "3 daily sessions",
+          "timeLimit": "15-minute limit",
+          "content": "Basic content library",
+          "analytics": "Personal analytics"
+        }
+      },
+      "premium": {
+        "name": "Premium",
+        "price": "$9.99/month",
+        "features": {
+          "sessions": "10 daily sessions",
+          "timeLimit": "60-minute sessions",
+          "content": "Full content library",
+          "analytics": "Advanced analytics",
+          "tracking": "Wellness tracking"
+        }
+      },
+      "pro": {
+        "name": "Pro",
+        "price": "$19.99/month",
+        "features": {
+          "sessions": "Unlimited sessions",
+          "timeLimit": "Unlimited length",
+          "content": "Premium exclusive content",
+          "insights": "Advanced insights",
+          "support": "Priority support"
+        }
+      }
+    },
+    "science": {
+      "title": "The Science Behind Sound Therapy",
+      "intro": "Sound therapy is backed by extensive scientific research.",
+      "description": "Studies have shown that specific audio frequencies can influence brainwave patterns, reduce cortisol levels, and trigger the body's natural relaxation response. Our therapeutic sounds utilize principles from neuroscience, psychology, and traditional healing practices to provide measurable wellness benefits.",
+      "highlights": {
+        "stressReduction": "Clinically proven stress reduction",
+        "neuroplasticity": "Neuroplasticity enhancement",
+        "sleep": "Improved sleep architecture",
+        "cognitive": "Enhanced focus and cognitive performance"
+      }
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Welcome Back",
+      "email": "Email Address",
+      "password": "Password",
+      "submit": "Sign In",
+      "forgotPassword": "Forgot your password?",
+      "noAccount": "Don't have an account?",
+      "signUp": "Sign up"
+    },
+    "register": {
+      "title": "Create Your Account",
+      "name": "Full Name",
+      "email": "Email Address",
+      "password": "Password",
+      "confirmPassword": "Confirm Password",
+      "submit": "Get Started",
+      "hasAccount": "Already have an account?",
+      "signIn": "Sign in",
+      "passwordRequirement": "Password must be at least 8 characters long"
+    }
+  },
+  "business": {
+    "registration": {
+      "title": "Register Your Organization",
+      "subtitle": "Start bringing therapeutic sound healing to your team with a 14-day free trial",
+      "step1": "Basic Info",
+      "step2": "Details",
+      "step3": "Address",
+      "step4": "Setup",
+      "basicInfo": "Organization Information",
+      "businessDetails": "Business Details",
+      "addressInfo": "Address Information",
+      "addressOptional": "Address information is optional but helps us provide better service",
+      "companyName": "Company Name",
+      "companyNamePlaceholder": "Enter your company name",
+      "displayName": "Display Name",
+      "displayNamePlaceholder": "Public name for your organization",
+      "displayNameHelp": "This is how your organization will appear to your users",
+      "subdomain": "Subdomain",
+      "primaryEmail": "Primary Contact Email",
+      "phone": "Phone Number",
+      "industry": "Industry",
+      "companySize": "Company Size",
+      "selectIndustry": "Select your industry",
+      "selectCompanySize": "Select company size",
+      "employees": "employees",
+      "addressLine1": "Address Line 1",
+      "addressLine2": "Address Line 2",
+      "city": "City",
+      "state": "State/Province",
+      "country": "Country",
+      "postalCode": "Postal Code",
+      "previous": "Previous",
+      "next": "Next",
+      "creating": "Creating Organization...",
+      "createOrganization": "Create Organization",
+      "trialInfo": "Start with a 14-day free trial. No credit card required.",
+      "haveAccount": "Already have an account?",
+      "signIn": "Sign in here",
+      "domain": {
+        "tooShort": "Domain must be at least 3 characters",
+        "checking": "Checking availability...",
+        "checkError": "Error checking domain availability",
+        "notAvailable": "Domain is not available",
+        "suggestions": "Try these alternatives"
+      },
+      "error": {
+        "requiredFields": "Please fill in all required fields",
+        "domainNotAvailable": "Please select an available domain",
+        "general": "An error occurred during registration"
+      },
+      "infrastructure": {
+        "title": "Setting Up Your Organization",
+        "description": "We're preparing your multi-tenant infrastructure. This process takes about 1-2 minutes.",
+        "complete": "Registration Successful!",
+        "emailNotification": "You'll receive an email confirmation at {{email}} in approximately 5-10 minutes with:",
+        "emailIncludes": [
+          "Your login credentials",
+          "Direct access to {{subdomain}}.sonicus.eu",
+          "Getting started guide"
+        ],
+        "redirect": "Your Sonicus instance is being prepared...",
+        "deploymentStatus": "🚀 We're currently:",
+        "deploymentSteps": [
+          "Setting up your dedicated container",
+          "Configuring your database",
+          "Preparing your sound library",
+          "Setting up your admin dashboard"
+        ],
+        "thankYou": "Thank you for choosing Sonicus!",
+        "estimatedTime": "Estimated deployment time: 5-10 minutes",
+        "error": "Infrastructure setup encountered an issue",
+        "continueAnyway": "Continue to Portal",
+        "registration": {
+          "title": "Organization Registration",
+          "description": "Creating your organization account..."
+        },
+        "dns": {
+          "title": "DNS Configuration",
+          "description": "Setting up your subdomain and DNS records..."
+        },
+        "payment": {
+          "title": "Payment Setup",
+          "description": "Initializing payment processing for future billing..."
+        },
+        "crm": {
+          "title": "CRM Integration",
+          "description": "Creating your customer relationship record..."
+        },
+        "verification": {
+          "title": "DNS Verification",
+          "description": "Verifying domain propagation and accessibility..."
+        },
+        "deployment": {
+          "title": "Container Deployment",
+          "description": "Deploying your dedicated application container..."
+        }
+      }
+    },
+    "welcome": {
+      "title": "Welcome to Sonicus!",
+      "yourSubdomain": "Your Portal",
+      "subscriptionTier": "Plan",
+      "trialEnds": "Trial ends",
+      "trialTitle": "Your 14-Day Free Trial",
+      "trialDescription": "You have access to all Starter tier features during your trial period:",
+      "trialFeatures": {
+        "users": "Up to {{count}} users",
+        "soundLibraries": "{{count}} sound libraries",
+        "analytics": "Basic analytics",
+        "support": "Email support"
+      },
+      "nextStepsTitle": "Get Started in 4 Steps",
+      "nextStepsDesc": "Here's how to get your organization up and running:",
+      "steps": {
+        "accessPortal": "Access Your Portal",
+        "accessPortalDesc": "Visit your organization's dedicated portal to start using Sonicus",
+        "visitPortal": "Visit Portal",
+        "inviteTeam": "Invite Your Team",
+        "inviteTeamDesc": "Add team members and assign roles for your organization",
+        "inviteMembers": "Invite Members",
+        "customizeBranding": "Customize Branding",
+        "customizeBrandingDesc": "Add your logo and brand colors to personalize the experience",
+        "customizeNow": "Customize",
+        "configureSounds": "Configure Sound Packages",
+        "configureSoundsDesc": "Choose therapeutic sound collections for your organization",
+        "browseSounds": "Browse Sounds"
+      },
+      "resourcesTitle": "Helpful Resources",
+      "resources": {
+        "gettingStarted": "Getting Started Guide",
+        "gettingStartedDesc": "Learn the basics of setting up your organization",
+        "apiDocs": "API Documentation",
+        "apiDocsDesc": "Integrate Sonicus with your existing systems",
+        "support": "Support Center",
+        "supportDesc": "Get help from our wellness experts",
+        "community": "Community Forum",
+        "communityDesc": "Connect with other organizations using Sonicus"
+      },
+      "needHelp": "Need help getting started? Our team is here to help.",
+      "contactSupport": "Contact Support",
+      "goToPortal": "Go to Portal"
+    },
+    "industries": {
+      "technology": "Technology",
+      "healthcare": "Healthcare",
+      "finance": "Finance",
+      "education": "Education",
+      "retail": "Retail",
+      "manufacturing": "Manufacturing",
+      "consulting": "Consulting",
+      "realEstate": "Real Estate",
+      "nonProfit": "Non-profit",
+      "other": "Other"
+    },
+    "companySize": {
+      "1-10": "1-10",
+      "11-50": "11-50",
+      "51-200": "51-200",
+      "201-1000": "201-1000",
+      "1000+": "1000+"
+    }
+  },
+  "dashboard": {
+    "settings": "Settings",
+    "manageUsers": "Manage Users",
+    "trialEnds": "Trial ends",
+    "stats": {
+      "totalUsers": "Total Users",
+      "activeUsers": "Active Users",
+      "totalSessions": "Total Sessions",
+      "totalListenTime": "Listen Time",
+      "usersLimit": "users",
+      "nearLimit": "Near limit",
+      "newThisMonth": "new this month",
+      "avgMinutes": "avg minutes",
+      "thisMonth": "this month"
+    },
+    "sections": {
+      "popularSounds": "Popular Sounds",
+      "wellnessMetrics": "Wellness Metrics",
+      "quickActions": "Quick Actions",
+      "subscription": "Subscription"
+    },
+    "viewAll": "View All",
+    "detailedReport": "Detailed Report",
+    "listens": "listens",
+    "noData": {
+      "sounds": "No sound data available yet"
+    },
+    "wellness": {
+      "avgScore": "Average Wellness Score",
+      "responses": "Survey Responses",
+      "noResponsesCTA": "Encourage your team to participate in wellness surveys for better insights.",
+      "sendSurvey": "Send Survey"
+    },
+    "actions": {
+      "inviteUsers": "Invite Users",
+      "inviteUsersDesc": "Add team members to your organization",
+      "customizeBranding": "Customize Branding",
+      "customizeBrandingDesc": "Add your logo and brand colors",
+      "exportData": "Export Data",
+      "exportDataDesc": "Download usage and wellness reports",
+      "apiAccess": "API Access",
+      "apiAccessDesc": "Generate API keys for integrations"
+    },
+    "plan": "Plan",
+    "features": {
+      "users": "{{count}} users",
+      "soundLibraries": "{{count}} sound libraries",
+      "analytics": "Advanced analytics",
+      "customBranding": "Custom branding",
+      "apiAccess": "API access"
+    },
+    "upgrade": "Upgrade Plan",
+    "trial": {
+      "ending": "Trial Ending Soon",
+      "endingDesc": "Your trial will end soon. Upgrade to continue using Sonicus.",
+      "upgradeNow": "Upgrade Now"
+    },
+    "error": {
+      "noOrganization": "No organization context found",
+      "fetchFailed": "Failed to load dashboard data",
+      "b2cMode": "Organization Dashboard Not Available",
+      "b2cModeDesc": "This feature is only available for business organizations.",
+      "title": "Error Loading Dashboard"
+    }
+  },
+  "userManagement": {
+    "title": "User Management",
+    "subtitle": "{{current}} of {{limit}} users in {{organization}}",
+    "inviteUser": "Invite User",
+    "searchPlaceholder": "Search users...",
+    "filters": {
+      "allRoles": "All Roles"
+    },
+    "sort": {
+      "name": "Sort by Name",
+      "role": "Sort by Role",
+      "dateAdded": "Sort by Date Added"
+    },
+    "roles": {
+      "admin": "Admin",
+      "manager": "Manager",
+      "user": "User"
+    },
+    "status": {
+      "active": "Active",
+      "invited": "Invited",
+      "inactive": "Inactive"
+    },
+    "joinedOn": "Joined on",
+    "lastActive": "Last active",
+    "removeUser": "Remove",
+    "noUsers": "No Users Yet",
+    "noUsersDesc": "Start by inviting team members to your organization.",
+    "inviteFirstUser": "Invite First User",
+    "confirmRemove": "Are you sure you want to remove this user?",
+    "invite": {
+      "title": "Invite New User",
+      "email": "Email Address",
+      "role": "Role",
+      "roleDescriptions": "Role Descriptions:",
+      "send": "Send Invitation",
+      "success": "Invitation sent successfully!",
+      "error": "Failed to send invitation"
+    },
+    "roleDesc": {
+      "user": "Can access and use therapeutic sounds",
+      "manager": "Can manage sound packages and view team analytics",
+      "admin": "Full access to organization settings and user management"
+    },
+    "remove": {
+      "error": "Failed to remove user"
+    },
+    "updateRole": {
+      "error": "Failed to update user role"
+    },
+    "error": {
+      "noOrganization": "No organization context found",
+      "noPermission": "You don't have permission to manage users",
+      "fetchFailed": "Failed to load users",
+      "userLimitReached": "User limit reached ({{limit}} users max)",
+      "b2cMode": "User Management Not Available",
+      "b2cModeDesc": "This feature is only available for business organizations."
+    }
+  },
+  "branding": {
+    "title": "Organization Branding",
+    "subtitle": "Customize your organization's appearance and branding",
+    "tabs": {
+      "colors": "Colors",
+      "typography": "Typography",
+      "presets": "Presets",
+      "advanced": "Advanced"
+    },
+    "colors": {
+      "title": "Brand Colors",
+      "primary": "Primary Color",
+      "secondary": "Secondary Color", 
+      "accent": "Accent Color",
+      "background": "Background Color",
+      "text": "Text Color"
+    },
+    "typography": {
+      "title": "Typography",
+      "primaryFont": "Primary Font",
+      "headingFont": "Heading Font"
+    },
+    "layout": {
+      "title": "Layout & Theme",
+      "themeMode": "Theme Mode",
+      "light": "Light",
+      "dark": "Dark", 
+      "auto": "Auto (System)"
+    },
+    "presets": {
+      "title": "Theme Presets"
+    },
+    "advanced": {
+      "title": "Advanced Customization",
+      "customCSS": "Custom CSS",
+      "cssPlaceholder": "Enter custom CSS rules...",
+      "cssHelp": "Add custom CSS to further customize your organization's appearance."
+    },
+    "actions": {
+      "reset": "Reset to Defaults",
+      "save": "Save Changes"
+    },
+    "preview": {
+      "title": "Live Preview",
+      "sampleTitle": "Your Organization Portal",
+      "sampleSubtitle": "This is how your branding will appear to users",
+      "cardTitle": "Dashboard Card",
+      "cardContent": "This is sample content showing your brand colors and typography.",
+      "primaryButton": "Primary Button",
+      "secondaryButton": "Secondary Button",
+      "statLabel": "Sample Metric",
+      "statLabel2": "Another Metric"
+    },
+    "save": {
+      "success": "Branding updated successfully!",
+      "error": "Failed to save branding changes."
+    },
+    "error": {
+      "b2cMode": "Organization Branding Not Available",
+      "b2cModeDesc": "This feature is only available for business organizations."
+    }
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "retry": "Retry",
+    "save": "Save",
+    "cancel": "Cancel",
+    "edit": "Edit",
+    "delete": "Delete",
+    "confirm": "Confirm",
+    "yes": "Yes",
+    "no": "No",
+    "user": "User",
+    "dashboard": "Dashboard",
+    "settings": "Settings",
+    "help": "Help & Support",
+    "footer": {
+      "version": "Sonicus v1.0.0 - Audio Therapy Application",
+      "tagline": "Powered by Elefefe"
+    }
+  }
+}
